@@ -1,0 +1,176 @@
+Include OLYMPICS_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	0
+def	dy	23
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+
+
+ //====== Set Point Saved
+Item
+{
+	Text SetPointSaved
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/SetPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/SetPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Match Point Saved
+Item
+{
+	Text MatchPointSaved
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MatchPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/MatchPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Win1stServe
+Item
+{
+	Text Win1stServe
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValueF
+	pos xr y
+}
+
+//====== Win2ndServe
+Item
+{
+	Text Win2ndServe
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValueF
+	pos xr y
+}
+
+
+//====== NetApproach
+Item
+{
+	Text NetApproach
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/NetApproach
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/NetApproach
+	Font StatValueF
+	pos xr y
+}
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font StatValueF
+	pos xr y
+}
+

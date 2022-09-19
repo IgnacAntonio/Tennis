@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 30.00 30.00
+Speed: 1.0
+Acceleration: Forehand_acc
+
+Author: Reginald Wesley | Matteo Berrettini

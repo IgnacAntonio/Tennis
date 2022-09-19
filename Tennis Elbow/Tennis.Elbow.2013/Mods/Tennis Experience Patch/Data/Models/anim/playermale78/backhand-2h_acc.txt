@@ -1,0 +1,6 @@
+Anim: BackHand-2H_acc.x
+Info: 23.00 23.00
+Speed: 1.0
+Acceleration: backhand-2h_acc
+
+Author: Reginald Wesley | Jannik Sinner

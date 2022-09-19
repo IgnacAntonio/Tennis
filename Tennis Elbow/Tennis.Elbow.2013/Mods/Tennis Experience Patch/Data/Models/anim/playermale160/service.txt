@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 81.0 81.0 55.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Auger-Aliassime

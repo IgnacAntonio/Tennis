@@ -1,0 +1,6 @@
+Anim: ForeHand_acc.x
+Info: 25.0 25.0
+Speed: 1.0
+
+
+Author: Rharm | Bublik

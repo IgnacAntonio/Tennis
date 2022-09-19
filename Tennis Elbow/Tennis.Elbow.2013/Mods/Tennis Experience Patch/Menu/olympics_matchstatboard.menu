@@ -1,0 +1,235 @@
+Include OLYMPICS_MatchStatBoard.def
+
+Background #PreviousMenu
+
+item
+{
+   Image Ico/Olympics/Stats FrameW FrameH
+   Pos FrameX FrameY 
+}
+
+item
+{
+   Image Ico/Olympics/SponsorBar 70 15
+   Pos 280 1100
+}
+
+def	ArrowS	25
+def	ArrowX	FrameLx
+def	ArrowY	FrameYu
+def	Edged	6
+
+add	ArrowX	Edged
+
+add	ArrowY	ArrowS
+
+
+//=== Countries flags
+
+// Load flags
+item
+{
+	CycleButton #ImageGI
+	ImageFlag FlagTeam1Olympics 0 0
+	Pos -1000 -1000 
+OnAction
+{
+SlideCountry /InGame_p1/Country 0 /WT_Intern/NbCountry-1
+}
+
+}
+item
+{
+	CycleButton #ImageGI
+	ImageFlag FlagTeam2Olympics 0 0
+	Pos -1000 -1000 
+OnAction
+{
+SlideCountry /InGame_p2/Country 0 /WT_Intern/NbCountry-1
+} 
+
+}
+
+
+item
+{
+	Image FlagTeam1Olympics 45 20
+	Pos 105 157
+
+}
+
+item
+{
+	Image FlagTeam2Olympics 45 20
+	Pos 515 157
+
+}
+
+
+//=== Countries
+
+item
+{
+	Text SCB_CountryRank /InGame_p1/Country3L
+	Pos 90 167
+	Font CountryF
+	ShrinkToMaxPixel LightScoreNameMax
+	
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreCountryX
+	}
+}
+	
+item
+{
+	Text SCB_CountryRank /InGame_p2/Country3L 
+	Pos 500 167
+	Font CountryF
+	ShrinkToMaxPixel LightScoreNameMax
+	
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreCountryX
+	}
+}
+
+
+item
+{
+	Invisible
+	OnAction
+	{
+		SetCfg /Intern/MatchBoardSet 0 !OnEnter
+	}
+}
+
+
+item
+{
+	SubMenu OLYMPICS_MatchStatBoardSub /Intern/MatchBoardSet
+	Pos FrameLx FrameYu
+}
+
+
+item
+{
+	Image Ico/ArrowOLYMPICS -ArrowS ArrowS
+	Font IcoF
+	Pos 235 168
+
+	OnAction
+	{
+		SlideCfg /Intern/MatchBoardSet 0 /Intern/CurrentSet !Negative !Cycle
+
+	}
+}
+
+
+def	ArrowX	FrameRx
+add	ArrowX	-Edged
+
+item
+{
+	Image Ico/ArrowOLYMPICS ArrowS ArrowS
+	Font IcoF
+	Pos 405 168
+
+	OnAction
+	{
+		SlideCfg /Intern/MatchBoardSet 0 /Intern/CurrentSet !Positive !Cycle
+
+	}
+}
+
+
+//====== Network Arcade / Simu
+def	NwX	630
+def	IcoS	32
+def	y	405
+
+item ArcadeSimu01
+{
+	HelpText ArcadeSimu01 !ShowIfUnselectable
+	Image Ico/ControlSimulation IcoS IcoS
+	CycleButton #ImageGI
+
+	Pos NwX y Right Center
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/Arcade 0 2
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item ArcadeSimu02
+{
+	HelpText ArcadeSimu02 !ShowIfUnselectable
+	Image Ico/ControlArcade IcoS IcoS
+	Invisible
+}
+
+item ArcadeSimu03
+{
+	HelpText ArcadeSimu03 !ShowIfUnselectable
+	Image Ico/ControlArcade IcoS IcoS
+	Invisible
+}
+
+//====== Network Skill Mode
+add	y	25
+
+item NW_SMode
+{
+	CycleButton #Text
+	Pos NwX y
+	Font NetF
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/SkillMode 0 2
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+
+//====== Network Lag
+add	y	15
+
+item NW_LagV
+{
+	Text NW_InLag
+	CycleButton #Text
+	Pos NwX y
+
+	Font NetF
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/NbLagFrame -1 24
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /Intern/DemoPlayback 2 !Or
+}
+
+//====== LagRatio
+
+add	y	15
+
+item
+{
+	Text NW_LagRatio /NW_Intern/LagRatio
+	Pos NwX y
+	Font NetF
+
+	ShowIfNot /NW_Intern/Status 0
+}

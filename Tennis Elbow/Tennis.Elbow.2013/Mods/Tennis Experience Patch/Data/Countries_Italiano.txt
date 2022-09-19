@@ -1,0 +1,239 @@
+Andorra                                      ; AD ; AND ; 5
+Emirati arabi uniti                          ; AE ; ARE ; 6
+Afghanistan                                  ; AF ; AFG ; 6
+Antigua e Barbuda                            ; AG ; ATG ; 2
+Anguilla                                     ; AI ; AIA ; 2
+Albania                                      ; AL ; ALB ; 5
+Armenia                                      ; AM ; ARM ; 5
+Antille olandesi                             ; AN ; ANT ; 2
+Angola                                       ; AO ; AGO ; 4
+Argentina                                    ; AR ; ARG ; 3
+Samoa americane                              ; AS ; ASM ; 8
+Austria                                      ; AT ; AUT ; 5
+Australia                                    ; AU ; AUS ; 8
+Aruba                                        ; AW ; ABW ; 2
+Åland Islands                                ; AX ; ALA ; 5
+Azerbaigian                                  ; AZ ; AZE ; 6
+Bosnia-Erzegovina                            ; BA ; BIH ; 5
+Barbados                                     ; BB ; BRB ; 2
+Bangladesh                                   ; BD ; BGD ; 7
+Belgio                                       ; BE ; BEL ; 5
+Burkina Faso                                 ; BF ; BFA ; 4
+Bulgaria                                     ; BG ; BUL ; 5
+Bahrein                                      ; BH ; BHR ; 6
+Burundi                                      ; BI ; BDI ; 4
+Benin                                        ; BJ ; BEN ; 4
+Bermuda                                      ; BM ; BMU ; 2
+Brunei                                       ; BN ; BRN ; 7
+Bolivia                                      ; BO ; BOL ; 3
+Brasile                                      ; BR ; BRA ; 3
+Bahamas                                      ; BS ; BHS ; 2
+Bhutan                                       ; BT ; BTN ; 7
+Isola Bouvet                                 ; BV ; BVT ; 4
+Botswana                                     ; BW ; BWA ; 4
+Bielorussia                                  ; BY ; BLR ; 5
+Belize                                       ; BZ ; BLZ ; 2
+Canada                                       ; CA ; CAN ; 1
+Isole Cocos                                  ; CC ; CCK ; 8
+Congo (ex Zaire)                             ; CD ; COD ; 4
+Repubblica Centrafricana                     ; CF ; CAF ; 4
+Congo                                        ; CG ; COG ; 4
+Svizzera                                     ; CH ; SUI ; 5
+Costa d'Avorio                               ; CI ; CIV ; 4
+Isole Cook                                   ; CK ; COK ; 8
+Cile                                         ; CL ; CHL ; 3
+Camerun                                      ; CM ; CMR ; 4
+Cina                                         ; CN ; CHN ; 7
+Colombia                                     ; CO ; COL ; 3
+Serbia                                       ; RS ; SRB ; 6
+Costa Rica                                   ; CR ; CRI ; 2
+Cuba                                         ; CU ; CUB ; 2
+Capo Verde                                   ; CV ; CPV ; 4
+Isola Christmas                              ; CX ; CXR ; 8
+Cipro                                        ; CY ; CYP ; 6
+Repubblica ceca                              ; CZ ; CZE ; 5
+Germania                                     ; DE ; GER ; 5
+Gibuti                                       ; DJ ; DJI ; 4
+Danimarca                                    ; DK ; DNK ; 5
+Dominica                                     ; DM ; DMA ; 2
+Repubblica dominicana                        ; DO ; DOM ; 2
+Algeria                                      ; DZ ; DZA ; 4
+Ecuador                                      ; EC ; ECU ; 3
+Estonia                                      ; EE ; EST ; 5
+Egitto                                       ; EG ; EGY ; 4
+Sahara occidentale                           ; EH ; ESH ; 4
+Eritrea                                      ; ER ; ERI ; 4
+Spagna                                       ; ES ; ESP ; 5
+Etiopia                                      ; ET ; ETH ; 4
+Finlandia                                    ; FI ; FIN ; 5
+Figi                                         ; FJ ; FJI ; 8
+Isole Falkland                               ; FK ; FLK ; 3
+Micronesia                                   ; FM ; FSM ; 8
+Faerøerne                                    ; FO ; FRO ; 5
+Francia                                      ; FR ; FRA ; 5
+Gabon                                        ; GA ; GAB ; 4
+Gran Bretagna                                ; GB ; GBR ; 5
+Grenada                                      ; GD ; GRD ; 2
+Georgia                                      ; GE ; GEO ; 5
+Guiana francese                              ; GF ; GUF ; 2
+Ghana                                        ; GH ; GHA ; 4
+Gibilterra                                   ; GI ; GIB ; 5
+Groenlandia                                  ; GL ; GRL ; 1
+Gambia                                       ; GM ; GMB ; 4
+Guinea                                       ; GN ; GIN ; 4
+Guadalupa                                    ; GP ; GLP ; 2
+Guinea Equatoriale                           ; GQ ; GNQ ; 4
+Grecia                                       ; GR ; GRC ; 5
+Isole Georgia del Sud e Sandwich del Sud     ; GS ; SGS ; 3
+Guatemala                                    ; GT ; GTM ; 2
+Guam                                         ; GU ; GUM ; 8
+Guinea Bissau                                ; GW ; GNB ; 4
+Guyana                                       ; GY ; GUY ; 2
+Hong Kong                                    ; HK ; HKG ; 7
+Isole Heard e McDonald                       ; HM ; HMD ; 4
+Honduras                                     ; HN ; HND ; 2
+Croazia                                      ; HR ; CRO ; 5
+Haiti                                        ; HT ; HTI ; 2
+Ungheria                                     ; HU ; HUN ; 5
+Indonesia                                    ; ID ; IDN ; 8
+Irlanda                                      ; IE ; IRL ; 5
+Israele                                      ; IL ; ISR ; 6
+India                                        ; IN ; IND ; 7
+Territorio britannico dell'Oceano Indiano    ; IO ; IOT ; 7
+Iraq                                         ; IQ ; IRQ ; 6
+Iran                                         ; IR ; IRN ; 6
+Islanda                                      ; IS ; ISL ; 5
+Italia                                       ; IT ; ITA ; 5
+Giamaica                                     ; JM ; JAM ; 2
+Giordania                                    ; JO ; JOR ; 6
+Giappone                                     ; JP ; JPN ; 7
+Kenya                                        ; KE ; KEN ; 4
+Kirghizistan                                 ; KG ; KGZ ; 6
+Cambogia                                     ; KH ; KHM ; 7
+Kiribati                                     ; KI ; KIR ; 8
+Comore                                       ; KM ; COM ; 4
+Saint Christopher e Nevis                    ; KN ; KNA ; 2
+Corea del Nord                               ; KP ; PRK ; 7
+Corea del Sud                                ; KR ; KOR ; 7
+Kuwait                                       ; KW ; KWT ; 6
+Isole Cayman                                 ; KY ; CYM ; 2
+Kazakistan                                   ; KZ ; KAZ ; 6
+Laos                                         ; LA ; LAO ; 7
+Libano                                       ; LB ; LBN ; 6
+Saint Lucia                                  ; LC ; LCA ; 2
+Liechtenstein                                ; LI ; LIE ; 5
+Sri Lanka                                    ; LK ; LKA ; 7
+Liberia                                      ; LR ; LBR ; 4
+Lesotho                                      ; LS ; LSO ; 4
+Lituania                                     ; LT ; LTU ; 5
+Lussemburgo                                  ; LU ; LUX ; 5
+Lettonia                                     ; LV ; LAT ; 5
+Libia                                        ; LY ; LBY ; 4
+Marocco                                      ; MA ; MAR ; 4
+Monaco                                       ; MC ; MCO ; 5
+Moldavia                                     ; MD ; MDA ; 5
+Madagascar                                   ; MG ; MDG ; 4
+Isole Marshall                               ; MH ; MHL ; 8
+Macedonia                                    ; MK ; MKD ; 5
+Mali                                         ; ML ; MLI ; 4
+Myanmar                                      ; MM ; MMR ; 7
+Mongolia                                     ; MN ; MNG ; 6
+Macao                                        ; MO ; MAC ; 7
+Marianne settentrionali                      ; MP ; MNP ; 8
+Martinica                                    ; MQ ; MTQ ; 2
+Mauritania                                   ; MR ; MRT ; 4
+Monserrat                                    ; MS ; MSR ; 2
+Malta                                        ; MT ; MLT ; 5
+Maurizio                                     ; MU ; MUS ; 4
+Maldive                                      ; MV ; MDV ; 7
+Malawi                                       ; MW ; MWI ; 4
+Messico                                      ; MX ; MEX ; 2
+Malesia                                      ; MY ; MYS ; 7
+Mozambico                                    ; MZ ; MOZ ; 4
+Namibia                                      ; NA ; NAM ; 4
+Nuova Caledonia                              ; NC ; NCL ; 8
+Niger                                        ; NE ; NER ; 4
+Isola Norfolk                                ; NF ; NFK ; 8
+Nigeria                                      ; NG ; NGA ; 4
+Nicaragua                                    ; NI ; NIC ; 2
+Paesi Bassi                                  ; NL ; NED ; 5
+Norvegia                                     ; NO ; NOR ; 5
+Nepal                                        ; NP ; NPL ; 7
+Nauru                                        ; NR ; NRU ; 8
+Niue                                         ; NU ; NIU ; 8
+Nuova Zelanda                                ; NZ ; NZL ; 8
+Oman                                         ; OM ; OMN ; 6
+Panama                                       ; PA ; PAN ; 2
+Perù                                         ; PE ; PER ; 3
+Polinesia francese                           ; PF ; PYF ; 8
+Papua Nuova Guinea                           ; PG ; PNG ; 8
+Filippine                                    ; PH ; PHL ; 7
+Pakistan                                     ; PK ; PAK ; 7
+Polonia                                      ; PL ; POL ; 5
+Saint-Pierre e Miquelon                      ; PM ; SPM ; 1
+Isole Pitcairn                               ; PN ; PCN ; 8
+Portorico                                    ; PR ; PRI ; 2
+Palestina                                    ; PS ; PSE ; 6
+Portogallo                                   ; PT ; POR ; 5
+Palau                                        ; PW ; PLW ; 8
+Paraguay                                     ; PY ; PRY ; 3
+Qatar                                        ; QA ; QAT ; 6
+Riunione                                     ; RE ; REU ; 4
+Romania                                      ; RO ; ROU ; 5
+Russia                                       ; RU ; RUS ; 5
+Ruanda                                       ; RW ; RWA ; 4
+Arabia Saudita                               ; SA ; SAU ; 6
+Isole Salomone                               ; SB ; SLB ; 8
+Seicelle                                     ; SC ; SYC ; 4
+Sudan                                        ; SD ; SDN ; 4
+Svezia                                       ; SE ; SWE ; 5
+Singapore                                    ; SG ; SGP ; 7
+Sant'Elena                                   ; SH ; SHN ; 4
+Slovenia                                     ; SI ; SLO ; 5
+Svalbard e Jan Mayen                         ; SJ ; SJM ; 5
+Slovacchia                                   ; SK ; SVK ; 5
+Sierra Leone                                 ; SL ; SLE ; 4
+San Marino                                   ; SM ; SMR ; 5
+Senegal                                      ; SN ; SEN ; 4
+Somalia                                      ; SO ; SOM ; 4
+Suriname                                     ; SR ; SUR ; 3
+São Tomé e Príncipe                          ; ST ; STP ; 4
+El Salvador                                  ; SV ; SLV ; 2
+Siria                                        ; SY ; SYR ; 6
+Swaziland                                    ; SZ ; SWZ ; 4
+Isole Turks e Caicos                         ; TC ; TCA ; 2
+Ciad                                         ; TD ; TCD ; 4
+Territori australi francesi                  ; TF ; ATF ; 8
+Togo                                         ; TG ; TGO ; 4
+Thailandia                                   ; TH ; THA ; 7
+Tagikistan                                   ; TJ ; TJK ; 6
+Tokelau                                      ; TK ; TKL ; 8
+Timor orientale                              ; TL ; TLS ; 8
+Turkmenistan                                 ; TM ; TKM ; 6
+Tunisia                                      ; TN ; TUN ; 4
+Tonga                                        ; TO ; TON ; 8
+Turchia                                      ; TR ; TUR ; 6
+Trinidad e Tobago                            ; TT ; TTO ; 2
+Tuvalu                                       ; TV ; TUV ; 8
+Taiwan                                       ; TW ; TPE ; 7
+Tanzania                                     ; TZ ; TZA ; 4
+Ucraina                                      ; UA ; UKR ; 5
+Uganda                                       ; UG ; UGA ; 4
+Stati Uniti                                  ; US ; USA ; 1
+Uruguay                                      ; UY ; URU ; 3
+Uzbekistan                                   ; UZ ; UZB ; 6
+Vaticano                                     ; VA ; VAT ; 5
+Saint Vincent e Grenadine                    ; VC ; VCT ; 2
+Venezuela                                    ; VE ; VEN ; 3
+Isole Vergini britanniche                    ; VG ; VGB ; 2
+Isole Vergini americane                      ; VI ; VIR ; 2
+Vietnam                                      ; VN ; VNM ; 7
+Vanuatu                                      ; VU ; VUT ; 8
+Wallis e Futuna                              ; WF ; WLF ; 8
+Samoa                                        ; WS ; WSM ; 8
+Yemen                                        ; YE ; YEM ; 6
+Mayotte                                      ; YT ; MYT ; 4
+Sudafrica                                    ; ZA ; RSA ; 4
+Zambia                                       ; ZM ; ZMB ; 4
+Zimbabwe                                     ; ZW ; ZWE ; 4
+Montenegro                                   ; ME ; MNE ; 6

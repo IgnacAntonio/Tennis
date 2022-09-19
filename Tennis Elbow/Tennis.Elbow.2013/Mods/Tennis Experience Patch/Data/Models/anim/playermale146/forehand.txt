@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 29.50 29.50
+Speed: 1.0
+Acceleration: Forehand_acc
+
+Author: Reginald Wesley| Jannik Sinner

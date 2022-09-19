@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 17 34 21	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | Andy Murray
+
+HandBounce: -25.3 -27.4 71.4 0.636 0.260 -0.727

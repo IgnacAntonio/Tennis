@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 21.00 21.00
+Speed: 1.0
+
+author: <Henman/Misiek>

@@ -1,0 +1,2 @@
+Anim: ServiceWaiting.x
+Info: 1 15 30 17.0	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall

@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 72.5 72.5 41.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Karen Khachanov
+

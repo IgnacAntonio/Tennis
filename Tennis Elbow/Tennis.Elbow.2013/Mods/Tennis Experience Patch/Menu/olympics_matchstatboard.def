@@ -1,0 +1,40 @@
+Include Menu.Def
+
+def	FrameX	60
+def	FrameY	150
+
+def	FrameW	520
+def	FrameH	220
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		HugeChars 18 24 0xFFFFFFFF 0
+Font	SmallF		HugeChars 10 14 0xFFFFFFFF 0
+Font	VSmallF		HugeChars 9 12 0xFFFFFFFF 0
+Font	IcoF		HugeChars 9 12 0xFFFFFFFF 0
+Font	NetF		HugeChars 10 13 0xFFFFFFFF 0x2F000000 Right Bottom
+
+// font for the summary
+Font	SummaryF	HugeChars 13 20 0xFFFDDA2E 0 Shadow0
+// font for the score
+Font	ScoreF		HugeChars 10 15 0xFF10203A 0 Shadow0
+// font for the names
+Font	NameF 		HugeChars 10 15 0xFFFFFFFF 0 Center Center Shadow1
+// font for the time
+Font	TimeF 		HugeChars 10 15 0xFFFFFFFF 0 Center Center Shadow1
+// font for the stats (label)
+Font	StatLabelF 	HugeChars 10 15 0xFFFFFFFF 0 Center Center Shadow1
+// font for the stats (value)
+Font	StatValueF 	HugeChars 10 15 0xFFFFFFFF 0 Center Center Shadow1
+// font for the countries
+Font	CountryF	HugeChars 13 20 0xFFFDDA2E 0 Shadow0

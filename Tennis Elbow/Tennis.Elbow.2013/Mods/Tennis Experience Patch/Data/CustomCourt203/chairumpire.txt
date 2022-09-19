@@ -1,0 +1,13 @@
+Anim: ChairUmpire
+NbSprite: 1
+InfoSup: 1
+
+Spr 0
+{
+	Page ChairUmpire
+	Pos 0 0
+	Size 127 127
+	RealSize 70 125
+	HotSpot 45 100
+	Time 250.0
+}

@@ -1,0 +1,337 @@
+Include RG_Hud.def
+
+Background #PreviousMenu
+
+ShrinkTo 0 0	// Don't shrink
+
+def	$s1	StatTeam1Set1
+def	$s2	StatTeam2Set1
+
+// $1 : 0 for the game score, else the set number
+// $2 : 0 if set score lower than 10, 1 else
+
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardGame LightScoreGameW LightScoreGameH // /Intern/ScoreGameW /Intern/ScoreGameH 
+	Pos 0 0 Right Up
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreGameW -1
+	}
+	ShowIf /Intern/ScoreType 0
+	ShowIf $1 0
+}
+
+item
+{
+	Text /$s1/Score
+	Pos /Intern/ScoreGameTextX /Intern/ScoreDYu+1.8
+	Font GameScoreF
+
+	ShowIf $1 0
+	ShowIfNot /$s1/Score 0 0
+	ShowIfNot /$s2/Score 0 0 !Or
+	ShowIfNot /$s2/ScoreNum 4 4
+	ShowIf /Intern/TieBreak 0
+}
+
+item
+{
+	Text /$s2/Score
+	Pos /Intern/ScoreGameTextX /Intern/ScoreDYd-1.8
+	Font GameScoreF
+	
+	ShowIf $1 0
+	ShowIfNot /$s1/Score 0 0
+	ShowIfNot /$s2/Score 0 0 !Or
+	ShowIfNot /$s1/ScoreNum 4 4
+	ShowIf /Intern/TieBreak 0
+}
+
+item
+{
+	Text /$s1/ScoreNum
+	Pos /Intern/ScoreGameTextX /Intern/ScoreDYu+1.8
+	Font GameScoreF
+
+	ShowIf $1 0
+	ShowIfNot /$s1/Score 0 0
+	ShowIfNot /$s2/Score 0 0 !Or
+	ShowIfNot /Intern/TieBreak 0
+}
+
+item
+{
+	Text /$s2/ScoreNum
+	Pos /Intern/ScoreGameTextX /Intern/ScoreDYd-1.8
+	Font GameScoreF
+	
+	ShowIf $1 0
+	ShowIfNot /$s1/Score 0 0
+	ShowIfNot /$s2/Score 0 0 !Or
+	ShowIfNot /Intern/TieBreak 0
+}
+
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardSet LightScoreSetW LightScoreSetH // /Intern/ScoreSetW /Intern/ScoreSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSetW -1
+	}
+
+	ShowIf /Intern/ScoreType 0
+	ShowIfNot $1 0
+	ShowIf $2 0
+	ShowIfNot /Intern/CurrentSet $1
+}
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardSet2 FullScoreSetW FullScoreSetH // /Intern/ScoreSetW /Intern/ScoreSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSetW -1
+	}
+
+	ShowIf /Intern/ScoreType 1
+	ShowIfNot $1 0
+	ShowIf $2 0
+	ShowIfNot /Intern/CurrentSet $1
+}
+
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardCurrentSet LightScoreCurrentSetW LightScoreCurrentSetH // /Intern/ScoreCurrentSetW /Intern/ScoreCurrentSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreCurrentSetW -1
+	}
+
+	ShowIf /Intern/ScoreType 0
+	ShowIfNot $1 0
+	ShowIf $2 0
+	ShowIf /Intern/CurrentSet $1
+}
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardCurrentSet FullScoreCurrentSetW FullScoreCurrentSetH // /Intern/ScoreCurrentSetW /Intern/ScoreCurrentSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreCurrentSetW -1
+	}
+
+	ShowIf /Intern/ScoreType 1
+	ShowIfNot $1 0
+	ShowIf $2 0
+	ShowIf /Intern/CurrentSet $1
+}
+
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardSet LightScoreSetWx2 LightScoreSetH // /Intern/ScoreSetWx2 /Intern/ScoreSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSetWx2 -1
+	}
+
+	ShowIf /Intern/ScoreType 0
+	ShowIf $2 1
+	ShowIfNot /Intern/CurrentSet $1
+}
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardSet FullScoreSetWx2 FullScoreSetH // /Intern/ScoreSetWx2 /Intern/ScoreSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSetWx2 -1
+	}
+
+	ShowIf /Intern/ScoreType 1
+	ShowIf $2 1
+	ShowIfNot /Intern/CurrentSet $1
+}
+
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardCurrentSet LightScoreCurrentSetWx2 LightScoreCurrentSetH // /Intern/ScoreCurrentSetWx2 /Intern/ScoreCurrentSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreCurrentSetWx2 -1
+	}
+
+	ShowIf /Intern/ScoreType 0
+	ShowIf $2 1
+	ShowIf /Intern/CurrentSet $1
+}
+item
+{
+	Image IcoNoBorder/RolandGarros/ScoreBoardCurrentSet FullScoreCurrentSetWx2 FullScoreCurrentSetH // /Intern/ScoreCurrentSetWx2 /Intern/ScoreCurrentSetH
+	Pos 0 0 Right Up
+
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreCurrentSetWx2 -1
+	}
+
+	ShowIf /Intern/ScoreType 1
+	ShowIf $2 1
+	ShowIf /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s1/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYu+1.8
+	Font LoserSetF
+
+	ShowIfNot /$s1/Score /$s2/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+item
+{
+	Text /$s1/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYu+1.8
+	Font SetF
+
+	ShowIf /$s1/Score /$s2/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s2/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYd-1.8
+	Font LoserSetF
+	
+	ShowIfNot /$s2/Score /$s1/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+item
+{
+	Text /$s2/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYd-1.8
+	Font SetF
+	
+	ShowIf /$s2/Score /$s1/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s1/Score
+	Pos /Intern/ScoreCurrentSetTextX /Intern/ScoreDYu+1.8
+	Font CurrentSetF
+
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s2/Score
+	Pos /Intern/ScoreCurrentSetTextX /Intern/ScoreDYd-1.8
+	Font CurrentSetF
+	
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s1/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYu+1.8
+	Font FullLoserSetF
+
+	ShowIfNot /$s1/Score /$s2/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+item
+{
+	Text /$s1/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYu+1.8
+	Font FullSetF
+
+	ShowIf /$s1/Score /$s2/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s2/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYd-1.8
+	Font FullLoserSetF
+	
+	ShowIfNot /$s2/Score /$s1/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+item
+{
+	Text /$s2/Score
+	Pos /Intern/ScoreSetTextX /Intern/ScoreDYd-1.8
+	Font FullSetF
+	
+	ShowIf /$s2/Score /$s1/Score 999999
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/CurrentSet $1 5
+	ShowIfNot /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s1/Score
+	Pos /Intern/ScoreCurrentSetTextX /Intern/ScoreDYu+1.8
+	Font FullCurrentSetF
+
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/CurrentSet $1
+}
+
+item
+{
+	Text /$s2/Score
+	Pos /Intern/ScoreCurrentSetTextX /Intern/ScoreDYd-1.8
+	Font FullCurrentSetF
+	
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/CurrentSet $1
+}

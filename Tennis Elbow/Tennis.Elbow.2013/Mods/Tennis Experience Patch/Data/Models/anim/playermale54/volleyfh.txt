@@ -1,0 +1,5 @@
+Anim: VolleyFH.x
+Info: 17.0 17.0
+Acceleration: volleyfh_acc
+
+Author: Lucian Cucuteanu | Novak Djokovic

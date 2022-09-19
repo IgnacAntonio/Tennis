@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 69.0 69.0 43.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | Venus Williams
+
+SweetSpot: 4.5 -19.7 241.3 0.112 0.009 0.994
+HandThrow: -19.5 0.5 156.5 -0.121 0.012 0.993

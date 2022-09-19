@@ -1,0 +1,6 @@
+Anim: Service.x
+Info: 62.0 62.0 34.0	// Hit ball - Max Extension - Throw Ball
+Author: Emmainf | Anderson v3
+
+SweetSpot: -18.8 -33.0 246.0 0.125 -0.135 0.983
+HandThrow: -12.0 4.2 200.4 -0.065 0.548 0.834

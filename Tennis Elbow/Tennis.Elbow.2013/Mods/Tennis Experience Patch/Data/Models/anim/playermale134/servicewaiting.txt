@@ -1,0 +1,5 @@
+Anim: ServiceWaiting.x
+Info: 0 22 32 28 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Rharm | SafIN
+

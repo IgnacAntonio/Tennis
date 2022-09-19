@@ -1,0 +1,13 @@
+Anim: Net
+NbSprite: 1
+InfoSup: 0
+NbMipMap: 3
+
+Spr 0
+{
+	Page Misc_01
+	Pos 0 0
+	Size 382 40
+	HotSpot 0 0
+	Time 1000.0
+}

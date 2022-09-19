@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 120.0 120.0 101.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Nick Kyrgios

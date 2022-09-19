@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 15 30 17 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+Author: Neeky McDeez
+HandBounce: 0.9 -19.2 89.4 0.320 0.563 -0.762

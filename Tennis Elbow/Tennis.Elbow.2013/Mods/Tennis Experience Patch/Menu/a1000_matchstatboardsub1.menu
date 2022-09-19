@@ -1,0 +1,44 @@
+Include A1000_MatchStatBoard.def
+
+Background #PreviousMenu
+
+ShrinkTo 0 0	// Don't shrink
+
+def	$s1	StatTeam1Set1
+def	$s2	StatTeam2Set1
+
+// $1 : 0 for the game score, else the set number
+
+item
+{
+	OnEnter
+	Invisible
+
+	OnAction
+	{
+		SetCfg $s1 $StatTeam1Set$1
+		SetCfg $s2 $StatTeam2Set$1
+	}
+}
+
+item
+{
+	Text /$s1/Score
+	Pos 0 0
+	Font ScoreF
+
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1 5
+}
+
+item
+{
+	Text /$s2/Score
+	Pos 0 15
+	Font ScoreF
+	
+	ShowIfNot $1 0
+	ShowIf /Intern/ScoreType 0
+	ShowIf /Intern/CurrentSet $1 5
+}

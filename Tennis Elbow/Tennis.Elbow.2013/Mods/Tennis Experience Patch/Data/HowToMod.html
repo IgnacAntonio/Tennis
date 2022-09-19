@@ -1,0 +1,523 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>How to Mod Tennis Elbow 2013</title>
+<link href="../Doc/images/subSilver.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" link=blue vlink=purple lang=FR>
+<div>
+  <p align=center style='text-align:center'><b><font size="+1">How to Mod Tennis Elbow 2013 ?</font></b></p>
+  <p align=center style='text-align:center'>&nbsp;</p>
+  <table width="100%" border="0" cellspacing="0" cellpadding="10">
+    <tr>
+      <td rowspan="25" bgcolor="BBCCDD">&nbsp;</td>
+      <td bgcolor="BBCCDD">&nbsp;</td>
+      <td rowspan="25" bgcolor="BBCCDD">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Tennis Elbow 2013 has a very open engine, allowing easy modifications of many things.<br>
+          The most obvious ones are about the player &amp; tournament databases. But with a bit more time,
+          you can also change the courts, and even add outfit or animations for the players ! </p>
+        <p>Before to do modifications to TE2013, be sure to agree the <a href="../Doc/En_License.Txt">License</a>.
+          To do modifications, you must have purchased the complete game. You shouldn't modify the demo version.</p>
+        <p>After, you need a tool to access the files within the file “Pak01.PAK”
+          located in the “Data” directory. The format of this file is the same
+          than the one of Quake 2 .Pak files. So, for example, you can use the
+          tool here:<br>
+          <a href="http://www.managames.com/download.php?qped211.exe">http://www.managames.com/download.php?qped211.exe</a>
+          (old website here www.planetquake.com/qped has been discontinued)<br>
+          <a href="http://www.managames.com/download.php?QPed.zip">http://www.managames.com/download.php?QPed.zip</a>
+          (version that doesn't require installation ; works on Win7, but you'll
+          have to manually register the .exe to automatically open .pak files)</p>
+        <p><strong>/!\ Important</strong>: the directories in the .Pak file are relative to the Tennis Elbow
+          2013 root directory, not from the Data subdirectory. Ie: if you want to export the Menu directory,
+          it should be to : &quot;[TE2013 Dir]\Menu&quot;, not &quot;[TE2013 Dir]\Data\Menu&quot;.</p>
+        <div>
+          <p>You can also easily edit the .ini files in the “Data” directory:</p>
+        </div>
+        <ul>
+          <li> Players.ATP.ini &amp; Players.WTA.ini: contains all the players; by default, you can have up
+            to 3000</li>
+          <li>
+            <div> Tour.ATP.Ini &amp; Tour.WTA.Ini: contains all the tournaments; by default, you can have up
+              to 350</div>
+          </li>
+          <li>
+            <div> TourCategory.ATP.ini &amp; TourCategory.WTA.ini: contains all the tournament categories;
+              you can have up to 50</div>
+          </li>
+        </ul>
+        <p>&quot;ATP&quot; files are for the men tour, and &quot;WTA&quot; are for the women tour. Later in
+          this document, the files are refered without their ATP or WTA part; just edit the one for the tour
+          you want to modify.</p>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <p>When you do modifications, don't forget to test them, and even if everything looks fine, you should
+            open the &quot;System.log&quot; file(within your TE2013 directory) with the Windows Notepad, and
+            look for &quot;Warning&quot; and &quot;Error&quot; (use CTRL+F). Through these messages, the TE2013
+            Engine will let you know if something seems wrong. Sometimes, something is wrong, but the Engine
+            will not detect it and crashes instead, so be cautious... ;-)</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong><font size="+1">Players &amp; Tournaments</font></strong></p>
+        <p>If you want, you can raise the maximum of players and tournaments by changing these lines in the
+          Tour.ini and Players.ini, under the section [WT_Static] :</p>
+        <p>MaxTournament = 500<br>
+          MaxPlayer = 5000</p>
+        <p>But be careful, the saved games will take much more disk space with such parameters !</p>
+        <p>Moreover, when you change any of these settings, you'll lose your current saved games. </p>
+        <p>If you need to count the number of players per country, change this line in Tennis.ini (or the .ini
+          of your current profile), under the section [WT_Static], from:<br>
+          CountCountry = 0<br>
+          to :<br>
+          CountCountry = 1</p>
+        <p><strong>/!\ Important</strong>:</p>
+        <ul>
+          <li> You need to have at least 2 players per country in the Davis Cup for each year of the game!</li>
+        </ul>
+        <p><strong>Invalid Saved Games:</strong></p>
+        <ul>
+          <li>Most changes to the Tournament Banks will invalidate your current saved games ; so you'll be
+            forced to start a new game to enjoy your changes</li>
+          <li>Changing the number of Players or the years they played will also invalidate your current saved
+            games</li>
+          <li>If you install a new version, the previous Banks will be renamed to -LastUsed , allowing you
+            to get back your changes easily, else you wouldn't be able to go on with your saved games      </li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>The “<b>Players.ini</b>” file is quite self-explaining, and contain many parameters.<br>
+          The skills of the players are normalized during the game according their current rank.<br>
+          The number after “[Player” is not important, the engine will sort the players by the ranking.</p>
+        <p>Be very careful to always keep enough players for the Davis Cup / Fed Cup (ie: at least 2 players
+          every year for all countries in the Final &amp; Qualif Draws).</p>
+        <p><strong>Explanations about the parameters :</strong><br>
+          Most parameters are well self-explaining.<br>
+          Here more details :<br>
+          <strong>RankPerYear</strong> = 1, 2, 2, 1, 1, 1.05, 1, 28, 9<br>
+          This line will determines the rank of the player for each year. The
+          player won't be necessary at this rank at the end of the year, but he
+          should be quite close. It's used to determine his strength. This strength
+          will be used to normalize most of the skills.<br>
+          A rank of &quot;-1&quot; means the player won't play on this year.<br>
+          A rank of &quot;-2&quot; means the rank will be the same than the previous
+          year.<br>
+          A rank of &quot;1.05&quot; means the player will get the strength
+        to reach the 1st rank + a bonus of 5% ; you can give such bonus to any ranking, for example &quot;2.03&quot;, but it makes sense only for the top 3 or 4, else just raise the ranking directly ; for example, you can have 2 players with a rank of 1 on the same year ; in this case, both will have a good chance to end up #1.</p>
+        <p>These skills are not normalized : &quot;<strong>Concentration</strong>&quot;, &quot;<strong>ColdBlood</strong>&quot;,
+          &quot;<strong>Constancy</strong>&quot;, &quot;<strong>Motivation</strong>&quot;.<br>
+          Instead, they are interpolated between the value in the base (when rank is on BestRank) to half of
+          the base value (when at the 1000th rank).<br>
+          Example :<br>
+          ColdBlood = 78<br>
+          with :<br>
+          BestRank = 3<br>
+          When RankPerYear is 3, then ColdBlood will be 78%; if RankPerYear is 1000, then ColdBlood will be
+          78 / 2 = 39% .</p>
+        <p><strong>Off Time :</strong> you can specify off time for the player, making him not enter any tournament on some specific weeks ; to do so, add the weeks you want him to miss after his rank ; for example : &quot;28 -5.15.20-25.40-,&quot; instead of &quot;28,&quot; in the <strong>RankPerYear</strong> line above will make the player misses the week 1 to 5, then 15, then 20 to 25, then 40 to 52 ; it's equivalent of &quot;28 1-5.15.20-25.40-52&quot;, but you can omit the 1st &quot;1&quot; and last &quot;52&quot;. You need to set <strong>[WT_Static]MaxOffTimePlayer</strong> to at least the total number of players with off time values.</p>
+        <p>&quot;<strong>FirstYear</strong>&quot; is the player's career starting year.</p>
+        <p>&quot;<strong>SingleDouble</strong>&quot; is the affinity for the singles or the doubles :<br>
+          -1 =&gt; only singles<br>
+          -0.5 =&gt; mostly singles<br>
+          0 =&gt; equally singles &amp; doubles<br>
+          +0.5 =&gt; mostly doubles<br>
+          +1 =&gt; only doubles</p>
+        <p>Body = 177 62<br>
+          means 177cm for 62kg .</p>
+        <p><strong>How to set the skills ?</strong><br>
+          As all the skills (except Concentration, ColdBlood, Constancy &amp;
+          Motivation) are normalized in real time by the game engine depending of the rank
+          to reach during the current year, it won't make the player any stronger
+          to set all his skills to 90 instead of 10.<br>
+          So the idea is to set the skills around the value 35 :<br>
+          - set to 35 if the player is normally skilled for this skill<br>
+          - set above 35 if the player is relatively more skilled in this skill
+          than in his other skills, to 40 if only a bit, to 50 if a lot, to 60
+          if very much<br>
+          - set below 35 if the player is relatively less skilled in this skill
+          than in his other skills, to 30 if only a bit, to 20 if a lot, to 10
+          if very much</p>
+        <p>For Concentration, ColdBlood, Constancy &amp; Motivation for the best players, set them high from
+          75 to 95 depending of the best rank (from 20 to 1), and lower them a bit when the player has a weakness
+          in this particular area.</p>
+        <p><strong>Outfit Code :</strong><br>
+          Each player can have an optional Outfit Code, that defines his appearance and strike styles. If he doesn't have an Outfit Code, then he has a default random appearance.<br>
+          An Outfit Code
+          looks like this :<br>
+          Outfit			=	C s0 n2 E p6 G n0 H p2 n6 Ht n0 R s0 b0.25 n2 RH Si h72 n3 Se h120 n3 So h-120 b0.4 n3 d-2 Sk p2 Sc s0<br>
+          To obtain such kind of code :        </p>
+        <ul>
+          <li>go to Training Club -&gt; Player Sheet -&gt; Customize Character , and configure your player the way you want</li>
+          <li>once it looks good, click on the "Copy Outfit code to Clipboard"   button, and then paste the code in his Player section within Players.ini</li>
+          <li>if the code isn't copied correctly (on Windows, it bugs sometimes, and on Mac OSX, it  doesn't work at all), then you can find the code at the end of the file System.log within your game folder<br>
+          </li>
+        </ul>
+        <p><br>
+    </p>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <p>The use of “<b>Tour.ini</b>” is less obvious, here a line per line explanation:</p>
+          <p>[Tournament001]<br>
+            Name            =       Doha<br>
+            Ground          =       HD<br>
+            DrawSingle      =     32<br>
+            DrawDouble      =    16<br>
+            Category        =      9<br>
+            Country         =       QA<br>
+            Week            =       1<br>
+            PrizeMoney      =    $1000000  142000   83600    49000   29000    17000    10000</p>
+        </div>
+        <ul>
+          <li>
+            <div> “Name” is the name</div>
+          </li>
+          <li>“Ground” is the ground: CL = Clay; GR = Grass; HD = Cement; RA =
+            Synthetic; IN = Indoor synthetic; HD_BG = Blue-Green Cement; PC =
+            NewLine Synthetic; HR = Green Clay</li>
+          <li>
+            <div> “DrawSingle” is the size of the draw for the Single competition;
+              0 means no Single draw</div>
+          </li>
+          <li>“DrawDouble” is the size of the draw for the Double competition;
+            0 means no Double draw</li>
+          <li>“Category” is the number of the category in the file “TourCategory.ini”</li>
+          <li>“Country” is the code of the country where the tournament is located.
+            You have the list of the codes within the file “Countries_English.txt”
+            located in the same directory “Data”.</li>
+          <li>
+            <div> “Week” is the number of the week in the year, from 1 to 52</div>
+          </li>
+          <li>“PrizeMoney” is the money earnt in tournament; 1<sup>st</sup> number
+            = total prize; 2<sup>nd</sup> number = prize for winner; 3<sup>rd</sup>
+            = for finalist; 4th = for semi-finalists; and so on</li>
+        </ul>
+        <div>
+          <p>To add a tournament, just copy/paste this entire section. The number after “[Tournament” is not
+            important, the engine will sort tournaments by week and importance.</p>
+          <p>You can have up to 30 tournaments per week per competition (ie: 30
+            for singles, and 30 for doubles). Don't forget the qualifications
+            count for 1 tournament apart, and Davis Cup Qualification as well.<br>
+            So for example, you can have 15 tournaments / week, every week, if
+            all your tournaments have a qualification draw.</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <p>The use of “<b>TourCategory.ini</b>” is even a bit more complicated.</p>
+          <p>[Category01]<br>
+            Type             =        GrandSlam<br>
+            EntryPoints   =        1000   700    450    250    150    75      35      5<br>
+            RacePoints   =        200    140    90      50      30      15      7        1<br>
+            QualifEntryPts         =        15<br>
+            QualifRacePts         =        3<br>
+            Seed            =        32<br>
+            QualifDraw   =        -1                 // Last direct acceptance = Draw - NbQualified<br>
+            QualifSeed    =        16<br>
+            QualifNbRound        =        3<br>
+            QualifDrawDouble= 0<br>
+            QualifSeedDouble= 0<br>
+            NbSetFinal    =        3<br>
+            NbSetRound =        3<br>
+            SetType                 =        3<br>
+            NbDoubleSet =        2<br>
+            NbDoubleSetFinal    =        2<br>
+            TopPresence          =        0.95<br>
+            TieInLastSet =        0<br>
+            ForcedRank  =        1</p>
+        </div>
+        <ul>
+          <li>
+            <div> “Type” can be Future, Challenger, IntlSeries, IntlSeriesGold, MasterSeries, GrandSlam, MasterCup,
+              or TeamCup</div>
+          </li>
+          <li>
+            <div> “EntryPoints” is the points earned for the Entry Ranking; 1<sup>st</sup> number = for winner;
+              2<sup>nd</sup> = for finalist; 3<sup>rd</sup> = for semi-finalists; and so on</div>
+          </li>
+          <li>
+            <div> “RacePoints” is same than “EntryPoints”, but for the Race Ranking</div>
+          </li>
+          <li>
+            <div> “QualifEntryPts” is the bonus points received by qualified players reaching the final draw,
+              for the Entry Ranking</div>
+          </li>
+          <li>
+            <div> “QualifRacePts” is same, but for the Race Ranking</div>
+          </li>
+          <li>
+            <div> “Seed” is the number of seeded players in the draw</div>
+          </li>
+          <li>
+            <div> “QualifDraw” is the size of the Single qualification draw; ‘-1’ means the qualification draw
+              will have the same size than the final draw set by the tournament in “Tour.ini”</div>
+          </li>
+          <li>
+            <div> “QualifSeed” is the number of seed for the Single qualification draw; ‘-1’ means it’ll have
+              2 seeds for each qualified player</div>
+          </li>
+          <li>
+            <div> “QualifDrawDouble” &amp; “QualifSeedDouble” are same than “QualifDraw” &amp; “QualifSeed”,
+              but for Double draw</div>
+          </li>
+          <li>
+            <div> “NbSetFinal” is the number of sets in single for the final</div>
+          </li>
+          <li>
+            <div> “NbSetRound” is the number of sets in single for other rounds</div>
+          </li>
+          <li>“SetType” is the type of number of set, for the human players (it
+            can be edited for each type when beginning a new game)</li>
+          <li>“NbDoubleSet” &amp; “NbDoubleSetFinal” is the number of sets in
+            double</li>
+          <li>
+            <div> “TopPresence” is the chance ratio that a “top” player will enter this tournament</div>
+          </li>
+          <li>
+            <div> “TieInLastSet” : ‘0’ means won’t have tie-break in the last set; ‘1’ means will have tie-break
+              in the last set</div>
+          </li>
+          <li>
+            <div> “ForcedRank” to 1 means that this tournament counts for the ranking, if the player has the
+              needed ranking to enter it directly</div>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>The <b>menus</b> work with scripts.<br>
+          You can find a little doc in the file “Menu.doc” containing the instructions in the Menu directory,
+          in the “Pak01.PAK”.</p>
+        <p>If you add a lot of stuff in menus, you'll need to raise the following values in the &quot;Scripts\GameSys.ini&quot; , under [Menu] : MaxAction, MaxAction, MaxCfg, MaxParam, MaxIniCode. Check in the &quot;System.log&quot; to know how much of these you're using, try to have about 10 or 20% more than needed.</p>
+        <hr>
+        <p>The <b>Render Engine</b> uses Shaders, contained in the “Scripts” directory, in the “Pak01.PAK”,
+          with a little doc in the file “Shader.doc”. You can edit them with the Notepad, it’s only plain text.</p>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong><font size="+1">How to add a court ?</font></strong></p>
+        <p>To add a court, with QPed extract the directory &quot;Data\Court07&quot; (you can't extract other
+          courts' pictures), and then copy everything from it to &quot;Data\CustomCourt01&quot; (you have to
+          create this directory).</p>
+        <p> Edit the icon &quot;Menu\Art\ico\CustomCourt01.tga&quot;.<br>
+          Now, it's done, Tennis Elbow will see this new court !</p>
+        <p>You can have up to 4 custom courts visible in the Training Club menu.</p>
+        <p>Alternatively, you can put everything in the new folder &quot;Data\Court10&quot;.</p>
+        <p><strong>For the 2D Courts :</strong> (visible only when &quot;3D court&quot;
+          is &quot;Off&quot; in the &quot;Video Options&quot;)</p>
+        <p> To edit the texture, launch your favourite painter program (Photoshop,
+          Paint Shop Pro, etc...) and open the file &quot;Data\CustomCourt01\Court.jpg&quot;
+          . You'll have also to modify all the .bmp files, which are the sprite
+          files.</p>
+        <p><strong>For the 3D Courts :</strong></p>
+        <p><strong> </strong>Open the file &quot;Pak01.Pak/Scripts/GameSys.ini&quot;
+          &amp; look for [Stadium01] . Each 3D court uses a 3D Mesh + 1 texture.
+          You can easily edit &amp; add new texture, but you can't edit the existing
+          3D meshes.</p>
+        <p>The ground texture will be : &quot;Data\CustomCourt01\CourtTex.jpg&quot;
+          ; the default settings texture for the outdoor stadium is : &quot;Data/Models/Textures/Stadium/CourtA01.jpg&quot;
+          ; for the indoor stadium, it is : &quot;Data/Models/Textures/Stadium/CourtIn1.jpg&quot;
+          .</p>
+        <p>Adding a skin means the game engine will look for CourtA01.jpg or CourtIn1.jpg
+          in the subfolder : &quot;Data/Models/Textures/Stadium/[NameOfSkin]&quot;.</p>
+        <p><strong>Physics &amp; World Tour :</strong></p>
+        <p>You can also edit the Court.ini to modify the ball rebound physic &amp;
+          sound, and the skid sounds.</p>
+        <p>If you want to see this court in tournament mode, edit the &quot;Data\Tour.Ini&quot;
+          file.<br>
+          In section &quot;[Court]&quot;, add this line :<br>
+          NewCourt = 10<br>
+          (you can replace NewCourt by anything you want)<br>
+          And then, in a tournament section, change the ground to :<br>
+          Ground = NewCourt</p>
+        <p>You can have a total of 200 courts used in the World Tour.</p>
+        <p><strong>To set a icon in World Tour</strong> for your new court, you
+          add a &quot;Icon&quot; entry in your [StadiumXX] section which tells
+          what existing icon (from 1 to 9) to display ; for example, the new court
+          10 will show the icon from the court 7, the Blue-Green Cement, with
+          this :</p>
+        <p>[Stadium10]<br>
+          Icon = 7<br>
+        </p>
+        </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong><font size="+1">Moving the camera for the 2D Courts</font></strong></p>
+        <p>If you add or change an existing court view angle, you'll want to move the camera to match your
+          custom view angle.</p>
+        <p>To do so, edit the &quot;Tennis.ini&quot;, and change this line, under [3dEngine], from :<br>
+          DevMode = 0<br>
+          to :<br>
+          DevMode = 1</p>
+        <p> Be careful : when the DevMode is turned on, the settings &amp; current World Tour game aren't saved
+          when you exit the game by clicking on the top right cross of the window, or by pressing ALT+F4 .</p>
+        <p>After, in game, press F9 till the line judges and the chair umpire are removed : they are not in
+          3D, so they won't move when you move the camera.</p>
+        <p>Keys on keypad :</p>
+        <ul>
+          <li>1 : zoom out</li>
+          <li>2 : zoom in</li>
+          <li>+ : rotate camera up</li>
+          <li>- : rotate camera down</li>
+          <li>4 : move camera up</li>
+          <li>5 : move camera down</li>
+          <li>7 : move camera back</li>
+          <li>8 : move camera front</li>
+          <li>9 : save camera (so it'll be already set next time you enter the court) ; the camera settings
+            are saved in the [Camera] section of the Tennis.ini</li>
+          <li>6 : reset camera</li>
+          <li>3 : toggle custom camera on/off (only work after the camera has been saved)</li>
+        </ul>
+        <p>At the same time, press these keys to affect the movement speed :</p>
+        <ul>
+          <li>Left Shift : 5 times faster</li>
+          <li>Left Alt : 20 times faster</li>
+          <li>Left Shift + Alt : 100 times faster</li>
+          <li>Left Control : 10 times slower</li>
+        </ul>
+        <p>Once you're done, locate the [Camera] section within your &quot;Tennis.ini&quot;, and then copy
+          these entries into the &quot;Court.ini&quot; of your new court :</p>
+        <p>[Camera]<br>
+          CustomFocal = 2.8<br>
+          Angle = -2.2266<br>
+          Dist = 3086<br>
+          Height = 85</p>
+        <p>Note: of course, the values will be the ones that you'll have set during the game, so they might
+          differ from these ones.<br>
+        </p>
+        </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong><font size="+1">How to add a new T-shirt ?</font></strong></p>
+        <p>To add a new T-shirt, you should extract all these directories &amp; files, using QPed :</p>
+        <ul>
+          <li>Data\Models\Textures : contains all the textures, both for male &amp; female</li>
+          <li>Scripts\GameSys.Ini : contains the number of available outfit styles for each part</li>
+        </ul>
+        <p><strong>Step 1</strong> : create the new T-shirt (or any other outfit
+          part), and save it in the correct directory (look into the .pak &quot;Data/Models/Textures&quot;)
+          with a correct name : &quot;ShirtXX.jpg&quot; where &quot;XX&quot; is
+          the number of the new T-shirt</p>
+        <p><strong>Step 2</strong> : edit &quot;GameSys.Ini&quot;, and locate this text : &quot;NbPreset &amp;
+          NbType &amp; FirstType&quot; . Just under, you'll see the list of all possible outfit parts. You
+          just have to increase by one the &quot;NbType&quot; of the part you added a style to. For a male
+          T-shirt, it's [Male_Shirt] .</p>
+        <p><strong>Step 3</strong>, only for Female's T-shirt &amp; skirt, and the Male's T-Shirt : you'll
+          have to define on what 3D model to put the new T-shirt or skirt texture. To do so, open &quot;Data\Models\Textures\Female.Ini&quot;
+          (or Male.ini) and look for [Female/Shirt], [Female/Shorts] or [Male/Shirt]. If you add a T-shirt,
+          look this line:<br>
+          Model = Tshirt01 1-5 Tshirt02 6-11<br>
+          and change it to :<br>
+          Model = Tshirt01 1-5 12 Tshirt02 6-11<br>
+          or :<br>
+          Model = Tshirt01 1-5 Tshirt02 6-11 12<br>
+          depending if you want to use the 1st or 2nd 3D model. The 1st model is the shirt with short sleeves,
+          and the 2nd model is the sleeveless shirt.</p>
+        <p>For the T-shirt, you'll also need to define a mask to tell the engine what part is the skin in the
+          texture.</p>
+        <p><strong>Step 4</strong> : you should be done now, just launch the game, and look if your new part
+          style is available in the outfit customization screen..!</p>
+        </td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td><p><strong><font size="+1">How to distribute your Mod to other users ?</font></strong></p>
+        <p>The best way to create a Mod that you can release so other people can install it easily is to do the following :</p>
+        <ul>
+          <li> never modify the Pak01.pak nor the Pak02.pak      </li>
+          <li>create a Pak03.Pak and every time you want to modify a file, extract it from Pak01.pak and put it in Pak03.Pak (don't forget to create the correct folder &amp; sub-folders when needed)</li>
+          <li>publish only the Pak03.Pak and tell people to put it in  &quot;Mods\&lt;NameOfYourMod&gt;\Data&quot; sub-folder (&quot;Mods&quot; is a folder created on 1st launch of the game, more info here <a href="http://www.managames.com/Forum/topic29-11960.php">http://www.managames.com/Forum/topic29-11960.php</a> )</li>
+          <li>be sure to never include  &quot;Menu\Build.txt&quot; nor &quot;Menu\BuildMac.txt&quot; within your .Pak, except if you want to force people to be able to use your Mod only with the same version of Tennis Elbow than yours ; these 2 files are used by the game engine to determine if TennisElbow.exe and the .Pak files match ; if they don't, the game will refuse to start stating &quot;Missing, Wrong Version, or Corrupted Data Files. Please re-install the game.&quot;</li>
+          <li>if you modified files that are outside a .Pak file, then don't put them in the Pak03.Pak (example : all Players &amp; Tour .ini files) ; just keep them along Pak03.pak, so for example, your Mod will contain these 2 files : Pak03.pak and Players.ATP.Ini</li>
+          <li>if you modify some game limits (especially for the menus, but also the number of outfits and strike styles), notify users about that, so it'll be easier for them to update their GameSys.ini in case they want to merge 2 Mods together, or want to use your Mod with a newer version of the game</li>
+        </ul>
+        <p><strong>A little explanation how the game engine loads files :</strong></p>
+        <p>When the game engine wants to load a file, it'll look for the file in the hard drive 1st, then if it didn't find it, it looks for it in the last .pak file (Pak02.pak on a unmodified installation), then if it still didn't find it, it looks in the previous .pak files till the 1st one (Pak01.Pak). So if you add Pak03.pak, the game engine will look for files in it after the files in your hard-drive and before to look for them in Pak02.pak . In both cases (hard drive, then .Pak), the game check the Mods subfolder 1st and then the game folder.</p>
+<p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="center"><hr></td>
+    </tr>
+    <tr>
+      <td align="center"><p>If you need any additional information, you can ask for help in the Forum :<br>
+        <a href="http://www.managames.com/Forum/forum29.php">http://www.managames.com/Forum/forum29.php</a></p>
+        <p>And read the FAQ here that explains a lot of other topics, including animation:<br>
+          <a href="http://www.managames.com/Forum/topic29-4059.php">http://www.managames.com/Forum/topic29-4059.php</a></p></td>
+    </tr>
+    <tr>
+      <td bgcolor="BBCCDD">&nbsp;</td>
+    </tr>
+  </table>
+  <p align=center style='text-align:center'><b><font size="+1"></font></b></p>
+</div>
+<div>
+  <p align="center"><b>ManuTOO – December 14th 2014</b></p>
+  <p align="center"><a href="http://www.managames.com"><img src="../Doc/images/ManaGames02.gif" width="256" height="160" border="0"></a></p>
+</div>
+</body>
+</html>

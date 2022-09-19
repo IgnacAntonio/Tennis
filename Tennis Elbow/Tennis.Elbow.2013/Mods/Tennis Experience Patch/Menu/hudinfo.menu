@@ -1,0 +1,156 @@
+Include Hud.Def
+
+Font	Default	HugeChars 11 14 0xFFFFFFFF 0 Circle Center Center Shadow0.5 LH1.15
+Font	InfoF	HugeChars 11 13 0xFFE4E4E4 0 Circle Center Center LH0.85
+
+Background #PreviousMenu
+
+Item
+{
+	OnEnter !Always
+
+	OnAction
+	{
+		MulAddMulCfg /Intern/IG_InfoX 0 /Intern/IG_InfoS InfoBarW
+		MulAddMulCfg /Intern/IG_InfoX 1 /Intern/WideBorder -1
+	}
+
+	Invisible
+}
+
+
+//============ Info Bar
+item
+{
+	Image Ico/HudInfoBar InfoBarW InfoBarH
+	Pos -1 0
+}
+
+def	x	InfoBarW 0.45
+def	y	InfoBarH 0.45
+
+Item HudInfo
+{
+	CycleButton #Text /Intern/HudInfoOther /Intern/HudInfoNum
+	Pos x y
+
+	Font InfoF
+
+	OnAction
+	{
+		SlideCfg /Intern/HudInfo 0 100
+	}
+
+	ShrinkToMaxPixel InfoBarW 0.9
+	UnSelectable
+}
+
+//============ Balls
+
+def 	y	InfoBarH 1.1
+def	IcoS	24
+def	x	5
+def	dx	IcoS 1.2
+
+item InfoBall01
+{
+	CycleButton #ImageGI
+	Image Ico/HudBallYellow IcoS IcoS
+	Pos x y
+	add x dx
+
+	OnAction
+	{
+		SlideCfg /Intern/HudBallRed 0 1
+	}
+
+	UnSelectable
+	ShowIf /Intern/HudNbBall 1 10
+}
+
+item InfoBall01
+{
+	CycleButton #ImageGI
+	Image Ico/HudBallYellow IcoS IcoS
+	Pos x y
+	add x dx
+
+	OnAction
+	{
+		SlideCfg /Intern/HudBallRed 0 1
+	}
+
+	UnSelectable
+	ShowIf /Intern/HudNbBall 2 10
+}
+
+item InfoBall01
+{
+	CycleButton #ImageGI
+	Image Ico/HudBallYellow IcoS IcoS
+	Pos x y
+	add x dx
+
+	OnAction
+	{
+		SlideCfg /Intern/HudBallRed 0 1
+	}
+
+	UnSelectable
+	ShowIf /Intern/HudNbBall 3 10
+}
+
+item InfoBall01
+{
+	CycleButton #ImageGI
+	Image Ico/HudBallYellow IcoS IcoS
+	Pos x y
+	add x dx
+
+	OnAction
+	{
+		SlideCfg /Intern/HudBallRed 0 1
+	}
+
+	UnSelectable
+	ShowIf /Intern/HudNbBall 4 10
+}
+
+item InfoBall01
+{
+	CycleButton #ImageGI
+	Image Ico/HudBallYellow IcoS IcoS
+	Pos x y
+	add x dx
+
+	OnAction
+	{
+		SlideCfg /Intern/HudBallRed 0 1
+	}
+
+	UnSelectable
+	ShowIf /Intern/HudNbBall 5 10
+}
+
+item InfoBall01
+{
+	CycleButton #ImageGI
+	Image Ico/HudBallYellow IcoS IcoS
+	Pos x y
+	add x dx
+
+	OnAction
+	{
+		SlideCfg /Intern/HudBallRed 0 1
+	}
+
+	UnSelectable
+	ShowIf /Intern/HudNbBall 6 10
+}
+
+
+item InfoBall02
+{
+	Image Ico/HudBallRed IcoS IcoS
+	Invisible
+}

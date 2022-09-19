@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 68.0 68.0 40.0	// Hit ball - Max Extension - Throw Ball
+Author: Emmainf | Monaco
+SweetSpot: 6.1 -17.0 252.7 0.002 -0.260 0.966
+HandThrow: -44.5 4.3 187.0 0.058 0.448 0.892

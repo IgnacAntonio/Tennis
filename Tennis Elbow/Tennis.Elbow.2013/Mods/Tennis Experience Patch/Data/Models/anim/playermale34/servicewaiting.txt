@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 16 31 20	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | David Ferrer

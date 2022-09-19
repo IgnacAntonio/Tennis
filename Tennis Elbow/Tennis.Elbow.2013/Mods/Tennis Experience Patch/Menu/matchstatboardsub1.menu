@@ -1,0 +1,322 @@
+Include MatchStatBoard.def
+
+Background #PreviousMenu
+
+Font	Default		HugeChars 11 15 0xFFFFFFFF 0 Center Center Shadow LH1.15
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	0
+def	dy	21
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+//====== 1stServe
+Item
+{
+	Text 1stServe
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/1stServe
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	pos xr y
+}
+
+ //====== Ace
+Item
+{
+	Text Ace
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Ace
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Ace
+	pos xr y
+}
+
+//====== DoubleFault
+Item
+{
+	Text DoubleFault
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/DoubleFault
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/DoubleFault
+	pos xr y
+}
+
+//====== Fastest Serve
+Item
+{
+	Text FastestServe
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/FastestServe
+	pos xl y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/FastestServe
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/FastestServeUs
+	pos xl y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/FastestServeUs
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+
+//====== Avr 1st Serve Speed
+Item
+{
+	Text AvrSpeed1st
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/Avr1stServeSpeed
+	pos xl y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/Avr1stServeSpeed
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/Avr1stServeSpeedUs
+	pos xl y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/Avr1stServeSpeedUs
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+//====== Avr 2nd Serve Speed
+Item
+{
+	Text AvrSpeed2nd
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/Avr2ndServeSpeed
+	pos xl y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/Avr2ndServeSpeed
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/Avr2ndServeSpeedUs
+	pos xl y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/Avr2ndServeSpeedUs
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+//====== Winners
+Item
+{
+	Text Winners
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Winner
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Winner
+	pos xr y
+}
+
+//====== Errors
+Item
+{
+	Text Unforced
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/UnforcedError
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/UnforcedError
+	pos xr y
+}
+
+//====== NetApproach
+Item
+{
+	Text NetApproach
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/NetApproach
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/NetApproach
+	pos xr y
+}
+
+//====== BreakPoint
+Item
+{
+	Text BreakPoint
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/BreakPoint
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	pos xr y
+}
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	pos xr y
+}

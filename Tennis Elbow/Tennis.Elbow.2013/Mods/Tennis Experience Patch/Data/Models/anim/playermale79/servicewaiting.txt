@@ -1,0 +1,8 @@
+Anim: ServiceWaiting.x
+Info: 5 10 29 15.3	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+
+
+Author: emmainf | schwartzman
+
+

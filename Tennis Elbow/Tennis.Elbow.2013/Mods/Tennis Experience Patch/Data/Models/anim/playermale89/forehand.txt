@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 23
+Speed: 1.0
+Acceleration: ForeHand_Acc
+
+Author: Megyaem | Verdasco 

@@ -1,0 +1,5 @@
+Anim: ServiceWaiting.x
+Info: 0 16 24 19	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Rharm | Hurkacz
+

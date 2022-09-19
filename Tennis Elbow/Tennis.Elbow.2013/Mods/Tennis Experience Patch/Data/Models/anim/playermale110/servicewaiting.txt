@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 20 32 23 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Rharm | Alliasime
+
+HandBounce: -12.0 2.0 82.0 0.462 0.123 -0.879

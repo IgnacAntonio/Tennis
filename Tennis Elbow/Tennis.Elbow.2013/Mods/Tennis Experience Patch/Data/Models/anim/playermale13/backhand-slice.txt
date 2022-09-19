@@ -1,0 +1,4 @@
+Anim: BackHand-Slice.x
+Info: 19.0 19.0		// Hit ball - Max Extension
+Speed: 1.0
+Author: Neeky McDeez | Nadal

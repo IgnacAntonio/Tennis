@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 42.0 42.0 12.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -21.8 -17.6 238.2 0.206 -0.039 0.978
+HandThrow: -62.6 22.6 151.6 -0.259 0.225 0.939
+
+Author: TE Vanilla | Sharapova

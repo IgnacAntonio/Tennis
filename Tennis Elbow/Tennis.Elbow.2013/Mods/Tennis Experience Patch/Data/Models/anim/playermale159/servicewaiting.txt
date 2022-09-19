@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 20 34 26 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Sam | Chardy

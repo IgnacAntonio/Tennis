@@ -1,0 +1,2948 @@
+//===System Errors
+TooLow3dCardT	Your 3D video card doesn't support the capabilities needed for the game.\nYou can try to start anyway, but it won't work properly.\nDo you want to continue?\n(If you do and can't see anything, press Esc to exit)
+TooLow3dCardH	Too low 3D Card
+
+ExceptionT	The program met an unhandled exception.\nCrash logged in file "System.Log".\nSend report to ManaGames.com ?
+ExceptionTns	The program met an unhandled exception.\nCrash logged in file "System.Log".
+ExceptionH	Program error
+
+MemoryH		Memory Error
+MemoryT1	Something is really wrong with the memory system!\nTry to close all other applications before launching this program again.\nYou need at least 128 MB of system memory.
+MemoryT2	No memory left !\nTry to close all other applications before launching this program again.\nYou need at least 256 MB of free system memory.
+
+NoDisp1		Can't initialize display.\nCheck your video driver version.
+NoDisp2		Display Init Error
+
+MissingData	Missing, Wrong Version, or Corrupted Data Files. Please re-install the game.
+MissingDataT	Init Error
+
+//===Init
+loading		\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoading Game...
+LoadingGame	Loading...
+
+NagDayLeft	You have %s evaluation days left.\n\nDuring the last 7 days of test,\nyou cannot play matches anymore,\nyou can only do warm-ups.\n\nPlease register your version if you appreciate this game !\n(once registered, this reminder won't appear anymore)
+NagDayLeftTitle	%s - Trial reminder
+
+InvalidKey	Your key appears to be invalid!\nPlease contact us at contact@managames.com,\nwith your first name, last name, and customer ID.\n
+InvalidKeyTitle	%s - Invalid Key
+
+TrialOver	The trial period is over.\n\nIf you want to enjoy all %s's features, please order the full version.\n\n%s
+TrialOver01	Now, you can only do warm-up and play online; match isn't available anymore; 3D courts aren't available anymore when playing online.
+TrialOver02	Now, you can only do warm-up; match isn't available anymore.
+TrialOverTitle	Trial time over
+
+//===Doc
+Doc_Order	En_OrderFullVersion
+Doc_Readme1st	Doc\En_QuickStart.html
+Doc_Rd1stName	Read me 1st
+Doc_Menu	Help
+Documentation	Documentation
+NW_Doc		Doc\En_Documentation.html
+Forum		Forum
+ForumLnk	http://www.managames.com/Forum
+EULA		User License
+EulaLnk		Doc\En_License.Txt
+
+//===Global
+On		On
+Off		Off
+Default		Default
+Back		Back
+Ok		OK
+sOnOff01	Off
+sOnOff02	On
+String[]	[%s]
+
+MenuName01	Main Menu
+MenuName02	Training Club
+MenuName03	Play!
+MenuName05	Play Options
+MenuName06	Credits
+MenuName11	Audio
+MenuName12	Video
+MenuName13	Misc Options
+MenuName14	Profile
+MenuName15	Controls
+MenuName16	In-game
+MenuName19	World Tour
+MenuName20	Tour Info
+MenuName21	Network
+MenuName22	Recordings
+
+TitleB02	STATISTICS
+TitleB03	Choose Difficulty
+TitleB04	Choose Number of Sets
+TitleB05	Enter your name
+TitleB06	Singles Ranking
+TitleB07	Doubles Ranking
+TitleB08	Singles Activity
+TitleB09	Doubles Activity
+TitleB11	Coach
+TitleB12	Player's Talents
+TitleB13	New Game
+TitleB14	Choose Tour Settings
+TitleB15	Choose Force Year
+TitleB21	Singles Draw
+TitleB22	Doubles Draw
+TitleB23	Past Champions
+TitleB31	Tournaments
+TitleB32	Qualifying
+TitleB33	Doubles Partner
+TitleB34	Practise Partner
+TitleB35	Match !
+TitleB41	Streak Stats
+TitleB42	Last Week News
+TitleB51	Head To Head
+
+TabTitle01	TRAINING
+TabTitle02	PLANNING
+TabTitle03	SPONSOR
+TabTitle04	TEAM
+TabTitle05	COACH CONTRACT
+TabTitle11	ACCOUNTING
+TabTitle12	YEARLY STATS
+TabTitle13	CAREER TITLES
+TabTitle14	SELECT TOURNAMENT
+
+NotInBeta	Not available in the Beta
+
+//===Main
+TrainingClub	Training Club
+WorldTour	Resume current game
+EnterWorldTour	World Tour
+TeCopyR		%s %s - ©Copyright Mana Games 2010-2012
+CopyR		%s %s - ©Copyright Mana Games 2007-2012
+GameName	%s (Build %s)
+
+//===Exit
+Quit		Exit?
+Yes		Yes
+No		No
+HT_Quit		Exit
+HT_SaveQuit	Save match and exit
+
+//===TrainingClub
+Play		Play
+CharacterSheet	Character Sheet
+PlayOptions	Play Options
+
+Court01		     Roland Garros
+Court02		     Wimbledon
+Court03		     Australian Open
+Court04		     US Open
+Court05		     Nitto ATP Finals
+Court06		     BNP Paribas Open
+Court07		     Miami Open 
+Court08		     Rolex Monte-Carlo Masters
+Court09		     Mutua Madrid Open
+CustomCourt01	     Internazionali BNL d'Italia
+CustomCourt02	     Coupe Rogers
+CustomCourt03	     Western & Southern Open
+CustomCourt04	     Rolex Shanghai Masters
+CustomCourt05        Rolex Paris Masters
+CustomCourt06        ABN AMRO World Tennis Tournament
+CustomCourt07        ATP Cup
+CustomCourt08        Dubai Duty Free Tennis Championships
+CustomCourt09        Abierto Mexicano Telcel presentado por HSBC
+CustomCourt10        Barcelona Open Banc Sabadell
+CustomCourt11        Hamburg Open
+CustomCourt12        China Open
+CustomCourt13        Rakuten Japan Open Tennis Championships
+CustomCourt14        European Open
+CustomCourt15        Swiss Indoors Basel
+CustomCourt16        Qatar ExxonMobil Open
+CustomCourt17        Antalya Open
+CustomCourt18        Great Ocean Road Open
+CustomCourt19        Murray River Open
+CustomCourt20        Singapore Tennis Open
+CustomCourt21        Open Sud de France 
+CustomCourt22        Córdoba Open
+CustomCourt23        Sofia Open
+CustomCourt24        Astana Open
+CustomCourt25        Chile Dove Men+Care Open
+CustomCourt26        Open 13 Provence
+CustomCourt27        Argentina Open
+CustomCourt28        Delray Beach Open 
+CustomCourt29        Sardegna Open
+CustomCourt30        Andalucia Open
+CustomCourt31        Serbia Open
+CustomCourt32        BMW Open 
+CustomCourt33        Millennium Estoril Open
+CustomCourt34        Mifel Open
+CustomCourt35        Banque Eric Sturdza Geneva Open
+CustomCourt36        Open Parc Auvergne-Rhône-Alpes Lyon
+CustomCourt37        Gerry Weber Open
+CustomCourt38        Fever-Tree Championships
+CustomCourt39        Nature Valley International
+CustomCourt40        Emilia-Romagna Open
+CustomCourt41        Hall of Fame Open
+CustomCourt42        Swedish Open 
+CustomCourt43        MercedesCup
+CustomCourt44        Plava Laguna Croatia Open Umag
+CustomCourt45        BB&T Atlanta Open
+CustomCourt46        J.Safra Sarasin Swiss Open Gstaad
+CustomCourt47        Mallorca Championships
+CustomCourt48        Generali Open
+CustomCourt49        Citi Open
+CustomCourt50        Winston-Salem Open
+CustomCourt51        Moselle Open
+CustomCourt52        St. Petersburg Open
+CustomCourt53        San Diego Open
+CustomCourt54        VTB Kremlin Cup
+CustomCourt55        Intrum Stockholm Open
+CustomCourt56        Erste Bank Open 
+CustomCourt57        Rio Open 
+CustomCourt58	     Laver Cup
+CustomCourt59        Next Gen ATP Finals 
+CustomCourt60        Mubadala World Tennis Championship
+CustomCourt61        Davis Cup - Madrid (Spain)
+CustomCourt62        Davis Cup - Geneva (Switzerland)
+CustomCourt63        Davis Cup - Nahsville (United States)
+CustomCourt64        Davis Cup - Halifax (Canadá)
+CustomCourt65        Davis Cup - Frankfurt (Germany)
+CustomCourt66        Davis Cup - Lille (France)
+CustomCourt67        Davis Cup - Nis (Serbian)
+CustomCourt68        Davis Cup - Brisbane (Australia)
+CustomCourt69        Davis Cup - Turin (Italy)
+CustomCourt70        Davis Cup - Varazdin (Czech Republic)
+CustomCourt71        Davis Cup - Liege (Belgium)
+CustomCourt72        Davis Cup - Glasgow (UK)
+CustomCourt73        Davis Cup - Innsbruck (Austria)
+CustomCourt74        Olympic Games of Tokyo 2020
+CustomCourt75        Istanbul Challenger Ted Open
+CustomCourt76        Open de Quimper
+CustomCourt77        Challenger Cherbourg - La Manche
+CustomCourt78        Potchefstroom
+CustomCourt79        Biella Challenger Indoor
+CustomCourt80        Dove Men+Care Legion Sudamericana
+CustomCourt81        Nur Sultan 1&2
+CustomCourt82        Nur Sultan 3&4
+CustomCourt83        Dove Men+Care Legion Sudamericana (Santiago)
+CustomCourt84        Lille
+CustomCourt85        Zadar Open
+CustomCourt86        AnyTech365 Andalucia Open
+CustomCourt87        ATP Challenger 50 Oeiras
+CustomCourt88        Belgrade
+CustomCourt89        Challenger de Salinas
+CustomCourt90        Tallahassee Tennis Challenger
+CustomCourt91        Roma Garden Open
+CustomCourt92        Ostragroup Open 2021 by Moneta
+CustomCourt93        Prague Open 2021
+CustomCourt94        Heilbronn
+CustomCourt95	     Zagreb Open	
+CustomCourt96	     Viking Open Nottingham
+CustomCourt97	     Open Sopra Steria
+CustomCourt98	     Peugeot Slovak Open
+CustomCourt99	     Beeline Open
+CustomCourt100	     Open du Pays d'Aix	
+CustomCourt101	     Moneta Czech Open	
+CustomCourt102	     Aspria Tennis Cup  	
+CustomCourt103	     Porto 
+CustomCourt104       Salzburg Anif 		
+CustomCourt105       Braunschweig  
+CustomCourt106	     Perugia  	
+CustomCourt107	     Concord Iasi Open
+CustomCourt108	     Todi  	
+CustomCourt109	     Cary, NC  
+CustomCourt110	     Open de Tenis Ciudad de Pozoblanco	
+CustomCourt111	     Tampere  	
+CustomCourt112	     Segovia  	
+CustomCourt113       Poznan 
+CustomCourt114	     Lexington Challenger
+CustomCourt115       Cordenons   
+CustomCourt116	     Liberec  	
+CustomCourt117	     San Marino Open 
+CustomCourt118	     Meersbush  
+CustomCourt119	     Warsaw  
+CustomCourt120	     Barletta  	
+CustomCourt121	     Como  	
+CustomCourt122	     Rafa Nadal Open by Sotheby's  	
+CustomCourt123	     Saint Tropez 
+CustomCourt124	     Sevilla  	
+CustomCourt125 	     Cassis Open Provence
+CustomCourt126	     Banja Luka 	
+CustomCourt127	     Szczecin  
+CustomCourt128	     Open Blot Rennes
+CustomCourt129	     Fergana
+CustomCourt130	     Dove Men + Care Quito Challenger
+CustomCourt131	     Braga  	
+CustomCourt132	     Bucharest  	
+CustomCourt133	     Open d'Orleans 
+CustomCourt134	     Lima  	
+CustomCourt135       Lisbon  
+CustomCourt136	     Geneva Open Challenger	
+CustomCourt137	     Murcia
+CustomCourt138	     Sibiu	
+CustomCourt139	     Napoli  
+CustomCourt140	     Alicante Ferrero Challenger	
+CustomCourt141	     Bogota    	
+CustomCourt142	     Buenos Aires 	
+CustomCourt143	     Eckental
+CustomCourt144	     Trofeo Faip-Perrel	
+CustomCourt145	     Pau  
+CustomCourt146	     Campeonato Internacional de Tenis
+CustomCourt147	     Helsinki  
+CustomCourt148	     Puerto Vallarta	
+CustomCourt149	     Circuito Dove Men Care
+CustomCourt150	     Maia 	
+CustomCourt151	     Rio de Janeiro	
+CustomCourt152	      Antalya
+CustomCourt153	      Gran Canaria
+CustomCourt154	      Cleveland	
+CustomCourt155	      Lugano
+CustomCourt156	      St Petersburg Open	
+CustomCourt157	      Split
+CustomCourt158	      Little Rock	
+CustomCourt159        Forli 1
+CustomCourt160	      Forli 2	
+CustomCourt161	      Amersfoot	
+CustomCourt162	      Lexington	
+CustomCourt163	      Trieste
+CustomCourt164	      Verona	
+CustomCourt165	      Luedenscheid
+CustomCourt166	      Prague 3	
+CustomCourt167	      Tulln
+CustomCourt168	      Kyiv	
+CustomCourt169	      Ambato
+CustomCourt170	      Biel	
+CustomCourt171	      Lima 2	
+CustomCourt172	      Internationaux de Tennis de Vendée	
+CustomCourt173	      Barcelona challenger
+CustomCourt174	      Napoli 2	
+CustomCourt175        Losinj
+CustomCourt176	      Las Vegas	
+CustomCourt177	      Tenerife
+CustomCourt178	      Roanne	
+CustomCourt179        Brasilia
+CustomCourt180	      Manama	
+CustomCourt181	      Bari	
+CustomCourt182	      Gwangju Challenger	
+CustomCourt183	      Recanati
+CustomCourt184	      Oracle Challenger Series – Chicago	
+CustomCourt185	      AON Open Challenger
+CustomCourt186	      Vancouver		
+CustomCourt187	      San Benedetto Tennis Cup
+CustomCourt188	      International Challenger Zhangjiagang	
+CustomCourt189	      Portoroz
+CustomCourt190	      Aptos	
+CustomCourt191	      Challenger Banque Nationale de Gatineau	
+CustomCourt192	      Shanghai Challenger	
+CustomCourt193	      Cary Challenger
+CustomCourt194	      OEC Kaohsiung	
+CustomCourt195	      Irving Tennis Classic
+CustomCourt196	      Thindown Challenger Biella	
+CustomCourt197	      Sibiu Open
+CustomCourt198	      Marburg		
+CustomCourt199	      Tiburon Challenger
+CustomCourt200	      Monterrey Challenger	
+CustomCourt201	      Stockton Challenger	
+CustomCourt202	      Firenze Tennis Cup	
+CustomCourt203	      President's Cup
+CustomCourt204	      São Paulo Challenger de Tênis	
+CustomCourt205	      Milex Open
+CustomCourt206	      Fairfield Challenger	
+CustomCourt207	      Sparkassen ATP Challenger
+CustomCourt208	      Tashkent Challenger	
+CustomCourt209	      Sánchez-Casal Mapfre Cup	
+CustomCourt210	      Ningbo Challenger	
+CustomCourt211	      Calgary National Bank Challenger	
+CustomCourt212	      Wolffkran Open	
+CustomCourt213	      Brest Challenger
+CustomCourt214	      Las Vegas Challenger	
+CustomCourt215	      Latrobe City Traralgon ATP
+CustomCourt216	      Future Sozopol 	
+CustomCourt217	      Winnipeg National Bank Challenger
+CustomCourt218	      Shenzhen Longhua Open	
+CustomCourt219	      Hungarian Challenger Open
+CustomCourt220        Charlottesville Men's Pro 	
+CustomCourt221	      Bauer Watertechnology Cup	
+CustomCourt222	      Challenger Ciudad de Guayaquil	
+CustomCourt223	      Slovak Open
+CustomCourt224	      Internationaux de Tennis de Vendée	
+CustomCourt225 	      Knoxville Challenger
+CustomCourt226	      Uruguay Open	
+CustomCourt227        ONGC–GAIL Delhi Open
+CustomCourt228	      Copa San Juan Gobierno	
+CustomCourt229	      JSM Challenger of Champaign–Urbana	
+CustomCourt230	      Future Buenos Aires M25	
+CustomCourt231	      Kobe Challenger	
+CustomCourt232	      Copa Gobierno de Cordoba	
+CustomCourt233	      Internazionali di Tennis Castel del Monte	
+CustomCourt234	      Future Buenos Aires M15	
+CustomCourt235	      Future Rosario M25	
+CustomCourt236	      Future Darwin M15	
+CustomCourt237	      Future Santo Domingo M25	
+CustomCourt238	      Future Most M15	
+CustomCourt239	      Future Madrid M25	
+CustomCourt240	      Future Tokyo M15	
+CustomCourt241	      Future Nancy M25	
+CustomCourt242	      Future Polten M15	
+CustomCourt243	      Future Baréin M15
+CustomCourt244	      Future Antalya M15
+CustomCourt245	      Future Nussloch M25
+CustomCourt246	      Future Albury M25
+CustomCourt247	      Future Mildura M25
+CustomCourt248	      Future Arlon M25
+CustomCourt249	      Future Koksijde M15
+CustomCourt250	      Future Pardubice M25
+CustomCourt251	      Future Martos M25
+CustomCourt252	      Future Murcia M15
+CustomCourt253	      Future Palma de Rio M25
+CustomCourt254	      Future Pozoblanco M25
+CustomCourt255	      Future San Sebastian M25
+CustomCourt256	      Future Santander M25
+CustomCourt257	      Future Parnu M15
+CustomCourt258	      Future Helsinki M15
+CustomCourt259	      Future Shrewsbury M25
+CustomCourt260	      Future Bad Schussenried M15
+CustomCourt261	      Future Kaarst M15
+CustomCourt262	      Future Kaltenkirchen M15
+CustomCourt263	      Future Marburg M15
+CustomCourt264	      Future Uberlingen M15
+CustomCourt265	      Future Gyor M25
+CustomCourt266	      Future Dublin M25
+CustomCourt267	      Future Bolzano M25
+CustomCourt268	      Future Pontedera M25
+CustomCourt269	      Future Anseong M15
+CustomCourt270	      Future Daegu M25
+CustomCourt271	      Future Gimcheon M15
+CustomCourt272	      Future Meshref M15
+CustomCourt273	      Future Brasov M15
+CustomCourt274	      Future Bucharest M15
+CustomCourt275	      Future Bad Salzdetfurth M15
+CustomCourt276	      Future Getafe M15
+CustomCourt277	      Future Sao Bras de Alportel M15
+CustomCourt278	      Future Curitiba M15
+CustomCourt279	      Future Pitesti M25
+CustomCourt280	      Future Ricany M25
+CustomCourt281	      Future Sevilla M25
+CustomCourt282	      Future Jounieh M25
+CustomCourt283	      Future Stockholm M25
+CustomCourt284	      Future Bakio M25
+CustomCourt285	      Future Falun M25
+CustomCourt286	      Future Oviedo M25
+CustomCourt287	      Future Tay Ninh M25
+CustomCourt288	      Future Lima M15
+CustomCourt289	      Future Bydgoszcz M25
+CustomCourt290	      Future Poznan M25
+CustomCourt291	      Future Setubal M15
+CustomCourt292	      Future Oliveira de Azemeis M25
+CustomCourt293	      Future Faro M15
+CustomCourt294	      Future Idanha-a-Nova M15
+CustomCourt295	      Future Loulé M15
+CustomCourt296	      Future Portimao M15
+CustomCourt297	      Future Porto M25
+CustomCourt298	      Future Quinta Do Lago M15
+CustomCourt299	      Future Hamburg M25
+CustomCourt300	      Future Sintra M15
+CustomCourt301	      Future Tavira M25
+CustomCourt302	      Future Vale Do Lobo M15
+CustomCourt303	      Future Curtea de Arges M15
+CustomCourt304	      Future Ramat Hasharon M15
+CustomCourt305	      Future Tartu M15
+CustomCourt306	      Future Doha M15
+CustomCourt307	      Future Istanbul M25
+CustomCourt308	      Future Monastir M15
+CustomCourt309	      Future Toulouse Balma M25
+
+//===PlayMode
+WarmUp		Warm-up
+Match		Match
+
+SavedMatchScore	Saved match score:\n%s
+GoOnLoad	Load saved match
+GoOnDelete	Delete saved match,\nand Start a new match
+GoOnKeep	Start a new match
+
+//===Language
+Language	Language:
+
+Lang1_01	Croatian
+Lang1_02	Deutsch
+Lang1_03	English
+Lang1_04	Español
+Lang1_05	Français
+Lang1_06	Italiano
+Lang1_07	Magyar
+Lang1_08	Nederlands
+Lang1_09	Polski
+Lang1_10	Serbian
+Lang1_11	Slovak
+
+//===Network
+OpenWeb		Open Website
+Network		Network Play
+WebDirectX	http://support.microsoft.com/kb/179113
+NoNetwork	No network interface found!\nPlease install TCP/IP.
+NW_Port		Port:
+NW_SkillMode	Skills:
+NW_SMode01	Free Mode
+NW_SMode02	Fair Mode
+NW_SMode03	Realistic Mode
+NW_SModeI01	(players can have 100%% at all skills)
+NW_SModeI02	(Skills average: 80%% = 780 points left;\nService & Forehand skills remapped to 20-70%%,\nBackhand skills to 15-65%%, other skills to 25-75%%)
+NW_SModeI03	(Skills average: 80%% = 780 points left;\nAll skills remapped to 30-90%%)
+NW_Host		Host Game
+NW_Join		Join Game
+NW_JoinTheGame	Join this game
+NW_JoinLocal	Find local games
+NW_DistantIP	Remote IP:
+NW_JoinDistant	Join remote game
+NW_FindPlayer	Chat Lobby
+NW_Chat			Chat
+NW_CreatingHost	Creating Host\nPlease wait...
+NW_Status01	An error occurred, can't create connection
+NW_Status02	Waiting for a player to join the session...
+NW_Status03	Connecting...
+NW_Status04	Connection lost!
+NW_Status05	Can't reach central server!\nPlease, check your Internet connection
+NW_Status06	Connected
+Ping		Ping:
+PingAvr		Ping Average:
+PacketLoss	Packet Loss:
+NW_AutoLag	Auto-Delay:
+NW_Lag		Delay (half ping):
+NW_LagV01	Auto
+NW_LagV02	None
+NW_LagV03	17 ms
+NW_LagV04	33 ms
+NW_LagV05	50 ms
+NW_LagV06	67 ms
+NW_LagV07	83 ms
+NW_LagV08	100 ms
+NW_LagV09	117 ms
+NW_LagV10	133 ms
+NW_LagV11	150 ms
+NW_LagV12	167 ms
+NW_LagV13	184 ms
+NW_LagV14	200 ms
+NW_LagV15	217 ms
+NW_LagV16	233 ms
+NW_LagV17	250 ms
+NW_LagV18	267 ms
+NW_LagV19	284 ms
+NW_LagV20	300 ms
+NW_LagV21	317 ms
+NW_LagV22	333 ms
+NW_LagV23	350 ms
+NW_LagV24	367 ms
+NW_LagV25	384 ms
+NW_LagV26	400 ms
+NW_LookingHost	Searching Games\nPlease wait...
+NW_Refresh	Refresh list
+NW_NoGame	No game available !
+NW_HostInfo	Host Build: %s (Local Build: %s)
+NW_Full		Full - cannot join !
+NW_NotSameBuild	This host doesn't have the same build version than your local game.\nPlease check that the host and you both have the latest version available from the website.
+	//%s = name of other player
+NW_NotSameMod	This host have installed the Mod '%s' and you have '%s'.
+NW_HostHasMod	This host have installed the Mod '%s' and you have the official game.
+NW_NotOfficial	This host has the official game and you have installed the Mod '%s'.
+NW_OPState01	%s\npaused the game
+NW_OPState02	%s\nis in menus
+NW_OPState03	Waiting for\n%s
+NW_OPState04	Connection Lost !
+NW_OPState05	Trial time elapsed !
+NW_OPState06	%s\nswapped to another application
+NW_OPState07	%s\nis watching replay
+NW_OPState08	%s\nis watching stats
+NW_OtherQuit01	%s retired
+NW_OtherQuit02	Connection lost
+NW_OtherQuit03	Trial time elapsed !
+NW_OtherQuit04	%s's trial time elapsed
+NW_InPing		%s ms
+NW_InLag 		Delay:\32//
+NW_LagRatio 	Lag Ratio: %s%%
+NW_ServerID		ServerID: %s
+
+NW_CreateHost	Create Game
+NW_MaxPing		Max Ping:
+NW_HostType		Type:
+NW_HType01		Public
+NW_HType02		Private
+NW_AllowTrial	Permission:
+NW_ATrial01		Accept all players
+NW_ATrial02		Only full version
+NW_WaitedTime	Waited: %s
+NW_AvrWait		Average Waiting: %s
+NW_MinWait		Min Waiting: %s
+NW_MaxWait		Max Waiting: %s
+NW_Pinged		Someone just asked your game info!
+NW_GlobalStat	Global Internet Statistics
+NW_RunningGame	Games in Progress: %s
+NW_NbPlayers    Connected Players: %s
+NW_WaitingGame 	Other Waiting Hosts: %s
+NW_TotalGame	Overall Played Games: %s
+NW_RefreshPing	Refresh Ping
+NW_JoinInternet	Find Internet games
+NW_InternetGame	Internet Games
+NW_Hide			Hide unavailable games:
+
+Players		Players
+Court		Court
+Sets		Sets
+Games		Games
+Mode		Mode
+Trial		Demo
+NW_Ping		Ping
+Max			Max
+NW_TrialM01	Yes
+NW_TrialM02	Accepted
+NW_TrialM03	No
+NW_MaxRunning	Max in Progress (Month): %s (%s)
+NW_LastRequest	Requests in the last hour: %s
+NW_TotalRequest	Total list requests: %s
+NW_NoGameExt	No game available...\nCreate your own!
+
+NW_SModeS01	Free
+NW_SModeS02	Fair
+NW_SModeS03	Realist
+
+NW_Preview	Preview: %s
+
+NW_ConnecTest	Connection Test
+NW_ConnTest01	Testing connection...
+NW_ConnTest02	Can't contact global server! Your Internet connection is down ?
+NW_ConnTest03	It seems your PC is not reachable, other players from Internet might not be able to join your game.\nPlease check that UDP port %s is open in your Firewall and/or Router.
+NW_ConnTest04	Everything seems alright, a player should join your game soon !\nFor your information, your ping with the central server located in France is %s ms (but it doesn't have any influence during the game).
+NW_ConnTest05	Test unavailable...
+Retry			Retry
+
+NW_Resync		Desynchronization detected...\nResynchronization done !
+NW_Running		Game in progress (%s vs %s)
+NW_Score		Score:
+NW_OtherPlayer	Connected with:
+
+NW_Cant01		Wait end of point...
+NW_Cant02		You can't do that now
+OnlineLadder	Online Ladder
+OnlineTourney	Online Tournaments
+NW_ELO			(ELO: %s; Games: %s)
+NW_ELO+			(ELO: +%s)
+NW_ELO-			(ELO: %s)
+NW_Ranking		Your level:
+YourName:		Your Name:
+NW_DetectedIP	Detected IP:
+NW_Override		Override IP:
+NW_ClearOvIP	Clear Override IP
+NW_Tagline		Personal Message:
+NW_ClearTag		Clear Message
+NW_Reject		Reject this Player
+NW_Ban			Ban this Player (for this session)
+NW_Yes&Ban		Yes, and Ban this Player (for this session)
+NW_NoEloPenalty	Ok, but cancel his ELO Penalty
+
+NW_Rematch01	Propose a rematch
+NW_Rematch02	Play Rematch !
+NW_Rematch03	Rematch proposed !
+NW_Rematch04	Restarting...
+
+NW_Level01	New Player
+NW_Level02	Club
+NW_Level03	Junior
+NW_Level04	Pro
+NW_Level05	Master
+NW_Level06	Incredible
+
+PresetChat01	Nice shot
+PresetChat02	Great shot !
+PresetChat03	You got lucky !
+PresetChat04	I was just lucky
+PresetChat05	I own ya ! :-p
+PresetChat06	Thanks
+PresetChat07	Good game
+PresetChat08	Great game !
+PresetChat09	LOL !
+PresetChat10	Sorry...
+PresetChat11	It's hot...!
+PresetChat12	Sorry, you're too good for me, I'm quitting
+
+PresetChatKey	F%s:
+PresetChatKey1	Preset Chat #1
+PresetChatKey2	Preset Chat #2
+
+ChatBlock		[Block Chat]
+ChatUnblock		[Unblock Chat]
+ChatBlockKey	Tab:
+
+ChatStart	*** This Chat may be recorded by ManaGames. Please keep polite & respect your opponent.
+ChatStart2	*** Mana Games will never ask for your License Key details. Shared Keys will be banned.
+
+PresetChat21	[Chat Unblocked]
+PresetChat22	[Chat Blocked]
+
+SetFairSkill	Would you like to set your skills to the recommended ones for Fair & Realistic Modes ?
+SetSkillRally	Set Skills for Baseline Play
+SetSkillVaried	Set Skills for Varied play
+SetSkillLater	Ask again later
+SetSkillNo		Don't ask again
+
+NW_YourReput	Your Reputation:
+NW_Reput01		Very Bad
+NW_Reput02		Bad
+NW_Reput03		Neutral
+NW_Reput04		Good
+NW_Reput05		Very Good
+
+NW_OtherReput	Reputation:
+NW_SvReput		Reputation: %s
+
+NW_GiveReput	Give Reputation: %s
+NW_ReputGiven	Reputation Given
+
+NW_Double		Doubles:
+NW_Double01		Competitive
+NW_Double02		Cooperative
+
+//===PlayOptions
+PlayerCfg01		Singles
+PlayerCfg02		2 against 1
+PlayerCfg03		1 against 2
+PlayerCfg04		Doubles
+PlayerCfg05		Cooperative Doubles
+
+NbSet01		Best of 1 Set
+NbSet02		Best of 3 Sets
+NbSet03		Best of 5 Sets
+
+ValidCrc	CRC# OK
+InvalidCrc	CRC# INVALID !!
+
+SwapEndsOn	Swap ends every 2 games
+SwapEndsOff	Swap ends off
+
+	// attrition of the grass court
+Attrition	Court Attrition
+
+//===Options
+Profile			Profile
+DefaultProfile	Default
+Audio			Audio
+Controls		Controls
+Video			Video
+MiscOptions		Misc Options
+Advanced		Advanced Options:\32//
+
+//===ConfirmAdv
+AdvOptions	Advanced options are useful for experienced users.\nIf you just want to quickly play, leave them disabled for the moment!\n\nTurn on advanced options?
+
+//===Audio
+Apply		Apply
+Fx			Effects:
+FxVol		Volume:
+FxFreq		Frequency:
+FxBit		Bits:
+Music		Music:
+MusVol		Volume:
+
+AnnLang		Umpire announcements:
+AnnLg01		Auto
+AnnLg02		English
+AnnLg03		French
+AnnLg04     German
+AnnLg05     Spanish
+AnnLg06     Italian
+
+FaultAnnounce	Fault Calls:
+FaultAnnounce01	Realistic
+FaultAnnounce02	All
+
+Crowd:		Crowd:
+
+//===Grunt
+Grunt:			Grunt:
+Grunt			Grunt
+GruntFrequency	Frequency
+GruntFreq01		Only Service
+GruntFreq02		Also Acceleration
+GruntFreq03		All Tough Strikes
+GruntFreq04		All Rally Strikes
+ListenGrunt		Listen
+
+//===MiscOptions
+Fps			Draw Fps:
+Mph			Speed in:
+MphOn		Mph
+KmhOn		Km/h
+BallMotion	Motion Blur on Ball:
+BallMCode01	Off
+BallMCode02	Normal
+BallMCode03	Like on TV
+
+ScoreB		Scoreboard:
+ScorebCode01	Default
+ScorebCode02	Australian Open
+ScorebCode03	Roland Garros
+ScorebCode04	Wimbledon
+ScorebCode05	US Open
+ScorebCode06	ATP Masters 1000
+ScorebCode07	ATP 500
+ScorebCode08	ATP 250
+ScorebCode09	ATP Finals
+ScorebCode10	Davis Cup
+ScorebCode11	Olympics Games of Río 2016
+ScorebCode12	Challenger Series
+ScorebCode13	Indian Wells (ATP1000)
+ScorebCode14	Miami (ATP1000)
+ScorebCode15	Monte-Carlo (ATP1000)
+ScorebCode16	Madrid (ATP1000)
+ScorebCode17	Rome (ATP1000)
+ScorebCode18	Toronto (ATP1000)
+ScorebCode19	Cincinnati (ATP1000)
+ScorebCode20	Shanghai (ATP1000)
+ScorebCode21	Paris (ATP1000)
+ScorebCode22	Rotterdam (ATP500)
+ScorebCode23	New York (ATP250)
+ScorebCode24	Acapulco (ATP500)
+ScorebCode25	Dubai (ATP500)
+ScorebCode26	Barcelona (ATP500)
+ScorebCode27	Tokyo (ATP500)
+ScorebCode28	Beijing (ATP500)
+ScorebCode29	Basel (ATP500)
+ScorebCode30	Antwerp (ATP250)
+ScorebCode31	Hamburg (ATP500)
+ScorebCode32	Estoril (ATP250)
+ScorebCode33	Doha (ATP250)
+ScorebCode34	Geneva (ATP250)
+ScorebCode35	Brisbane (ATP250)
+ScorebCode36	Montpellier (ATP250)
+ScorebCode37	Buenos Aires (ATP250)
+ScorebCode38	Budapest (ATP250)
+ScorebCode39	Moscow (ATP250)
+ScorebCode40	Chengdu (ATP250)
+ScorebCode41	Marseille (ATP250)
+ScorebCode42	Delray Beach (ATP250)
+ScorebCode43	Munich (ATP250)
+ScorebCode44	Sofia (ATP250)
+ScorebCode45	Metz (ATP250)
+ScorebCode46	Halle (ATP500)
+ScorebCode47	Atlanta (ATP250)
+ScorebCode48	Winston-Salem (ATP250)
+ScorebCode49	Newport (ATP250)
+ScorebCode50	Bastad (ATP250)
+ScorebCode51	Lyon (ATP250)
+ScorebCode52	Stuttgart (ATP250)
+ScorebCode53	s-Hertogenbosch (ATP250)
+ScorebCode54	Cordoba (ATP250)
+ScorebCode55	Rio de Janeiro (ATP500)
+ScorebCode56	Washington (ATP500)
+ScorebCode57	Auckland (ATP250)
+ScorebCode58	Umag (ATP250)
+ScorebCode59	Stockholm (ATP250)
+ScorebCode60	St. Petersburg (ATP250)
+ScorebCode61	Sao Paulo (ATP250)
+ScorebCode62	Sydney (ATP250)
+ScorebCode63	London (ATP500)
+ScorebCode64	Vienne (ATP500)
+ScorebCode65	Antalya (ATP250)
+ScorebCode66	Zhuhai (ATP250)
+ScorebCode67	Los Cabos (ATP250)
+ScorebCode68	Eastbourne (ATP250)
+ScorebCode69	Marrakech (ATP250)
+ScorebCode70	Pune (ATP250)
+ScorebCode71	Kitzbuhel (ATP250)
+ScorebCode72	Houston (ATP250)
+ScorebCode73	Gstaad (ATP250)
+ScorebCode74	World Cup 2018
+ScorebCode75	Laver Cup
+ScorebCode76	ITF 25s
+
+SoundP		Shot Sounds:
+SoundpCode01	ITST Mixpack
+SoundpCode02	Bunburry
+SoundpCode03	AUSTRALIAN OPEN (Roman Grace)
+SoundpCode04	INDIAN WELLS (Roman Grace)
+SoundpCode05	MIAMI (Roman Grace)
+SoundpCode06	MONTECARLO (Roman Grace)
+SoundpCode07	MADRID (Roman Grace)
+SoundpCode08	ROME (Roman Grace)
+SoundpCode09	ROLAND GARROS (Roman Grace)
+SoundpCode10	WIMBLEDON (Roman Grace)
+SoundpCode11	TORONTO (Roman Grace)
+SoundpCode12	CINCINNATI (Roman Grace)
+SoundpCode13    US OPEN (Roman Grace)
+SoundpCode14    US OPEN AUXILIARY (Roman Grace)
+SoundpCode15    SHANGHAI (Roman Grace)
+SoundpCode16    PARIS BERCY (Roman Grace)
+SoundpCode17    WORLD TOUR FINALS (Roman Grace)
+
+
+DevMode			DevMode:
+PauseCPU		Auto-Pause in CPU vs CPU:
+GamesPerSet		Games per set:
+TieInLastSet	Tie Break in Last Set:
+TieInLastSet01	No
+TieInLastSet02	Yes
+TieInLastSet03	Master
+SplitScreen		Split screen:
+SplitScr01		Off
+SplitScr02		Auto
+SplitScr03		On
+
+CheckingBd01	Checking if a new version is available online...
+CheckingBd02	Online Account Verification...
+CheckNewVersion	Check for new version:
+OnceWeek		Once a week
+	// Newversion01 is -1
+NewVersion01	Cannot connect to the website.\nPlease check your Internet connection.
+NewVersion02	No new version was found on the website
+NewVersion03	A new version is available on the website
+NewVersion04	If you want to play over the Internet, you should install DirectX 9.0c (or later version), else you might experience insane lags!
+NewVersion05	Online account verification failed !
+NewVersion06	You have to install the latest version to create a public game
+NewVersion07	You have to install the latest version to find Internet games
+NewVersion08	Your ping is too high to enter this game!
+NewVersion09	This game didn't answer!
+NewVersion10	Game already full - cannot join !
+NewVersion11	You need the full version to enter this game
+NewVersion12	You have to download and install the demo version to play online against other human players.
+NewVersion13	Your license key is already in use.\nIf you got disconnected, please wait 5 min before to connect again.
+NewVersion14	This host wants to play with someone else.\nTry to join another game.
+NewVersion15	The name you chose is similar to an existing name, so it has been changed.
+NewVersion16	If you want to play Online with a Modded game, you have to buy the Full version.
+DownloadNow		Download now!
+ChangeLog		More Info
+BanInfo			More Info
+
+DrawAfterMatch	Show draw after match:
+DrawAfterM01	Never
+DrawAfterM02	Only after win
+DrawAfterM03	Only after loss
+DrawAfterM04	Always
+
+AutoWeeklySave	Auto Weekly Save:
+ShowWeeklyNews	Show Weekly News:
+WeeklyNews01	No
+WeeklyNews02	Yes
+WeeklyNews03	Only when played
+WeeklyNews04	Only when not played
+
+ViewCpuMatch	View All Matches
+CpuMatchView	View CPU matches:
+CpuMatchPreview	Match presentation:
+CpuMatchStart	Auto start:
+CpuMatchViewAll View by default:
+CpuMatchViewQ	View Qualies:
+CpuMatchViewC	View Competition:
+CpuMatchScore	Enter Score:
+
+MatchLog	View Match Log
+
+SkillMode	Offline Skills:
+
+//===Language
+Language	Language:
+
+Lang1_01	Croatian
+Lang1_02	Deutsch
+Lang1_03	English
+Lang1_04	Español
+Lang1_05	Français
+Lang1_06	Italiano
+Lang1_07	Magyar
+Lang1_08	Nederlands
+Lang1_09	Polski
+Lang1_10	Serbian
+Lang1_11	Slovak
+
+//===Upgrate To TE2011
+Upgrade2011	You have to upgrade your License to enjoy the 3D Courts.\nMore info in the newsletter.
+Newsletter	Newsletter
+UrlUp2011	http://www.managames.com/newsletter/newsletter_2010-06-04_en.html
+
+//===Profile
+NewProfile		Create New Profile
+SetBaseProf		Set Default Profile
+ShowOnStartup	Select on Startup:\32//
+DeleteProfile	Delete this Profile
+
+//===Credits
+Credits		Credits
+CreditTOO	\29\30 ManuTOO \30\31\n(aka Emmanuel Rivoire):\nCode, Design, Sounds, Menus
+CreditZic	\29\30 Music \30\31\nStockMusic.Net
+CreditTrans	\29\30 Localization \30\31\nGerman: Woeger / Markic\nCroatian: Blacky - Serbian: stefdza90\nItalian: swissmade\nEnglish: Rob4590 - Dutch: Niels - Hungarian: Libre83\nSpanish: Santiago Spaltro - Polish: domin.eu.org
+CreditQuality	\29\30 Quality Assurance \30\31\nWolfgang Woeger, Eric Rivoire,\nRob4590, Aldecius, jolamouche
+
+TeCreditTOO	\29\30 ManuTOO \30\31\n(aka Emmanuel Rivoire):\nCode, Design, Sounds, Menus, Animation
+TeCreditModel	\29\30 3D Art \30\31\nNovtilus.com
+TeCreditZic	\29\30 Music \30\31\nStockMusic.Net
+TeCreditTrans	\29\30 Localization \30\31\nGerman: Woeger - Italian: swissmade\nCroatian: Blacky - Serbian: stefdza90\nEnglish: Rob4590 - Dutch: Niels - Hungarian: Libre83\nSpanish: Santiago Spaltro - Polish: IqPublishing.com
+TeCreditQuality	\29\30 Quality Assurance \30\31\nEric Rivoire, S.Williamz, Brad1981, Tom Paulman, CC\nbtaylor, solarisaint, kyuuji, ahmedcoolio, milos, stuey, algo
+TeCreditModders \29\30 Patch Maxou ATP 2016 \30\31\n Maxou, Lucas Lodi, phucnguyen0209, Sam, Elias, Lucian86, Megyaem,Grandslamaces, infernal18...
+
+VersionSW	Trial version - Freely distributable
+VersionReg	Registered version to: %s
+Hello%s		Hello %s
+
+InstalledMod	Installed Mod: %s
+
+//===Recordings
+Recordings		Recordings
+RecordMode		Recordings:
+RecordMode01	Off
+RecordMode02	Real-Time
+RecordMode03	Buffered
+ShowOldBuild	Show Incompatible Records:
+RecordOrder		Record Order:
+RecordOrder01	Normal
+RecordOrder02	Reversed
+RecordPage		Page (%s/%s):
+
+//===Ingame
+ReturnGame		Return To Game
+GiveUp			Give Up
+LeaveCourt		Leave Court
+Replay			Replay
+PlayerStat		Player Statistics
+MatchStat		Match Statistics
+ConfirmGiveUp	Are you sure you want to give up this match?
+ContinueLater	Continue Later
+HudInfo01		Serving for set
+HudInfo02		Serving for match
+HudInfo03		BREAK POINT
+HudInfo04		SET POINT
+HudInfo05		MATCH POINT
+HudInfo06		Serving to stay\nin Set
+HudInfo07		Serving to stay\nin Match
+HudInfo08		%s winner #%s
+HudInfo09		Ace #%s
+HudInfo10		Double Fault #%s
+HudInfo11		%s error #%s
+HudInfo12		Last Rally:\n%s strikes
+HudInfo13		Winner Speed:\n%s %s
+HudInfo15		Dropshot Winner: #%s
+HudInfo16		Volley Dropshot\nWinner: #%s
+
+//===TE In-game Help
+IGH_Help		Help
+InGameHelp		In-Game Help
+IGH_DangerZone	The "Danger Zone" visual marker helps you to see where you should position yourself to strike the ball.
+IGH_HiDanger	Hi Danger !
+IGH_Unsafe		Unsafe
+IGH_Safe		Safe
+IGH_Preview		Ball Preview:
+IGH_Prev01		Off
+IGH_Prev02		Service
+IGH_Prev03		Service + Rally
+IGH_Prev04		All + Danger Zone
+IGH_Prev05		All + Danger Zone + Aiming
+IGH_SweetSpot	When you do an acceleration, a drop shot or a volley, you have to strike the ball with the cords, not with your body !
+IGH_SsBad		Ball outside cords\n=\nUnsafe
+IGH_SsGood		Ball inside cords\n=\nSafe
+IGH_AutoPos		Auto-Positioning:
+IGH_AutoPos01	Slow to Left, Right & Forward
+IGH_AutoPos02	Average to Left, Right & Forward
+IGH_AutoPos03	Fast to Left, Right, Forward & Backward
+IGH_Control		Controls:
+IGH_Control01	Simulation : High Danger + Slow Precision
+IGH_Control02	Arcade: Low Danger + Fast Precision
+IGH_Control03	Elite: Even harder than Simulation mode!
+IGH_AutoShow	Show this Help at Startup:
+IGH_SeeAgain	To see the Help again, press 'Esc' during the game, then click on 'Help'
+IGH_Strikes		List of Strikes
+IGH_StrikeList  All available strikes :\n(By default: b1 = Left Alt; b2 = Left Ctrl)\n\n\7 b1 = Normal Strike\n\7 b1 + up = Short Strike\n\7 b1 + down = Top Spin\n\n\7 b2 = Slice\n\7 b2 + up = Drop Shot\n\7 b2 + down = Defensive Lob\n\n\7 b1+b2 = Acceleration\n\7 b1+b2 + up = Short Acceleration\n\7 b1+b2 + down = Aggressive Lob\n\n\7 No button = Safe Strike\n\nOn Service :\n\n\7 b1+b2 = 1st service at max speed\n\7 b1 = Safe 1st service, but slower\n\7 b2 = 2nd service, 100%% safe\n\7 up = Add slice spin\n\7 down = Add top spin\n\nUp and down are inverted when you control the player who is on the top of the screen.
+IGH_Tiredness	Tiredness:
+
+IGH_NeedButton	You have to maintain the button(s) pressed when you hit the ball.\n\nIf you don't, then you will only do the safe strike that goes slowly to the center of your opponent's court.
+IGH_ShowAgain	Show this message again ?
+
+
+//===TE In-game options
+IG_Options		Options
+ShowInfoOnError	Show Info On Error:
+ShowStrikeSpeed	Show Strikes Speed:
+ShowStrikeCount	Show Strikes Count:
+SimulMatchTime	Simulated Match Time:
+BallSize		Ball Size:
+
+//===Camera
+Camera			Camera
+CameraMode		Camera Mode:
+CameraMode01	Still
+CameraMode02	Scrolling
+CameraMode03	Constant Zoom
+CameraMode04	Mild Dynamic
+CameraMode05	Full Dynamic
+CameraMode06	Subjective
+CameraMode07	3rd Person
+CameraMode08	Follow Ball
+CameraZoom		Camera Zoom:
+ZoomStart		Zoom Start:
+ZoomStart01		After Serve
+ZoomStart02		During Serve
+ZoomStart03		Before Serve
+CameraHeight	Height:
+CameraFocal		Aperture:
+CameraTrans		Left / Right:
+
+CameraFollow	Ends:
+CameraFollow01	Auto
+CameraFollow02	Player 1
+CameraFollow03	Player 2
+CameraFollow04	Normal
+CameraFollow05	Opposite
+
+CameraSave	Save Camera
+CameraLoad	Load Camera
+
+//===Video
+VidBase		Basics Options
+VidAdv		Advanced Options
+KeepNewMode	Keep new mode?
+NoTimed		No(%ss)
+SetLow		Fast
+SetMed		Normal
+SetHi		Quality
+
+//===VideoBase
+WxH		Resolution:
+VideoSize	%sx%s
+VidBits		Bits:
+VidHz		Refresh Rate:
+Hertz		%s Hz
+Window		Windowed:
+
+Window01	Exclusive Fullscreen
+Window02	Window
+Window03	Fullscreen Window
+
+FSAA		FSAA:
+AA01		Off
+AA02		2x
+AA03		3x
+AA04		4x
+AA05		5x
+AA06		6x
+AA07		7x
+AA08		8x
+AA09		9x
+AA10		10x
+AA11		11x
+AA12		12x
+AA13		13x
+AA14		14x
+AA15		15x
+AA16		16x
+LOD			Level of Details:
+LOD_01		Very Low
+LOD_02		Low
+LOD_03		Normal
+LOD_04		High
+HiResCourt	Hi-res Court:
+AnisoL01	Off
+Anisotropic	Anisotropic Level:
+
+MeshLOD		Player Details:
+MeshLOD01	Normal
+MeshLOD02	High
+
+Shadow		Shadows:
+Shadow01	Circle
+Shadow02	Detailed
+Shadow03	All
+
+HwRatio		Monitor Aspect Ratio:
+HwRatio01	Auto-Detect
+HwRatio02	4:3
+HwRatio03	16:10
+HwRatio04	16:9
+HwRatio05	Custom
+
+ForceRatio		Force Aspect Ratio:
+ForceRatio01	Off
+ForceRatio02	4:3
+ForceRatio03	16:10
+ForceRatio04	16:9
+
+Stadium3D	3D Court:
+
+//===VideoAdv
+VSync		VSync Frames:
+DoNotClip	DoNotClip:
+HwTnL		T&L processing:
+HwTL01		Software
+HwTL02		Mixed
+HwTL03		Hardware
+Dx3d		3d Engine:
+DXTL01		DirectX 7
+DXTL02		DirectX 9
+Texture		Textures:
+TexMode01	Auto
+TexMode02	16 bits
+TexMode03	32 bits
+Filter		Filtering:
+BiTri01		Bilinear
+BiTri02		Trilinear
+
+DensityNear	Near Crowd Density:
+DensityFar	Far Crowd Density:
+
+CrowdDensity01	Off
+CrowdDensity02	Lower
+CrowdDensity03	Low
+CrowdDensity04	Normal
+
+//===Controls
+Ctrl		Control:
+PlCtrl01	Mouse
+PlCtrl02	Keyboard 1
+PlCtrl03	Keyboard 2
+PlCtrl04	Joystick 1
+PlCtrl05	Joystick 2
+PlCtrl06	Joystick 3
+PlCtrl07	Joystick 4
+Player		Player\32//
+MseMode		Visual Cursors:
+MseSense	Mouse Sensitivity:
+
+MseFilter	Filter:
+MFilter01	Off
+MFilter02	Soft
+MFilter03	Strong
+
+Up			Up:
+Down		Down:
+Left		Left:
+Right		Right:
+Button1		Fire 1:
+Button2		Fire 2:
+Button1+2	Fire 1+2:
+Menu		Menu:
+ButtonLift	Fire 1+Down\n(Top Spin):
+ButtonSlice	Fire 2+Up\n(Slice):
+
+Button10	Alternate Strike Up:
+Button11	Alternate Strike Down:
+
+UseAltStrikeY	Use Alternate Strike Up/Down:
+
+PressKey	Press a key
+PressButton	Press a button
+
+//===Joy
+Button		Button
+Hat			Hat
+HatLeft		Left
+HatUp		Up
+HatRight	Right
+HatDown		Down
+Axe0<		Left
+Axe0>		Right
+Axe1<		Up
+Axe1>		Down
+
+//===Mouse
+Mup			Up
+Mdown		Down
+Mleft		Left
+Mright		Right
+
+
+//===Remap
+Remap01		Remap Strikes
+Remap02		Assign Keys/Buttons
+
+Strike01	Normal Strike:
+Strike02	Short Strike:
+Strike03	Top Spin:
+Strike04	Slice:
+Strike05	Drop Shot:
+Strike06	Defensive Lob:
+Strike07	Acceleration:
+Strike08	Short Acceleration:
+Strike09	Aggressive Lob:
+
+Button01	Fire 1
+Button02	Fire 2
+Button03	Fire 1+2
+Button04	Fire 4
+Button05	Fire 5
+Button06	Fire 6
+Button07	Fire 7
+Button08	Fire 8
+Button09	Fire 9
+
+Axe01		Up
+Axe02		Center
+Axe03		Down
+Axe04		Any
+
+//===TrialVersion
+NotInTrial		To enjoy this feature, please order the full version.
+NotInTrial_bis	Not Available in Trial Version
+TrialVersion	Trial Version
+GetFull1		Get full version now!
+GetFull2		Get\nFull Version\nNow!
+BuyFull			Buy Full Version
+
+
+//===Nag
+NagTitle	Reminder Screen
+
+
+//===End of Match
+EOM_Retired		(retired)
+EOM_RetiredELO	(retired; ELO Penalty: -%s)
+Small_Frame		(%s)
+Crushed			Impressive, you totally crushed your opponent !\nWould you like a more challenging opponent for your next game?
+Crush_Strong1	Yes, a bit stronger
+Crush_Strong2	Yes, stronger
+Crush_Strong3	Yes, really stronger
+Crush_No		No, Thanks
+
+
+//===Match Summary
+Summary01	MATCH SUMMARY
+Summary02	SET 1 SUMMARY
+Summary03	SET 2 SUMMARY
+Summary04	SET 3 SUMMARY
+Summary05	SET 4 SUMMARY
+Summary06	SET 5 SUMMARY
+Summary07	MATCH
+Summary08	SET 1
+Summary09	SET 2
+Summary10	SET 3
+Summary11	SET 4
+Summary12	SET 5
+Summary13	SUMMARY
+Summary14	FIRST
+Summary15	SECOND
+Summary16	THIRD
+Summary17   FOURTH
+Summary18   FIFTH
+Summary19   SET
+
+Ace				ACES
+DoubleFault		DOUBLE FAULTS
+1stServe		1ST SERVE %%
+Win1stServe		1ST SERVE PTS WON %%
+Win2ndServe		2ND SERVE PTS WON %%
+Winners			WINNERS
+Unforced		UNFORCED ERRORS
+NetApproach		NET POINTS WON
+BreakPoint		BREAK POINTS WON
+TotalPoint		TOTAL POINTS WON
+AvrSpeed1st		AVR 1st SERVE SPEED
+AvrSpeed2nd		AVR 2nd SERVE SPEED
+FastestServe	FASTEST SERVE
+
+Ace2			Aces
+DoubleFault2	Double Faults
+1stServe2		First Serve %%
+Win1stServe2	1st Serve Pts Won %%
+Win2ndServe2	2nd Serve Pts Won %%
+Winners2		Winners
+Unforced2		Unforced Errors
+NetApproach2	Net Points Won
+BreakPoint2		Break Points Won
+TotalPoint2		Total Points Won
+AvrSpeed1st2	Avr 1st Serve Speed
+AvrSpeed2nd2	Avr 2nd Serve Speed
+FastestServe2	Fastest Serve
+
+ShortRallyWon	SHORT RALLIES WON
+MediumRallyWon	MEDIUM RALLIES WON
+LongRallyWon	LONG RALLIES WON
+SetPointSaved	SET POINTS SAVED
+MatchPointSaved	MATCH POINTS SAVED
+ReturnWinner	RETURN WINNERS
+ReturnPointWon	RETURN POINTS WON
+BreakvsGameBP	BREAKS / GAMES
+
+ShortRallyWon2	Short Rallies Won
+MediumRallyWon2	Medium Rallies Won
+LongRallyWon2	Long Rallies Won
+SetPointSaved2	Set Points Saved
+MatchPointSaved2	Match Points Saved
+ReturnWinner2	Return Winners
+ReturnPointWon2	Return Points Won
+BreakvsGameBP2	Breaks / Games
+
+NetApproach3	Net Approach Points Won
+Winners3		Total Winners
+Unforced3		Total Unforced Errors
+1stServe3		1st Serves In %%
+NetApproach4	NET APPROACHES
+Win1stServe3	WINNING ON 1st SERVE %%
+Win2ndServe3	WINNING ON 2nd SERVE %%
+
+1stServe4		1ST SERVE PERCENTAGE
+BreakPoint3		BREAK POINT CONVERSIONS
+Winners4		TOTAL WINNERS
+
+1stServe5		1st Serve In Play
+Win1stServe5	1st Serves Won
+Win2ndServe5	2nd Serves Won
+ReturnPointWon5 Returns In Play
+
+DoubleFault3	DOUBLE\nFAULTS
+1stServe6		1ST\nSERVE %%
+Winners5		WINNERS
+Unforced4		UNFORCED\nERRORS
+BreakPoint4		BREAK\nPOINTS
+
+1stServe7 	1st SERVE IN %%
+BreakPoint5 	BREAK PTS WON
+TotalPoint3	TOTAL PTS WON
+Winners6	WINNERS FH/BH
+Winners7	TOTAL WINNERS
+Unforced5	UNFORCED ERRORS FH/BH
+Unforced6	TOTAL UNFORCED ERRORS
+NetApproach5	NET POINTS W/L
+Win1stServe6	1ST SERVE PTS WON
+Win2ndServe6	2ND SERVE PTS WON
+ShortRallyWon3	PTS WON UNDER 5 SHOTS
+MediumRallyWon3	PTS WON BETWEEN 5-9 SHOTS
+LongRallyWon3	PTS WON OVER 9 SHOTS
+Forehand2	FOREHAND UNFORCED ERRORS
+Win1stServe7	1ST SERVES WON
+Win2ndServe7	2ND SERVES WON
+1stServe8	1ST SERVE % %%
+
+1stServe9 	1st Serve In %%
+BreakPoint6 	Break Points Won
+TotalPoint4	Total Points Won
+Winners8	Winners FH/BH
+Winners9	Total Winners
+Unforced7	Unforced Errors FH/BH
+Unforced8	Total Unforced Errors
+NetApproach6	Net Points W/L
+Win1stServe7	1st Serve Points Won
+Win2ndServe7	2nd Serve Points Won
+ShortRallyWon4	Points Won With >5 Shots
+MediumRallyWon4	Points Won With 5-9 Shots
+LongRallyWon4	Points Won With 9< Shots
+Forehand2	FOREHAND UNFORCED ERRORS
+Win1stServe8	1st Serves Won
+Win2ndServe8	2nd Serves Won
+1stServe10	1st Serve % %%
+
+//===HUD
+HUD_Training	Warm-up
+HUD_Match		Match
+HUD_TieBreak	Tiebreak
+HUD_MasterTB	Master Tiebreak
+EndsWillChange	Ends will change
+Service1		1st Service
+Service2		2nd Service
+TeamWin			Team %d wins
+PlayerWin		Player %d wins
+Deuce#			Deuce #%d
+ChangeOfEnds	Change of ends
+SpeedMph		%s mph
+SpeedKmh		%s kmh
+Fault			FAULT!
+Net				NET!
+LilBall		\7
+
+IG_Message01	Pause\nPress Pause or F12 to Toggle Pause
+IG_Message02	%s\nRun to your partner if you want to change return side.\nPress a button to skip\n%s...
+
+//=== Scoreboard
+SCB_CenterCourt			CENTER COURT
+SCB_CenterCourt2		CENTRE COURT
+SCB_CenterCourt3		COURT CENTRAL
+SCB_CenterCourt4		STADIUM
+SCB_CenterCourt5		MANOLO SANTANA
+SCB_CenterCourt6		CAMPO CENTRALE
+SCB_CenterCourt7		NATIONAL TENNIS STADIUM
+SCB_CenterCourt8		CANCHA CENTRAL
+SCB_CenterCourt9		PISTA CENTRAL
+SCB_CenterCourt10		AGORA
+SCB_CenterCourt11		CENTRAL COURT
+SCB_CenterCourt12		STADIUM COURT
+SCB_Name3L				%-3.3s
+SCB_TrnNameYear			%s %s -
+SCB_TrnNameCountry		%s, %s
+SCB_CountryRank			%s
+SCB_CountriesForDouble	(%s/%s)
+SCB_NamesForDouble		%s/%s
+SCB_Rank				(%s)
+SCB_RankForDouble		(%s/%s)
+SCB_Seed01				%s
+SCB_Seed02				(%s)
+SCB_ScoreAdv01			%s
+SCB_ScoreAdv02			40
+SCB_EXMatch				EXHIBITION MATCH
+SCB_EX					EXHIBITION
+SCB_MatchTime			MATCH TIME
+SCB_Set1Time			1st SET TIME
+SCB_Set2Time			2nd SET TIME
+SCB_Set3Time			3rd SET TIME
+SCB_Set4Time			4th SET TIME
+SCB_Set5Time			5th SET TIME
+SCB_MatchTime3			Match
+SCB_Set1Time3			Set 1
+SCB_Set2Time3			Set 2
+SCB_Set3Time3			Set 3
+SCB_Set4Time3			Set 4
+SCB_Set5Time3			Set 5
+SCB_Match				MATCH
+SCB_Set1				SET 1
+SCB_Set2				SET 2
+SCB_Set3				SET 3
+SCB_Set4				SET 4
+SCB_Set5				SET 5
+SCB_Statistics			STATISTICS
+SCB_Score				SCORE
+SCB_1stSet				1st SET 
+SCB_2ndSet				2nd SET
+SCB_3rdSet				3rd SET
+SCB_4thSet				4th SET
+SCB_5thSet				5th SET
+SCB_MatchTime2			MATCH DURATION
+SCB_SetTime2			SET DURATION
+SCB_MatchTime4			MATCH DURATION
+SCB_State1				FLORIDA
+SCB_State2				OHIO
+SCB_State3				TENNESSEE
+SCB_State4				FL
+SCB_State5				NC
+SCB_State6				GA
+SCB_City1				MASON
+SCB_Stadium1			ARENELE BNR
+SCB_Stadium2			PALAIS DES SPORTS
+SCB_Stadium3			PUTRA STADIUM
+SCB_Stadium4			DOM SPORTOVA
+SCB_Stadium5			LAWN COUNTRY CLUB
+SCB_Stadium6			COURT PHILIPPE CHATRIER
+SCB_Country1			ENGLAND
+SCB_Tournament1			GERRY WEBER OPEN
+SCB_Tournament2			BMW OPEN
+SCB_Tournament3			DAVIS CUP
+SCB_Tournament4			CÓRDOBA OPEN -
+SCB_Category1			MEN'S SINGLES - 
+SCB_Category2			MEN'S DOUBLES -
+SCB_Category3			GENTLEMEN'S SINGLES -
+SCB_Category4			GENTLEMEN'S DOUBLES -
+SCB_Category5			GENTLEMEN'S SINGLES
+SCB_Category6			GENTLEMEN'S DOUBLES
+SCB_Category7			MEN'S SINGLES
+SCB_Category8			MEN'S DOUBLES
+
+//===Cheat code
+WinAllPoints	Win All Points
+NormalPoints	Normal Points
+CheatingSet		A Cheating Set
+BallGrows		Ball Grows
+NormalBall		Normal Ball
+HighSpeed		High Speed
+NormalSpeed		Normal Speed
+Bozo			Bozo !
+NoBozo			Let's keep serious...
+
+//===Replay
+ReplaySpd01	Rewind 2x
+ReplaySpd02	Rewind
+ReplaySpd03	Rewind 1/2x
+ReplaySpd04	Rewind 1/4x
+ReplaySpd05	Step by Step
+ReplaySpd06	Slow motion 1/8x
+ReplaySpd07	Slow motion 1/4x
+ReplaySpd08	Slow motion 1/2x
+ReplaySpd09	Normal play
+ReplaySpd10	Forward 2x
+
+//===PlayerStat
+Stat		STATISTICS
+Skill		Skill
+Strikes		Strikes
+In			In
+Out			Out
+Success		Success
+Percent		%s%%
+Forehand	Forehand
+Backhand	Backhand
+VolleyFH	Forehand Volley
+VolleyBH	Backhand Volley
+Smash		Smash
+1stService	1st Service
+2ndService	2nd Service
+Total		Overall
+TotalDec	%s //
+Form		Form
+DistMeter01	\32meters
+DistMeter02	\32yards
+DistKm01	\32kilometers
+DistKm02	\32miles
+Rank		Rank
+SkillCrc	Skill Crc
+FormOfDay	Form of Day
+
+//===CharacterSheet
+PrevPlayer	Previous Player
+NextPlayer	Next Player
+NamePl		Player Name
+SoulHuman	Human
+SoulCPU		CPU
+StyleDefender	Defender
+StylePower	Power Baseliner
+StylePuncher	Puncher
+StyleVaried	Varied
+StyleVolleyer	Volleyer
+StyleCounter	Counter
+Country		Country
+Load		Load game
+Save		Save game
+PlayerLoad	Load player
+PlayerSave	Save player
+PlayerSaveWT	Save player To Training Club
+CharHandLeft	Left handed
+CharHandRight	Right handed
+ColorHair	Hair color
+ColorShirt	T-Shirt color
+ColorCuff	Cuff color
+ColorShorts	Shorts color
+ColorSkin	Skin color
+Character	Change Character
+ChangeSex	Change Male / Female
+CustomizeChar	Customize Character
+Service		Service
+Points		Points
+ChangeValue	Change Value
+NewGame		Start a new game
+Level		Skill
+Level01		Beginner
+Level02		Club
+Level03		Junior
+Level04		Pro
+Level05		Master
+Level06		Incredible
+Preview		Preview
+Preview01	None
+Preview02	Service
+Preview03	All
+CharSheet01	CHARACTER SHEET
+CharSheet02	MATCH OPPONENT
+CharSheet03	TRAINING
+CharSheet04	MATCH BRIEFING
+CharSheet05	MATCH OPPONENT
+CharSheet06	PARTNER
+CharSheet07	OPPONENT'S PARTNER
+SkillName01	Forehand Power
+SkillName02	Forehand Consistency
+SkillName03	Forehand Precision
+SkillName04	Backhand Power
+SkillName05	Backhand Consistency
+SkillName06	Backhand Precision
+SkillName07	Service Power
+SkillName08	Service Consistency
+SkillName09	Service Precision
+SkillName10	Return
+SkillName11	Lob
+SkillName12	Passing
+SkillName13	Drop shot
+SkillName14	Counter
+SkillName15	Forehand Volley
+SkillName16	Backhand Volley
+SkillName17	Smash
+SkillName18	Net Presence
+SkillName19	Top Spin
+SkillName20	Speed
+SkillName21	Stamina
+SkillName22	Tonicity
+SkillName23	Reflexes
+SkillName24	Strength
+SkillName25	Short Term Form
+SkillName26	Long Term Form
+SkillName27	Injury Risk
+SkillName28	Concentration
+SkillName29	Cold Blood
+SkillName30	Consistency
+SkillName31	Tactics
+SkillName32	Positioning
+SkillName33	Self Confidence
+SkillName34	Motivation
+SkillName35	Experience
+SkillName36	Doubles Spirit
+SkillName37	Slow
+SkillName38	Mid Slow
+SkillName39	Normal
+SkillName40	Mid Fast
+SkillName41	Fast
+SkillName42	Surface Speed
+SkillName43	Energy
+SkillName44	Stress
+SkillName45	Energy Max
+SkillName46	Points
+SkillName47	Level
+SkillName48	SubLevel
+SkillName49	Preview
+SkillName50	Auto-Positioning
+SkillTechnic	Technical skills
+SkillPhysical	Physical skills
+SkillMental		Mental skills
+SkillSurface	Surfaces
+IrLevel01	Very Low
+IrLevel02	Low
+IrLevel03	Medium
+IrLevel04	High
+IrLevel05	Very High
+
+SkillFH			Forehand
+SkillBH			Backhand
+SkillVolley		Volley
+SkillFitness	Fitness
+SkillService	Service
+SkillSpecial	Special
+
+Slice			Slice
+ReturnWaiting	Return Stance
+
+ArcadeSimu01	Simulation Controls
+ArcadeSimu02	Arcade Controls
+ArcadeSimu03	Elite Controls
+
+Tiredness01	Tiredness Off
+Tiredness02	Tiredness On
+
+Age			Age
+Height		Height
+%scm		%scm
+Weight		Weight
+%skg		%skg
+SeeTalents	See Talents
+NoTalent	No Special Talent
+RankSD		%s\n%s
+
+SingleHandFH	Single-handed Forehand
+DoubleHandFH	Double-handed Forehand
+SingleHandBH	Single-handed Backhand
+DoubleHandBH	Double-handed Backhand
+SetFavPartner	Set favorite doubles partner
+UnsetFavPartner	Unset favorite doubles partner
+
+AutoPos01	Slow
+AutoPos02	Average
+AutoPos03	Fast
+
+
+//=== Customize Player
+CsHat		Hat
+CsHair		Hair
+CsGlasses	Sunglasses
+CsEyes		Eyes
+CsShirt		T-Shirt
+CsCuff		Wristband
+CsRacket	Racket
+CsRacketHandle	Racket Handle
+CsRacketString	Racket String
+CsShorts	Shorts / Skirt
+CsSkin		Skin
+CsSocks		Socks
+CsShoes		Shoes
+
+PresetStyle		Style
+PresetStyle01	Custom
+
+CsType		Model
+TypeNone	None
+CsTypeNum	%s / %s
+
+CsHue			Color
+CsSaturation	Saturation
+CsBrightness	Brightness
+CsInvert		Invert
+
+SetOutfitCfg	Enter Outfit Code
+GetOutfitCfg	Copy Outfit Code to Clipboard
+
+CreatedBy		Player Anim :\n%s
+
+AltAccAnim		Alternate Acceleration Style:
+AltAccAnimOn	When available
+
+
+//===PlayerTalents
+Talents		Talents
+Talent01	Early ball hit:
+Talent02	Ball feeling:
+Talent03	Fast learner:
+Talent04	Injury resistance:
+Talent05	Slice serve:
+Talent06	Topspin serve:
+Talent07	Kick serve:
+Talent08	Slice mastery:
+Talent09	Champion:
+Talent10	Chameleon:
+Talent11	Globetrotter:
+
+
+//===LoadSave
+LoadSave01	LOAD PLAYER
+LoadSave02	SAVE PLAYER
+LoadSave03	LOAD TOUR
+LoadSave04	SAVE TOUR
+Slot01		A
+Slot02		B
+Slot03		C
+Slot04		D
+Slot05		E
+Slot06		F
+Slot07		G
+Slot08		H
+Slot09		I
+Slot10		J
+Slot11		K
+Slot12		L
+Slot13		M
+Slot14		N
+Slot15		O
+Slot16		P
+Slot17		Q
+Slot18		R
+Slot19		S
+Slot20		T
+Slot21		U
+Slot22		V
+Slot23		W
+Slot24		X
+Slot25		Y
+Slot26		Z
+Slot27		é
+Slot28		à
+Slot29		ù
+Slot30		è
+Slot31		$
+Slot32		£
+Slot33		µ
+Slot34		!
+Slot35		%
+Slot36		&
+Slot37		#
+Slot38		ç
+Slot39		@
+Slot40		²
+Slot41		-
+Slot42		°
+Slot43		=
+Slot44		}
+Slot45		{
+Slot46		[
+Slot47		]
+Slot48		§
+Slot49		+
+Slot50		~
+Slot51		^
+Slot52		_
+Slot53		©
+Slot54		,
+Slot55		;
+Slot56		®
+Slot57		¿
+Slot58		Ø
+Slot59		/
+EmptySlot	-- Empty --
+LoadSlot	Load Slot
+SaveSlot	Save Slot
+DeleteSlot	Delete Slot
+InvalidSlot	!! Invalid !!
+LockedSlot	!! Locked !!
+AutoSaveSlot	Auto Save Slot
+Round:%s	Round: %s
+Day:%s		Day: %s
+Week:%s		Week: %2s
+Year:%s		Year: %s
+(%s)		(%s)
+
+LoadCrashed	Last attempt to load the current saved game crashed ! Starting a new game instead.\n\nYou can still try to manually load your current saved game from the Load menu, though.
+CheckAccount	Check Online Account
+Locked01	Your saved games have been locked. To unlock them, you have to check your online account.\nIf you didn' buy the game, you should buy it now.
+Locked02	Your account is valid, your saved games have been unlocked !
+
+//===WorldTour
+WT_Players	Coached Players
+NextMatch	Next Match
+TourInfo	Draw Sheets, Rankings & Scores
+CurrentDate	Year %s, week %s
+
+//===NewGame
+NewGameSure	Start\nnew game?
+Done		Done
+NameNG1_01	Player
+Qualif		Qualifying
+QualifSet01	Off
+Tournament	Tournament
+NormalRound	Normal\nRound
+Final		Final
+Satellite	ITF Wolrd Tennis Tour 15+H
+Future		ITF Wolrd Tennis Tour 25+H
+Challenger	Challenger
+TET250		ATP 250
+TET500		ATP 500
+MasterSeries	ATP Masters 1000
+GrandSlam	Grand Slam
+MasterCup	Masters Cup
+TeamCup		Davis Cup
+OlympicGames	Olympics Games
+Exhibition	Exhibition
+PressEnterDone	Press 'Enter' when done
+NbPlayer01	1 player
+NbPlayer02	2 players
+NbPlayer03	3 players
+NbPlayer04	4 players
+
+TourMen		Men Tour
+TourWomen	Women Tour
+
+StartingRank	Starting Rank:
+%s&%s			%s & %s
+
+CatType01	Grand Slam
+CatType02	Masters Cup
+CatType03	ATP Masters 1000
+CatType04	Davis Cup
+CatType05	ATP500
+CatType06	ATP250
+CatType07	Challenger
+CatType08	Future
+CatType09	Satellite
+
+IntlSeries	TET250 & 500
+
+PlayPeriod:		Play Period:		// For Career Play Period
+CareerPeriod	Play Period			// For Player Pick Screen
+CareerPeriod:	Play Period:		// For Player Pick Screen
+PlayYears	%s - %s
+Height:		Height:
+Birthday	Birthday
+Month:		Month:
+Day:		Day:
+Players:	Players:
+
+GameMode:	Game Mode:
+GameMode01	Full Career
+GameMode02	1 Season
+PlayYear:	Year:
+
+NG_PickPlayer	Pick an existing player
+NG_CreatePlayer	Create a new player
+NG_ClickToPick	Click on a player's Play Period to pick him
+NG_PickIt		Pick this player
+
+StartRank:		Start Rank:
+YearEndRank:	Year End Rank:
+
+BestYearEndRank	Best Year End Ranking
+
+Auto		Auto
+
+NewGameStarWarn	You have to spend all your available stars before going to the next screen.
+NgHelp01	...
+NgHelp02	The more stars, the higher bonus you'll get when training the skills associated with this specialty.
+NgHelp03	The 1st star of Charisma gives you a bonus when recruiting new players. The following stars allow you to hire more trainers.
+NgHelp04	The more stars, the more money your players will get from sponsors contracts.
+NgHelp05	Allows you to know the potentials of players you want to recruit. If the potential is beyond your detection skill, then it will be hidden.
+NgHelp06	Luck will give your players more chance to have easy 1st round matches; ie: against qualifiers or low ranked players.
+NgSpeciality	Select your training specialty
+NgHeight	The taller you are, the better you could be at smashes and service power. The shorter you are, the faster you could run.
+NgCoachCountry	The coach center will be located in the coach's country
+
+NgHelpP01	Ability to hit the ball on the rise
+NgHelpP02	Ability to softly control the ball, especially at the net
+NgHelpP03	Learn faster from training, but also forget a bit faster with time
+NgHelpP04	Lower chance to get injured
+NgHelpP05	Serve giving a slice effect to the ball, most effective on a fast surface
+NgHelpP06	Serve giving a topspin effect to the ball, most effective on a slow surface
+NgHelpP07	Serve giving a kick effect to the ball, most effective on a normal surface
+NgHelpP08	Perfect control and use of slice effect during rallies
+NgHelpP09	Ability to play your best level against lower ranked players
+NgHelpP10	Lower the negative effect when changing your playing style during a match
+NgHelpP11	Less tired after trips, especially long ones
+
+//===PlayerEd
+PlayerBnk	Edit Player Bank
+Num		Num
+PlayerEd	\29\30 Player Bank Editor \30\31
+ResetPlayer	Undo changes to this player
+SavePB		Save Player Bank
+LoadPB		Load Player Bank
+PB_Default	Default Bank
+PB_Alt		Alternate Bank
+PB_Bak		Previous Bank
+PB_Current	Current Bank
+R		<R>
+SortRank	Sort Players by Rank
+L		<C>
+SortCountry	Sort Players by Country
+N		<N>
+SortName	Sort Players by Name
+W		<W>
+SortWinRatio	Sort Players by Win Ratio
+AvrForce	Rally+Volley Force
+// percentage of games won on Serve/Return depending of the strength of the opponent
+SvVs0		Serve Win %% Vs 0
+SvVsEqual	Serve Win %% Vs Equal
+SvVs50		Serve Win %% Vs 50
+SvVs100		Serve Win %% Vs 100
+RetVs0		Return Win %% Vs 0
+RetVsEqual	Return Win %% Vs Equal
+RetVs50		Return Win %% Vs 50
+RetVs100	Return Win %% Vs 100
+GameVs0		Game Win %% Vs 0
+GameVsEqual	Game Win %% Vs Equal
+GameVs50	Game Win %% Vs 50
+GameVs100	Game Win %% Vs 100
+
+//===TourInfo
+LastWeekNews	Last Week News
+BoardDraw		Tournaments of the week
+BoardRanking	Ranking Boards
+BoardActivity	Activity
+BoardTeamCup	Davis Cup Board
+BoardAllDraw	All tournament draws
+
+//===BoardRanking
+NavDown		Down
+NavUp		Up
+NavLeft		Left
+NavRight	Right
+BoardSingle	Singles Competition
+BoardDouble	Doubles Competition
+BRanking01	Entry System
+BRanking02	The Race
+Name		Name
+PosMoved	Pos.\nmoved
+TrnPlayed	Tourns.\nPlayed
+SeeActivity	See Activity
+// Davis encounter
+SeeEncounter	See Match
+Team			Team
+TeamSep		/
+TeamNoOne	--- / ---
+Infinite	+\14
+SortH2H		Sort Players by Head to Head
+SelectH2H	Select Head To Head Player
+Head-Head	%2s - %-2s
+Head-HeadSmall	%s-%s
+HeadToHeadBR	Head\nTo Head
+H2hInfoOff	Click on a rank to see Head To Head of a player
+H2hInfoOn	Viewing Head To Head of: %s
+H2hTurnOff	Turn off Head to Head
+
+ExportRankToCsv	Export To TEM_Ranking.csv
+ExportCharToCsv	Export To TEM_Player.csv
+ExportYearToCsv	Export To TEM_YearlyStat.csv
+
+//===BoardH2hDetail
+H2H_LeftName	%s (%s)
+H2H_RightName	(%s) %s
+Year\nWeek		Year\nWeek
+Rank\nVsRank	Rank\nVs Rank
+Winner			Winner
+Score\nRound	Score\nRound
+
+y\nWeek		%s\nWeek: %s
+SvsS		%s vs %s
+
+
+//===BoardActivity
+Week		Week
+Partner		Partner
+LostRound	Round
+EntryPoints	Entry\nPoints
+RacePoints	Race\nPoints
+EntryRank	Entry\nRank
+RaceRank	Race\nRank
+LastYear	Last Year
+NoActivity	...
+CountForRankE	Counts for Entry System
+CountForRankR	Counts for Race
+SeeTournament	See Tournament
+NoRecord	( No record yet ... )
+Round01		--
+Round02		Champion
+Round03		Final
+Round04		Semi-Final
+Round05		Quarter-Final
+Round06		Round Of 16
+Round07		Fifth Round
+Round08		Round Of 16
+Round09		3rd Round
+Round10		2nd Round
+Round11		1st Round
+// in Masters Cup
+Round12		Round Robin
+// when missed forced tournament
+Round13		--Missed--
+Round14		Qualified
+Round15		Playoffs
+Round16		Qualy R1
+Round17		Qualy R2
+Round18		Qualy R3
+Round19		Qualy R4
+ActivityStreak	View streak stats in main tournaments
+HelpStreak		Main tournaments are TET250 and above
+
+//===BoardReview
+ReviewYear	Current Year:
+ReviewCareer	Career Review:
+ReviewWins	Wins
+ReviewLosses	Losses
+ReviewTitles	Titles
+ReviewPrize	Prizes
+Dollar		$
+SeeDetails	See Details
+AllTitles	%s / %s
+AllTitlesHT	Main Titles / Other Titles
+Titles01	Year Summary
+Titles02	Career Summary
+:		:
+
+//===BoardActivityStreak
+CurrentStreak	Current Streak
+BestStreak		Best Streak
+Cumulative		Total
+
+StreakStat01	Wins:
+StreakStat02	Finals:
+StreakStat03	Titles:
+StreakStat04	Wins in Masters Series:
+StreakStat05	Masters Series Titles:
+StreakStat06	Wins in Grand Slam:
+StreakStat07	Grand Slam Titles:
+StreakStat08	Clay wins:
+StreakStat09	Grass wins:
+StreakStat10	Synthetic wins:
+StreakStat11	Hard wins:
+StreakStat12	Indoor wins:
+StreakStat13	Clay titles:
+StreakStat14	Grass titles:
+StreakStat15	Synthetic titles:
+StreakStat16	Hard titles:
+StreakStat17	Indoor titles:
+StreakStat18	Wins against Top 10:
+StreakStat19	Weeks at #1:
+StreakStat20	Years ended at #1:
+
+//===BoardDraw
+PrevTournament	Previous Tournament
+NextTournament	Next Tournament
+NoTrnSingle		No Singles Tournament This Week
+NoTrnDoubles	No Doubles Tournament This Week
+DrawFinal	Main Draw
+DrawQualif	Qualifying Draw
+DrawRank	(%s\32//
+DrawCountry	- %s)\32//
+DrawRankP	- %s)
+EntryPos	Entry Rank
+DrawBye		Bye
+DayOfWeek01	Monday
+DayOfWeek02	Tuesday
+DayOfWeek03	Wednesday
+DayOfWeek04	Thursday
+DayOfWeek05	Friday
+DayOfWeek06	Saturday
+DayOfWeek07	Sunday
+String]		%s]
+DrawPage	[Page %s/%s]
+Encounter	[Match %s/%s]
+NoMatchHere	Still no match played\nin this part of the draw
+NoDrawHere	This tournament doesn't have this draw
+NoDavis		Davis Cup didn't start
+SpaceRight	%s\32//
+SpaceLeft	\32%s
+SpaceBoth	\32%s\32
+Seed		Seed
+WC			[WC]
+WildCard	Wildcard
+Q			[q]
+Qualified	Qualifier
+LD			[LD]
+LastDirect	Last direct acceptance
+DrawDraw	[Draw: %s]
+DTS_Left	\32- %s
+DTS_Right	%s -\32//
+RoundRobin	[Round Robin]
+DrawWin		[%s\32//
+DrawWinH	Wins
+DrawLoss	- %s]
+DrawLossH	Losses
+DB_Retired	\32ret.
+DB_WO		W.O.
+Week[]		[%s; Week: %s]
+(%s:%s)		(%s:%s)
+RankingPoint	Ranking Points
+EntryRacePoint	Entry & Race Points
+
+ViewAllMatch	View all matches
+ViewNoMatch		View no match
+ViewToggleMatch Toggle selected matches
+
+ViewMatch01	Skip Match
+ViewMatch02	View Match
+
+//===WT_common
+WT_Week		Week: %s
+WT_Title01	World Tour
+WT_Title02	MATCH RESULT
+WT_Title03	WEEK RESULT
+WT_Title04	WILDCARD
+WT_Title05	ENTER SINGLES QUALIFYING
+WT_Title06	ENTER DOUBLES QUALIFYING
+WT_Title07	MASTERS
+WT_Title08	DAVIS CUP
+WT_Title09	TOO LOW RANKING
+WT_Title10	QUALIFYING
+WT_Title11	BACK TO COACH CENTER
+WT_Title12	TRAVEL PLAN
+WT_Title13	INJURED
+WT_Title14	SPONSOR
+WT_Title15	TEAM MEMBER QUIT
+WT_Title16	SPONSOR BONUS
+WT_Title17	MANDATORY TOURNAMENT
+WT_Title18	PARTNER AWAY
+WT_Title19	NEW YEAR
+WT_Title20	PARTNER RETIRED
+WT_Title21	CONTRACT ENDING
+WT_Title22	CONTRACT DISSOLVED
+WT_Title23	PLAYER RETIRING
+WT_Title24	CONTRACT WARNING
+
+//===WT_ShowMatch
+WT_Play			Play!
+WT_PlayMatch	Play Match
+HeadToHead		Head To Head:
+-		-
+
+//===PlayerTab
+Training	Training
+Planning	Planning
+Sponsor		Sponsor
+
+PlayerCant02	You can't choose a partner for this week anymore!
+PlayerCant03	You can't choose a partner if you are in a doubles tournament or if you have one planned for next week!
+PlayerCant04	Too late to book for this week!
+PlayerCant05	Too late to cancel booking for this week!
+PlayerCant06	The tournament you registered for on the previous week lasts 2 weeks, therefore you can't book a tournament on this week.
+
+SwapOrderPrev	Swap Order with Previous Player
+SwapOrderNext	Swap Order with Next Player
+SwapOrder		Are you sure you want to swap order of %s with %s ?
+
+//===PlayerPlanning
+Type		Type
+Prize		Prize
+Ground		Surface
+Single		Singles
+Double		Doubles
+EnterSingle	Enter Singles Draw
+ExitSingle	Leave Singles Draw
+EnterDouble	Enter Doubles Draw
+ExitDouble	Leave Doubles Draw
+DoublePartner	Doubles Partner:
+ChoosePartner	Choose doubles partner
+NoDoublePartner	- none -
+DoQualification	Enter qualifying:
+DoQualif01	No
+DoQualif02	Ask
+DoQualif03	Yes
+LastResult	Latest Result: %s
+
+PlayerLowRank01	Ok for qualifying ?\n\nYour ranking will probably not be high enough to enter the Main Draw directly. So you might have to play in the qualifying tournament.\nDo you still want to plan this tournament ?
+PlayerLowRank02	Ranking Too Low!\n\nYour ranking will probably not be high enough to enter the Qualifying Draw. So you may not be able to play this tournament at all!\nDo you still want to plan this tournament ?
+PlayerLowRank03	Low Ranking!\n\nYour ranking will probably not be high enough to enter this tournament draw!\nDo you still want to plan this tournament ?
+PlayerLowRank04	Partner will retire!\n\nYour partner will retire at end of this year. You should take a new partner if you want to play this tournament.
+PlayerLowRank05	Cancellation Fee\n\nAre you sure you want to cancel your participation to this tournament ? If yes, you'll have to pay a fee of $%s.
+Cancel			Cancel
+
+EnterLowRank00	Ranking high enough to enter the Main Draw
+EnterLowRank01	Ranking not high enough : Might need to qualify
+EnterLowRank02	Ranking probably not high enough to enter qualies
+EnterLowRank03	Ranking probably not high enough to enter the draw
+
+CantEnterQ01	Your ranking is not high enough to enter the qualifying draw of: %s.
+CantEnterQ02	Your ranking is not high enough to enter the main draw of: %s; and this tournament doesn't have a qualifying draw.
+CantEnterQ03	Because you still haven't lost in the main draw of your current tournament, your participation in the qualifying of %s has been cancelled.
+CantEnterQ04	Because your partner still hasn't lost in the main draw of his current tournament, your participation in the qualifying of %s has been cancelled.
+CantEnterQ05	Because you are too late to enter the draw, your participation in the qualifying of %s has been cancelled.
+
+EnterOtherQ		Do you want to see other available qualifying ?
+CancelOtherQ	Don't play this week
+OtherQualif		Enter this qualifying
+EnterTournament	Enter this tournament
+
+EnterEowQualif	Do you want to enter qualifying of another tournament before the end of the week ?
+
+WorldRegion01	North America
+WorldRegion02	Central America
+WorldRegion03	South America
+WorldRegion04	Africa
+WorldRegion05	Europe
+WorldRegion06	Middle East
+WorldRegion07	Asia
+WorldRegion08	Oceania
+
+PremierM	PremierM
+Premier5	Premier5
+Premier		Premier
+IntlWTA		International
+
+AutoWC		Because of your nationality, the tournament director will give you a wildcard to enter directly in the main draw!
+
+
+//===WT_Training & CharSheetSkillBar & TrainHour
+NbTrainingDay	Training days: %s
+NbTrainingHour	Training hours: %s
+TrainSkill	Train Skill
+TrainRally	Train rally skills (50%% time bonus)
+TrainService	Train service skills (25%% time bonus)
+TrainSpecial	Train special skills (100%% time bonus)
+TrainVolley	Train volley skills (50%% time bonus)
+TrainMental	Mental Training
+TrainHour01	Train for how many hours ?
+TrainHour02	Rest for how many hours ?
+TrainBody	Body Training
+LowerLift	Lower Top Spin
+TH_Min		Min
+TH_Max		Max
+TB_Footing	Footing
+TB_Building	Body Building
+TB_Bicycle	Bicycle
+TB_Swimming	Swimming
+TB_Sprint	Sprint
+TB_Yoga		Yoga
+TB_Rest		Rest
+TrainCant01	You don't have any experience points to spend !
+TrainCant02	No one is available to practice with you !
+TrainCant03	You don't have any time left to train !
+TrainCant04	There's no one with you who is able to train you !
+TrainCant05	You're too injured to train now. Wait %s more day(s).
+
+TrainPartner	Practice with a player (150%% time bonus)
+TrainNbSetWon	You won %s set(s)
+TrainNbSetLost	You lost %s set(s)
+TrainExhausted	You're exhausted, you cannot train anymore!\nYou should rest, from the Body Training menu...
+WarningHourLeft	You still have some training hours left!\nAre you sure you want to continue?\nIf you do, your remaining hours will be used to rest.
+
+//===WT_TravelPlan
+From:		From: %s
+To:			To: %s
+Plane:		Plane:
+PlaneClass01	Economy
+PlaneClass02	Business
+PlaneClass03	First
+Coach		Coach
+Hotel:		Hotel:
+HotelStar01	1 Star
+HotelStar02	3 Stars
+HotelStar03	5 Stars
+PlanePrice$	$%s
+HotelPrice$	$%s / night
+CoachCL01	Already at Center
+CoachCL02	is not with this player
+CoachCL03	Must go with this player
+CoachCL04	Already going to this tournament
+CoachCL05	Available
+CoachGo04	Player pays for Coach's trip :
+CoachGo05	Go with player :
+
+CashNow			Cash now :
+CostForWeek		Travel cost for one week :
+TeamCostForWeek	Team cost for one week :
+CashAfter01		Cash after trip :
+CashAfter02		Cash after one week :
+
+TravelNow	Go back to Coach Center now ?
+
+
+//===Hire & Buy
+HireBuy		Hire & Buy
+
+//===Match
+StartMatch	Start Match
+SeeResult	Skip to result
+InTieScore	(%s)
+Break		Break
+MiniBreak	Mini Break
+MatchSpeed	Match Speed
+MatchSpeed:	Speed:
+Malus:		Malus: %s%%
+EnergyMode	Energy Spending
+
+Bonus_No	No\32		// added to the following bonus names, when they are off
+Bonus_PowerH	%sPower Bonus
+Bonus_DropShotH	%sDrop Shot Bonus
+Bonus_DropHiH	%sDrop Shot Super Bonus
+Bonus_PSpeedH	%sPlay Speed Bonus
+Bonus_PSpeedHiH	%sPlay Speed Super Bonus
+Bonus_AccH		%sAcceleration Bonus
+Bonus_TacticH	%sTactic Bonus
+Bonus_TacticHiH	%sTactic Super Bonus
+Bonus_SSpeedH	%sService Efficiency Bonus
+Bonus_LeftHandH	%sLeft Handed Bonus
+
+// only 2 letters from the translated words
+Bonus_Power		PW
+Bonus_DropShot	DS
+Bonus_PlaySpeed	PS
+Bonus_Acc		AC
+Bonus_Tactic	TT
+Bonus_SSpeed	SE
+Bonus_LeftHand	LH
+
+XpBoost			Experience Boost
+XpPoint			Experience: %s
+XpBoostChoice	%s%% boost
+XpCost			need %s points
+XpBoostOff		No boost
+
+WinLoose01	NoCheat
+WinLoose02	Win
+WinLoose03	Loose
+
+PointByPoint01	Game By Game
+PointByPoint02	Point By Point
+
+Score01		0
+Score02		15
+Score03		30
+Score04		40
+Score05		Ad
+
+EnterScore	Enter Score
+
+MatchEvent01	Ace
+MatchEvent02	Ace on 2nd Serve
+MatchEvent03	Double Fault
+MatchEvent04	Winner
+MatchEvent05	Winner at Net
+MatchEvent06	Fault
+MatchEvent07	Fault at Net
+MatchEvent08	Winning Lob
+MatchEvent09	Winning Passing
+MatchEvent10	Missed Lob
+MatchEvent11	Missed Passing
+MatchEvent12	Net fight won with a Lob
+MatchEvent13	Net fight won with a Passing
+MatchEvent14	Net fight lost with a missed Lob
+MatchEvent15	Net fight lost with a missed Passing
+
+//===WT_MatchResult
+ReachRound		You reached the:
+InTournament	In the tournament:
+Congratulation	Congratulations!
+QualifFinal		You have qualified\nfor the main draw
+
+//===WT_Victory
+YouWon		You won %s!
+WonTeamCup	Your team won the Davis Cup!
+TrnName01	the Davis Cup
+TrnName02	the Masters Cup
+
+//===ChooseTournament
+CurrentWeek	Current week
+CT_Week		Week\n%s
+CT_NoTrn	No Tournament This Week
+PrevWeek	Previous Week
+NextWeek	Next Week
+SelectCompet	Select Competition
+CT_Single	Singles Draw
+CT_Double	Doubles Draw
+CT_ESD01	No singles draw
+CT_ESD02	Missed singles qualifying
+CT_ESD03	Failed to qualify in singles
+CT_ESD04	Enter singles qualifying draw
+CT_ESD05	Select singles competition
+CT_ESD06	Forced to play singles
+CT_ESD07	Got a Wildcard for Singles!
+CT_ESD09	Singles qualifying full
+CT_EDD01	No doubles draw
+CT_EDD02	Missed doubles qualifying
+CT_EDD03	Failed to qualify in doubles
+CT_EDD04	Enter doubles qualifying draw
+CT_EDD05	Select doubles competition
+CT_EDD06	Forced to play doubles
+CT_EDD07	Got a Wildcard for Doubles!
+CT_EDD08	No partner for doubles
+CT_EDD09	Doubles qualifying full
+CT_EDD10	Partner busy
+CT_ESnD		Select singles & doubles
+CT_NextQualif	You can enter qualifying for the other tournament before the end of the week (click Back to cancel)
+CT_More		More Tournaments
+CT_NoRecord	Still no tournament archived
+
+TrnWeekWarning	This tournament will occur in more than 30 weeks. Are you sure you don't want to play any other tournament before this one ?
+
+//===WT_GotWildcard
+GotWildcard01	Because of your good results this week, the director of your tournament next week has offered you a wildcard to enter the main draw!
+GotWildcard02	Because your next tournament takes place in your home country, its director has offered you a wildcard to enter the %s !
+
+ProposeWC		Do you want to accept it ?
+TrnName+Type	%s (%s)
+
+//===WT_ComfirmEnterQualif
+	// ‘%s’ is name of the tournament
+EnterQualif	You have to qualify to enter the main draw of %s.\n\nDo you want to enter the qualifying draw?
+
+//===WT_Cant/EnterMaster/Davis
+CantEnterMaster	Sorry, but you don't have the ranking needed to enter the final of the Masters.
+EnterMaster	You entered the final of the Masters!
+CantPlayDavis01	Sorry, but your country didn't reach this round of the Davis Cup.
+CantPlayDavis02	Sorry, but the team captain didn't choose you to play this Davis Cup round in %s, because you're not ranked high enough.
+NeededDavis	Your country needs you to play for the Davis Cup team!
+NotInDavis	Sorry, but your team is not in Davis Cup.\nDo you want to select this round anyway?
+Playoff		Play-offs
+DavisPlayoffWon	Congratulations!\n\nYour country won the Davis Cup's playoffs, and have qualified for the main draw next year.
+DavisPlayoffLost	Bad luck!\n\nYour country lost in the Davis Cup's playoffs, and will have to play the qualifiying draw next year.
+HomeTeam	Receiving Team
+
+// PartnerCat0x will be inserted into the 1st '%s' of PartnerToDavis
+PartnerCat01	Davis Cup
+PartnerCat02	Doubles Masters
+PartnerToDavis	Your partner is going to play the %s, so you can't participate to the doubles draw of this tournament : %s.
+
+//===WT_WeekResult
+Tournament:	Tournament:
+Round:		Round:
+NoPlay		Didn't play this week
+Prize:		Prize:
+Taxes:		Taxes:
+TotalPrize:	Career Prize:
+EntryPoint:	Entry Points:
+EntryRank:	Entry Rank:
+RacePoint:	Race Points:
+RaceRank:	Race Rank:
+NoRanking	None
+
+//===ChoosePartner
+CurrentPartner	Selected Partner:
+SelectPartner	Select this player
+CP_HowToSelect	Click on his rank to select your partner
+EnterSingleToo	Do you want to enter singles draw, too ?
+
+//===Injury
+Injury:		Injury: %s
+Injured		Injured
+InjuryNbDay	%s days
+Injury01	Exhausted
+Injury02	Gastric problem
+Injury03	Ankle sprain
+Injury04	Blisters
+Injury05	Stress fracture
+Injury06	Tennis elbow
+Injury07	Knee
+Injury08	Shoulder
+Injury09	Back
+Injury10	Adductor muscles
+Injury11	Nausea
+InjuryLevel01	Light
+InjuryLevel02	Medium
+InjuryLevel03	Serious
+GotInjured	You got injured !
+CpuGotInjured	%s got injured !
+InjuryType	Injury:
+InjuryLevel	Severity:
+InjuryDay	Full rest days\nto recover:
+TrainInjury	Injured ! Efficiency reduced to %s%%
+
+CantEnterInj01	You can't enter the %s tournament because you are currently injured.
+CantEnterInj02	You can't play your next match in the %s tournament because you are currently injured.
+
+//===Sponsor
+Nuke			Nike
+Adadas			Adidas
+Rebook			Rebook
+Babe-ola		Babe-ola
+Willdad			Willdad
+OceanicAir		Oceanic Air
+StarFlipCoffee	StarFlip Coffee
+Halt-onHotels	Halt-on Hotels
+B-AxeInsurance	B-Axe Insurance
+BargrassBank	Bargrass Bank
+SportDiscount	Super Sport Super Discount
+MacMickey		MacMickey
+WholeMud		WholeMud
+MalBaret		MalBaret
+EdSupermarket	Ed Supermarket
+NoSponsor		No sponsor offer this week...
+Name:			Name:
+TaxePercent		%s%%
+TotalWage:		Contract worth:
+WeeklyWage:		Weekly wage:
+DollarsSum		$%s
+ContractLenght:	Contract Length:
+NbWeek:			Weeks Left:
+NbMonth			%s months
+NbYear			%s year(s)
+NbWeekLeft		%s / %s
+SponsorAdv:		Special Advantage:
+SponsorAdv01	None
+SponsorAdv02	Free Equipment
+SponsorAdv03	50%% Plane Discount
+SponsorAdv04	50%% Hotel Discount
+BonusObjective:	Bonus Objective:
+YearlyObj:		Yearly Objective:
+NoObjective		None
+SponsorObj		%s (in single)\nor %s (in double)
+SponsorObj01	Victory
+SponsorObj02	Final
+SponsorObj03	Semifinal
+SponsorObj04	Quarter-final
+ObjTrn:			In tournaments:
+SponsorTrn01	Grand Slams
+SponsorTrn02	Grand Slams & Masters Cup
+SponsorTrn03	Grand Slams, Masters Cup & Davis Cup
+SponsorTrn04	Masters Series & above
+SponsorTrn05	TET500 & above
+SponsorTrn06	TET250 & above
+SponsorTrn07	Challengers & above
+SponsorTrn08	Futures & above
+SponsorTrn09	Satellites & above
+SponsorTrn10	None
+NbObjective:	Number of times to achieve:
+ObjectiveDone:	Done:
+ObjDone			%s / %s
+ObjWage:		Objective worth:
+Reputation		Reputation
+Cash:n$			Cash: $%s
+ConfirmSponsor	Are you sure you want to sign a contract with %s ?
+SignContract	Sign Contract
+SponsorEnded	Your contract with %s has just ended.
+SponsorBonus	You just reached the objectives set by your sponsor %s !\nYou got the $%s bonus !
+Accounting		Accounting details
+
+//===Accounting
+LastWeek	Last Week
+Career		Career
+Sponsor:	Sponsor:
+Coach:		Coach:
+Team:		Team:
+Equipment:	Equipment:
+BankAgio:	Bank Interest:
+BasicNeeds:	Basic Needs:
+Leisure:	Leisure:
+Profit:		Profit:
+
+//===Team	/!\ Note: accord these names with the ones used in WT_Training
+TrainerSkill01	---
+TrainerSkill02	Rally: +%s%%%%
+TrainerSkill03	Service: +%s%%%%
+TrainerSkill04	Special shots: +%s%%%%
+TrainerSkill05	Volley: +%s%%%%
+TrainerSkill06	Physical: +%s%%%%
+TrainerSkill07	Mental: +%s%%%%
+TrainerSkill08	Physiotherapist: +%s%%%%
+TrainerSkill09	Sparring Partner: #%s
+TrainerSkill10	Assistant: +%s%%%%
+TrainerSkill11	Girlfriend: +%s%%%%
+
+OtherSkill	+%s%%
+
+TrainerFilter01	---
+TrainerFilter02	Rally
+TrainerFilter03	Service
+TrainerFilter04	Special shots
+TrainerFilter05	Volley
+TrainerFilter06	Physical
+TrainerFilter07	Mental
+TrainerFilter08	Physiotherapist
+TrainerFilter09	Sparring Partner
+TrainerFilter10	Assistant
+TrainerFilter11	Girlfriend
+
+
+//===CoachTabs
+CoachTabTitle01	Coach Info
+CoachTabTitle02	Trainers
+CoachTabTitle03	Recruit Players
+CoachTabTitle04	Coach Contract
+CoachTabTitle05	Coach Center
+CoachTabTitle06	Contracts History
+
+//===Hire & Fire
+Wage&Travel	Pay and\nTravel
+Trainer		Trainer
+MajorSkill	Major\nSkill
+MinorSkill	Minor\nSkill
+OtherSkills	Other\nSkills
+WeeklyWage	Weekly\nWage
+Plane		Plane\nClass
+Hotel		Hotel\nStars
+Previous	Previous
+Next		Next
+PlaneClassS01	Eco
+PlaneClassS02	Biz
+PlaneClassS03	1st
+NoOtherSkill	---
+TrainerFilter	Filter:
+ConfirmH&F01	Are you sure you want to hire %s for $%s per week ?
+ConfirmH&F02	Are you sure you want to fire %s ?
+CantHire01		You can't hire %s: none of your players have enough cash !
+CantHire02		You can't hire %s: you cannot have more than %s trainers per player !
+Hire			Hire %s
+Fire			Fire %s
+
+TrainerQuit		%s just quit because there was no one able to pay him !
+SparringPartner	Sparring Partner
+
+PayFor01		Not paying for this team member
+PayFor02		Paying for this team member
+TravelWith01	Not travelling with this team member
+TravelWith02	Travelling with this team member
+
+TrainerInfo01	You hired your first Trainer !\n\nTrainers give you a bonus to your training efficiency, in the fields they are skilled.
+TrainerInfo02	You hired your first Physiotherapist !\n\nPhysiotherapists give you a bonus to your resting efficiency when you choose to rest, and a bonus as well to your everyday rest time and your injury healing rate.
+TrainerInfo03	You hired your first Sparring Partner !\n\nSparring partners can practise with you, at the coach center, or at tournaments. Their skill level shows the rank they could reach if they were playing tournaments.
+TrainerInfo04	You hired your first Assistant !\n\nWhen you travel without your coach, assistants allow you to lower the motivation handicap you get, and allow you to do all kind of training.
+
+
+//===CoachInfo
+Country:		Country:
+Difficulty:		Difficulty Level:
+Speciality:		Specialty:
+Charisma:		Charisma:
+Business:		Business:
+Potential:		Potential Detection:
+Luck:			Luck:
+Cash:			Cash:
+CareerScore:	Career Score:
+(Percent)		(%s%%)
+(+Percent)		(+%s%%)
+(+Num)			(+%s)
+CoachTrainBonus	Training bonus
+CoachTeamBonus	Bonus on maximum number of trainers
+CoachBizBonus	Bonus on sponsor contracts
+CoachPotBonus	Maximal potential detected
+CoachLuckBonus	More frequent easy 1st rounds
+
+Contracts:		Contracts:
+NbGoalSuceeded	Successful
+NbGoalFailed	Failed
+NbGoalCancel	Cancelled
+NbGoalDissolve	Dissolved
+NbGoal			Total
+
+NewDiffWarn		Are you sure you want to change the difficulty level ?
+
+EndCareer		Retire
+RetireWarning	Are you sure you want to end your career ?\nIt will end the game and you won't be able to play anymore.
+
+
+//===CoachAllContracts
+From-Ranks		From\nRanks
+To-Ranks		To\nRanks
+NoContract		Still no contract with additional player
+Result			Result
+YearWeek		%s - Week: %s
+
+ContractEnd01	Ended
+ContractEnd02	Dissolved
+ContractEnd03	Retired
+ContractEnd04	Cancelled
+ContractEnd05	Succeeded
+ContractEnd06	Failed
+ContractEnd07	Running
+
+
+//===CoachRecruit & PlayerContract
+NoPlayerToCoach	No player is willing to hire you.\nWait for your reputation to rise a bit.
+HowToRecruit	Click on the ranking of the player to recruit
+PlayerObjective	Objective
+Commission		Commission
+CoachGoal01		Maintain ranking #%s
+CoachGoal02		Win a tournament
+CoachGoal03		Reach rank #%s
+CoachGoal04		Be the best player possible
+
+CoachCant01	You're already coaching 4 players; you cannot recruit any more players.
+CoachCant02	You cannot recruit more than 1 player every %s weeks, and you recruited your last player only %s week(s) ago.
+CoachCant03	You cannot recruit more than 1 player every %s weeks, and you have already recruited one this week.
+CoachCant04	You don't have enough space on your hard drive !\nYou need to have at least %s free MB to save your game.
+
+RecruitPlayer	Recruit Player
+
+RecruitPlayer01	Recruit %s for 1 year ?
+RecruitPlayer02	Coach %s for 1 more year ?
+RecruitPlayer04	Coach %s till he retires\nat the end of this season ?
+Commission:		Commission:
+Objective:		Objective:
+Competition:	Competition:
+Type:			Type:
+Dissolved		Contract dissolved if drop below\nrank #%s for %s consecutive weeks.
+
+GoalDone		-- Done! --
+NbYear:			Years left:
+WillDissolve	Contract will be dissolved if below\nrank #%s for %s more week(s).
+CancelContract	Cancel contract
+ReleasePlayer01	Are you sure you want to end the contract with this player ?
+ReleasePlayer02	Are you sure you want to end the contract with this player ?\nIf you do so, you'll lose some reputation, as he's in a lesser state than when you started to coach him.
+
+GotDissolved	Your player stayed under the rank #%s for %s weeks. Therefore, the contract has been dissolved, and you cannot coach him anymore.
+CurrentRank:	Current Rank:
+
+ContractRes01	Failed : objective not done !
+ContractRes02	Succeeded : objective done !
+
+
+//===Player's Team
+PlayerTeamFire	You're the only one paying for %s. If you don't pay for him anymore, you have to fire this team member. Are you sure you want to proceed ?
+CantPayForTeam	You don't have enough money to pay for %s.
+TooMuchTravelT	You can't travel with more than %s team members.
+
+TrainingBonus	Training Bonus:
+TeamTravel01	You can't change this setting when the team member or the player is not at the Coach Center.
+TeamTravel02	You can't fire %s because this team member is currently not in the Coach Center.
+
+	// Coach Center is same than 'Training Center'
+CoachCenter		Coach Center
+CurrentLocation	Current Location: %s
+
+
+//===CoachCenter & Equipment
+BuyEquipment	Buy	// %s for $%s
+
+Equipment01	clay court
+Equipment02	grass court
+Equipment03	synthetic court
+Equipment04	cement court
+Equipment05	indoor carpet court
+Equipment06	indoor hard court
+Equipment07	blue-green cement court
+Equipment08	fitness center
+Equipment09	spa center
+
+Installation:	Installation:			// Camp installation: court, etc...
+Cost:			Cost:					// price of installation
+
+Bonus:		Bonus:
+BuildingBonus08	Body building +5%%
+BuildingBonus09	Rest +5%%
+
+SurfaceSpeed:	Surface Speed:
+SurfaceSpeed:S	Surface Speed: %s
+CourtSpeed01	Slow
+CourtSpeed02	Fast
+CourtSpeed03	Mid Slow+
+CourtSpeed04	Normal
+CourtSpeed05	Mid Fast+
+CourtSpeed06	Mid Fast
+CourtSpeed07	Normal+
+
+TooExpensive	You don't have enough money to purchase this. You need %s more dollars.
+
+SelectSurface	Select Training Court
+SurfaceNA		Court still not built
+
+
+//===WT_ForcedTournament
+ForcedTrn	Due to your ranking, you have to participate in the %s tournament, in %s, or not play any tournament.
+ForcedSD02	Singles
+ForcedSD03	Doubles
+ForcedSD04	Singles & Doubles
+DoNoEnter	Don't play this tournament
+
+
+//===WT_Performance
+Performance01	You are Number One in %s for the 1st time in your career !
+Performance02	You reached the top %s in %s for the 1st time in your career !
+Performance08	What an amazing achievement, you just did the Grand Slam in %s over 2 calendar years !!
+Performance09	What an incredible achievement, you just did the Grand Slam in %s in one calendar year !!!
+Performance10	You finished the season at Number One in %s for the 1st year : you just entered tennis history books !
+Performance11	You finished the season at Number One in %s for the 2nd year : you're amazing !
+Performance12	You finished the season at Number One in %s for the 3rd year : tennis fans will remember you forever !
+Performance13	You finished the season at Number One in %s for the 4th year : your talent has no limit !
+Performance14	You finished the season at Number One in %s for the 5th year : you're a living legend !
+Performance15	You finished the season at Number One in %s for the 6th year : you're a god amongst men !
+Performance16	You finished the season at Number One in %s for the 7th year : is there anything or anyone able to stop you ?
+Performance17	You finished the season at Number One in %s for the 8th year : what is your secret ?
+Performance18	You finished the season at Number One in %s for the 9th year : you've really entered the pantheon of tennis legends !
+Performance19	You finished the season at Number One in %s for the 10th year : you're the best player ever !
+Performance20	You finished the season at Number One in %s for more than 10 years : you're just unbelievable !
+
+Compet01	Singles
+Compet02	Doubles
+Compet03	All
+
+
+//===WT_EndOfGame
+EndOfGame	Career results
+EogTitle01	Best Coaches
+EogTitle02	Most Titles
+EogTitle03	Most Weeks at #1
+EogTitle04	Most Grand Slams
+EogTitle05	Most Years ended #1
+EogTitle06	Overall Rankings
+
+PrevEog		Previous ranking
+NextEog		Next ranking
+
+EOG_RealResult	(Real Life Results)
+EOG_Players 	(%s)
+
+GameOver		Game Over
+GameOverTxt01	Congratulations, you have played many years on the tour, and it is now time to put an end to your career.\nLet's have a final look at your career ranking.
+GameOverTxt02	You have decided to put an early end at your presence on the tour.\nLet's have a final look at your career ranking.
+
+SeasonOver		Season's Over
+ForceRank:		Force Rank:
+RankSingles:	Singles Ranking:
+RankDoubles:	Doubles Ranking:
+
+//===WT_TrialEnd
+TrialEnd	End of Trial
+TrialEnd01	Congratulations, you've just reached the Top 20 in %s !\nIf you want to continue your rise, you have to order the full version now.
+TrialEnd02	Congratulations, you've just reached your 1st final of a major tournament in %s !\nIf you want to try to win this tournament, you have to order the full version now.
+TrialEnd03	You just finished your 2nd year of the game.\nIf you want to play the following years, you have to order the full version now.
+
+TrialEndInfo	Important: your game has been saved to slot '%s', so as soon as you have ordered the full version and got your license key, you'll be able to continue your current game !
+StartNewGame	Start a new game
+
+//===WT_ misc info
+NbGameYearLeft	You have %s years left of play.
+GameLastYear	This is the last year of play !
+OldAge01		You've become older now. Your technical skills train and drop slower. Your physical potential is lower. Your risk of injury increases faster. Your mental skills drop slower.
+OldAge02		You've become older now. Your skills drop faster.
+
+PartnerRetired	Your doubles partner just decided to put an end to his career.\nYou'll have to select a new partner if you want to play doubles.
+
+//===BoardWeekNews
+WeekResults		Results
+NoWeekResult	No tournament last week in this competition
+ResultDefeated	def.
+Rise&Drop		Best rises and worst drops
+MajorTour		Main Tour
+MinorTour		Minor Tour
+
+
+//===PlayerCareerEvolution
+CareerEvolution	See Yearly Stats
+Year			Year
+NbMainTitle		Main Titles
+TotalPrize		Total Prize
+Cash			Cash
+CoachScore		Coach Score
+FutureYear	---
+
+
+//===PlayerPalmares
+Palmares	Career Titles
+NoPalmares	No titles so far
+
+
+#alternate	1			//=== Text for women ; add here any sentence that may need to be changed for women players
+CatType03	PremierM&5
+CatType04	Fed Cup
+CatType05	Premier
+CatType06	International
+
+IntlSeries	Premier & International
+MasterSeries	PremierM&5
+
+TeamCup		Fed Cup
+BoardTeamCup	Fed Cup Board
+WT_Title08	FED CUP
+NoDavis		Fed Cup didn't start
+WonTeamCup	Your team won the Fed Cup!
+TrnName01	the Fed Cup
+CantPlayDavis01	Sorry, but your country didn't reach this round of the Fed Cup.
+CantPlayDavis02	Sorry, but the team captain didn't choose you to play this Fed Cup round in %s, because you're not ranked high enough.
+NeededDavis	Your country needs you to play for the Fed Cup team!
+NotInDavis	Sorry, but your team is not in Fed Cup.\nDo you want to select this round anyway?
+DavisPlayoffWon	Congratulations!\n\nYour country won the Fed Cup's playoffs, and have qualified for the main draw next year.
+DavisPlayoffLost	Bad luck!\n\nYour country lost in the Fed Cup's playoffs, and will have to play the qualifying draw next year.
+PartnerCat01	Fed Cup
+SponsorTrn03	Grand Slams, Masters Cup & Fed Cup
+SponsorTrn04	Premier5 & above
+SponsorTrn05	Premier & above
+SponsorTrn06	International & above

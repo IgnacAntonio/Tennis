@@ -1,0 +1,37 @@
+Include MenuSet01.def
+
+def	IxL	Sx2
+def	IxR	Sx3
+def	IyU	Sy2
+def	IyD	Sy3
+
+def	IcoS	145
+def	EdgeX	54
+def	EdgeY	12
+
+add	IxL	EdgeX
+add	IxR	-IcoS
+add	IxR	-EdgeX
+
+add	IyU	EdgeY
+add	IyD	-IcoS
+add	IyD	-EdgeY
+
+
+def	IxM	0
+add	IxM	IxL 0.5
+add	IxM	IxR 0.5
+
+def	IyM	0
+add	IyM	IyU 0.5
+add	IyM	IyD 0.5
+
+
+def	Slx	Sx2
+def	Srx	Sx3
+def	LilEdge	8
+
+Add	Slx	LilEdge
+Add	Srx	-LilEdge
+
+ShrinkTo	Slx Srx

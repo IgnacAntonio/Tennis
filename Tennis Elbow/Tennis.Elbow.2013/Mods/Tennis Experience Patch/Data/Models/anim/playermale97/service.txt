@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 87.00 87.00 57.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Dominic Thiem

@@ -1,0 +1,169 @@
+Include Cordoba_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.3
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	0
+def	dy	21
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+//====== Ace
+Item
+{
+	Text /Intern/Team1s
+	Font VSmallF
+	pos 300 400 Left Center
+	ShrinkToMaxPixel 50
+}
+
+Item
+{
+	Text /Intern/Team2s
+	Font VSmallF
+	pos 400 400 Left Center
+	ShrinkToMaxPixel 50
+}
+
+Item
+{
+	Text /$ts1/Ace
+	Font BigF
+	pos 299 395 Right Center
+}
+
+Item
+{
+	Text /$ts2/Ace
+	Font BigF
+	pos 499 395 Right Center
+}
+
+//====== DoubleFault
+
+Item
+{
+	Text /Intern/Team1s
+	Font VSmallF
+	pos 458 260 Left Center
+	ShrinkToMaxPixel 50
+}
+
+Item
+{
+	Text /Intern/Team2s
+	Font VSmallF
+	pos 530 260 Left Center
+	ShrinkToMaxPixel 50
+}
+
+Item
+{
+	Text /$ts1/DoubleFault
+	Font BigF
+	pos 455 255 Right Center
+}
+
+Item
+{
+	Text /$ts2/DoubleFault
+	Font BigF
+	pos 528 255 Right Center
+}
+
+//====== 1stServe
+add y dy
+
+Item
+{
+	Text /$ts1/1stServe
+	Font StatLabelF
+	pos 130 104 Right Center
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	Font StatValueF
+	pos 130 118 Right Center
+}
+
+//====== Win1stServe
+add y dy
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatLabelF
+	pos 315 104 Right Center
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValueF
+	pos 315 118 Right Center
+}
+
+//====== Win2ndServe
+add y dy
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatLabelF
+	pos 500 104 Right Center
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValueF
+	pos 500 118 Right Center
+}
+
+item
+{
+   Image Ico/Cordoba/HideStat 598 350
+   Pos 0 -70.5
+}
+
+add y dy
+add y dy
+add y dy
+
+//====== BreakPoint
+add y dy
+
+Item
+{
+	Text /$ts1/BreakPoint
+	Font SmallF
+	pos 312 246 Right Center
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	Font SmallF
+	pos 312 259 Right Center
+}

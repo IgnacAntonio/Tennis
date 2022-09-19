@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 0 18 5// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Reginald Wesley | Milos Raonic

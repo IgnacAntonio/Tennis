@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 21 32 23.5	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Megyaem | Janowicz
+
+HandBounce: -41.4 -22.0 84.1 0.381 0.307 -0.872

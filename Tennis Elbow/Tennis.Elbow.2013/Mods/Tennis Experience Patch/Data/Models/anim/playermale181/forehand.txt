@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 25.0 25.0
+Speed: 0.0
+
+Author: Nico75 | classic

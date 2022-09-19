@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 50.0 50.0 20.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | Gael Monfils

@@ -1,0 +1,6 @@
+Anim: Service.x
+Info: 61.0 61.0 36.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Kei Nishikori
+
+

@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 106.0 106.0 78.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Milos Raonic
+

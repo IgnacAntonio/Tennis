@@ -1,0 +1,360 @@
+Include Cordoba_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	EdgeS 2
+def	dy	31
+
+def	xtl	xc
+
+item
+{
+	Invisible
+	OnAction
+	{
+		SetCfg $ts1 $StatTeam1Set$1 !OnEnter
+		SetCfg $ts2 $StatTeam2Set$1 !OnEnter
+	}
+}
+
+Item
+{
+	Text SCB_Statistics
+	ShowIf /Intern/MatchBoardSet 0 5
+	Font SummaryF
+	pos xr-65 15 Left Center
+}
+
+Item
+{
+	Text SCB_Match
+	ShowIf /Intern/MatchBoardSet 0
+	Font SummaryF
+	pos xr-65 38 Left Center
+}
+
+Item
+{
+	Text SCB_1stSet
+	ShowIf /Intern/MatchBoardSet 1
+	Font SummaryF
+	pos xr-65 38 Left Center
+}
+
+Item
+{
+	Text SCB_2ndSet
+	ShowIf /Intern/MatchBoardSet 2
+	Font SummaryF
+	pos xr-65 38 Left Center
+}
+
+Item
+{
+	Text SCB_3rdSet
+	ShowIf /Intern/MatchBoardSet 3
+	Font SummaryF 
+	pos xr-65 38 Left Center
+}
+
+Item
+{
+	Text SCB_4thSet
+	ShowIf /Intern/MatchBoardSet 4
+	Font SummaryF 
+	pos xr-65 38 Left Center
+}
+
+Item
+{
+	Text SCB_5thSet
+	ShowIf /Intern/MatchBoardSet 5
+	Font SummaryF 
+	pos xr-65 38 Left Center
+}
+
+//================================= Online level
+//add y -dy 0.30
+add y -dy 0.90
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xl y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam1/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xr y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam2/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT2 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT2 0 10000
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO /StatTeam1/Elo /StatTeam1/EloNbGame
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item
+{
+	Text NW_ELO /StatTeam2/Elo /StatTeam2/EloNbGame
+	Pos xr y Center Center
+
+	Font VSmallF
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y -dy 0.30
+
+
+//================================= Time & Names
+Item
+{
+	Text /$ts1/PrTime
+	Font TimeF
+	pos xr+60 56 Right Center
+	add y dy
+}
+
+Item
+{
+	Text /Intern/Team1ss
+	Font Name2F
+	pos xl-70 245 Left Center
+	ShrinkToMaxPixel 100
+}
+
+Item
+{
+	Text /Intern/Team2ss
+	Font Name2F
+	pos xr-70 245 Left Center
+	ShrinkToMaxPixel 100
+}
+
+Item
+{
+	Text /Intern/Team1Entry
+	Font NameF
+	pos xl-70 265 Left Center
+	ShrinkToMaxPixel 130
+}
+
+Item
+{
+	Text /Intern/Team2Entry
+	Font NameF
+	pos xr-70 265 Left Center
+	ShrinkToMaxPixel 130
+	add y dy
+}
+
+item
+{
+	Text SCB_Seed01 /WorldTour_p1/Seed+1
+	Pos xl-70 290 Left Center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /WorldTour_p1/Seed -1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+item
+{
+	Text SCB_Seed01 /TrainingClub_p1/Rank
+	Pos xl-70 290 Left Center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIfNot /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /TrainingClub_p1/Rank 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+item
+{
+	Text SCB_CountryRank /InGame_p1/Country3L /InGame_p1/RankS 
+	Pos xl-45 290 Left Center
+	Font CountryF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreRankCountryX
+	}
+}
+
+item
+{
+	Text SCB_CountryRank /TrainingClub_p1/Country3L /InGame_p1/RankS 
+	Pos xl-45 290 Left Center
+	Font CountryF
+	ShrinkToMaxPixel 100
+	ShowIfNot /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreRankCountryX
+	}
+}
+
+//================================= Score
+Item
+{
+	Text EOM_Retired
+	pos xl+70 245 Right Center
+	Font SmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos xl+70 245 Right Center
+	Font VSmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_Retired
+	pos xr+70 245 Right Center
+	Font SmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos xr+70 245 Right Center
+	Font VSmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text /$ts1/PrScore
+	Font ScoreF
+	pos xtl 56
+	add y 8
+}
+
+//============================== Stats
+
+add y dy	0.2
+
+Item
+{
+	SubMenuIf /Intern/StatPage 0 0 Cordoba_MatchStatBoardSub1
+	Pos 0 y
+}
+
+
+def	IcoS	16
+def	xr	FrameW 0.99
+
+add y dy	8.5
+
+

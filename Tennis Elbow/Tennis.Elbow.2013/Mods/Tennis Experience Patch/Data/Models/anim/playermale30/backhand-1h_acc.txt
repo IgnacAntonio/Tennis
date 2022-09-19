@@ -1,0 +1,6 @@
+Anim: BackHand-1H_acc.x
+Info: 35.0 35.0 // Hit ball - Max Extension
+Speed: 1.0
+Acceleration: backhand-1h_acc
+
+Author: Reginald Wesley | Dominic Thiem

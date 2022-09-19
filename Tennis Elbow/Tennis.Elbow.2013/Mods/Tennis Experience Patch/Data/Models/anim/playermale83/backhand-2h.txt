@@ -1,0 +1,4 @@
+Anim: BackHand-2H.x
+Info: 29.0 29.0
+Speed: 1.0
+Author: Unknown | Dolgopolov

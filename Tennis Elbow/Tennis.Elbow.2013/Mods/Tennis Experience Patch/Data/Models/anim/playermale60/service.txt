@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 59.0 59.0 37.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Megyaem & Emmainf | Berlocq
+
+SweetSpot: -10.7 -23.0 248.0 0.052 -0.078 0.996
+HandThrow: -33.7 -13.3 202.0 0.103 0.751 0.652

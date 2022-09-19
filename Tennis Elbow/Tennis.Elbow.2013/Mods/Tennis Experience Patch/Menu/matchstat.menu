@@ -1,0 +1,392 @@
+Include Menu.Def
+Include Hud.def
+Include ListOfHuds.def
+
+
+def	yo	435
+
+FontSize	Default 15 21
+FontSize	Selected 18 24
+
+Background #Game
+
+item
+{
+	Invisible
+	OnAction
+	{
+		SetCfg /Intern/SectionMode InGame !OnEnter
+		UpdateStats !OnEnter
+	}
+}
+
+// HUD'S DEFAULT
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DEF HUD_DEF MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CHGR HUD_CHGR CHGR_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_WC18 HUD_WC18 WC18_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_LAVERCUP HUD_LAVERCUP LAVERCUP_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ITF25S HUD_ITF25S ITF25S_MatchStatBoard
+}
+
+// HUD'S GRAND SLAMS
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_WIM HUD_WIM WIM_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_RG HUD_RG RG_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_USO HUD_USO USO_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_AO12 HUD_AO12 AO12_MatchStatBoard
+}
+
+// HUD'S CATEGORIES
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DAVISCUP HUD_DAVISCUP DAVIS_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATPWTF HUD_ATPWTF ATPWTF_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATP1000 HUD_ATP1000 A1000_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATP500 HUD_ATP500 A500_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATP250 HUD_ATP250 A250_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_OLYMPICS HUD_OLYMPICS OLYMPICS_MatchStatBoard
+}
+
+// HUD'S MASTERS 1000
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_IWELLS HUD_IWELLS IWELLS_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MIAMI HUD_MIAMI MIAMI_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MCARLO HUD_MCARLO MCARLO_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MADRID HUD_MADRID MADRID_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ROMA HUD_ROMA ROMA_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CANADA HUD_CANADA CANADA_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CINCINNATI HUD_CINCINNATI CINCINNATI_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_SHANGHAI HUD_SHANGHAI SHANGHAI_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_PARISBERCY HUD_PARISBERCY PARISBERCY_MatchStatBoard
+}
+
+// HUD'S ATP 500
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ROTTERDAM HUD_ROTTERDAM ROTTERDAM_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DUBAI HUD_DUBAI DUBAI_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BEIJING HUD_BEIJING BEIJING_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_TOKYO HUD_TOKYO TOKYO_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BASEL HUD_BASEL BASEL_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_HAMBURG HUD_HAMBURG HAMBURG_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BARCELONA HUD_BARCELONA BARCELONA_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ACAPULCO HUD_ACAPULCO ACAPULCO_MatchStatBoard
+}
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_RIO HUD_RIO RIO_MatchStatBoard
+}
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_WASHINGTON HUD_WASHINGTON WASHINGTON_MatchStatBoard
+}
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_LONDON HUD_LONDON LONDON_MatchStatBoard
+}
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_VIENNE HUD_VIENNE VIENNE_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_HALLE HUD_HALLE HALLE_MatchStatBoard
+}
+
+// HUD'S ATP 250
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_OEIRAS HUD_OEIRAS OEIRAS_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DOHA HUD_DOHA DOHA_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BAIRES HUD_BAIRES BAIRES_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATLANTA HUD_ATLANTA ATLANTA_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BRISBANE HUD_BRISBANE BRISBANE_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BUCHAREST HUD_BUCHAREST BUCHAREST_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DBEACH HUD_DBEACH DBEACH_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_GENEVE HUD_GENEVE GENEVE_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_KLUMPUR HUD_KLUMPUR KLUMPUR_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MARSEILLE HUD_MARSEILLE MARSEILLE_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_METZ HUD_METZ METZ_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MONTPELLIER HUD_MONTPELLIER MONTPELLIER_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MOSCOW HUD_MOSCOW MOSCOW_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MUNICH HUD_MUNICH MUNICH_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_NEWPORT HUD_NEWPORT NEWPORT_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_WSALEM HUD_WSALEM WSALEM_MatchStatBoard
+}
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_SOFIA HUD_SOFIA SOFIA_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_BASTAD HUD_BASTAD BASTAD_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_NICE HUD_NICE NICE_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_STUTTGART HUD_STUTTGART STUTTGART_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_TOPSHELF HUD_TOPSHELF TOPSHELF_MatchStatBoard
+}
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CORDOBA HUD_CORDOBA CORDOBA_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_AUCKLAND HUD_AUCKLAND AUCKLAND_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_CROATIE HUD_CROATIE CROATIE_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_STOCKHOLM HUD_STOCKHOLM STOCKHOLM_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_STPETERSBURG HUD_STPETERSBURG STPETERSBURG_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_SAOPAULO HUD_SAOPAULO SAOPAULO_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_SYDNEY HUD_SYDNEY SYDNEY_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_ISTANBUL HUD_ISTANBUL ISTANBUL_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_SHENZHEN HUD_SHENZHEN SHENZHEN_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_CABOS HUD_CABOS CABOS_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_NOTTIN HUD_NOTTIN NOTTIN_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_CASABLANCA HUD_CASABLANCA CASABLANCA_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_CHENNAI HUD_CHENNAI CHENNAI_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_KITZBUL HUD_KITZBUL KITZBUL_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_HOUSTON HUD_HOUSTON HOUSTON_MatchStatBoard
+}
+
+item
+{
+    SubMenuIf /Intern/SelectedHUD HUD_GSTAAD HUD_GSTAAD GSTAAD_MatchStatBoard
+}
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MEMPHIS HUD_MEMPHIS MEMPHIS_MatchStatBoard
+}
+
+item
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ANTWERP HUD_ANTWERP ANTWERP_MatchStatBoard
+}
+
+Font	Bg		HugeChars 18 24 0xBFFFFFFF 0 Circle Left Up
+
+def	yh	yo
+add	yh	-38
+def	bh	470
+add	bh	-yh
+
+item
+{
+	Image Menu/Bar01 260 bh Rounded
+	Pos 190 yh
+	Font Bg
+}
+
+
+item
+{
+	Text Ok
+	Pos 320 yo
+	OnAction
+	{
+		MenuBack
+	}
+	Selected
+	DefaultBack
+}

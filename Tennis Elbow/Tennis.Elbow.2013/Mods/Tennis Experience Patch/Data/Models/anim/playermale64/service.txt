@@ -1,0 +1,8 @@
+Anim: Service.x
+Info: 56 56 29.0	
+
+SweetSpot: 16.1 -14.7 244.4 -0.103 0.053 0.993
+HandThrow: -14.3 -15.5 169.4 0.156 0.225 0.962
+
+Author: megyaem | Monfils
+

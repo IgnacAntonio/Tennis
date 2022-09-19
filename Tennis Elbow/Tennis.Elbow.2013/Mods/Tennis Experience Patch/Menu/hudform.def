@@ -1,0 +1,23 @@
+Background #PreviousMenu
+
+def	bw	40
+def	bh	7
+
+def	cw	7
+def	ch	7
+
+def	y	bh	0.675
+def	dy	bh	1.40
+
+def	xl	cw
+add xl	1
+add	bw	-xl
+
+def dw cw
+add dw bw 1.15
+def dh bh 1.9
+add dh dy
+
+def	xr	-xl
+
+Font	IcoF	HugeChars 6 8 0xFFFFFFFF 0 Center Top

@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 60 80.0 35	// Hit ball - Max Extension - Throw Ball
+
+Author: Tennis Experience | Krajinovic

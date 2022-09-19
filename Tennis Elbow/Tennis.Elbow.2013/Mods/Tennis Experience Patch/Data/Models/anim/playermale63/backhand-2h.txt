@@ -1,0 +1,4 @@
+Anim: Backhand-2h.x
+Info: 22.0 22.0
+Speed: 1.0
+Author: Rharm | Bublik

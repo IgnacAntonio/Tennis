@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 60.00 60.00 30.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Rharm | Evans

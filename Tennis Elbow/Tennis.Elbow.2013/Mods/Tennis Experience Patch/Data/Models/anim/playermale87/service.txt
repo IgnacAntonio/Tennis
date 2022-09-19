@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 81.5 81.5 49.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Shapovalov

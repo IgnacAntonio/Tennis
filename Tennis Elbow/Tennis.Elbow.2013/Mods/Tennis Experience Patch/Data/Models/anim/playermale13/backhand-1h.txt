@@ -1,0 +1,5 @@
+Anim: BackHand-1H.x
+Info: 26 26	// Hit ball - Max Extension
+Speed: 1.0
+Author: Emmainf | Berlocq v1
+Acceleration : backhand-1h_acc

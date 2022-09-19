@@ -1,0 +1,7 @@
+Anim: ServiceWaiting.x
+Info: 10 31 48 35 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+HandBounce: -9.3 -40.6 76.7 0.455 0.427 -0.781
+
+Author: Lucian Cucuteanu
+//Player: Novak Djokovic

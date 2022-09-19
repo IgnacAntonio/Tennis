@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 47 67 24	// Hit ball - Max Extension - Throw Ball
+
+Author: Tennis Experience | McDonald

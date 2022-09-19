@@ -1,0 +1,6 @@
+Anim: BackHand-1H.x
+Info: 25.0 25.0 // Hit ball - Max Extension
+Speed: 1.0
+Acceleration: backhand-1h_Acc
+
+Author: Lucian Cucuteanu | Federer v3

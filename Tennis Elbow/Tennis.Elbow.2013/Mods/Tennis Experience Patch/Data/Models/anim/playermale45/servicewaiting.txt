@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 16 31 19// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | Venus Williams
+
+HandBounce: -6.9 -6.5 75.1 0.471 -0.100 -0.876

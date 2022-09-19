@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 86.0 86.0 56.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Kyle Edmund
+

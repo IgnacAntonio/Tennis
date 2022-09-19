@@ -1,0 +1,5 @@
+Anim: forehand.x
+Info : 31.0 31.0
+Speed : 1.0 
+
+Author: Nico | John Millman

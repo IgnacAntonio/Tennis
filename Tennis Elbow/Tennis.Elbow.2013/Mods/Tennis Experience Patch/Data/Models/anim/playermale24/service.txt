@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 95.0 95.0 70.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Neeky McDeez | McEnroe
+
+SweetSpot: 23.2 -19.8 238.4 0.171 -0.312 0.935
+HandThrow: -13.7 85.7 107.2 0.007 0.774 0.633

@@ -1,0 +1,196 @@
+Include USO_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	0
+def	dy	32
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+//====== Short Rally Length
+Item
+{
+	Text ShortRallyWon2 /Intern/ShortRallyLength+1
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/ShortRallyWon
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/ShortRallyWon
+	Font StatValueF
+	pos xr y
+}
+
+//====== Medium Rally Length
+Item
+{
+	Text MediumRallyWon2 /Intern/ShortRallyLength+1 /Intern/MediumRallyLength
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MediumRallyWon
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/MediumRallyWon
+	Font StatValueF
+	pos xr y
+}
+
+//====== Long Rally Length
+Item
+{
+	Text LongRallyWon2 /Intern/MediumRallyLength
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/LongRallyWon
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/LongRallyWon
+	Font StatValueF
+	pos xr y
+}
+
+ //====== Set Point Saved
+Item
+{
+	Text SetPointSaved2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/SetPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/SetPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Match Point Saved
+Item
+{
+	Text MatchPointSaved2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MatchPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/MatchPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Win1stServe
+Item
+{
+	Text Win1stServe2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValueF
+	pos xr y
+}
+
+//====== Win2ndServe
+Item
+{
+	Text Win2ndServe2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValueF
+	pos xr y
+}

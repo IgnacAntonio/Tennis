@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 87.0 87.0 52.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | David Nalbandian

@@ -1,0 +1,7 @@
+Anim: ForeHand_acc.x
+Info: 36.00 36.00
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Reginald Wesley | Roger Federer

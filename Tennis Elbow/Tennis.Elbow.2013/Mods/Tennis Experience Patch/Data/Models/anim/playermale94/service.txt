@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 83.00 83.00 58.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Stefan Edberg

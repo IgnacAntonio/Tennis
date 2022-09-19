@@ -1,0 +1,6 @@
+Anim: Service.x
+Info: 84.48 84.48 47.0	// Hit ball - Max Extension - Throw Ball
+Author: Neeky McDeez | Del Potro v2
+
+SweetSpot: 7.9 -3.6 246.5 0.368 0.373 0.851
+HandThrow: 1.9 16.8 147.1 -0.691 0.214 0.691

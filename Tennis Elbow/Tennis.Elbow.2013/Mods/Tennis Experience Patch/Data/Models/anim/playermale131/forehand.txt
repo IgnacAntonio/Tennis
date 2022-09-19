@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 32.0 32.0
+Speed: 1.0
+
+Author: Davide Menez | Novak Djokovic

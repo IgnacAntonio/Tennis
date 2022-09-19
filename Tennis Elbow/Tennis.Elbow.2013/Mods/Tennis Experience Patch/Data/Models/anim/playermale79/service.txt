@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 68 68 39.7	// Hit ball - Max Extension - Throw Ball
+
+
+
+
+Author: emmainf | schwartzman

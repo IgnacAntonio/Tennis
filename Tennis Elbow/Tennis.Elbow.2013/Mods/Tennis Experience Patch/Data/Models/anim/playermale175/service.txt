@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 102 102 68	// Hit ball - Max Extension - Throw Ball
+
+Author: Tennis Experience | Fransisco Cerundolo

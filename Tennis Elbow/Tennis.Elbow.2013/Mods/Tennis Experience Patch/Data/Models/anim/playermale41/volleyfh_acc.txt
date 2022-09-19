@@ -1,0 +1,4 @@
+Anim: VolleyFH_acc.x
+Info: 20.0 20.0
+
+Author: Lucian Cucuteanu | Novak Djokovic

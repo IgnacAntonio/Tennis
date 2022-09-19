@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 34.5 34.5 17.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -2.3 -18.7 244.3 0.766 0.253 0.591
+HandThrow: -25.6 -59.0 148.9 -0.197 0.310 0.930
+
+Author: Neeky McDeez | Dolgopolov

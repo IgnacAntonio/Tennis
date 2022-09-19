@@ -1,0 +1,330 @@
+Include SideOptions.def
+
+Font	BgF		HugeChars 18 24 0x7F000000 0 Circle Left Up Shadow LH1.15
+
+FontSize	Default		14 18
+FontSize	Selected	15 20
+
+def Vw	100
+def Vh	25
+
+def	dy	25
+
+add	y -10
+
+item
+{
+	SubMenu MenuSet01 10
+}
+
+
+//========================== Fx Volume
+item
+{
+	Text Fx
+	Pos x1 y Right
+}
+
+item
+{
+	CheckButton On Off
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Sound/SoundOn !Apply
+	}
+}
+
+
+item
+{
+	Text FxVol
+	Pos x1 y Right
+}
+
+item
+{
+	Image Ico/VolumeBar Vw Vh
+	Pos x2 y Left Center
+	Font BgF
+}
+
+item
+{
+	Image Ico/VolumeBar %Vw Vh
+	SlideButton #Image
+
+	Pos x2 y Left Center
+	Add y dy
+	OnAction
+	{
+		SlideCfg /Sound/FxVolume 0.0 1.0 16
+		UpdateFxVolume
+	}
+}
+
+
+//========================== FX Frequency
+item
+{
+	Text FxFreq
+	Pos x1 y Right
+}
+
+item
+{
+	Text Hertz /Sound/Frequency
+	CycleButton #None
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		NumberCfg /Sound/Frequency 11025 22050 44100 !Apply
+	}
+}
+
+
+//========================== FX Bits
+item
+{
+	Text FxBit
+	Pos x1 y Right
+}
+
+item
+{
+	CycleButton #Num
+	Pos x2 y Left
+	Add y dy
+	OnAction
+	{
+		ToggleCfg /Sound/NbBits 8 16 !Apply
+	}
+}
+
+
+//========================== Music
+item
+{
+	Text Music
+	Add y dy 0.35
+	Pos x1 y Right
+}
+
+item
+{
+	CheckButton On Off
+	Pos x2 y Left
+	Add y dy
+	OnAction
+	{
+		ToggleCfg /Sound/MusicOn !Apply
+	}
+}
+
+
+item
+{
+	Text MusVol
+	Pos x1 y Right
+}
+
+item
+{
+	Image Ico/VolumeBar Vw Vh
+	Pos x2 y Left Center
+	Font BgF
+}
+
+item
+{
+	//SlideButton #%
+	Image Ico/VolumeBar %Vw Vh
+	SlideButton #Image
+
+	Pos x2 y Left Center
+	Add y dy
+	OnAction
+	{
+		SlideCfg /Sound/MusicVolume 0.0 1.0 16
+		UpdateMusicVolume
+	}
+}
+
+//========================== Grunt
+item
+{
+	Text Grunt:
+	Add y dy 0.35
+	Pos x1 y Right
+}
+
+/*item
+{
+	CheckButton On Off
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Sound/GruntVolume 0 1
+		UpdateFxVolume
+	}
+}*/
+
+def	Vw	Vw 0.5
+def	Vh	Vh 0.75
+
+item
+{
+	Image Ico/VolumeBar Vw Vh
+	Pos x2 y Left Center
+	Font BgF
+}
+
+item
+{
+	Image Ico/VolumeBar %Vw Vh
+	SlideButton #Image
+
+	Pos x2 y Left Center
+	Add y dy
+	OnAction
+	{
+		SlideCfg /Sound/GruntVolume 0.0 1.0 16
+		UpdateFxVolume
+	}
+}
+
+//========================== Crowd
+item
+{
+	Text Crowd:
+	Add y dy 0.35
+	Pos x1 y Right
+}
+
+item
+{
+	Image Ico/VolumeBar Vw Vh
+	Pos x2 y Left Center
+	Font BgF
+}
+
+item
+{
+	Image Ico/VolumeBar %Vw Vh
+	SlideButton #Image
+
+	Pos x2 y Left Center
+	Add y dy
+	OnAction
+	{
+		SlideCfg /Sound/CrowdVolume 0.0 1.0 16
+		UpdateFxVolume
+	}
+}
+
+//========================== SOUNDPACK Selector
+item
+{
+	Text SoundP
+	Add y dy 0.35
+	Pos x1 y Right
+}
+
+
+item SoundpCode
+{
+	CycleButton #Text
+	Pos x2 y  Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Sound/CourtBaseSound 101 229 16
+	}
+
+	ShrinkToMaxPixel MaxR
+}
+
+//========================== AnnLang
+def x3		400
+Add y dy 0.35
+
+item
+{
+	Text AnnLang
+	Pos x1 y Right
+}
+
+
+item AnnLg
+{
+	CycleButton #Text
+	Pos x3 y// Left
+	Add y dy
+	OnAction
+	{
+		SlideCfg /Sound/AnnLang -1 4
+	}
+}
+
+//========================== Fault Announce
+item
+{
+	Text FaultAnnounce
+	Pos x1 y Right
+}
+
+
+item FaultAnnounce
+{
+	CycleButton #Text
+	Pos x3 y// Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Sound/FaultOnSameSide 0 1
+	}
+}
+
+
+item
+{
+	Text Default
+	Add y dy 0.5
+	Pos 320 y Center
+	//Add y dy
+	OnAction
+	{
+		SetCfg /Sound/SoundOn 1 !Apply
+		SetCfg /Sound/FxVolume 0.75
+		SetCfg /Sound/Frequency 22050 !Apply
+		SetCfg /Sound/NbBits 16 !Apply
+		SetCfg /Sound/MusicOn 1 !Apply
+		SetCfg /Sound/MusicVolume 0.625
+		SetCfg /Sound/AnnLang -1
+		UpdateFxVolume
+		UpdateMusicVolume
+	}
+}
+
+
+item
+{
+	Text Apply
+	Font Apply
+	Pos 500 y Center
+	OnAction
+	{
+		RestartSound
+		Apply
+	}
+}
+
+include DefaultBack.def

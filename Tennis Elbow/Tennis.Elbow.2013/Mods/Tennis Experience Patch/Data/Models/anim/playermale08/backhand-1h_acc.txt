@@ -1,0 +1,6 @@
+Anim: BackHand-1H_Acc.x
+Info: 28.0 28.0 // Hit ball - Max Extension
+Speed: 1.0
+
+//Player: Roger Federer
+//Author: Lucian Cucuteanu

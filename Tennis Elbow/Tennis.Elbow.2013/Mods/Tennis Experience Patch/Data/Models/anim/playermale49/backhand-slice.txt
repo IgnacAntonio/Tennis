@@ -1,0 +1,5 @@
+Anim: BackHand-Slice.x
+Info: 23.00 23.00		// Hit ball - Max Extension
+Speed: 1.0
+
+Author: Reginald Wesley | Alexander Zverev

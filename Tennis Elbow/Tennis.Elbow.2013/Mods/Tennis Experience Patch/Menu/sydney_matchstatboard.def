@@ -1,0 +1,40 @@
+Include Menu.Def
+
+def	FrameX	100
+def	FrameY	30
+
+def	FrameW	450
+def	FrameH	350
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		AvantBold 18 18 0xFFFFFFFF 0
+Font	SmallF		Avant 	  13 13 0xFFFFFFFF 0 Center Center Shadow0
+Font	VSmallF		AvantBold 9 9 0xFFFFFFFF 0
+Font	IcoF		AvantBold 9 9 0xFFFFFFFF 0
+Font	NetF		AvantBold 10 10 0xFFFFFFFF 0x2F000000 Right Bottom
+
+// font for the summary
+Font	SummaryF	AvantBold 20 20 0xFF93D41D 0 Shadow0
+// font for the score
+Font	ScoreF		AvantBold 10 10 0xFFFFFFFF 0 Shadow0
+// font for the names
+Font	NameF 		AvantBold 12 12 0xFFFFFFFF 0 Center Center Shadow0
+// font for the time
+Font	TimeF 		AvantBold 9 9 0xFFB2B2B2 0 Center Center Shadow0
+// font for the time
+Font	MatchTimeF 	AvantBold 9 9 0xFFB2B2B2 0 Center Center Shadow0
+// font for the stats (label)
+Font	StatLabelF 	Avant 11 11 0xFFFFFFFF 0 Center Center Shadow0
+// font for the stats (value)
+Font	StatValueF 	AvantBold 12 12 0xFF93D41D 0 Center Center Shadow0

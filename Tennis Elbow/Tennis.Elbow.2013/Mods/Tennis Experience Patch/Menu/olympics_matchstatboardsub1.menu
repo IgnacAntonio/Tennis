@@ -1,0 +1,173 @@
+Include OLYMPICS_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	0
+def	dy	23
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+
+ //====== Ace
+Item
+{
+	Text Ace
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Ace
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Ace
+	Font StatValueF
+	pos xr y
+}
+
+//====== DoubleFault
+Item
+{
+	Text DoubleFault
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/DoubleFault
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/DoubleFault
+	Font StatValueF
+	pos xr y
+}
+
+//====== 1stServe
+Item
+{
+	Text 1stServe4
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/1stServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	Font StatValueF
+	pos xr y
+}
+
+//====== Errors
+Item
+{
+	Text Unforced
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/UnforcedError
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/UnforcedError
+	Font StatValueF
+	pos xr y
+}
+
+//====== BreakPoint
+Item
+{
+	Text BreakPoint3
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/BreakPoint
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	Font StatValueF
+	pos xr y
+}
+
+//====== Winners
+Item
+{
+	Text Winners4
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Winner
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Winner
+	Font StatValueF
+	pos xr y
+}

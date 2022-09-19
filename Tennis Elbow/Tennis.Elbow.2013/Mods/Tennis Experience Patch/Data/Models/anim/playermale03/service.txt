@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 30.0 30.0 15.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -3.7 -14.2 246.1 0.262 -0.021 0.965
+HandThrow: -19.6 -30.8 185.0 -0.077 0.524 0.848
+
+Author: TE Vanilla | Nadal

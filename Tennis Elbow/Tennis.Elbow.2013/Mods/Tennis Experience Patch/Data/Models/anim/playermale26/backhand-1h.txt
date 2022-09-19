@@ -1,0 +1,7 @@
+Anim: BackHand-1H.x
+Info: 25.0 25.0	// Hit ball - Max Extension
+Speed: 1.0
+Acceleration: BackHand-1h_acc.x
+
+
+Author: Emmacabj | Dominic Thiem

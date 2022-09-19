@@ -1,0 +1,459 @@
+Include SideOptions.def
+
+def x1		340
+def x2		450
+def x3		320
+
+def	MaxR	Sx3
+add	MaxR	-x1
+add	MaxR	-10
+
+FontSize Default	14 18
+FontSize Selected	16 20
+
+def	dy	30
+
+add	y	-12
+
+item
+{
+	OnEnter
+	Invisible
+
+	OnAction
+	{
+		GetMatchLogName /Intern/MatchLog /WT_Intern/InWT
+	}
+}
+
+item
+{
+	OnExit !Real
+	Invisible
+
+		OnAction
+	{
+		SetCfg /Intern/SelectedHUD /Menu/SelectedHUD
+	}
+}
+
+item
+{
+	SubMenu MenuSet01 12
+}
+
+
+//========================== Language
+item
+{
+	Text Language
+	Pos x1 y Right
+}
+
+item Lang
+{
+	Text /Game/Language
+//	SlideButton #None
+	Pos x2 y
+	Add y dy
+
+	OnAction
+	{
+		StringCfg /Game/Language 11 !Cycle
+	}
+
+	OnActionIf /WT_Intern/InWT 0
+	{
+		SetAltLanguage /Game/Language 0
+		BreakAction
+	}
+
+	OnAction
+	{
+		SetAltLanguage /Game/Language /WT_Static/WTA
+	}
+}
+
+//========================== Fps
+item
+{
+	Text Fps
+	Pos x1 y Right
+}
+
+item
+{
+	CheckButton
+	Pos x2 y// Left
+	Add y dy
+	OnAction
+	{
+		ToggleCfg /Game/DrawFps
+	}
+}
+
+
+//========================== CheckForNewVersion
+item
+{
+	Text CheckNewVersion
+	Pos x1 y Right
+
+	OnAction
+	{
+		SetCfg /Intern/CheckingBuild 1
+		//Render	// will be called by CheckNewBuild
+		Function FuncCheckNewBuild  1
+		SetCfg /Intern/CheckingBuild 0
+		Menu NewVersion /Intern/NewBuild
+	}
+
+	ShowIf /3dEngine/InBrowser 0
+}
+
+item OnceWeek
+{
+	Text OnceWeek
+	Invisible
+	ShrinkToMaxPixel MaxR
+}
+
+item
+{
+	CheckButton OnceWeek Off
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Menu/CheckNewVersion
+	}
+
+	ShrinkToMaxPixel MaxR
+	ShowIf /3dEngine/InBrowser 0
+}
+
+
+
+//========================== Ball Motion Blur
+item
+{
+	Text BallMotion
+	Pos x1 y Right
+}
+
+
+item BallMCode
+{
+	CycleButton #Text
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Game/MotionBlur 0 2
+	}
+
+	ShrinkToMaxPixel MaxR
+}
+
+//========================== SCOREBOARD Selector
+item
+{
+	Text ScoreB
+	Pos x1 y Right
+}
+
+
+item ScorebCode
+{
+	CycleButton #Text
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Menu/SelectedHUD 0 750 75
+	}
+
+	ShrinkToMaxPixel MaxR
+}
+
+
+
+//========================== MPH / KMH
+item MphOn
+{
+	Text MphOn
+	Invisible
+}
+
+item KmhOn
+{
+	Text KmhOn
+	Invisible
+}
+
+item
+{
+	Text Mph
+	Pos x1 y Right
+}
+
+item
+{
+	CheckButton MphOn KmhOn
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Game/Mph
+	}
+}
+
+//========================== NbGame
+item
+{
+	Text GamesPerSet
+	Pos x1 y Right
+}
+
+
+item
+{
+	SlideButton #Num
+	Pos x2 y// Left
+
+	OnAction
+	{
+		SlideCfg /TrainingClub/GamesPerSet 0 6
+	}
+
+	ShowIf /WT_Intern/InWT 0
+}
+
+item
+{
+	SlideButton #Num
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /WorldTour/GamesPerSet 0 6
+	}
+
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+
+//========================== Tie Break in Last Set
+item
+{
+	Text TieInLastSet
+	Pos x1 y Right
+	ShowIfNot /Menu/Adv 0
+	ShowIf /WT_Intern/InWT 0
+}
+
+
+item TieInLastSet
+{
+	CycleButton #Text
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /TrainingClub/TieInLastSet 0 2
+	}
+
+	ShowIfNot /Menu/Adv 0
+	ShowIf /WT_Intern/InWT 0
+}
+
+//==================== Show Draw after Match
+item
+{
+	Text SkillMode
+	Pos x1 y Right
+
+	ShowIfNot /Menu/Adv 0
+	ShowIf /WT_Intern/InWT 0
+}
+
+item NW_SMode
+{
+	CycleButton #Text
+	Pos x2 y
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /TrainingClub/SkillMode 0 2
+	}
+
+	ShowIfNot /Menu/Adv 0
+	ShowIf /WT_Intern/InWT 0
+}
+
+//==================== Show Draw after Match
+
+Add y dy -2
+
+item
+{
+	Text DrawAfterMatch
+	Pos x1 y Right
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+
+item DrawAfterM
+{
+	CycleButton #Text
+	Pos x2 y
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Game/DrawAfterMatch 0 3
+	}
+
+	ShrinkToMaxPixel MaxR
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+//==================== Auto Weekly Save
+item
+{
+	Text AutoWeeklySave
+	Pos x1 y Right
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+item
+{
+	CheckButton
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Game/AutoWeeklySave
+	}
+
+	ShrinkToMaxPixel MaxR
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+//==================== Weekly New
+item
+{
+	Text ShowWeeklyNews
+	Pos x1 y Right
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+item WeeklyNews
+{
+	CycleButton #Text
+	Pos x2 y// Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Game/ShowWeeklyNews 0 3
+	}
+
+	ShrinkToMaxPixel MaxR
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+//==================== View all matches
+item
+{
+	Text ViewCpuMatch
+	Pos x1 y
+	Add y dy
+
+	OnAction
+	{
+		Menu MiscViewCpuMatch
+	}
+
+	ShowIfNot /Menu/Adv 0
+	ShowIfNot /WT_Intern/InWT 0
+}
+
+
+//============================ DevMode
+item
+{
+	Text DevMode
+	Pos x1 y Right
+	ShowIfNot /Game/AllowDev 0 0
+}
+
+item
+{
+	CheckButton
+	Pos x2 y// Left
+	Add y dy
+	OnAction
+	{
+		ToggleCfg /3dEngine/DevMode
+	}
+	ShowIfNot /Game/AllowDev 0 0
+}
+
+
+//============================ Match Log
+Font	IcoF		HugeChars 12 15 0xFFFFFFFF 0 Center Top
+
+def	IcoS	32
+
+item
+{
+	Image Ico/Csv IcoS IcoS
+	HelpText MatchLog
+
+	Pos Sx2+3 Sy3-3 Left Down
+	Font IcoF
+
+	OnAction
+	{
+		SysOpen /Intern/MatchLog
+	}
+
+	ShowIfNot /Intern/MatchLog -1
+}
+
+//============================ Advanced
+item sOnOff
+{
+	Text Advanced
+	PressButton #Text
+	Pos x3 y
+	Add y dy
+
+	OnActionIf /Menu/Adv 0
+	{
+		SetCfg /Menu/Adv 0
+		Menu ConfirmAdvanced
+	}
+
+	OnActionIf /Menu/Adv 1
+	{
+		SetCfg /Menu/Adv 0
+	}
+}
+
+//========= CheckingBuild
+item
+{
+	SubMenu CheckingBuild 0
+	ShowIf /Intern/CheckingBuild 1
+	Pos 0 50
+}

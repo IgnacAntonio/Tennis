@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 20.0 20.0
+Speed: 1.0
+Author: m4n4c0r | Federer

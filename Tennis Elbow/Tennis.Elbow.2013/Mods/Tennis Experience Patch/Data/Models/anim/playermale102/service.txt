@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 57.0 57.0 32.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Fabio Fognini
+

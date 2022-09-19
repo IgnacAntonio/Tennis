@@ -1,0 +1,7 @@
+Anim: ForeHand.x
+Info: 35.00 35.00
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Reginald Wesley | Stefanos Tsitsipas

@@ -1,0 +1,6 @@
+Anim: ForeHand_acc.x
+Info: 23.00 23.00
+Speed: 1.0
+Acceleration: forehand_acc
+
+Author: Rharm | Evans

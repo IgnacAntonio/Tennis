@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 54.0 54.0 23.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Sinner

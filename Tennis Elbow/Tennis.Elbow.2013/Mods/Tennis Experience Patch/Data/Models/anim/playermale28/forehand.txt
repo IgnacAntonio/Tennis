@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 28.5 28.5
+Speed: 1.0
+Author: Neeky McDeez | Gasquet v2

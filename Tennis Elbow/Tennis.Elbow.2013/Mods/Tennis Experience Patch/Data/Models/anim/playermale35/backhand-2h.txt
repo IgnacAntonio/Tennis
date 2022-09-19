@@ -1,0 +1,6 @@
+Anim: BackHand-2H.x
+Info: 22.0 22.0
+Speed: 1.0
+Acceleration: backhand-2h_acc
+
+Author: Lucian Cucuteanu | Nadal v2

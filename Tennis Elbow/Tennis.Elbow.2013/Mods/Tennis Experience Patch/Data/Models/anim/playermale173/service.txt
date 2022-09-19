@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 60 80 41	// Hit ball - Max Extension - Throw Ball
+
+Author: Tennis Experience | Tommy Paul

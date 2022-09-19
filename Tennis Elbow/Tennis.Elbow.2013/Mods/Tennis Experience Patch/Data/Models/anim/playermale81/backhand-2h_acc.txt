@@ -1,0 +1,6 @@
+Anim: BackHand-2H_acc.x
+Info: 25.00 25.00
+Speed: 1.0
+Acceleration: backhand-2h_acc
+
+Author: Reginald Wesley | Rafael Nadal

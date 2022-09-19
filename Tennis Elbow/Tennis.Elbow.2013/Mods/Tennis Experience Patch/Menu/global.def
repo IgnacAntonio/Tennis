@@ -1,0 +1,4274 @@
+Include Menu.Def
+
+item On
+{
+	Text On
+}
+
+item Off
+{
+	Text Off
+}
+
+item SlideBar
+{
+	//Image SlideBar 64 16
+	Image Menu/Bar02 64 32 Rounded
+}
+
+
+item SlideButton
+{
+	//Image SlideButton 16 16
+	Image Menu/RoundBg01s 16 16 Rounded
+	Pos 0 0 Center Center
+}
+
+
+Font	FpsF	HugeChars 15 20 0xFF4F8FFF 0x7F000000 Circle Left Up Shadow
+
+item DrawFps
+{
+	Text #%.1f #Fps
+	Font FpsF
+	Pos 0 8
+	ShowIfNot /Game/DrawFps 0
+}
+
+
+Font	IcoF		HugeChars 18 24 0xBFFFFFFF 0 Center Up Shadow LH1.15
+def	IcoS	16
+
+item	RadioOff
+{
+	Image Ico/RadioOff IcoS IcoS
+	HelpText /Intern/RadioHelpText !ShowIfUnselectable
+
+	Pos 0 2 Center Center
+	Font IcoF
+
+	Invisible
+}
+
+item	RadioOn
+{
+	Image Ico/RadioOn IcoS IcoS
+	HelpText /Intern/RadioHelpText !ShowIfUnselectable
+
+	Pos 0 2 Center Center
+	Font IcoF
+	//Color 0xFF7F7F7F
+
+	Invisible
+}
+
+
+//======= Courts - Normal Size
+item
+{
+	HelpText Court02 !ShowIfUnselectable
+	Image Ico/Court02 IcoS IcoS
+	Invisible
+}
+
+item
+{
+	HelpText Court03 !ShowIfUnselectable
+	Image Ico/Court03 IcoS IcoS
+	Invisible
+}
+
+item
+{
+	HelpText Court04 !ShowIfUnselectable
+	Image Ico/Court04 IcoS IcoS
+	Invisible
+}
+
+item
+{
+	HelpText Court05 !ShowIfUnselectable
+	Image Ico/Court05 IcoS IcoS
+	Invisible
+}
+
+item
+{
+	HelpText Court06 !ShowIfUnselectable
+	Image Ico/Court06 IcoS IcoS
+	Invisible
+}
+
+item
+{
+	HelpText Court07 !ShowIfUnselectable
+	Image Ico/Court07 IcoS IcoS
+	Invisible
+}
+
+item
+{
+	HelpText Court08 !ShowIfUnselectable
+	Image Ico/Court08 IcoS IcoS
+	Invisible
+}
+
+item Court09
+{
+	HelpText Court09 !ShowIfUnselectable
+	Image Ico/Court09 IcoS IcoS
+}
+
+item Court10
+{
+	HelpText CustomCourt01 !ShowIfUnselectable
+	Image Ico/CustomCourt01 IcoS IcoS
+}
+
+item Court11
+{
+	HelpText CustomCourt02 !ShowIfUnselectable
+	Image Ico/CustomCourt02 IcoS IcoS
+}
+
+item Court12
+{
+	HelpText CustomCourt03 !ShowIfUnselectable
+	Image Ico/CustomCourt03 IcoS IcoS
+}
+
+item Court13
+{
+	HelpText CustomCourt04 !ShowIfUnselectable
+	Image Ico/CustomCourt04 IcoS IcoS
+}
+
+item Court14
+{
+	HelpText CustomCourt05 !ShowIfUnselectable
+	Image Ico/CustomCourt05 IcoS IcoS
+}
+
+item Court15
+{
+	HelpText CustomCourt06 !ShowIfUnselectable
+	Image Ico/CustomCourt06 IcoS IcoS
+}
+
+item Court16
+{
+	HelpText CustomCourt07 !ShowIfUnselectable
+	Image Ico/CustomCourt07 IcoS IcoS
+}
+
+item Court17
+{
+	HelpText CustomCourt08 !ShowIfUnselectable
+	Image Ico/CustomCourt08 IcoS IcoS
+}
+
+item Court18
+{
+	HelpText CustomCourt09 !ShowIfUnselectable
+	Image Ico/CustomCourt09 IcoS IcoS
+}
+
+item Court19
+{
+	HelpText CustomCourt10 !ShowIfUnselectable
+	Image Ico/CustomCourt10 IcoS IcoS
+}
+
+item Court20
+{
+	HelpText CustomCourt11 !ShowIfUnselectable
+	Image Ico/CustomCourt11 IcoS IcoS
+}
+
+item Court21
+{
+	HelpText CustomCourt12 !ShowIfUnselectable
+	Image Ico/CustomCourt12 IcoS IcoS
+}
+
+item Court22
+{
+	HelpText CustomCourt13 !ShowIfUnselectable
+	Image Ico/CustomCourt13 IcoS IcoS
+}
+
+item Court23
+{
+	HelpText CustomCourt14 !ShowIfUnselectable
+	Image Ico/CustomCourt14 IcoS IcoS
+}
+
+item Court24
+{
+	HelpText CustomCourt15 !ShowIfUnselectable
+	Image Ico/CustomCourt15 IcoS IcoS
+}
+
+item Court25
+{
+	HelpText CustomCourt16 !ShowIfUnselectable
+	Image Ico/CustomCourt16 IcoS IcoS
+}
+
+item Court26
+{
+	HelpText CustomCourt17 !ShowIfUnselectable
+	Image Ico/CustomCourt17 IcoS IcoS
+}
+
+item Court27
+{
+	HelpText CustomCourt18 !ShowIfUnselectable
+	Image Ico/CustomCourt18 IcoS IcoS
+}
+
+item Court28
+{
+	HelpText CustomCourt19 !ShowIfUnselectable
+	Image Ico/CustomCourt19 IcoS IcoS
+}
+
+item Court29
+{
+	HelpText CustomCourt20 !ShowIfUnselectable
+	Image Ico/CustomCourt20 IcoS IcoS
+}
+
+item Court30
+{
+	HelpText CustomCourt21 !ShowIfUnselectable
+	Image Ico/CustomCourt21 IcoS IcoS
+}
+
+item Court31
+{
+	HelpText CustomCourt22 !ShowIfUnselectable
+	Image Ico/CustomCourt22 IcoS IcoS
+}
+
+item Court32
+{
+	HelpText CustomCourt23 !ShowIfUnselectable
+	Image Ico/CustomCourt23 IcoS IcoS
+}
+
+item Court33
+{
+	HelpText CustomCourt24 !ShowIfUnselectable
+	Image Ico/CustomCourt24 IcoS IcoS
+}
+
+item Court34
+{
+	HelpText CustomCourt25 !ShowIfUnselectable
+	Image Ico/CustomCourt25 IcoS IcoS
+}
+
+item Court35
+{
+	HelpText CustomCourt26 !ShowIfUnselectable
+	Image Ico/CustomCourt26 IcoS IcoS
+}
+
+item Court36
+{
+	HelpText CustomCourt27 !ShowIfUnselectable
+	Image Ico/CustomCourt27 IcoS IcoS
+}
+
+item Court37
+{
+	HelpText CustomCourt28 !ShowIfUnselectable
+	Image Ico/CustomCourt28 IcoS IcoS
+}
+
+item Court38
+{
+	HelpText CustomCourt29 !ShowIfUnselectable
+	Image Ico/CustomCourt29 IcoS IcoS
+}
+
+item Court39
+{
+	HelpText CustomCourt30 !ShowIfUnselectable
+	Image Ico/CustomCourt30 IcoS IcoS
+}
+
+item Court40
+{
+	HelpText CustomCourt31 !ShowIfUnselectable
+	Image Ico/CustomCourt31 IcoS IcoS
+}
+
+item Court41
+{
+	HelpText CustomCourt32 !ShowIfUnselectable
+	Image Ico/CustomCourt32 IcoS IcoS
+}
+
+item Court42
+{
+	HelpText CustomCourt33 !ShowIfUnselectable
+	Image Ico/CustomCourt33 IcoS IcoS
+}
+
+item Court43
+{
+	HelpText CustomCourt34 !ShowIfUnselectable
+	Image Ico/CustomCourt34 IcoS IcoS
+}
+
+item Court44
+{
+	HelpText CustomCourt35 !ShowIfUnselectable
+	Image Ico/CustomCourt35 IcoS IcoS
+}
+
+item Court45
+{
+	HelpText CustomCourt36 !ShowIfUnselectable
+	Image Ico/CustomCourt36 IcoS IcoS
+}
+
+item Court46
+{
+	HelpText CustomCourt37 !ShowIfUnselectable
+	Image Ico/CustomCourt37 IcoS IcoS
+}
+
+item Court47
+{
+	HelpText CustomCourt38 !ShowIfUnselectable
+	Image Ico/CustomCourt38 IcoS IcoS
+}
+
+item Court48
+{
+	HelpText CustomCourt39 !ShowIfUnselectable
+	Image Ico/CustomCourt39 IcoS IcoS
+}
+
+item Court49
+{
+	HelpText CustomCourt40 !ShowIfUnselectable
+	Image Ico/CustomCourt40 IcoS IcoS
+}
+
+item Court50
+{
+	HelpText CustomCourt41 !ShowIfUnselectable
+	Image Ico/CustomCourt41 IcoS IcoS
+}
+
+item Court51
+{
+	HelpText CustomCourt42 !ShowIfUnselectable
+	Image Ico/CustomCourt42 IcoS IcoS
+}
+
+item Court52
+{
+	HelpText CustomCourt43 !ShowIfUnselectable
+	Image Ico/CustomCourt43 IcoS IcoS
+}
+
+item Court53
+{
+	HelpText CustomCourt44 !ShowIfUnselectable
+	Image Ico/CustomCourt44 IcoS IcoS
+}
+
+item Court54
+{
+	HelpText CustomCourt45 !ShowIfUnselectable
+	Image Ico/CustomCourt45 IcoS IcoS
+}
+
+item Court55
+{
+	HelpText CustomCourt46 !ShowIfUnselectable
+	Image Ico/CustomCourt46 IcoS IcoS
+}
+
+item Court56
+{
+	HelpText CustomCourt47 !ShowIfUnselectable
+	Image Ico/CustomCourt47 IcoS IcoS
+}
+
+item Court57
+{
+	HelpText CustomCourt48 !ShowIfUnselectable
+	Image Ico/CustomCourt48 IcoS IcoS
+}
+
+item Court58
+{
+	HelpText CustomCourt49 !ShowIfUnselectable
+	Image Ico/CustomCourt49 IcoS IcoS
+}
+
+item Court59
+{
+	HelpText CustomCourt50 !ShowIfUnselectable
+	Image Ico/CustomCourt50 IcoS IcoS
+}
+
+item Court60
+{
+	HelpText CustomCourt51 !ShowIfUnselectable
+	Image Ico/CustomCourt51 IcoS IcoS
+}
+
+item Court61
+{
+	HelpText CustomCourt52 !ShowIfUnselectable
+	Image Ico/CustomCourt52 IcoS IcoS
+}
+
+item Court62
+{
+	HelpText CustomCourt53 !ShowIfUnselectable
+	Image Ico/CustomCourt53 IcoS IcoS
+}
+
+item Court63
+{
+	HelpText CustomCourt54 !ShowIfUnselectable
+	Image Ico/CustomCourt54 IcoS IcoS
+}
+
+item Court64
+{
+	HelpText CustomCourt55 !ShowIfUnselectable
+	Image Ico/CustomCourt55 IcoS IcoS
+}
+
+item Court65
+{
+	HelpText CustomCourt56 !ShowIfUnselectable
+	Image Ico/CustomCourt56 IcoS IcoS
+}
+
+item Court66
+{
+	HelpText CustomCourt57 !ShowIfUnselectable
+	Image Ico/CustomCourt57 IcoS IcoS
+}
+
+item Court67
+{
+	HelpText CustomCourt58 !ShowIfUnselectable
+	Image Ico/CustomCourt58 IcoS IcoS
+}
+
+item Court68
+{
+	HelpText CustomCourt59 !ShowIfUnselectable
+	Image Ico/CustomCourt59 IcoS IcoS
+}
+
+item Court69
+{
+	HelpText CustomCourt60 !ShowIfUnselectable
+	Image Ico/CustomCourt60 IcoS IcoS
+}
+
+item Court70
+{
+	HelpText CustomCourt61 !ShowIfUnselectable
+	Image Ico/CustomCourt61 IcoS IcoS
+}
+
+item Court71
+{
+	HelpText CustomCourt62 !ShowIfUnselectable
+	Image Ico/CustomCourt62 IcoS IcoS
+}
+
+item Court72
+{
+	HelpText CustomCourt63 !ShowIfUnselectable
+	Image Ico/CustomCourt63 IcoS IcoS
+}
+
+item Court73
+{
+	HelpText CustomCourt64 !ShowIfUnselectable
+	Image Ico/CustomCourt64 IcoS IcoS
+}
+
+item Court74
+{
+	HelpText CustomCourt65 !ShowIfUnselectable
+	Image Ico/CustomCourt65 IcoS IcoS
+}
+
+item Court75
+{
+	HelpText CustomCourt66 !ShowIfUnselectable
+	Image Ico/CustomCourt66 IcoS IcoS
+}
+
+item Court76
+{
+	HelpText CustomCourt67 !ShowIfUnselectable
+	Image Ico/CustomCourt67 IcoS IcoS
+}
+
+item Court77
+{
+	HelpText CustomCourt68 !ShowIfUnselectable
+	Image Ico/CustomCourt68 IcoS IcoS
+}
+
+item Court78
+{
+	HelpText CustomCourt69 !ShowIfUnselectable
+	Image Ico/CustomCourt69 IcoS IcoS
+}
+
+item Court79
+{
+	HelpText CustomCourt70 !ShowIfUnselectable
+	Image Ico/CustomCourt70 IcoS IcoS
+}
+
+item Court80
+{
+	HelpText CustomCourt71 !ShowIfUnselectable
+	Image Ico/CustomCourt71 IcoS IcoS
+}
+
+item Court81
+{
+	HelpText CustomCourt72 !ShowIfUnselectable
+	Image Ico/CustomCourt72 IcoS IcoS
+}
+
+item Court82
+{
+	HelpText CustomCourt73 !ShowIfUnselectable
+	Image Ico/CustomCourt73 IcoS IcoS
+}
+
+item Court83
+{
+	HelpText CustomCourt74 !ShowIfUnselectable
+	Image Ico/CustomCourt74 IcoS IcoS
+}
+
+item Court84
+{
+	HelpText CustomCourt75 !ShowIfUnselectable
+	Image Ico/CustomCourt75 IcoS IcoS
+}
+
+item Court85
+{
+	HelpText CustomCourt76 !ShowIfUnselectable
+	Image Ico/CustomCourt76 IcoS IcoS
+}
+
+item Court86
+{
+	HelpText CustomCourt77 !ShowIfUnselectable
+	Image Ico/CustomCourt77 IcoS IcoS
+}
+
+item Court87
+{
+	HelpText CustomCourt78 !ShowIfUnselectable
+	Image Ico/CustomCourt78 IcoS IcoS
+}
+
+item Court88
+{
+	HelpText CustomCourt79 !ShowIfUnselectable
+	Image Ico/CustomCourt79 IcoS IcoS
+}
+
+item Court89
+{
+	HelpText CustomCourt80 !ShowIfUnselectable
+	Image Ico/CustomCourt80 IcoS IcoS
+}
+
+item Court90
+{
+	HelpText CustomCourt81 !ShowIfUnselectable
+	Image Ico/CustomCourt81 IcoS IcoS
+}
+
+item Court91
+{
+	HelpText CustomCourt82 !ShowIfUnselectable
+	Image Ico/CustomCourt82 IcoS IcoS
+}
+
+item Court92
+{
+	HelpText CustomCourt83 !ShowIfUnselectable
+	Image Ico/CustomCourt83 IcoS IcoS
+}
+
+item Court93
+{
+	HelpText CustomCourt84 !ShowIfUnselectable
+	Image Ico/CustomCourt84 IcoS IcoS
+}
+
+item Court94
+{
+	HelpText CustomCourt85 !ShowIfUnselectable
+	Image Ico/CustomCourt85 IcoS IcoS
+}
+
+item Court95
+{
+	HelpText CustomCourt86 !ShowIfUnselectable
+	Image Ico/CustomCourt86 IcoS IcoS
+}
+
+item Court96
+{
+	HelpText CustomCourt87 !ShowIfUnselectable
+	Image Ico/CustomCourt87 IcoS IcoS
+}
+
+item Court97
+{
+	HelpText CustomCourt88 !ShowIfUnselectable
+	Image Ico/CustomCourt88 IcoS IcoS
+}
+
+item Court98
+{
+	HelpText CustomCourt89 !ShowIfUnselectable
+	Image Ico/CustomCourt89 IcoS IcoS
+}
+
+item Court99
+{
+	HelpText CustomCourt90 !ShowIfUnselectable
+	Image Ico/CustomCourt90 IcoS IcoS
+}
+
+item Court100
+{
+	HelpText CustomCourt91 !ShowIfUnselectable
+	Image Ico/CustomCourt91 IcoS IcoS
+}
+
+item Court101
+{
+	HelpText CustomCourt92 !ShowIfUnselectable
+	Image Ico/CustomCourt92 IcoS IcoS
+}
+
+item Court102
+{
+	HelpText CustomCourt93 !ShowIfUnselectable
+	Image Ico/CustomCourt93 IcoS IcoS
+}
+
+item Court103
+{
+	HelpText CustomCourt94 !ShowIfUnselectable
+	Image Ico/CustomCourt94 IcoS IcoS
+}
+
+item Court104
+{
+	HelpText CustomCourt95 !ShowIfUnselectable
+	Image Ico/CustomCourt95 IcoS IcoS
+}
+
+item Court105
+{
+	HelpText CustomCourt96 !ShowIfUnselectable
+	Image Ico/CustomCourt96 IcoS IcoS
+}
+
+item Court106
+{
+	HelpText CustomCourt97 !ShowIfUnselectable
+	Image Ico/CustomCourt97 IcoS IcoS
+}
+
+item Court107
+{
+	HelpText CustomCourt98 !ShowIfUnselectable
+	Image Ico/CustomCourt98 IcoS IcoS
+}
+
+item Court108
+{
+	HelpText CustomCourt99 !ShowIfUnselectable
+	Image Ico/CustomCourt99 IcoS IcoS
+}
+
+item Court109
+{
+	HelpText CustomCourt100 !ShowIfUnselectable
+	Image Ico/CustomCourt100 IcoS IcoS
+}
+
+item Court110
+{
+	HelpText CustomCourt101 !ShowIfUnselectable
+	Image Ico/CustomCourt101 IcoS IcoS
+}
+
+item Court111
+{
+	HelpText CustomCourt102 !ShowIfUnselectable
+	Image Ico/CustomCourt102 IcoS IcoS
+}
+
+item Court112
+{
+	HelpText CustomCourt103 !ShowIfUnselectable
+	Image Ico/CustomCourt103 IcoS IcoS
+}
+
+item Court113
+{
+	HelpText CustomCourt104 !ShowIfUnselectable
+	Image Ico/CustomCourt104 IcoS IcoS
+}
+
+item Court114
+{
+	HelpText CustomCourt105 !ShowIfUnselectable
+	Image Ico/CustomCourt105 IcoS IcoS
+}
+
+item Court115
+{
+	HelpText CustomCourt106 !ShowIfUnselectable
+	Image Ico/CustomCourt106 IcoS IcoS
+}
+
+item Court116
+{
+	HelpText CustomCourt107 !ShowIfUnselectable
+	Image Ico/CustomCourt107 IcoS IcoS
+}
+
+item Court117
+{
+	HelpText CustomCourt108 !ShowIfUnselectable
+	Image Ico/CustomCourt108 IcoS IcoS
+}
+
+item Court118
+{
+	HelpText CustomCourt109 !ShowIfUnselectable
+	Image Ico/CustomCourt109 IcoS IcoS
+}
+
+item Court119
+{
+	HelpText CustomCourt110 !ShowIfUnselectable
+	Image Ico/CustomCourt110 IcoS IcoS
+}
+
+item Court120
+{
+	HelpText CustomCourt111 !ShowIfUnselectable
+	Image Ico/CustomCourt111 IcoS IcoS
+}
+
+item Court121
+{
+	HelpText CustomCourt112 !ShowIfUnselectable
+	Image Ico/CustomCourt112 IcoS IcoS
+}
+
+item Court122
+{
+	HelpText CustomCourt113 !ShowIfUnselectable
+	Image Ico/CustomCourt113 IcoS IcoS
+}
+
+item Court123
+{
+	HelpText CustomCourt114 !ShowIfUnselectable
+	Image Ico/CustomCourt114 IcoS IcoS
+}
+
+item Court124
+{
+	HelpText CustomCourt115 !ShowIfUnselectable
+	Image Ico/CustomCourt115 IcoS IcoS
+}
+
+item Court125
+{
+	HelpText CustomCourt116 !ShowIfUnselectable
+	Image Ico/CustomCourt116 IcoS IcoS
+}
+
+item Court126
+{
+	HelpText CustomCourt117 !ShowIfUnselectable
+	Image Ico/CustomCourt117 IcoS IcoS
+}
+
+item Court127
+{
+	HelpText CustomCourt118 !ShowIfUnselectable
+	Image Ico/CustomCourt118 IcoS IcoS
+}
+
+item Court128
+{
+	HelpText CustomCourt119 !ShowIfUnselectable
+	Image Ico/CustomCourt119 IcoS IcoS
+}
+
+item Court129
+{
+	HelpText CustomCourt120 !ShowIfUnselectable
+	Image Ico/CustomCourt120 IcoS IcoS
+}
+
+item Court130
+{
+	HelpText CustomCourt121 !ShowIfUnselectable
+	Image Ico/CustomCourt121 IcoS IcoS
+}
+
+item Court131
+{
+	HelpText CustomCourt122 !ShowIfUnselectable
+	Image Ico/CustomCourt122 IcoS IcoS
+}
+
+item Court132
+{
+	HelpText CustomCourt123 !ShowIfUnselectable
+	Image Ico/CustomCourt123 IcoS IcoS
+}
+
+item Court133
+{
+	HelpText CustomCourt124 !ShowIfUnselectable
+	Image Ico/CustomCourt124 IcoS IcoS
+}
+
+item Court134
+{
+	HelpText CustomCourt125 !ShowIfUnselectable
+	Image Ico/CustomCourt125 IcoS IcoS
+}
+
+item Court135
+{
+	HelpText CustomCourt126 !ShowIfUnselectable
+	Image Ico/CustomCourt126 IcoS IcoS
+}
+
+item Court136
+{
+	HelpText CustomCourt127 !ShowIfUnselectable
+	Image Ico/CustomCourt127 IcoS IcoS
+}
+
+item Court137
+{
+	HelpText CustomCourt128 !ShowIfUnselectable
+	Image Ico/CustomCourt128 IcoS IcoS
+}
+
+item Court138
+{
+	HelpText CustomCourt129 !ShowIfUnselectable
+	Image Ico/CustomCourt129 IcoS IcoS
+}
+
+item Court139
+{
+	HelpText CustomCourt130 !ShowIfUnselectable
+	Image Ico/CustomCourt130 IcoS IcoS
+}
+
+item Court140
+{
+	HelpText CustomCourt131 !ShowIfUnselectable
+	Image Ico/CustomCourt131 IcoS IcoS
+}
+
+item Court141
+{
+	HelpText CustomCourt132 !ShowIfUnselectable
+	Image Ico/CustomCourt132 IcoS IcoS
+}
+
+item Court142
+{
+	HelpText CustomCourt133 !ShowIfUnselectable
+	Image Ico/CustomCourt133 IcoS IcoS
+}
+
+item Court143
+{
+	HelpText CustomCourt134 !ShowIfUnselectable
+	Image Ico/CustomCourt134 IcoS IcoS
+}
+
+item Court144
+{
+	HelpText CustomCourt135 !ShowIfUnselectable
+	Image Ico/CustomCourt135 IcoS IcoS
+}
+
+item Court145
+{
+	HelpText CustomCourt136 !ShowIfUnselectable
+	Image Ico/CustomCourt136 IcoS IcoS
+}
+
+item Court146
+{
+	HelpText CustomCourt137 !ShowIfUnselectable
+	Image Ico/CustomCourt137 IcoS IcoS
+}
+
+item Court147
+{
+	HelpText CustomCourt138 !ShowIfUnselectable
+	Image Ico/CustomCourt138 IcoS IcoS
+}
+
+item Court148
+{
+	HelpText CustomCourt139 !ShowIfUnselectable
+	Image Ico/CustomCourt139 IcoS IcoS
+}
+
+item Court149
+{
+	HelpText CustomCourt140 !ShowIfUnselectable
+	Image Ico/CustomCourt140 IcoS IcoS
+}
+
+item Court150
+{
+	HelpText CustomCourt141 !ShowIfUnselectable
+	Image Ico/CustomCourt141 IcoS IcoS
+}
+
+item Court151
+{
+	HelpText CustomCourt142 !ShowIfUnselectable
+	Image Ico/CustomCourt142 IcoS IcoS
+}
+
+item Court152
+{
+	HelpText CustomCourt143 !ShowIfUnselectable
+	Image Ico/CustomCourt143 IcoS IcoS
+}
+item Court153
+{
+	HelpText CustomCourt144 !ShowIfUnselectable
+	Image Ico/CustomCourt144 IcoS IcoS
+}
+
+item Court154
+{
+	HelpText CustomCourt145 !ShowIfUnselectable
+	Image Ico/CustomCourt145 IcoS IcoS
+}
+
+item Court155
+{
+	HelpText CustomCourt146 !ShowIfUnselectable
+	Image Ico/CustomCourt146 IcoS IcoS
+}
+
+item Court156
+{
+	HelpText CustomCourt147 !ShowIfUnselectable
+	Image Ico/CustomCourt147 IcoS IcoS
+}
+
+item Court157
+{
+	HelpText CustomCourt148 !ShowIfUnselectable
+	Image Ico/CustomCourt148 IcoS IcoS
+}
+
+item Court158
+{
+	HelpText CustomCourt149 !ShowIfUnselectable
+	Image Ico/CustomCourt149 IcoS IcoS
+}
+
+item Court159
+{
+	HelpText CustomCourt150 !ShowIfUnselectable
+	Image Ico/CustomCourt150 IcoS IcoS
+}
+
+item Court160
+{
+	HelpText CustomCourt151 !ShowIfUnselectable
+	Image Ico/CustomCourt151 IcoS IcoS
+}
+
+item Court161
+{
+	HelpText CustomCourt152 !ShowIfUnselectable
+	Image Ico/CustomCourt152 IcoS IcoS
+}
+
+item Court162
+{
+	HelpText CustomCourt153 !ShowIfUnselectable
+	Image Ico/CustomCourt153 IcoS IcoS
+}
+item Court163
+{
+	HelpText CustomCourt154 !ShowIfUnselectable
+	Image Ico/CustomCourt154 IcoS IcoS
+}
+
+item Court164
+{
+	HelpText CustomCourt155 !ShowIfUnselectable
+	Image Ico/CustomCourt155 IcoS IcoS
+}
+
+item Court165
+{
+	HelpText CustomCourt156 !ShowIfUnselectable
+	Image Ico/CustomCourt156 IcoS IcoS
+}
+
+item Court166
+{
+	HelpText CustomCourt157 !ShowIfUnselectable
+	Image Ico/CustomCourt157 IcoS IcoS
+}
+
+item Court167
+{
+	HelpText CustomCourt158 !ShowIfUnselectable
+	Image Ico/CustomCourt158 IcoS IcoS
+}
+
+item Court168
+{
+	HelpText CustomCourt159 !ShowIfUnselectable
+	Image Ico/CustomCourt159 IcoS IcoS
+}
+
+item Court169
+{
+	HelpText CustomCourt160 !ShowIfUnselectable
+	Image Ico/CustomCourt160 IcoS IcoS
+}
+
+item Court170
+{
+	HelpText CustomCourt161 !ShowIfUnselectable
+	Image Ico/CustomCourt161 IcoS IcoS
+}
+
+item Court171
+{
+	HelpText CustomCourt162 !ShowIfUnselectable
+	Image Ico/CustomCourt162 IcoS IcoS
+}
+
+item Court172
+{
+	HelpText CustomCourt163 !ShowIfUnselectable
+	Image Ico/CustomCourt163 IcoS IcoS
+}
+item Court173
+{
+	HelpText CustomCourt164 !ShowIfUnselectable
+	Image Ico/CustomCourt164 IcoS IcoS
+}
+
+item Court174
+{
+	HelpText CustomCourt165 !ShowIfUnselectable
+	Image Ico/CustomCourt165 IcoS IcoS
+}
+
+item Court175
+{
+	HelpText CustomCourt166 !ShowIfUnselectable
+	Image Ico/CustomCourt166 IcoS IcoS
+}
+
+item Court176
+{
+	HelpText CustomCourt167 !ShowIfUnselectable
+	Image Ico/CustomCourt167 IcoS IcoS
+}
+
+item Court177
+{
+	HelpText CustomCourt168 !ShowIfUnselectable
+	Image Ico/CustomCourt168 IcoS IcoS
+}
+
+item Court178
+{
+	HelpText CustomCourt169 !ShowIfUnselectable
+	Image Ico/CustomCourt169 IcoS IcoS
+}
+
+item Court179
+{
+	HelpText CustomCourt170 !ShowIfUnselectable
+	Image Ico/CustomCourt170 IcoS IcoS
+}
+
+item Court180
+{
+	HelpText CustomCourt171 !ShowIfUnselectable
+	Image Ico/CustomCourt171 IcoS IcoS
+}
+
+item Court181
+{
+	HelpText CustomCourt172 !ShowIfUnselectable
+	Image Ico/CustomCourt172 IcoS IcoS
+}
+
+item Court182
+{
+	HelpText CustomCourt173 !ShowIfUnselectable
+	Image Ico/CustomCourt173 IcoS IcoS
+}
+item Court183
+{
+	HelpText CustomCourt174 !ShowIfUnselectable
+	Image Ico/CustomCourt174 IcoS IcoS
+}
+
+item Court184
+{
+	HelpText CustomCourt175 !ShowIfUnselectable
+	Image Ico/CustomCourt175 IcoS IcoS
+}
+
+item Court185
+{
+	HelpText CustomCourt176 !ShowIfUnselectable
+	Image Ico/CustomCourt176 IcoS IcoS
+}
+
+item Court186
+{
+	HelpText CustomCourt177 !ShowIfUnselectable
+	Image Ico/CustomCourt177 IcoS IcoS
+}
+
+item Court187
+{
+	HelpText CustomCourt178 !ShowIfUnselectable
+	Image Ico/CustomCourt178 IcoS IcoS
+}
+
+item Court188
+{
+	HelpText CustomCourt179 !ShowIfUnselectable
+	Image Ico/CustomCourt179 IcoS IcoS
+}
+
+item Court189
+{
+	HelpText CustomCourt180 !ShowIfUnselectable
+	Image Ico/CustomCourt180 IcoS IcoS
+}
+
+item Court190
+{
+	HelpText CustomCourt181 !ShowIfUnselectable
+	Image Ico/CustomCourt181 IcoS IcoS
+}
+
+item Court191
+{
+	HelpText CustomCourt182 !ShowIfUnselectable
+	Image Ico/CustomCourt182 IcoS IcoS
+}
+
+item Court192
+{
+	HelpText CustomCourt183 !ShowIfUnselectable
+	Image Ico/CustomCourt183 IcoS IcoS
+}
+
+item Court193
+{
+	HelpText CustomCourt184 !ShowIfUnselectable
+	Image Ico/CustomCourt184 IcoS IcoS
+}
+
+item Court194
+{
+	HelpText CustomCourt185 !ShowIfUnselectable
+	Image Ico/CustomCourt185 IcoS IcoS
+}
+
+item Court195
+{
+	HelpText CustomCourt186 !ShowIfUnselectable
+	Image Ico/CustomCourt186 IcoS IcoS
+}
+
+item Court196
+{
+	HelpText CustomCourt187 !ShowIfUnselectable
+	Image Ico/CustomCourt187 IcoS IcoS
+}
+
+item Court197
+{
+	HelpText CustomCourt188 !ShowIfUnselectable
+	Image Ico/CustomCourt188 IcoS IcoS
+}
+
+item Court198
+{
+	HelpText CustomCourt189 !ShowIfUnselectable
+	Image Ico/CustomCourt189 IcoS IcoS
+}
+
+item Court199
+{
+	HelpText CustomCourt190 !ShowIfUnselectable
+	Image Ico/CustomCourt190 IcoS IcoS
+}
+
+item Court200
+{
+	HelpText CustomCourt191 !ShowIfUnselectable
+	Image Ico/CustomCourt191 IcoS IcoS
+}
+
+item Court201
+{
+	HelpText CustomCourt192 !ShowIfUnselectable
+	Image Ico/CustomCourt192 IcoS IcoS
+}
+
+item Court202
+{
+	HelpText CustomCourt193 !ShowIfUnselectable
+	Image Ico/CustomCourt193 IcoS IcoS
+}
+
+item Court203
+{
+	HelpText CustomCourt194 !ShowIfUnselectable
+	Image Ico/CustomCourt194 IcoS IcoS
+}
+
+item Court204
+{
+	HelpText CustomCourt195 !ShowIfUnselectable
+	Image Ico/CustomCourt195 IcoS IcoS
+}
+
+item Court205
+{
+	HelpText CustomCourt196 !ShowIfUnselectable
+	Image Ico/CustomCourt196 IcoS IcoS
+}
+
+item Court206
+{
+	HelpText CustomCourt197 !ShowIfUnselectable
+	Image Ico/CustomCourt197 IcoS IcoS
+}
+
+item Court207
+{
+	HelpText CustomCourt198 !ShowIfUnselectable
+	Image Ico/CustomCourt198 IcoS IcoS
+}
+
+item Court208
+{
+	HelpText CustomCourt199 !ShowIfUnselectable
+	Image Ico/CustomCourt199 IcoS IcoS
+}
+
+item Court209
+{
+	HelpText CustomCourt200 !ShowIfUnselectable
+	Image Ico/CustomCourt200 IcoS IcoS
+}
+
+item Court210
+{
+	HelpText CustomCourt201 !ShowIfUnselectable
+	Image Ico/CustomCourt201 IcoS IcoS
+}
+
+item Court211
+{
+	HelpText CustomCourt202 !ShowIfUnselectable
+	Image Ico/CustomCourt202 IcoS IcoS
+}
+
+item Court209
+{
+	HelpText CustomCourt200 !ShowIfUnselectable
+	Image Ico/CustomCourt200 IcoS IcoS
+}
+
+item Court210
+{
+	HelpText CustomCourt201 !ShowIfUnselectable
+	Image Ico/CustomCourt201 IcoS IcoS
+}
+
+item Court211
+{
+	HelpText CustomCourt202 !ShowIfUnselectable
+	Image Ico/CustomCourt202 IcoS IcoS
+}
+item Court209
+{
+	HelpText CustomCourt200 !ShowIfUnselectable
+	Image Ico/CustomCourt200 IcoS IcoS
+}
+
+item Court210
+{
+	HelpText CustomCourt201 !ShowIfUnselectable
+	Image Ico/CustomCourt201 IcoS IcoS
+}
+
+item Court211
+{
+	HelpText CustomCourt202 !ShowIfUnselectable
+	Image Ico/CustomCourt202 IcoS IcoS
+}
+
+item Court212
+{
+	HelpText CustomCourt203 !ShowIfUnselectable
+	Image Ico/CustomCourt203 IcoS IcoS
+}
+
+item Court213
+{
+	HelpText CustomCourt204 !ShowIfUnselectable
+	Image Ico/CustomCourt204 IcoS IcoS
+}
+
+item Court214
+{
+	HelpText CustomCourt205 !ShowIfUnselectable
+	Image Ico/CustomCourt205 IcoS IcoS
+}
+
+item Court215
+{
+	HelpText CustomCourt206 !ShowIfUnselectable
+	Image Ico/CustomCourt206 IcoS IcoS
+}
+
+item Court216
+{
+	HelpText CustomCourt207 !ShowIfUnselectable
+	Image Ico/CustomCourt207 IcoS IcoS
+}
+
+item Court217
+{
+	HelpText CustomCourt208 !ShowIfUnselectable
+	Image Ico/CustomCourt208 IcoS IcoS
+}
+
+item Court218
+{
+	HelpText CustomCourt209 !ShowIfUnselectable
+	Image Ico/CustomCourt209 IcoS IcoS
+}
+
+item Court219
+{
+	HelpText CustomCourt210 !ShowIfUnselectable
+	Image Ico/CustomCourt210 IcoS IcoS
+}
+
+item Court220
+{
+	HelpText CustomCourt211 !ShowIfUnselectable
+	Image Ico/CustomCourt211 IcoS IcoS
+}
+
+item Court221
+{
+	HelpText CustomCourt212 !ShowIfUnselectable
+	Image Ico/CustomCourt212 IcoS IcoS
+}
+
+item Court222
+{
+	HelpText CustomCourt213 !ShowIfUnselectable
+	Image Ico/CustomCourt213 IcoS IcoS
+}
+
+item Court223
+{
+	HelpText CustomCourt214 !ShowIfUnselectable
+	Image Ico/CustomCourt214 IcoS IcoS
+}
+
+item Court224
+{
+	HelpText CustomCourt215 !ShowIfUnselectable
+	Image Ico/CustomCourt215 IcoS IcoS
+}
+
+item Court225
+{
+	HelpText CustomCourt216 !ShowIfUnselectable
+	Image Ico/CustomCourt216 IcoS IcoS
+}
+
+item Court226
+{
+	HelpText CustomCourt217 !ShowIfUnselectable
+	Image Ico/CustomCourt217 IcoS IcoS
+}
+
+item Court227
+{
+	HelpText CustomCourt218 !ShowIfUnselectable
+	Image Ico/CustomCourt218 IcoS IcoS
+}
+
+item Court228
+{
+	HelpText CustomCourt219 !ShowIfUnselectable
+	Image Ico/CustomCourt219 IcoS IcoS
+}
+
+item Court229
+{
+	HelpText CustomCourt220 !ShowIfUnselectable
+	Image Ico/CustomCourt220 IcoS IcoS
+}
+
+item Court230
+{
+	HelpText CustomCourt221 !ShowIfUnselectable
+	Image Ico/CustomCourt221 IcoS IcoS
+}
+
+item Court231
+{
+	HelpText CustomCourt222 !ShowIfUnselectable
+	Image Ico/CustomCourt222 IcoS IcoS
+}
+
+item Court232
+{
+	HelpText CustomCourt223 !ShowIfUnselectable
+	Image Ico/CustomCourt223 IcoS IcoS
+}
+
+item Court233
+{
+	HelpText CustomCourt224 !ShowIfUnselectable
+	Image Ico/CustomCourt224 IcoS IcoS
+}
+
+item Court234
+{
+	HelpText CustomCourt225 !ShowIfUnselectable
+	Image Ico/CustomCourt225 IcoS IcoS
+}
+
+item Court235
+{
+	HelpText CustomCourt226 !ShowIfUnselectable
+	Image Ico/CustomCourt226 IcoS IcoS
+}
+
+item Court236
+{
+	HelpText CustomCourt227 !ShowIfUnselectable
+	Image Ico/CustomCourt227 IcoS IcoS
+}
+
+item Court237
+{
+	HelpText CustomCourt228 !ShowIfUnselectable
+	Image Ico/CustomCourt228 IcoS IcoS
+}
+
+item Court238
+{
+	HelpText CustomCourt229 !ShowIfUnselectable
+	Image Ico/CustomCourt229 IcoS IcoS
+}
+
+item Court239
+{
+	HelpText CustomCourt230 !ShowIfUnselectable
+	Image Ico/CustomCourt230 IcoS IcoS
+}
+
+item Court240
+{
+	HelpText CustomCourt231 !ShowIfUnselectable
+	Image Ico/CustomCourt231 IcoS IcoS
+}
+
+item Court241
+{
+	HelpText CustomCourt232 !ShowIfUnselectable
+	Image Ico/CustomCourt232 IcoS IcoS
+}
+
+item Court242
+{
+	HelpText CustomCourt233 !ShowIfUnselectable
+	Image Ico/CustomCourt233 IcoS IcoS
+}
+
+item Court243
+{
+	HelpText CustomCourt234 !ShowIfUnselectable
+	Image Ico/CustomCourt234 IcoS IcoS
+}
+
+item Court244
+{
+	HelpText CustomCourt235 !ShowIfUnselectable
+	Image Ico/CustomCourt235 IcoS IcoS
+}
+
+item Court245
+{
+	HelpText CustomCourt236 !ShowIfUnselectable
+	Image Ico/CustomCourt236 IcoS IcoS
+}
+
+item Court246
+{
+	HelpText CustomCourt237 !ShowIfUnselectable
+	Image Ico/CustomCourt237 IcoS IcoS
+}
+
+item Court247
+{
+	HelpText CustomCourt238 !ShowIfUnselectable
+	Image Ico/CustomCourt238 IcoS IcoS
+}
+
+item Court248
+{
+	HelpText CustomCourt239 !ShowIfUnselectable
+	Image Ico/CustomCourt239 IcoS IcoS
+}
+
+item Court249
+{
+	HelpText CustomCourt240 !ShowIfUnselectable
+	Image Ico/CustomCourt240 IcoS IcoS
+}
+
+item Court250
+{
+	HelpText CustomCourt241 !ShowIfUnselectable
+	Image Ico/CustomCourt241 IcoS IcoS
+}
+
+item Court251
+{
+	HelpText CustomCourt242 !ShowIfUnselectable
+	Image Ico/CustomCourt242 IcoS IcoS
+}
+
+item Court252
+{
+	HelpText CustomCourt243 !ShowIfUnselectable
+	Image Ico/CustomCourt243 IcoS IcoS
+}
+
+item Court253
+{
+	HelpText CustomCourt244 !ShowIfUnselectable
+	Image Ico/CustomCourt244 IcoS IcoS
+}
+
+item Court254
+{
+	HelpText CustomCourt245 !ShowIfUnselectable
+	Image Ico/CustomCourt245 IcoS IcoS
+}
+
+item Court255
+{
+	HelpText CustomCourt246 !ShowIfUnselectable
+	Image Ico/CustomCourt246 IcoS IcoS
+}
+
+item Court256
+{
+	HelpText CustomCourt247 !ShowIfUnselectable
+	Image Ico/CustomCourt247 IcoS IcoS
+}
+
+item Court257
+{
+	HelpText CustomCourt248 !ShowIfUnselectable
+	Image Ico/CustomCourt248 IcoS IcoS
+}
+
+item Court258
+{
+	HelpText CustomCourt249 !ShowIfUnselectable
+	Image Ico/CustomCourt249 IcoS IcoS
+}
+
+item Court259
+{
+	HelpText CustomCourt250 !ShowIfUnselectable
+	Image Ico/CustomCourt250 IcoS IcoS
+}
+
+item Court260
+{
+	HelpText CustomCourt251 !ShowIfUnselectable
+	Image Ico/CustomCourt251 IcoS IcoS
+}
+
+item Court261
+{
+	HelpText CustomCourt252 !ShowIfUnselectable
+	Image Ico/CustomCourt252 IcoS IcoS
+}
+
+item Court262
+{
+	HelpText CustomCourt253 !ShowIfUnselectable
+	Image Ico/CustomCourt253 IcoS IcoS
+}
+
+item Court263
+{
+	HelpText CustomCourt254 !ShowIfUnselectable
+	Image Ico/CustomCourt254 IcoS IcoS
+}
+
+item Court264
+{
+	HelpText CustomCourt255 !ShowIfUnselectable
+	Image Ico/CustomCourt255 IcoS IcoS
+}
+
+item Court265
+{
+	HelpText CustomCourt256 !ShowIfUnselectable
+	Image Ico/CustomCourt256 IcoS IcoS
+}
+
+item Court266
+{
+	HelpText CustomCourt257 !ShowIfUnselectable
+	Image Ico/CustomCourt257 IcoS IcoS
+}
+
+item Court267
+{
+	HelpText CustomCourt258 !ShowIfUnselectable
+	Image Ico/CustomCourt258 IcoS IcoS
+}
+
+item Court268
+{
+	HelpText CustomCourt259 !ShowIfUnselectable
+	Image Ico/CustomCourt259 IcoS IcoS
+}
+
+item Court269
+{
+	HelpText CustomCourt260 !ShowIfUnselectable
+	Image Ico/CustomCourt260 IcoS IcoS
+}
+
+item Court270
+{
+	HelpText CustomCourt261 !ShowIfUnselectable
+	Image Ico/CustomCourt261 IcoS IcoS
+}
+
+item Court271
+{
+	HelpText CustomCourt262 !ShowIfUnselectable
+	Image Ico/CustomCourt262 IcoS IcoS
+}
+
+item Court272
+{
+	HelpText CustomCourt263 !ShowIfUnselectable
+	Image Ico/CustomCourt263 IcoS IcoS
+}
+
+item Court273
+{
+	HelpText CustomCourt264 !ShowIfUnselectable
+	Image Ico/CustomCourt264 IcoS IcoS
+}
+
+item Court274
+{
+	HelpText CustomCourt265 !ShowIfUnselectable
+	Image Ico/CustomCourt265 IcoS IcoS
+}
+
+item Court275
+{
+	HelpText CustomCourt266 !ShowIfUnselectable
+	Image Ico/CustomCourt266 IcoS IcoS
+}
+
+item Court276
+{
+	HelpText CustomCourt267 !ShowIfUnselectable
+	Image Ico/CustomCourt267 IcoS IcoS
+}
+
+item Court277
+{
+	HelpText CustomCourt268 !ShowIfUnselectable
+	Image Ico/CustomCourt268 IcoS IcoS
+}
+
+item Court278
+{
+	HelpText CustomCourt269 !ShowIfUnselectable
+	Image Ico/CustomCourt269 IcoS IcoS
+}
+
+item Court279
+{
+	HelpText CustomCourt270 !ShowIfUnselectable
+	Image Ico/CustomCourt270 IcoS IcoS
+}
+
+item Court280
+{
+	HelpText CustomCourt271 !ShowIfUnselectable
+	Image Ico/CustomCourt271 IcoS IcoS
+}
+
+item Court281
+{
+	HelpText CustomCourt272 !ShowIfUnselectable
+	Image Ico/CustomCourt272 IcoS IcoS
+}
+
+item Court282
+{
+	HelpText CustomCourt273 !ShowIfUnselectable
+	Image Ico/CustomCourt273 IcoS IcoS
+}
+
+item Court283
+{
+	HelpText CustomCourt274 !ShowIfUnselectable
+	Image Ico/CustomCourt274 IcoS IcoS
+}
+
+item Court284
+{
+	HelpText CustomCourt275 !ShowIfUnselectable
+	Image Ico/CustomCourt275 IcoS IcoS
+}
+
+item Court285
+{
+	HelpText CustomCourt276 !ShowIfUnselectable
+	Image Ico/CustomCourt276 IcoS IcoS
+}
+
+item Court286
+{
+	HelpText CustomCourt277 !ShowIfUnselectable
+	Image Ico/CustomCourt277 IcoS IcoS
+}
+
+item Court287
+{
+	HelpText CustomCourt278 !ShowIfUnselectable
+	Image Ico/CustomCourt278 IcoS IcoS
+}
+
+item Court288
+{
+	HelpText CustomCourt279 !ShowIfUnselectable
+	Image Ico/CustomCourt279 IcoS IcoS
+}
+
+item Court289
+{
+	HelpText CustomCourt280 !ShowIfUnselectable
+	Image Ico/CustomCourt280 IcoS IcoS
+}
+
+item Court290
+{
+	HelpText CustomCourt281 !ShowIfUnselectable
+	Image Ico/CustomCourt281 IcoS IcoS
+}
+
+item Court291
+{
+	HelpText CustomCourt282 !ShowIfUnselectable
+	Image Ico/CustomCourt282 IcoS IcoS
+}
+
+item Court292
+{
+	HelpText CustomCourt283 !ShowIfUnselectable
+	Image Ico/CustomCourt283 IcoS IcoS
+}
+
+item Court293
+{
+	HelpText CustomCourt284 !ShowIfUnselectable
+	Image Ico/CustomCourt284 IcoS IcoS
+}
+
+item Court294
+{
+	HelpText CustomCourt285 !ShowIfUnselectable
+	Image Ico/CustomCourt285 IcoS IcoS
+}
+
+item Court295
+{
+	HelpText CustomCourt286 !ShowIfUnselectable
+	Image Ico/CustomCourt286 IcoS IcoS
+}
+
+item Court296
+{
+	HelpText CustomCourt287 !ShowIfUnselectable
+	Image Ico/CustomCourt287 IcoS IcoS
+}
+
+item Court297
+{
+	HelpText CustomCourt288 !ShowIfUnselectable
+	Image Ico/CustomCourt288 IcoS IcoS
+}
+
+item Court298
+{
+	HelpText CustomCourt289 !ShowIfUnselectable
+	Image Ico/CustomCourt289 IcoS IcoS
+}
+
+item Court299
+{
+	HelpText CustomCourt290 !ShowIfUnselectable
+	Image Ico/CustomCourt290 IcoS IcoS
+}
+
+item Court300
+{
+	HelpText CustomCourt291 !ShowIfUnselectable
+	Image Ico/CustomCourt291 IcoS IcoS
+}
+
+item Court301
+{
+	HelpText CustomCourt292 !ShowIfUnselectable
+	Image Ico/CustomCourt292 IcoS IcoS
+}
+
+item Court302
+{
+	HelpText CustomCourt293 !ShowIfUnselectable
+	Image Ico/CustomCourt293 IcoS IcoS
+}
+
+item Court303
+{
+	HelpText CustomCourt294 !ShowIfUnselectable
+	Image Ico/CustomCourt294 IcoS IcoS
+}
+
+item Court304
+{
+	HelpText CustomCourt295 !ShowIfUnselectable
+	Image Ico/CustomCourt295 IcoS IcoS
+}
+
+item Court305
+{
+	HelpText CustomCourt296 !ShowIfUnselectable
+	Image Ico/CustomCourt296 IcoS IcoS
+}
+
+item Court306
+{
+	HelpText CustomCourt297 !ShowIfUnselectable
+	Image Ico/CustomCourt297 IcoS IcoS
+}
+
+item Court307
+{
+	HelpText CustomCourt298 !ShowIfUnselectable
+	Image Ico/CustomCourt298 IcoS IcoS
+}
+
+item Court308
+{
+	HelpText CustomCourt299 !ShowIfUnselectable
+	Image Ico/CustomCourt299 IcoS IcoS
+}
+
+item Court309
+{
+	HelpText CustomCourt300 !ShowIfUnselectable
+	Image Ico/CustomCourt300 IcoS IcoS
+}
+
+item Court310
+{
+	HelpText CustomCourt301 !ShowIfUnselectable
+	Image Ico/CustomCourt301 IcoS IcoS
+}
+
+item Court311
+{
+	HelpText CustomCourt302 !ShowIfUnselectable
+	Image Ico/CustomCourt302 IcoS IcoS
+}
+
+item Court312
+{
+	HelpText CustomCourt303 !ShowIfUnselectable
+	Image Ico/CustomCourt303 IcoS IcoS
+}
+
+item Court313
+{
+	HelpText CustomCourt304 !ShowIfUnselectable
+	Image Ico/CustomCourt304 IcoS IcoS
+}
+
+item Court314
+{
+	HelpText CustomCourt305 !ShowIfUnselectable
+	Image Ico/CustomCourt305 IcoS IcoS
+}
+
+item Court315
+{
+	HelpText CustomCourt306 !ShowIfUnselectable
+	Image Ico/CustomCourt306 IcoS IcoS
+}
+
+item Court316
+{
+	HelpText CustomCourt307 !ShowIfUnselectable
+	Image Ico/CustomCourt307 IcoS IcoS
+}
+
+item Court317
+{
+	HelpText CustomCourt308 !ShowIfUnselectable
+	Image Ico/CustomCourt308 IcoS IcoS
+}
+
+item Court318
+{
+	HelpText CustomCourt309 !ShowIfUnselectable
+	Image Ico/CustomCourt309 IcoS IcoS
+}
+
+//======= Courts - Small Size
+item CourtS02
+{
+	HelpText Court02 !ShowIfUnselectable
+	Image Ico/Court02s IcoS IcoS
+	Invisible
+}
+
+item CourtS03
+{
+	HelpText Court03 !ShowIfUnselectable
+	Image Ico/Court03s IcoS IcoS
+	Invisible
+}
+
+item CourtS04
+{
+	HelpText Court04 !ShowIfUnselectable
+	Image Ico/Court04s IcoS IcoS
+	Invisible
+}
+
+item CourtS05
+{
+	HelpText Court05 !ShowIfUnselectable
+	Image Ico/Court05s IcoS IcoS
+	Invisible
+}
+
+item CourtS06
+{
+	HelpText Court06 !ShowIfUnselectable
+	Image Ico/Court06s IcoS IcoS
+	Invisible
+}
+
+item CourtS07
+{
+	HelpText Court07 !ShowIfUnselectable
+	Image Ico/Court07s IcoS IcoS
+	Invisible
+}
+
+item CourtS08
+{
+	HelpText Court08 !ShowIfUnselectable
+	Image Ico/Court08s IcoS IcoS
+	Invisible
+}
+
+item CourtS09
+{
+	HelpText Court09 !ShowIfUnselectable
+	Image Ico/Court09s IcoS IcoS
+	Invisible
+}
+
+item CourtS10
+{
+	HelpText CustomCourt01 !ShowIfUnselectable
+	Image Ico/CustomCourt01s IcoS IcoS
+	Invisible
+}
+
+item CourtS11
+{
+	HelpText CustomCourt02 !ShowIfUnselectable
+	Image Ico/CustomCourt02s IcoS IcoS
+	Invisible
+}
+
+item CourtS12
+{
+	HelpText CustomCourt03 !ShowIfUnselectable
+	Image Ico/CustomCourt03s IcoS IcoS
+	Invisible
+}
+
+
+item CourtS13
+{
+	HelpText CustomCourt04 !ShowIfUnselectable
+	Image Ico/CustomCourt04s IcoS IcoS
+	Invisible
+}
+
+item CourtS14
+{
+	HelpText CustomCourt05 !ShowIfUnselectable
+	Image Ico/CustomCourt05s IcoS IcoS
+	Invisible
+}
+
+item CourtS15
+{
+	HelpText CustomCourt06 !ShowIfUnselectable
+	Image Ico/CustomCourt06s IcoS IcoS
+	Invisible
+}
+
+item CourtS16
+{
+	HelpText CustomCourt07 !ShowIfUnselectable
+	Image Ico/CustomCourt07s IcoS IcoS
+	Invisible
+}
+
+item CourtS17
+{
+	HelpText CustomCourt08 !ShowIfUnselectable
+	Image Ico/CustomCourt08s IcoS IcoS
+	Invisible
+}
+
+item CourtS18
+{
+	HelpText CustomCourt09 !ShowIfUnselectable
+	Image Ico/CustomCourt09s IcoS IcoS
+	Invisible
+}
+
+item CourtS19
+{
+	HelpText CustomCourt10 !ShowIfUnselectable
+	Image Ico/CustomCourt10s IcoS IcoS
+	Invisible
+}
+
+item CourtS20
+{
+	HelpText CustomCourt11 !ShowIfUnselectable
+	Image Ico/CustomCourt11s IcoS IcoS
+	Invisible
+}
+
+item CourtS21
+{
+	HelpText CustomCourt12 !ShowIfUnselectable
+	Image Ico/CustomCourt12s IcoS IcoS
+	Invisible
+}
+
+item CourtS22
+{
+	HelpText CustomCourt13 !ShowIfUnselectable
+	Image Ico/CustomCourt13s IcoS IcoS
+	Invisible
+}
+
+item CourtS23
+{
+	HelpText CustomCourt14 !ShowIfUnselectable
+	Image Ico/CustomCourt14s IcoS IcoS
+	Invisible
+}
+
+item CourtS24
+{
+	HelpText CustomCourt15 !ShowIfUnselectable
+	Image Ico/CustomCourt15s IcoS IcoS
+	Invisible
+}
+
+item CourtS25
+{
+	HelpText CustomCourt16 !ShowIfUnselectable
+	Image Ico/CustomCourt16s IcoS IcoS
+	Invisible
+}
+
+item CourtS26
+{
+	HelpText CustomCourt17 !ShowIfUnselectable
+	Image Ico/CustomCourt17s IcoS IcoS
+	Invisible
+}
+
+item CourtS27
+{
+	HelpText CustomCourt18 !ShowIfUnselectable
+	Image Ico/CustomCourt18s IcoS IcoS
+	Invisible
+}
+
+item CourtS28
+{
+	HelpText CustomCourt19 !ShowIfUnselectable
+	Image Ico/CustomCourt19s IcoS IcoS
+	Invisible
+}
+
+item CourtS29
+{
+	HelpText CustomCourt20 !ShowIfUnselectable
+	Image Ico/CustomCourt20s IcoS IcoS
+	Invisible
+}
+
+item CourtS30
+{
+	HelpText CustomCourt21 !ShowIfUnselectable
+	Image Ico/CustomCourt21s IcoS IcoS
+	Invisible
+}
+
+item CourtS31
+{
+	HelpText CustomCourt22 !ShowIfUnselectable
+	Image Ico/CustomCourt22s IcoS IcoS
+	Invisible
+}
+
+item CourtS32
+{
+	HelpText CustomCourt23 !ShowIfUnselectable
+	Image Ico/CustomCourt23s IcoS IcoS
+	Invisible
+}
+
+item CourtS33
+{
+	HelpText CustomCourt24 !ShowIfUnselectable
+	Image Ico/CustomCourt24s IcoS IcoS
+	Invisible
+}
+
+item CourtS34
+{
+	HelpText CustomCourt25 !ShowIfUnselectable
+	Image Ico/CustomCourt25s IcoS IcoS
+	Invisible
+}
+
+item CourtS35
+{
+	HelpText CustomCourt26 !ShowIfUnselectable
+	Image Ico/CustomCourt26s IcoS IcoS
+	Invisible
+}
+
+item CourtS36
+{
+	HelpText CustomCourt27 !ShowIfUnselectable
+	Image Ico/CustomCourt27s IcoS IcoS
+	Invisible
+}
+
+item CourtS37
+{
+	HelpText CustomCourt28 !ShowIfUnselectable
+	Image Ico/CustomCourt28s IcoS IcoS
+	Invisible
+}
+
+item CourtS38
+{
+	HelpText CustomCourt29 !ShowIfUnselectable
+	Image Ico/CustomCourt29s IcoS IcoS
+	Invisible
+}
+
+item CourtS39
+{
+	HelpText CustomCourt30 !ShowIfUnselectable
+	Image Ico/CustomCourt30s IcoS IcoS
+	Invisible
+}
+
+item CourtS40
+{
+	HelpText CustomCourt31 !ShowIfUnselectable
+	Image Ico/CustomCourt31s IcoS IcoS
+	Invisible
+}
+
+item CourtS41
+{
+	HelpText CustomCourt32 !ShowIfUnselectable
+	Image Ico/CustomCourt32s IcoS IcoS
+	Invisible
+}
+
+item CourtS42
+{
+	HelpText CustomCourt33 !ShowIfUnselectable
+	Image Ico/CustomCourt33s IcoS IcoS
+	Invisible
+}
+
+item CourtS43
+{
+	HelpText CustomCourt34 !ShowIfUnselectable
+	Image Ico/CustomCourt34s IcoS IcoS
+	Invisible
+}
+
+item CourtS44
+{
+	HelpText CustomCourt35 !ShowIfUnselectable
+	Image Ico/CustomCourt35s IcoS IcoS
+	Invisible
+}
+
+item CourtS45
+{
+	HelpText CustomCourt36 !ShowIfUnselectable
+	Image Ico/CustomCourt36s IcoS IcoS
+	Invisible
+}
+
+item CourtS46
+{
+	HelpText CustomCourt37 !ShowIfUnselectable
+	Image Ico/CustomCourt37s IcoS IcoS
+	Invisible
+}
+
+item CourtS47
+{
+	HelpText CustomCourt38 !ShowIfUnselectable
+	Image Ico/CustomCourt38s IcoS IcoS
+	Invisible
+}
+
+item CourtS48
+{
+	HelpText CustomCourt39 !ShowIfUnselectable
+	Image Ico/CustomCourt39s IcoS IcoS
+	Invisible
+}
+
+item CourtS49
+{
+	HelpText CustomCourt40 !ShowIfUnselectable
+	Image Ico/CustomCourt40s IcoS IcoS
+	Invisible
+}
+
+item CourtS50
+{
+	HelpText CustomCourt41 !ShowIfUnselectable
+	Image Ico/CustomCourt41s IcoS IcoS
+	Invisible
+}
+
+item CourtS51
+{
+	HelpText CustomCourt42 !ShowIfUnselectable
+	Image Ico/CustomCourt42s IcoS IcoS
+	Invisible
+}
+
+item CourtS52
+{
+	HelpText CustomCourt43 !ShowIfUnselectable
+	Image Ico/CustomCourt43s IcoS IcoS
+	Invisible
+}
+
+item CourtS53
+{
+	HelpText CustomCourt44 !ShowIfUnselectable
+	Image Ico/CustomCourt44s IcoS IcoS
+	Invisible
+}
+
+item CourtS54
+{
+	HelpText CustomCourt45 !ShowIfUnselectable
+	Image Ico/CustomCourt45s IcoS IcoS
+	Invisible
+}
+
+item CourtS55
+{
+	HelpText CustomCourt46 !ShowIfUnselectable
+	Image Ico/CustomCourt46s IcoS IcoS
+	Invisible
+}
+
+item CourtS56
+{
+	HelpText CustomCourt47 !ShowIfUnselectable
+	Image Ico/CustomCourt47s IcoS IcoS
+	Invisible
+}
+
+item CourtS57
+{
+	HelpText CustomCourt48 !ShowIfUnselectable
+	Image Ico/CustomCourt48s IcoS IcoS
+	Invisible
+}
+
+item CourtS58
+{
+	HelpText CustomCourt49 !ShowIfUnselectable
+	Image Ico/CustomCourt49s IcoS IcoS
+	Invisible
+}
+
+item CourtS59
+{
+	HelpText CustomCourt50 !ShowIfUnselectable
+	Image Ico/CustomCourt50s IcoS IcoS
+	Invisible
+}
+
+item CourtS60
+{
+	HelpText CustomCourt51 !ShowIfUnselectable
+	Image Ico/CustomCourt51s IcoS IcoS
+	Invisible
+}
+
+item CourtS61
+{
+	HelpText CustomCourt52 !ShowIfUnselectable
+	Image Ico/CustomCourt52s IcoS IcoS
+	Invisible
+}
+
+item CourtS62
+{
+	HelpText CustomCourt53 !ShowIfUnselectable
+	Image Ico/CustomCourt53s IcoS IcoS
+	Invisible
+}
+
+item CourtS63
+{
+	HelpText CustomCourt54 !ShowIfUnselectable
+	Image Ico/CustomCourt54s IcoS IcoS
+	Invisible
+}
+
+item CourtS64
+{
+	HelpText CustomCourt55 !ShowIfUnselectable
+	Image Ico/CustomCourt55s IcoS IcoS
+	Invisible
+}
+
+item CourtS65
+{
+	HelpText CustomCourt56 !ShowIfUnselectable
+	Image Ico/CustomCourt56s IcoS IcoS
+	Invisible
+}
+
+item CourtS66
+{
+	HelpText CustomCourt57 !ShowIfUnselectable
+	Image Ico/CustomCourt57s IcoS IcoS
+	Invisible
+}
+
+item CourtS67
+{
+	HelpText CustomCourt58 !ShowIfUnselectable
+	Image Ico/CustomCourt58s IcoS IcoS
+	Invisible
+}
+
+item CourtS68
+{
+	HelpText CustomCourt59 !ShowIfUnselectable
+	Image Ico/CustomCourt59s IcoS IcoS
+	Invisible
+}
+
+item CourtS69
+{
+	HelpText CustomCourt60 !ShowIfUnselectable
+	Image Ico/CustomCourt60s IcoS IcoS
+	Invisible
+}
+
+item CourtS70
+{
+	HelpText CustomCourt61 !ShowIfUnselectable
+	Image Ico/CustomCourt61s IcoS IcoS
+	Invisible
+}
+
+item CourtS71
+{
+	HelpText CustomCourt62 !ShowIfUnselectable
+	Image Ico/CustomCourt62s IcoS IcoS
+	Invisible
+}
+
+item CourtS72
+{
+	HelpText CustomCourt63 !ShowIfUnselectable
+	Image Ico/CustomCourt63s IcoS IcoS
+	Invisible
+}
+
+item CourtS73
+{
+	HelpText CustomCourt64 !ShowIfUnselectable
+	Image Ico/CustomCourt64s IcoS IcoS
+	Invisible
+}
+
+item CourtS74
+{
+	HelpText CustomCourt65 !ShowIfUnselectable
+	Image Ico/CustomCourt65s IcoS IcoS
+	Invisible
+}
+
+item CourtS75
+{
+	HelpText CustomCourt66 !ShowIfUnselectable
+	Image Ico/CustomCourt66s IcoS IcoS
+	Invisible
+}
+
+item CourtS76
+{
+	HelpText CustomCourt67 !ShowIfUnselectable
+	Image Ico/CustomCourt67s IcoS IcoS
+	Invisible
+}
+
+item CourtS77
+{
+	HelpText CustomCourt68 !ShowIfUnselectable
+	Image Ico/CustomCourt68s IcoS IcoS
+	Invisible
+}
+
+item CourtS78
+{
+	HelpText CustomCourt69 !ShowIfUnselectable
+	Image Ico/CustomCourt69s IcoS IcoS
+	Invisible
+}
+
+item CourtS79
+{
+	HelpText CustomCourt70 !ShowIfUnselectable
+	Image Ico/CustomCourt70s IcoS IcoS
+	Invisible
+}
+
+item CourtS80
+{
+	HelpText CustomCourt71 !ShowIfUnselectable
+	Image Ico/CustomCourt71s IcoS IcoS
+	Invisible
+}
+
+item CourtS81
+{
+	HelpText CustomCourt72 !ShowIfUnselectable
+	Image Ico/CustomCourt72s IcoS IcoS
+	Invisible
+}
+
+item CourtS82
+{
+	HelpText CustomCourt73 !ShowIfUnselectable
+	Image Ico/CustomCourt73s IcoS IcoS
+	Invisible
+}
+
+item CourtS83
+{
+	HelpText CustomCourt74 !ShowIfUnselectable
+	Image Ico/CustomCourt74s IcoS IcoS
+	Invisible
+}
+
+item CourtS84
+{
+	HelpText CustomCourt75 !ShowIfUnselectable
+	Image Ico/CustomCourt75s IcoS IcoS
+	Invisible
+}
+
+item CourtS85
+{
+	HelpText CustomCourt76 !ShowIfUnselectable
+	Image Ico/CustomCourt76s IcoS IcoS
+	Invisible
+}
+
+item CourtS86
+{
+	HelpText CustomCourt77 !ShowIfUnselectable
+	Image Ico/CustomCourt77s IcoS IcoS
+	Invisible
+}
+
+item CourtS87
+{
+	HelpText CustomCourt78 !ShowIfUnselectable
+	Image Ico/CustomCourt78s IcoS IcoS
+	Invisible
+}
+
+item CourtS88
+{
+	HelpText CustomCourt79 !ShowIfUnselectable
+	Image Ico/CustomCourt79s IcoS IcoS
+	Invisible
+}
+
+item CourtS89
+{
+	HelpText CustomCourt80 !ShowIfUnselectable
+	Image Ico/CustomCourt80s IcoS IcoS
+	Invisible
+}
+
+item CourtS90
+{
+	HelpText CustomCourt81 !ShowIfUnselectable
+	Image Ico/CustomCourt81s IcoS IcoS
+	Invisible
+}
+
+item CourtS91
+{
+	HelpText CustomCourt82 !ShowIfUnselectable
+	Image Ico/CustomCourt82s IcoS IcoS
+	Invisible
+}
+
+item CourtS92
+{
+	HelpText CustomCourt83 !ShowIfUnselectable
+	Image Ico/CustomCourt83s IcoS IcoS
+	Invisible
+}
+
+item CourtS93
+{
+	HelpText CustomCourt84 !ShowIfUnselectable
+	Image Ico/CustomCourt84s IcoS IcoS
+	Invisible
+}
+
+item CourtS94
+{
+	HelpText CustomCourt85 !ShowIfUnselectable
+	Image Ico/CustomCourt85s IcoS IcoS
+	Invisible
+}
+
+item CourtS95
+{
+	HelpText CustomCourt86 !ShowIfUnselectable
+	Image Ico/CustomCourt86s IcoS IcoS
+	Invisible
+}
+item CourtS96
+{
+
+	HelpText CustomCourt87 !ShowIfUnselectable
+	Image Ico/CustomCourt87s IcoS IcoS
+	Invisible
+}
+item CourtS97
+{
+
+	HelpText CustomCourt88 !ShowIfUnselectable
+	Image Ico/CustomCourt88s IcoS IcoS
+	Invisible
+}
+
+item CourtS98
+{
+	HelpText CustomCourt89 !ShowIfUnselectable
+	Image Ico/CustomCourt89s IcoS IcoS
+	Invisible
+}
+
+item CourtS99
+{
+	HelpText CustomCourt90 !ShowIfUnselectable
+	Image Ico/CustomCourt90s IcoS IcoS
+	Invisible
+}
+
+item CourtS100
+{
+	HelpText CustomCourt91 !ShowIfUnselectable
+	Image Ico/CustomCourt91s IcoS IcoS
+	Invisible
+}
+
+item CourtS101
+{
+	HelpText CustomCourt92 !ShowIfUnselectable
+	Image Ico/CustomCourt92s IcoS IcoS
+	Invisible
+}
+
+item CourtS102
+{
+	HelpText CustomCourt93 !ShowIfUnselectable
+	Image Ico/CustomCourt93s IcoS IcoS
+	Invisible
+}
+
+item CourtS103
+{
+	HelpText CustomCourt94 !ShowIfUnselectable
+	Image Ico/CustomCourt94s IcoS IcoS
+	Invisible
+}
+
+item CourtS104
+{
+	HelpText CustomCourt95 !ShowIfUnselectable
+	Image Ico/CustomCourt95s IcoS IcoS
+	Invisible
+}
+
+item CourtS105
+{
+	HelpText CustomCourt96 !ShowIfUnselectable
+	Image Ico/CustomCourt96s IcoS IcoS
+	Invisible
+}
+
+item CourtS106
+{
+	HelpText CustomCourt97 !ShowIfUnselectable
+	Image Ico/CustomCourt87s IcoS IcoS
+	Invisible
+}
+
+item CourtS107
+{
+	HelpText CustomCourt98 !ShowIfUnselectable
+	Image Ico/CustomCourt98s IcoS IcoS
+	Invisible
+}
+
+item CourtS108
+{
+	HelpText CustomCourt99 !ShowIfUnselectable
+	Image Ico/CustomCourt99s IcoS IcoS
+	Invisible
+}
+
+item CourtS109
+{
+	HelpText CustomCourt100 !ShowIfUnselectable
+	Image Ico/CustomCourt100s IcoS IcoS
+	Invisible
+}
+
+item CourtS110
+{
+	HelpText CustomCourt101 !ShowIfUnselectable
+	Image Ico/CustomCourt101s IcoS IcoS
+	Invisible
+}
+
+item CourtS111
+{
+	HelpText CustomCourt102 !ShowIfUnselectable
+	Image Ico/CustomCourt102s IcoS IcoS
+	Invisible
+}
+
+item CourtS112
+{
+	HelpText CustomCourt103 !ShowIfUnselectable
+	Image Ico/CustomCourt103s IcoS IcoS
+	Invisible
+}
+
+item CourtS113
+{
+	HelpText CustomCourt104 !ShowIfUnselectable
+	Image Ico/CustomCourt104s IcoS IcoS
+	Invisible
+}
+
+item CourtS114
+{
+	HelpText CustomCourt105 !ShowIfUnselectable
+	Image Ico/CustomCourt105s IcoS IcoS
+	Invisible
+}
+
+item CourtS115
+{
+	HelpText CustomCourt106 !ShowIfUnselectable
+	Image Ico/CustomCourt106s IcoS IcoS
+	Invisible
+}
+
+item CourtS116
+{
+	HelpText CustomCourt107 !ShowIfUnselectable
+	Image Ico/CustomCourt107s IcoS IcoS
+	Invisible
+}
+
+item CourtS117
+{
+	HelpText CustomCourt108 !ShowIfUnselectable
+	Image Ico/CustomCourt108s IcoS IcoS
+	Invisible
+}
+
+item CourtS118
+{
+	HelpText CustomCourt109 !ShowIfUnselectable
+	Image Ico/CustomCourt109s IcoS IcoS
+	Invisible
+}
+
+item CourtS119
+{
+	HelpText CustomCourt110 !ShowIfUnselectable
+	Image Ico/CustomCourt110s IcoS IcoS
+	Invisible
+}
+
+item CourtS120
+{
+	HelpText CustomCourt111 !ShowIfUnselectable
+	Image Ico/CustomCourt111s IcoS IcoS
+	Invisible
+}
+
+item CourtS121
+{
+	HelpText CustomCourt112 !ShowIfUnselectable
+	Image Ico/CustomCourt112s IcoS IcoS
+	Invisible
+}
+
+item CourtS122
+{
+	HelpText CustomCourt113 !ShowIfUnselectable
+	Image Ico/CustomCourt113s IcoS IcoS
+	Invisible
+}
+
+item CourtS123
+{
+	HelpText CustomCourt114 !ShowIfUnselectable
+	Image Ico/CustomCourt114s IcoS IcoS
+	Invisible
+}
+
+item CourtS124
+{
+	HelpText CustomCourt115 !ShowIfUnselectable
+	Image Ico/CustomCourt115s IcoS IcoS
+	Invisible
+}
+
+item CourtS125
+{
+	HelpText CustomCourt116 !ShowIfUnselectable
+	Image Ico/CustomCourt116s IcoS IcoS
+	Invisible
+}
+
+item CourtS126
+{
+	HelpText CustomCourt117 !ShowIfUnselectable
+	Image Ico/CustomCourt117s IcoS IcoS
+	Invisible
+}
+
+item CourtS127
+{
+	HelpText CustomCourt118 !ShowIfUnselectable
+	Image Ico/CustomCourt118s IcoS IcoS
+	Invisible
+}
+
+item CourtS128
+{
+	HelpText CustomCourt119 !ShowIfUnselectable
+	Image Ico/CustomCourt119s IcoS IcoS
+	Invisible
+}
+
+item CourtS129
+{
+	HelpText CustomCourt120 !ShowIfUnselectable
+	Image Ico/CustomCourt120s IcoS IcoS
+	Invisible
+}
+
+item CourtS130
+{
+	HelpText CustomCourt121 !ShowIfUnselectable
+	Image Ico/CustomCourt121s IcoS IcoS
+	Invisible
+}
+
+item CourtS131
+{
+	HelpText CustomCourt122 !ShowIfUnselectable
+	Image Ico/CustomCourt122s IcoS IcoS
+	Invisible
+}
+
+item CourtS132
+{
+	HelpText CustomCourt123 !ShowIfUnselectable
+	Image Ico/CustomCourt133s IcoS IcoS
+	Invisible
+}
+
+item CourtS133
+{
+	HelpText CustomCourt124 !ShowIfUnselectable
+	Image Ico/CustomCourt134s IcoS IcoS
+	Invisible
+}
+
+item CourtS134
+{
+	HelpText CustomCourt125 !ShowIfUnselectable
+	Image Ico/CustomCourt125s IcoS IcoS
+	Invisible
+}
+
+item CourtS135
+{
+	HelpText CustomCourt126 !ShowIfUnselectable
+	Image Ico/CustomCourt126s IcoS IcoS
+	Invisible
+}
+
+item CourtS136
+{
+	HelpText CustomCourt127 !ShowIfUnselectable
+	Image Ico/CustomCourt127s IcoS IcoS
+	Invisible
+}
+
+item CourtS137
+{
+	HelpText CustomCourt128 !ShowIfUnselectable
+	Image Ico/CustomCourt128s IcoS IcoS
+	Invisible
+}
+
+item CourtS138
+{
+	HelpText CustomCourt129 !ShowIfUnselectable
+	Image Ico/CustomCourt129s IcoS IcoS
+	Invisible
+}
+
+item CourtS139
+{
+	HelpText CustomCourt130 !ShowIfUnselectable
+	Image Ico/CustomCourt130s IcoS IcoS
+	Invisible
+}
+
+item CourtS140
+{
+	HelpText CustomCourt131 !ShowIfUnselectable
+	Image Ico/CustomCourt131s IcoS IcoS
+	Invisible
+}
+
+item CourtS141
+{
+	HelpText CustomCourt132 !ShowIfUnselectable
+	Image Ico/CustomCourt132s IcoS IcoS
+	Invisible
+}
+
+item CourtS142
+{
+	HelpText CustomCourt133 !ShowIfUnselectable
+	Image Ico/CustomCourt133s IcoS IcoS
+	Invisible
+}
+
+item CourtS143
+{
+	HelpText CustomCourt134 !ShowIfUnselectable
+	Image Ico/CustomCourt134s IcoS IcoS
+	Invisible
+}
+
+item CourtS144
+{
+	HelpText CustomCourt135 !ShowIfUnselectable
+	Image Ico/CustomCourt135s IcoS IcoS
+	Invisible
+}
+
+item CourtS145
+{
+	HelpText CustomCourt136 !ShowIfUnselectable
+	Image Ico/CustomCourt136s IcoS IcoS
+	Invisible
+}
+
+item CourtS146
+{
+	HelpText CustomCourt137 !ShowIfUnselectable
+	Image Ico/CustomCourt137s IcoS IcoS
+	Invisible
+}
+
+item CourtS147
+{
+	HelpText CustomCourt138 !ShowIfUnselectable
+	Image Ico/CustomCourt138s IcoS IcoS
+	Invisible
+}
+
+item CourtS148
+{
+	HelpText CustomCourt139 !ShowIfUnselectable
+	Image Ico/CustomCourt139s IcoS IcoS
+	Invisible
+}
+
+item CourtS149
+{
+	HelpText CustomCourt140 !ShowIfUnselectable
+	Image Ico/CustomCourt140s IcoS IcoS
+	Invisible
+}
+
+item CourtS150
+{
+	HelpText CustomCourt141 !ShowIfUnselectable
+	Image Ico/CustomCourt141s IcoS IcoS
+	Invisible
+}
+
+item CourtS151
+{
+	HelpText CustomCourt142 !ShowIfUnselectable
+	Image Ico/CustomCourt142s IcoS IcoS
+	Invisible
+}
+
+item CourtS152
+{
+	HelpText CustomCourt143 !ShowIfUnselectable
+	Image Ico/CustomCourt143s IcoS IcoS
+	Invisible
+}
+
+item CourtS153
+{
+	HelpText CustomCourt144 !ShowIfUnselectable
+	Image Ico/CustomCourt144s IcoS IcoS
+	Invisible
+}
+
+item CourtS154
+{
+	HelpText CustomCourt145 !ShowIfUnselectable
+	Image Ico/CustomCourt145s IcoS IcoS
+	Invisible
+}
+
+item CourtS155
+{
+	HelpText CustomCourt146 !ShowIfUnselectable
+	Image Ico/CustomCourt146s IcoS IcoS
+	Invisible
+}
+
+item CourtS156
+{
+	HelpText CustomCourt147 !ShowIfUnselectable
+	Image Ico/CustomCourt147s IcoS IcoS
+	Invisible
+}
+
+item CourtS157
+{
+	HelpText CustomCourt148 !ShowIfUnselectable
+	Image Ico/CustomCourt148s IcoS IcoS
+	Invisible
+}
+
+item CourtS158
+{
+	HelpText CustomCourt149 !ShowIfUnselectable
+	Image Ico/CustomCourt149s IcoS IcoS
+	Invisible
+}
+
+item CourtS159
+{
+	HelpText CustomCourt150 !ShowIfUnselectable
+	Image Ico/CustomCourt150s IcoS IcoS
+	Invisible
+}
+
+item CourtS160
+{
+	HelpText CustomCourt151 !ShowIfUnselectable
+	Image Ico/CustomCourt151s IcoS IcoS
+	Invisible
+}
+
+item CourtS161
+{
+	HelpText CustomCourt152 !ShowIfUnselectable
+	Image Ico/CustomCourt152s IcoS IcoS
+	Invisible
+}
+
+item CourtS162
+{
+	HelpText CustomCourt153 !ShowIfUnselectable
+	Image Ico/CustomCourt153s IcoS IcoS
+	Invisible
+}
+
+item CourtS163
+{
+	HelpText CustomCourt154 !ShowIfUnselectable
+	Image Ico/CustomCourt154s IcoS IcoS
+	Invisible
+}
+
+item CourtS164
+{
+	HelpText CustomCourt155 !ShowIfUnselectable
+	Image Ico/CustomCourt155s IcoS IcoS
+	Invisible
+}
+
+item CourtS165
+{
+	HelpText CustomCourt156 !ShowIfUnselectable
+	Image Ico/CustomCourt156s IcoS IcoS
+	Invisible
+}
+
+item CourtS166
+{
+	HelpText CustomCourt157 !ShowIfUnselectable
+	Image Ico/CustomCourt157s IcoS IcoS
+	Invisible
+}
+
+item CourtS167
+{
+	HelpText CustomCourt158 !ShowIfUnselectable
+	Image Ico/CustomCourt158s IcoS IcoS
+	Invisible
+}
+
+item CourtS168
+{
+	HelpText CustomCourt159 !ShowIfUnselectable
+	Image Ico/CustomCourt159s IcoS IcoS
+	Invisible
+}
+
+item CourtS169
+{
+	HelpText CustomCourt160 !ShowIfUnselectable
+	Image Ico/CustomCourt160s IcoS IcoS
+	Invisible
+}
+
+item CourtS170
+{
+	HelpText CustomCourt161 !ShowIfUnselectable
+	Image Ico/CustomCourt161s IcoS IcoS
+	Invisible
+}
+
+item CourtS171
+{
+	HelpText CustomCourt162 !ShowIfUnselectable
+	Image Ico/CustomCourt162s IcoS IcoS
+	Invisible
+}
+
+item CourtS172
+{
+	HelpText CustomCourt163 !ShowIfUnselectable
+	Image Ico/CustomCourt163s IcoS IcoS
+	Invisible
+}
+
+item CourtS173
+{
+	HelpText CustomCourt164 !ShowIfUnselectable
+	Image Ico/CustomCourt164s IcoS IcoS
+	Invisible
+}
+
+item CourtS174
+{
+	HelpText CustomCourt165 !ShowIfUnselectable
+	Image Ico/CustomCourt165s IcoS IcoS
+	Invisible
+}
+
+item CourtS175
+{
+	HelpText CustomCourt166 !ShowIfUnselectable
+	Image Ico/CustomCourt166s IcoS IcoS
+	Invisible
+}
+
+item CourtS176
+{
+	HelpText CustomCourt167 !ShowIfUnselectable
+	Image Ico/CustomCourt167s IcoS IcoS
+	Invisible
+}
+
+item CourtS177
+{
+	HelpText CustomCourt168 !ShowIfUnselectable
+	Image Ico/CustomCourt168s IcoS IcoS
+	Invisible
+}
+
+item CourtS178
+{
+	HelpText CustomCourt169 !ShowIfUnselectable
+	Image Ico/CustomCourt169s IcoS IcoS
+	Invisible
+}
+
+item CourtS179
+{
+	HelpText CustomCourt170 !ShowIfUnselectable
+	Image Ico/CustomCourt170s IcoS IcoS
+	Invisible
+}
+
+item CourtS180
+{
+	HelpText CustomCourt171 !ShowIfUnselectable
+	Image Ico/CustomCourt171s IcoS IcoS
+	Invisible
+}
+
+item CourtS181
+{
+	HelpText CustomCourt172 !ShowIfUnselectable
+	Image Ico/CustomCourt172s IcoS IcoS
+	Invisible
+}
+
+item CourtS182
+{
+	HelpText CustomCourt173 !ShowIfUnselectable
+	Image Ico/CustomCourt173s IcoS IcoS
+	Invisible
+}
+
+item CourtS183
+{
+	HelpText CustomCourt174 !ShowIfUnselectable
+	Image Ico/CustomCourt174s IcoS IcoS
+	Invisible
+}
+
+item CourtS184
+{
+	HelpText CustomCourt175 !ShowIfUnselectable
+	Image Ico/CustomCourt175s IcoS IcoS
+	Invisible
+}
+
+item CourtS185
+{
+	HelpText CustomCourt176 !ShowIfUnselectable
+	Image Ico/CustomCourt176s IcoS IcoS
+	Invisible
+}
+
+item CourtS186
+{
+	HelpText CustomCourt177 !ShowIfUnselectable
+	Image Ico/CustomCourt177s IcoS IcoS
+	Invisible
+}
+
+item CourtS187
+{
+	HelpText CustomCourt178 !ShowIfUnselectable
+	Image Ico/CustomCourt178s IcoS IcoS
+	Invisible
+}
+
+item CourtS188
+{
+	HelpText CustomCourt179 !ShowIfUnselectable
+	Image Ico/CustomCourt179s IcoS IcoS
+	Invisible
+}
+
+item CourtS189
+{
+	HelpText CustomCourt180 !ShowIfUnselectable
+	Image Ico/CustomCourt180s IcoS IcoS
+	Invisible
+}
+
+item CourtS190
+{
+	HelpText CustomCourt181 !ShowIfUnselectable
+	Image Ico/CustomCourt181s IcoS IcoS
+	Invisible
+}
+
+item CourtS191
+{
+	HelpText CustomCourt182 !ShowIfUnselectable
+	Image Ico/CustomCourt182s IcoS IcoS
+	Invisible
+}
+
+item CourtS192
+{
+	HelpText CustomCourt183 !ShowIfUnselectable
+	Image Ico/CustomCourt183s IcoS IcoS
+	Invisible
+}
+
+item CourtS193
+{
+	HelpText CustomCourt184 !ShowIfUnselectable
+	Image Ico/CustomCourt184s IcoS IcoS
+	Invisible
+}
+
+item CourtS194
+{
+	HelpText CustomCourt185 !ShowIfUnselectable
+	Image Ico/CustomCourt185s IcoS IcoS
+	Invisible
+}
+
+item CourtS195
+{
+	HelpText CustomCourt186 !ShowIfUnselectable
+	Image Ico/CustomCourt186s IcoS IcoS
+	Invisible
+}
+
+item CourtS196
+{
+	HelpText CustomCourt187 !ShowIfUnselectable
+	Image Ico/CustomCourt187s IcoS IcoS
+	Invisible
+}
+
+item CourtS197
+{
+	HelpText CustomCourt188 !ShowIfUnselectable
+	Image Ico/CustomCourt188s IcoS IcoS
+	Invisible
+}
+
+item CourtS198
+{
+	HelpText CustomCourt189 !ShowIfUnselectable
+	Image Ico/CustomCourt189s IcoS IcoS
+	Invisible
+}
+
+item CourtS199
+{
+	HelpText CustomCourt190 !ShowIfUnselectable
+	Image Ico/CustomCourt190s IcoS IcoS
+	Invisible
+}
+
+item CourtS200
+{
+	HelpText CustomCourt191 !ShowIfUnselectable
+	Image Ico/CustomCourt191s IcoS IcoS
+	Invisible
+}
+
+item CourtS201
+{
+	HelpText CustomCourt192 !ShowIfUnselectable
+	Image Ico/CustomCourt192s IcoS IcoS
+	Invisible
+}
+
+item CourtS202
+{
+	HelpText CustomCourt193 !ShowIfUnselectable
+	Image Ico/CustomCourt193s IcoS IcoS
+	Invisible
+}
+
+item CourtS203
+{
+	HelpText CustomCourt194 !ShowIfUnselectable
+	Image Ico/CustomCourt194s IcoS IcoS
+	Invisible
+}
+
+item CourtS204
+{
+	HelpText CustomCourt195 !ShowIfUnselectable
+	Image Ico/CustomCourt195s IcoS IcoS
+	Invisible
+}
+
+item CourtS205
+{
+	HelpText CustomCourt196 !ShowIfUnselectable
+	Image Ico/CustomCourt196s IcoS IcoS
+	Invisible
+}
+
+item CourtS206
+{
+	HelpText CustomCourt197 !ShowIfUnselectable
+	Image Ico/CustomCourt197s IcoS IcoS
+	Invisible
+}
+
+item CourtS207
+{
+	HelpText CustomCourt198 !ShowIfUnselectable
+	Image Ico/CustomCourt198s IcoS IcoS
+	Invisible
+}
+
+item CourtS208
+{
+	HelpText CustomCourt199 !ShowIfUnselectable
+	Image Ico/CustomCourt199s IcoS IcoS
+	Invisible
+}
+
+item CourtS209
+{
+	HelpText CustomCourt200 !ShowIfUnselectable
+	Image Ico/CustomCourt200s IcoS IcoS
+	Invisible
+}
+
+item CourtS210
+{
+	HelpText CustomCourt201 !ShowIfUnselectable
+	Image Ico/CustomCourt201s IcoS IcoS
+	Invisible
+}
+
+item CourtS211
+{
+	HelpText CustomCourt202 !ShowIfUnselectable
+	Image Ico/CustomCourt202s IcoS IcoS
+	Invisible
+}
+
+item CourtS212
+{
+	HelpText CustomCourt203 !ShowIfUnselectable
+	Image Ico/CustomCourt203s IcoS IcoS
+	Invisible
+}
+
+item CourtS213
+{
+	HelpText CustomCourt204 !ShowIfUnselectable
+	Image Ico/CustomCourt204s IcoS IcoS
+	Invisible
+}
+
+item CourtS214
+{
+	HelpText CustomCourt205 !ShowIfUnselectable
+	Image Ico/CustomCourt205s IcoS IcoS
+	Invisible
+}
+
+item CourtS215
+{
+	HelpText CustomCourt206 !ShowIfUnselectable
+	Image Ico/CustomCourt206s IcoS IcoS
+	Invisible
+}
+
+item CourtS216
+{
+	HelpText CustomCourt207 !ShowIfUnselectable
+	Image Ico/CustomCourt207s IcoS IcoS
+	Invisible
+}
+
+item CourtS217
+{
+	HelpText CustomCourt208 !ShowIfUnselectable
+	Image Ico/CustomCourt208s IcoS IcoS
+	Invisible
+}
+
+item CourtS218
+{
+	HelpText CustomCourt209 !ShowIfUnselectable
+	Image Ico/CustomCourt209s IcoS IcoS
+	Invisible
+}
+
+item CourtS219
+{
+	HelpText CustomCourt210 !ShowIfUnselectable
+	Image Ico/CustomCourt210s IcoS IcoS
+	Invisible
+}
+
+item CourtS220
+{
+	HelpText CustomCourt211 !ShowIfUnselectable
+	Image Ico/CustomCourt211s IcoS IcoS
+	Invisible
+}
+
+item CourtS221
+{
+	HelpText CustomCourt212 !ShowIfUnselectable
+	Image Ico/CustomCourt212s IcoS IcoS
+	Invisible
+}
+
+item CourtS222
+{
+	HelpText CustomCourt213 !ShowIfUnselectable
+	Image Ico/CustomCourt213s IcoS IcoS
+	Invisible
+}
+
+item CourtS223
+{
+	HelpText CustomCourt214 !ShowIfUnselectable
+	Image Ico/CustomCourt214s IcoS IcoS
+	Invisible
+}
+
+item CourtS224
+{
+	HelpText CustomCourt215 !ShowIfUnselectable
+	Image Ico/CustomCourt215s IcoS IcoS
+	Invisible
+}
+
+item CourtS225
+{
+	HelpText CustomCourt216 !ShowIfUnselectable
+	Image Ico/CustomCourt216s IcoS IcoS
+	Invisible
+}
+
+item CourtS226
+{
+	HelpText CustomCourt217 !ShowIfUnselectable
+	Image Ico/CustomCourt217s IcoS IcoS
+	Invisible
+}
+
+item CourtS227
+{
+	HelpText CustomCourt218 !ShowIfUnselectable
+	Image Ico/CustomCourt218s IcoS IcoS
+	Invisible
+}
+
+item CourtS228
+{
+	HelpText CustomCourt219 !ShowIfUnselectable
+	Image Ico/CustomCourt219s IcoS IcoS
+	Invisible
+}
+
+item CourtS229
+{
+	HelpText CustomCourt220 !ShowIfUnselectable
+	Image Ico/CustomCourt220s IcoS IcoS
+	Invisible
+}
+
+item CourtS230
+{
+	HelpText CustomCourt221 !ShowIfUnselectable
+	Image Ico/CustomCourt221s IcoS IcoS
+	Invisible
+}
+
+item CourtS231
+{
+	HelpText CustomCourt222 !ShowIfUnselectable
+	Image Ico/CustomCourt222s IcoS IcoS
+	Invisible
+}
+
+item CourtS232
+{
+	HelpText CustomCourt223 !ShowIfUnselectable
+	Image Ico/CustomCourt223s IcoS IcoS
+	Invisible
+}
+
+item CourtS233
+{
+	HelpText CustomCourt224 !ShowIfUnselectable
+	Image Ico/CustomCourt224s IcoS IcoS
+	Invisible
+}
+
+item CourtS234
+{
+	HelpText CustomCourt225 !ShowIfUnselectable
+	Image Ico/CustomCourt225s IcoS IcoS
+	Invisible
+}
+
+item CourtS235
+{
+	HelpText CustomCourt226 !ShowIfUnselectable
+	Image Ico/CustomCourt226s IcoS IcoS
+	Invisible
+}
+
+item CourtS236
+{
+	HelpText CustomCourt227 !ShowIfUnselectable
+	Image Ico/CustomCourt227s IcoS IcoS
+	Invisible
+}
+
+item CourtS237
+{
+	HelpText CustomCourt228 !ShowIfUnselectable
+	Image Ico/CustomCourt228s IcoS IcoS
+	Invisible
+}
+
+item CourtS238
+{
+	HelpText CustomCourt229 !ShowIfUnselectable
+	Image Ico/CustomCourt229s IcoS IcoS
+	Invisible
+}
+
+item CourtS239
+{
+	HelpText CustomCourt230 !ShowIfUnselectable
+	Image Ico/CustomCourt230s IcoS IcoS
+	Invisible
+}
+
+item CourtS240
+{
+	HelpText CustomCourt231 !ShowIfUnselectable
+	Image Ico/CustomCourt231s IcoS IcoS
+	Invisible
+}
+
+item CourtS241
+{
+	HelpText CustomCourt232 !ShowIfUnselectable
+	Image Ico/CustomCourt232s IcoS IcoS
+	Invisible
+}
+
+item CourtS242
+{
+	HelpText CustomCourt233 !ShowIfUnselectable
+	Image Ico/CustomCourt233s IcoS IcoS
+	Invisible
+}
+
+item CourtS243
+{
+	HelpText CustomCourt234 !ShowIfUnselectable
+	Image Ico/CustomCourt234s IcoS IcoS
+	Invisible
+}
+
+item CourtS244
+{
+	HelpText CustomCourt235 !ShowIfUnselectable
+	Image Ico/CustomCourt235s IcoS IcoS
+	Invisible
+}
+
+item CourtS245
+{
+	HelpText CustomCourt236 !ShowIfUnselectable
+	Image Ico/CustomCourt236s IcoS IcoS
+	Invisible
+}
+
+item CourtS246
+{
+	HelpText CustomCourt237 !ShowIfUnselectable
+	Image Ico/CustomCourt237s IcoS IcoS
+	Invisible
+}
+
+item CourtS247
+{
+	HelpText CustomCourt238 !ShowIfUnselectable
+	Image Ico/CustomCourt238s IcoS IcoS
+	Invisible
+}
+
+item CourtS248
+{
+	HelpText CustomCourt239 !ShowIfUnselectable
+	Image Ico/CustomCourt239s IcoS IcoS
+	Invisible
+}
+
+item CourtS249
+{
+	HelpText CustomCourt240 !ShowIfUnselectable
+	Image Ico/CustomCourt240s IcoS IcoS
+	Invisible
+}
+
+item CourtS250
+{
+	HelpText CustomCourt241 !ShowIfUnselectable
+	Image Ico/CustomCourt241s IcoS IcoS
+	Invisible
+}
+
+item CourtS251
+{
+	HelpText CustomCourt242 !ShowIfUnselectable
+	Image Ico/CustomCourt242s IcoS IcoS
+	Invisible
+}
+
+item CourtS252
+{
+	HelpText CustomCourt243 !ShowIfUnselectable
+	Image Ico/CustomCourt243s IcoS IcoS
+	Invisible
+}
+
+item CourtS253
+{
+	HelpText CustomCourt244 !ShowIfUnselectable
+	Image Ico/CustomCourt244s IcoS IcoS
+	Invisible
+}
+
+item CourtS254
+{
+	HelpText CustomCourt245 !ShowIfUnselectable
+	Image Ico/CustomCourt245s IcoS IcoS
+	Invisible
+}
+
+item CourtS255
+{
+	HelpText CustomCourt246 !ShowIfUnselectable
+	Image Ico/CustomCourt246s IcoS IcoS
+	Invisible
+}
+
+item CourtS256
+{
+	HelpText CustomCourt247 !ShowIfUnselectable
+	Image Ico/CustomCourt247s IcoS IcoS
+	Invisible
+}
+
+item CourtS257
+{
+	HelpText CustomCourt248 !ShowIfUnselectable
+	Image Ico/CustomCourt248s IcoS IcoS
+	Invisible
+}
+
+item CourtS258
+{
+	HelpText CustomCourt249 !ShowIfUnselectable
+	Image Ico/CustomCourt249s IcoS IcoS
+	Invisible
+}
+
+item CourtS259
+{
+	HelpText CustomCourt250 !ShowIfUnselectable
+	Image Ico/CustomCourt250s IcoS IcoS
+	Invisible
+}
+
+item CourtS260
+{
+	HelpText CustomCourt251 !ShowIfUnselectable
+	Image Ico/CustomCourt251s IcoS IcoS
+	Invisible
+}
+
+item CourtS261
+{
+	HelpText CustomCourt252 !ShowIfUnselectable
+	Image Ico/CustomCourt252s IcoS IcoS
+	Invisible
+}
+
+item CourtS262
+{
+	HelpText CustomCourt253 !ShowIfUnselectable
+	Image Ico/CustomCourt253s IcoS IcoS
+	Invisible
+}
+
+item CourtS263
+{
+	HelpText CustomCourt254 !ShowIfUnselectable
+	Image Ico/CustomCourt254s IcoS IcoS
+	Invisible
+}
+
+item CourtS264
+{
+	HelpText CustomCourt255 !ShowIfUnselectable
+	Image Ico/CustomCourt255s IcoS IcoS
+	Invisible
+}
+
+item CourtS265
+{
+	HelpText CustomCourt256 !ShowIfUnselectable
+	Image Ico/CustomCourt256s IcoS IcoS
+	Invisible
+}
+
+item CourtS266
+{
+	HelpText CustomCourt257 !ShowIfUnselectable
+	Image Ico/CustomCourt257s IcoS IcoS
+	Invisible
+}
+
+item CourtS267
+{
+	HelpText CustomCourt258 !ShowIfUnselectable
+	Image Ico/CustomCourt258s IcoS IcoS
+	Invisible
+}
+
+item CourtS268
+{
+	HelpText CustomCourt259 !ShowIfUnselectable
+	Image Ico/CustomCourt259s IcoS IcoS
+	Invisible
+}
+
+item CourtS269
+{
+	HelpText CustomCourt260 !ShowIfUnselectable
+	Image Ico/CustomCourt260s IcoS IcoS
+	Invisible
+}
+
+item CourtS270
+{
+	HelpText CustomCourt261 !ShowIfUnselectable
+	Image Ico/CustomCourt261s IcoS IcoS
+	Invisible
+}
+
+item CourtS271
+{
+	HelpText CustomCourt262 !ShowIfUnselectable
+	Image Ico/CustomCourt262s IcoS IcoS
+	Invisible
+}
+
+item CourtS272
+{
+	HelpText CustomCourt263 !ShowIfUnselectable
+	Image Ico/CustomCourt263s IcoS IcoS
+	Invisible
+}
+
+item CourtS273
+{
+	HelpText CustomCourt264 !ShowIfUnselectable
+	Image Ico/CustomCourt264s IcoS IcoS
+	Invisible
+}
+
+item CourtS274
+{
+	HelpText CustomCourt265 !ShowIfUnselectable
+	Image Ico/CustomCourt265s IcoS IcoS
+	Invisible
+}
+
+item CourtS275
+{
+	HelpText CustomCourt266 !ShowIfUnselectable
+	Image Ico/CustomCourt266s IcoS IcoS
+	Invisible
+}
+
+item CourtS276
+{
+	HelpText CustomCourt267 !ShowIfUnselectable
+	Image Ico/CustomCourt267s IcoS IcoS
+	Invisible
+}
+
+item CourtS277
+{
+	HelpText CustomCourt268 !ShowIfUnselectable
+	Image Ico/CustomCourt268s IcoS IcoS
+	Invisible
+}
+
+item CourtS278
+{
+	HelpText CustomCourt269 !ShowIfUnselectable
+	Image Ico/CustomCourt269s IcoS IcoS
+	Invisible
+}
+
+item CourtS279
+{
+	HelpText CustomCourt270 !ShowIfUnselectable
+	Image Ico/CustomCourt270s IcoS IcoS
+	Invisible
+}
+
+item CourtS280
+{
+	HelpText CustomCourt271 !ShowIfUnselectable
+	Image Ico/CustomCourt271s IcoS IcoS
+	Invisible
+}
+
+item CourtS281
+{
+	HelpText CustomCourt272 !ShowIfUnselectable
+	Image Ico/CustomCourt272s IcoS IcoS
+	Invisible
+}
+
+item CourtS282
+{
+	HelpText CustomCourt273 !ShowIfUnselectable
+	Image Ico/CustomCourt273s IcoS IcoS
+	Invisible
+}
+
+item CourtS283
+{
+	HelpText CustomCourt274 !ShowIfUnselectable
+	Image Ico/CustomCourt274s IcoS IcoS
+	Invisible
+}
+
+item CourtS284
+{
+	HelpText CustomCourt275 !ShowIfUnselectable
+	Image Ico/CustomCourt275s IcoS IcoS
+	Invisible
+}
+
+item CourtS285
+{
+	HelpText CustomCourt276 !ShowIfUnselectable
+	Image Ico/CustomCourt276s IcoS IcoS
+	Invisible
+}
+
+item CourtS286
+{
+	HelpText CustomCourt277 !ShowIfUnselectable
+	Image Ico/CustomCourt277s IcoS IcoS
+	Invisible
+}
+
+item CourtS287
+{
+	HelpText CustomCourt278 !ShowIfUnselectable
+	Image Ico/CustomCourt278s IcoS IcoS
+	Invisible
+}
+
+item CourtS288
+{
+	HelpText CustomCourt279 !ShowIfUnselectable
+	Image Ico/CustomCourt279s IcoS IcoS
+	Invisible
+}
+
+item CourtS289
+{
+	HelpText CustomCourt280 !ShowIfUnselectable
+	Image Ico/CustomCourt280s IcoS IcoS
+	Invisible
+}
+
+item CourtS290
+{
+	HelpText CustomCourt281 !ShowIfUnselectable
+	Image Ico/CustomCourt281s IcoS IcoS
+	Invisible
+}
+
+item CourtS291
+{
+	HelpText CustomCourt282 !ShowIfUnselectable
+	Image Ico/CustomCourt282s IcoS IcoS
+	Invisible
+}
+
+item CourtS292
+{
+	HelpText CustomCourt283 !ShowIfUnselectable
+	Image Ico/CustomCourt283s IcoS IcoS
+	Invisible
+}
+
+item CourtS293
+{
+	HelpText CustomCourt284 !ShowIfUnselectable
+	Image Ico/CustomCourt284s IcoS IcoS
+	Invisible
+}
+
+item CourtS294
+{
+	HelpText CustomCourt285 !ShowIfUnselectable
+	Image Ico/CustomCourt285s IcoS IcoS
+	Invisible
+}
+
+item CourtS295
+{
+	HelpText CustomCourt286 !ShowIfUnselectable
+	Image Ico/CustomCourt286s IcoS IcoS
+	Invisible
+}
+
+item CourtS296
+{
+	HelpText CustomCourt287 !ShowIfUnselectable
+	Image Ico/CustomCourt287s IcoS IcoS
+	Invisible
+}
+
+item CourtS297
+{
+	HelpText CustomCourt288 !ShowIfUnselectable
+	Image Ico/CustomCourt288s IcoS IcoS
+	Invisible
+}
+
+item CourtS298
+{
+	HelpText CustomCourt289 !ShowIfUnselectable
+	Image Ico/CustomCourt289s IcoS IcoS
+	Invisible
+}
+
+item CourtS299
+{
+	HelpText CustomCourt290 !ShowIfUnselectable
+	Image Ico/CustomCourt290s IcoS IcoS
+	Invisible
+}
+
+item CourtS300
+{
+	HelpText CustomCourt291 !ShowIfUnselectable
+	Image Ico/CustomCourt291s IcoS IcoS
+	Invisible
+}
+
+item CourtS301
+{
+	HelpText CustomCourt292 !ShowIfUnselectable
+	Image Ico/CustomCourt292s IcoS IcoS
+	Invisible
+}
+
+item CourtS302
+{
+	HelpText CustomCourt293 !ShowIfUnselectable
+	Image Ico/CustomCourt293s IcoS IcoS
+	Invisible
+}
+
+item CourtS303
+{
+	HelpText CustomCourt294 !ShowIfUnselectable
+	Image Ico/CustomCourt294s IcoS IcoS
+	Invisible
+}
+
+item CourtS304
+{
+	HelpText CustomCourt295 !ShowIfUnselectable
+	Image Ico/CustomCourt295s IcoS IcoS
+	Invisible
+}
+
+item CourtS305
+{
+	HelpText CustomCourt296 !ShowIfUnselectable
+	Image Ico/CustomCourt296s IcoS IcoS
+	Invisible
+}
+
+item CourtS306
+{
+	HelpText CustomCourt297 !ShowIfUnselectable
+	Image Ico/CustomCourt297s IcoS IcoS
+	Invisible
+}
+
+item CourtS307
+{
+	HelpText CustomCourt298 !ShowIfUnselectable
+	Image Ico/CustomCourt298s IcoS IcoS
+	Invisible
+}
+
+item CourtS308
+{
+	HelpText CustomCourt299 !ShowIfUnselectable
+	Image Ico/CustomCourt299s IcoS IcoS
+	Invisible
+}
+
+item CourtS309
+{
+	HelpText CustomCourt300 !ShowIfUnselectable
+	Image Ico/CustomCourt300s IcoS IcoS
+	Invisible
+}
+
+item CourtS310
+{
+	HelpText CustomCourt301 !ShowIfUnselectable
+	Image Ico/CustomCourt301s IcoS IcoS
+	Invisible
+}
+
+item CourtS311
+{
+	HelpText CustomCourt302 !ShowIfUnselectable
+	Image Ico/CustomCourt302s IcoS IcoS
+	Invisible
+}
+
+item CourtS312
+{
+	HelpText CustomCourt303 !ShowIfUnselectable
+	Image Ico/CustomCourt303s IcoS IcoS
+	Invisible
+}
+
+item CourtS313
+{
+	HelpText CustomCourt304 !ShowIfUnselectable
+	Image Ico/CustomCourt304s IcoS IcoS
+	Invisible
+}
+
+item CourtS314
+{
+	HelpText CustomCourt305 !ShowIfUnselectable
+	Image Ico/CustomCourt305s IcoS IcoS
+	Invisible
+}
+
+item CourtS315
+{
+	HelpText CustomCourt306 !ShowIfUnselectable
+	Image Ico/CustomCourt306s IcoS IcoS
+	Invisible
+}
+
+item CourtS316
+{
+	HelpText CustomCourt307 !ShowIfUnselectable
+	Image Ico/CustomCourt307s IcoS IcoS
+	Invisible
+}
+
+item CourtS317
+{
+	HelpText CustomCourt308 !ShowIfUnselectable
+	Image Ico/CustomCourt308s IcoS IcoS
+	Invisible
+}
+
+item CourtS318
+{
+	HelpText CustomCourt309 !ShowIfUnselectable
+	Image Ico/CustomCourt309s IcoS IcoS
+	Invisible
+}
+
+//======== PlayerCfg
+item
+{
+	HelpText PlayerCfg02 !ShowIfUnselectable
+	Image Ico/PlayerCfg02 IcoS IcoS
+}
+
+item
+{
+	HelpText PlayerCfg03 !ShowIfUnselectable
+	Image Ico/PlayerCfg03 IcoS IcoS
+}
+
+item
+{
+	HelpText PlayerCfg04 !ShowIfUnselectable
+	Image Ico/PlayerCfg04 IcoS IcoS
+}
+
+
+//======== NbSet
+item
+{
+	HelpText NbSet02 !ShowIfUnselectable
+	Image Ico/NbSet02 IcoS IcoS
+}
+
+item
+{
+	HelpText NbSet03 !ShowIfUnselectable
+	Image Ico/NbSet03 IcoS IcoS
+}
+
+//======== Camera Scroll bar (used by Ball Size as well)
+item CamScrollBar
+{
+	Image Menu/Bar02vs 90 15 Rounded
+	Invisible
+}
+
+
+item CamScrollButton
+{
+	Image Menu/RoundBg01vs 12 15 Rounded
+	Pos 0 0 Center Center
+	Invisible
+}

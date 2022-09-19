@@ -1,0 +1,6 @@
+Anim: Service.x
+Info: 57 57 41.0	// Hit ball - Max Extension - Throw Ball
+Author: emmainf | Almagro
+
+SweetSpot: 8.4 -14.2 231.9 0.104 -0.182 0.978
+HandThrow: 12.8 -15.5 192.4 0.440 0.676 0.591

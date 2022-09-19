@@ -1,0 +1,5 @@
+Anim: BackHand-Slice.x
+Info: 28.0 28.0	// Hit ball - Max Extension
+Speed: 1.0
+
+Author: Lucian Cucuteanu | David Nalbandian

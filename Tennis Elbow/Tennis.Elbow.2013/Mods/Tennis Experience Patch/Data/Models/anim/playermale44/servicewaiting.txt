@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 17 34 21 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | Tomas Berdych v2
+
+HandBounce: -27.8 -26.1 77.5 0.400 0.183 -0.898

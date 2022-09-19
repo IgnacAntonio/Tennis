@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 39.5 39.5
+Speed: 1.0
+Author: Neeky McDeez | Soderling v2

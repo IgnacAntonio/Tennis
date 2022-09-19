@@ -1,0 +1,276 @@
+Include DAVIS_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	-35
+def	dy	15
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.115
+def	xr	FrameW 0.885
+
+	add y dy
+
+//====== 1stServe
+Item
+{
+	Text 1stServe5
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/1stServe
+	Font StatValueF
+	pos xl+101 y+10 right center
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	Font StatValue2F
+	pos xr-145 y+10 left center
+}
+
+//====== Win1stServe
+Item
+{
+	Text Win1stServe5
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl+101 y+9 right center
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValue2F
+	pos xr-145 y+9 left center
+}
+
+ //====== Ace
+Item
+{
+	Text Ace
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/Ace
+	Font StatValueF
+	pos xl+88 y+6 right center
+}
+
+Item
+{
+	Text /$ts2/Ace
+	Font StatValue2F
+	pos xr-83 y+6 left center
+}
+
+//====== DoubleFault
+Item
+{
+	Text DoubleFault
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/DoubleFault
+	Font StatValueF
+	pos xl+88 y+4 right center
+}
+
+Item
+{
+	Text /$ts2/DoubleFault
+	Font StatValue2F
+	pos xr-83 y+4 left center
+}
+
+//====== Winners
+Item
+{
+	Text Winners
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/Winner
+	Font StatValueF
+	pos xl+88 y+1 right center
+}
+
+Item
+{
+	Text /$ts2/Winner
+	Font StatValue2F
+	pos xr-83 y+1 left center
+}
+
+//====== Winners
+Item
+{
+	Text Winners
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/Winner
+	Font StatValueF
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/Winner
+	Font StatValue2F
+	pos xr-83 y left center
+}
+
+//====== NetApproach
+Item
+{
+	Text NetApproach2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/NetApproach
+	Font StatValueF
+	pos xl+101 y-4 right center
+}
+
+Item
+{
+	Text /$ts2/NetApproach
+	Font StatValue2F
+	pos xr-145 y-4 left center
+}
+
+//====== BreakPoint
+Item
+{
+	Text BreakPoint
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/BreakPoint
+	Font StatValueF
+	pos xl+101 y-6 right center
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	Font StatValue2F
+	pos xr-145 y-6 left center
+}
+
+//====== Errors
+Item
+{
+	Text Unforced
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/UnforcedError
+	Font StatValue2F
+	pos xl+88 y-9 right center
+}
+
+Item
+{
+	Text /$ts2/UnforcedError
+	Font StatValueF
+	pos xr-83 y-9 left center
+}
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl+800 y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	Font StatValueF
+	pos xl+88 y-10 right center
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font StatValueF
+	pos xr-83 y-10 left center
+}
+
+Item
+{
+   Image Ico/DavisCup/HideStat FrameW FrameH
+   Pos 0 -118.5
+}

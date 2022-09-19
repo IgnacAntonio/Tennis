@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 69.0 69.0 40.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Davide Menez | Alex De Minaur

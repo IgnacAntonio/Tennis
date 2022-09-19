@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 72.0 72.0 44.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Alcaraz

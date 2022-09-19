@@ -1,0 +1,629 @@
+Include PlayerPlanning.def
+
+Background	#PreviousMenu
+
+Font	IcoF		HugeChars 9 13 0xFFFFFFFF 0 Center Center LH1.0
+Font	ResultF		HugeChars 9 13 0xFFFFE040 0xDF0F0F4F Center Center LH1.0
+
+Fontsize	BoardF	9 13
+
+
+// $1 : HumanNum
+// $2 : slot num
+// $3 : 0 : planning ; 1 : other qualies ; 2 : Te Selection
+
+item WorldRegion
+{
+	Invisible
+	OnEnter !Always
+
+	OnAction	// get the tournament for the current week & slot index
+	{
+		SetCfg /Board/TypeRank -1
+		GetStringLang /WT_Intern/Text /Board/Region
+	}
+
+	OnActionIfNot $3 1
+	{
+		GetWeekTournamentInfoBySlot $1 /Board/CT_Week $2 Board /Intern/Te	// player + 1stweek + slot + section + Mode
+	}
+
+	OnActionIf $3 1
+	{
+		GetOtherQualies $2 /WT_Intern/OtherQualif Board		// Slot + Qualies Flag + Section
+	}
+
+	OnAction	// get the Region
+	{
+		GetStringLang /WT_Intern/Text /Board/Region
+	}
+
+	OnAction	// NbWeek from Current
+	{
+		SetCfg /WT_Intern/NbWeek /Board/CurrentWeek
+		MulAddMulCfg /WT_Intern/NbWeek 1 /WT_Intern/Week -1
+	}
+
+	OnActionIf /WT_Intern/NbWeek -52 -1
+	{
+		MulAddMulCfg /WT_Intern/NbWeek 1 52
+	}
+}
+
+def	y	dy 0.5
+add	xW	dxW 0.5
+
+//============================================ Week
+
+add	dxW	8
+
+item
+{
+	Image Menu/RoundBg03 dxW dy Rounded
+	Pos 0 0 left up
+	Color 0xCF040EA4
+
+	ShowIf /Board/FirstOfWeek 1
+	ShowIf /Board/Injured 0
+}
+
+
+item
+{
+	HelpText Injured !ShowIfUnselectable
+	Image Menu/RoundBg03 dxW dy Rounded
+	Pos 0 0 left up
+	Color 0xCFFF0F1F
+
+	ShowIf /Board/FirstOfWeek 1
+	ShowIfNot /Board/Injured 0
+}
+
+
+add	dxW	-8
+
+item
+{
+	Text /Board/CurrentWeek
+	Pos xW y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxW
+
+	ShowIf /Board/FirstOfWeek 1
+	ShowIfNot /Board/CurrentWeek /WT_Intern/Week
+	ShowIf /Board/CanTogglePlanning 1
+}
+
+item
+{
+	HelpText PlayerCant04 !ShowIfUnselectable
+	Text /Board/CurrentWeek
+	Pos xW y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxW
+
+	Color 0xFFFFFFFF
+
+	ShowIf /Board/FirstOfWeek 1
+	ShowIfNot /Board/CurrentWeek /WT_Intern/Week
+	ShowIfNot /Board/CanTogglePlanning 1
+	ShowIfNot /Board/SinglePlanned 2
+}
+
+item
+{
+	Text /Board/CurrentWeek
+	Pos xW y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxW
+
+	Color 0xFFFFFFFF
+
+	ShowIf /Board/FirstOfWeek 1
+	ShowIfNot /Board/CurrentWeek /WT_Intern/Week
+	ShowIfNot /Board/CanTogglePlanning 1
+	ShowIf /Board/SinglePlanned 2
+}
+
+item
+{
+	Text /Board/CurrentWeek
+	HelpText CurrentWeek !ShowIfUnselectable
+	Pos xW y	center	center
+	Font BoardFlashF
+	ShrinkToMaxPixel dxW
+
+	ShowIf /Board/FirstOfWeek 1
+	ShowIf /Board/CurrentWeek /WT_Intern/Week
+}
+
+
+//============================================ Background
+
+Font	BgF	HugeChars 18 24 0x7FFFFFFF 0 Circle Left Up
+
+def	wBg	640
+add	wBg	-xT
+
+def	hBg	dy
+add	hBg	1
+
+def	xBg	xT
+add	xBg	-2
+
+item	// No tournament
+{
+	Image Menu/RoundBg03 340 hBg Rounded
+	Font BgF
+	Pos 320 0 Center
+	Color 0xAF040EA4
+	ShowIf /Board/TypeRank -1
+}
+
+item	// No tournament
+{
+	Text CT_NoTrn
+	Font BoardF
+	Pos 320 y
+
+	ShrinkToMaxPixel 320
+	ShowIf /Board/TypeRank -1
+}
+
+item	// Grand Slams
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Font BgF
+	Pos xBg 0
+	Color 0xCFFE6A1F
+	ShowIf /Board/TypeRank 0 1
+}
+
+
+item	// Grand Slams, master cup, master series
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Font BgF
+	Pos xBg 0
+	Color 0xEFFECC00
+	ShowIf /Board/TypeRank 2
+}
+
+item	// Davis Cup
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Font BgF
+	Pos xBg 0
+	Color 0xCF00DF25
+	ShowIf /Board/TypeRank 3
+}
+
+item	// Int'l Gold
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Font BgF
+	Pos xBg 0
+	Color 0xCF6B6B6B
+	ShowIf /Board/TypeRank 4
+}
+
+item	// Int'l
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Font BgF
+	Pos xBg 0
+	Color 0xEFFEFEFE
+	ShowIf /Board/TypeRank 5
+}
+
+item	// Challengers
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Font BgF
+	Pos xBg 0
+	Color 0xCFC3FEAA
+	ShowIf /Board/TypeRank 6
+}
+
+item	// Futures
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Font BgF
+	Pos xBg 0
+	Color 0xCF5996FE
+	ShowIf /Board/TypeRank 7 8
+}
+
+add	xBg	0.5
+add	wBg	-1.0
+
+item	// Enter of Qualies
+{
+	Image Menu/RectBg05 wBg hBg
+	Font BgF
+	Pos xBg 0
+	Color 0x7FFFFFFF
+
+	HelpText OtherQualif
+
+	OnAction
+	{
+		Menu WT_OtherQualifSelect $2
+	}
+
+	ShowIf $3 1
+}
+
+item	// Select Tournament
+{
+	Image Menu/RectBg05 wBg hBg
+	Font BgF
+	Pos xBg 0
+	Color 0x7FFFFFFF
+
+	HelpText EnterTournament
+
+	OnActionIf /WT_Intern/NbWeek 30 52
+	{
+		Menu WT_SelectTrnWeekWarning $1 $2
+		BreakAction
+	}
+
+	OnAction
+	{
+		Menu WT_SelectTournament $1 $2
+	}
+
+//	ShowIf /Board/SinglePlanned 0
+//	ShowIf /Board/DoublePlanned 0 !Or
+	ShowIf $3 2
+	ShowIfNot /Board/TypeRank -1
+}
+
+/*item	// Missed Both Qualies
+{
+	Image Menu/RectBg05 wBg hBg
+	Font BgF
+	Pos xBg 0
+	Color 0x7FFFFFFF
+
+	HelpText EnterTournament
+
+	ShowIfNot /Board/SinglePlanned 0
+	ShowIfNot /Board/DoublePlanned 0
+	ShowIf $3 2
+} */
+
+
+//============================================ Info
+
+add	xT	dxT 0.5
+
+item
+{
+	Text /Board/Type
+	Pos xT y	center	center
+	Font BoardF
+	ShrinkToMaxPixel dxT
+
+	ShowIfNot /Board/TypeRank -1
+}
+
+add	xN	dxN 0.5
+
+item
+{
+	Text /Board/Name
+	Pos xN y	center	center
+	Font BoardF
+	ShrinkToMaxPixel dxN
+
+	ShowIfNot /Board/Name -1
+	ShowIfNot /Board/TypeRank -1
+
+}
+
+item Round
+{
+	CycleButton #Text
+	Pos xN y	center	center
+	Font BoardF
+
+	OnAction
+	{
+		SlideCfg /Board/Round -1 100
+	}
+
+	Unselectable
+	ShowIfNot /Board/Round -1
+	ShowIfNot /Board/TypeRank -1
+}
+
+add	xC	dxC 0.5
+
+item
+{
+	Text /Board/Country
+	HelpText /WT_Intern/Text !ShowIfUnselectable
+
+	Pos xC y	center	center
+	Font BoardF
+	ShrinkToMaxPixel dxC
+
+	ShowIfNot /Board/Country -1
+	ShowIfNot /Board/TypeRank -1
+}
+
+
+add	xP	dxP 0.95
+
+item
+{
+	Text /Board/Gain
+	HelpText TitleB23
+
+	Pos xP y	right	center
+	Font BoardF
+	ShrinkToMaxPixel dxP
+
+	OnAction
+	{
+		Menu BoardPastChampions /Board/BnkNum
+	}
+
+	ShowIfNot /Board/Gain -1
+	ShowIfNot /Board/TypeRank -1
+	SelectableIfNot /Board/TypeRank 3	// Not Davis
+}
+
+add	xG	dxG 0.5
+
+def	IcoS	23
+add	y	-0.5
+
+item CourtS01	// following images in Global.Def
+{
+	HelpText Court01 !ShowIfUnselectable
+	CycleButton #ImageGI
+	Font IcoF
+
+	Image Ico/Court01s IcoS IcoS
+	Pos xG y
+
+	OnAction
+	{
+		SlideCfg /Board/Ground 0 500
+	}
+
+	Unselectable
+	ShowIfNot /Board/Ground -1
+	ShowIfNot /Board/TypeRank -1
+}
+
+add	y	0.5
+
+
+add	xS	dxS 0.5
+
+item
+{
+	Text SpaceLeft /Board/DrawS
+	Pos xS y	left center
+	Font BoardF
+	ShrinkToMaxPixel dxS
+
+	ShowIfNot /Board/DrawS 0
+	ShowIfNot /Board/TypeRank -1
+	ShowIf /Board/LastResultS -1
+}
+
+item Round
+{
+	Text SpaceBoth /Board/DrawS
+	HelpText LastResult /WT_Intern/Text !ShowIfUnselectable
+	Pos xS y	left center
+	Font ResultF
+	ShrinkToMaxPixel dxS
+
+	OnRender
+	{
+		GetStringLang /WT_Intern/Text /Board/LastResultS -1
+	}
+
+	ShowIfNot /Board/DrawS 0
+	ShowIfNot /Board/TypeRank -1
+	ShowIfNot /Board/LastResultS -1
+}
+
+
+add	xD	dxD 0.5
+
+item
+{
+	Text SpaceLeft /Board/DrawD
+	Pos xD y	left	center
+	Font BoardF
+	ShrinkToMaxPixel dxD
+
+	ShowIfNot /Board/DrawD 0
+	ShowIfNot /Board/TypeRank -1
+	ShowIf /Board/LastResultD -1
+}
+
+item Round
+{
+	Text SpaceBoth /Board/DrawD
+	HelpText LastResult /WT_Intern/Text !ShowIfUnselectable
+	Pos xD y	left	center
+	Font ResultF
+	ShrinkToMaxPixel dxD
+
+	OnRender
+	{
+		GetStringLang /WT_Intern/Text /Board/LastResultD -1
+	}
+
+	ShowIfNot /Board/DrawD 0
+	ShowIfNot /Board/TypeRank -1
+	ShowIfNot /Board/LastResultD -1
+}
+
+def	IcoS	24
+
+
+item FuncTogglePlanning		// $1 : HumanNum ; $2 : Slot num ; $3 : Competition ; $4 : RankType
+{
+	OnActionIf /WT_Intern/CanTogglePlanning 0
+	{
+		Menu PlayerCant /WT_Intern/Planned+3
+		BreakAction
+	}
+
+	OnActionIfNot $4 0
+	{
+		Menu PlayerLowRank $1 $2 $3 $4-1
+		BreakAction
+	}
+
+	OnAction
+	{
+		TogglePlanning $1 $3 /Board/CT_Week $2 /WT_Intern/CancelFee
+
+		MulAddMulCfg $3 /$p/Partner		// Competition * Partner
+		MulAddMulCfg $3 /Board/NeedParter	// no need partner for Master Cup & Davis
+	}
+
+	OnActionIf $3 -1	// No Partner for Double ?
+	{
+		Menu ChoosePartner $1+1
+	}
+
+	Invisible
+	Unselectable
+}
+
+
+item FuncClearQualif
+{
+	Invisible
+
+	OnActionIf /Board/SingleRank 1
+	{
+		SetCfg /Board/SingleRank 0
+	}
+
+	OnActionIf /Board/DoubleRank 1
+	{
+		SetCfg /Board/DoubleRank 0
+	}
+}
+
+
+item SingleOn
+{
+	HelpText ExitSingle
+	Image Ico/Board_Single IcoS IcoS
+	Pos xS y	right center
+
+	Color 0xFFFFFFFF
+
+	OnAction
+	{
+		SetCfg /WT_Intern/Planned /Board/SinglePlanned
+		SetCfg /WT_Intern/CancelFee /Board/CancelFeeS
+		SetCfg /WT_Intern/CanTogglePlanning /Board/CanTogglePlanningS
+		Function FuncTogglePlanning $1 $2 0 /Board/SingleRank
+	}
+
+	ShowIfNot /Board/DrawS 0
+	ShowIfNot /Board/TypeRank -1
+
+	ShowIf /Board/SinglePlanned 1
+	SelectableIf $3 0
+}
+
+
+item SingleOff
+{
+	HelpText EnterSingle
+	Image Ico/Board_Single IcoS IcoS
+	Pos xS y	right center
+
+	OnAction
+	{
+		SetCfg /WT_Intern/Planned /Board/SinglePlanned
+		SetCfg /WT_Intern/CancelFee 0
+		SetCfg /WT_Intern/CanTogglePlanning /Board/CanTogglePlanningS
+	}
+
+	OnActionIf /$p/DoQualif 2
+	{
+		Function FuncClearQualif
+	}
+
+	OnAction
+	{
+		Function FuncTogglePlanning $1 $2 0 /Board/SingleRank
+	}
+
+	ShowIfNot /Board/DrawS 0
+	ShowIfNot /Board/TypeRank -1
+
+	ShowIfNot /Board/SinglePlanned 1
+	SelectableIf $3 0
+}
+
+
+item DoubleOn
+{
+	HelpText ExitDouble
+	Image Ico/Board_Double IcoS IcoS
+	Pos xD y	right center
+
+	Color 0xFFFFFFFF
+
+	OnAction
+	{
+		SetCfg /WT_Intern/Planned /Board/DoublePlanned
+		SetCfg /WT_Intern/CancelFee /Board/CancelFeeD
+		SetCfg /WT_Intern/CanTogglePlanning /Board/CanTogglePlanningD
+		Function FuncTogglePlanning $1 $2 1 /Board/DoubleRank
+	}
+
+	ShowIfNot /Board/DrawD 0
+	ShowIfNot /Board/TypeRank -1
+
+	ShowIf /Board/DoublePlanned 1
+	SelectableIf $3 0
+}
+
+
+item DoubleOff
+{
+	HelpText EnterDouble
+	Image Ico/Board_Double IcoS IcoS
+	Pos xD y	right center
+
+	OnAction
+	{
+		SetCfg /WT_Intern/Planned /Board/DoublePlanned
+		SetCfg /WT_Intern/CancelFee 0
+		SetCfg /WT_Intern/CanTogglePlanning /Board/CanTogglePlanningD
+	}
+
+	OnActionIf /$p/DoQualif 2
+	{
+		Function FuncClearQualif
+	}
+
+	OnAction
+	{
+		Function FuncTogglePlanning $1 $2 1 /Board/DoubleRank
+	}
+
+	ShowIfNot /Board/DrawD 0
+	ShowIfNot /Board/TypeRank -1
+
+	ShowIfNot /Board/DoublePlanned 1
+	SelectableIf $3 0
+}

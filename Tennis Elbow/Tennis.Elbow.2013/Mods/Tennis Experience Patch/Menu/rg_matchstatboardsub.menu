@@ -1,0 +1,378 @@
+Include RG_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	EdgeS 2
+def	dy	17.5
+
+def	xtl	xc
+
+item
+{
+	Invisible
+	OnAction
+	{
+		SetCfg $ts1 $StatTeam1Set$1 !OnEnter
+		SetCfg $ts2 $StatTeam2Set$1 !OnEnter
+	}
+}
+
+	SetCfg /Intern/RoundX /Intern/WideBorder+RoundX !Apply
+
+item Summary
+{
+	CycleButton #Text
+
+	OnAction
+	{
+		SlideCfg /Intern/MatchBoardSet 0 5 5
+	}
+
+	Font SummaryF
+	Unselectable
+	Pos xtl 50
+	add y dy
+	add y 8
+}
+
+item
+{
+	Font TimeF
+	Text SCB_Stadium6
+	Unselectable
+	Pos xr 65
+	add y dy
+	add y 8
+
+}
+
+item
+{
+	Text SCB_Category1
+	Unselectable
+	Pos xl-60 65 Left Center
+	Font TimeF
+	ShowIf /Intern/GameType 2
+	ShowIf SetCfg /WT_Static/WTA 0
+	ShowIf /Intern/PlayerCfg 0
+}
+
+item
+{
+	Text SCB_Category2
+	Unselectable
+	Pos xl-60 65 Left Center
+	Font TimeF
+	ShowIf /Intern/GameType 2
+	ShowIfNot /Intern/PlayerCfg 0
+}
+
+item Round
+{
+	CycleButton #Text
+	Unselectable
+	Pos xl+30 65 Left Center
+	Font TimeF
+	ShrinkToMaxPixel 50
+
+	OnAction
+	{
+		SlideCfg /WT_Intern/Round -1 100
+	}
+
+	ShowIfNot /WT_Intern/Round 12
+	ShowIf /Intern/GameType 2
+}
+
+item
+{
+	Text SCB_EXMatch
+	Unselectable	
+	Pos xl-60 65 Left Center
+	Font TimeF
+	ShowIfNot /Intern/GameType 2
+	ShrinkToMaxPixel 120
+}
+
+//================================= Online level
+//add y -dy 0.30
+add y -dy 0.90
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xl y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam1/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xr y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam2/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT2 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT2 0 10000
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO /StatTeam1/Elo /StatTeam1/EloNbGame
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item
+{
+	Text NW_ELO /StatTeam2/Elo /StatTeam2/EloNbGame
+	Pos xr y Center Center
+
+	Font VSmallF
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y -dy 0.30
+
+
+//================================= Time & Names
+Item
+{
+	Text /$ts1/PrTime
+	Font TimeF
+	pos xc 65
+	add y dy
+}
+
+Item
+{
+	Text /Intern/Team1
+	Font NameF
+	pos xl+95 95 right center
+}
+
+Item
+{
+	Text /Intern/Team2
+	Font NameF
+	pos xr-95 95 left center
+	add y dy
+}
+
+item
+{
+	Text SCB_Seed02 /WorldTour_p1/Seed+1
+	Pos xl+95 108 right center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /WorldTour_p1/Seed -1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+item
+{
+	Text SCB_Seed02 /WorldTour_p2/Seed+1
+	Pos xr-95 108 left center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /WorldTour_p2/Seed -1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+item
+{
+	Text SCB_CountryRank /InGame_p1/Country3L /InGame_p1/RankS 
+	Pos xl+78 108 right center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/PlayerCfg 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreRankCountryX
+	}
+}
+
+item
+{
+	Text SCB_CountryRank /InGame_p2/Country3L /InGame_p2/RankS 
+	Pos xr-78 108 left center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/PlayerCfg 0
+}
+
+//================================= Score
+Item
+{
+	Text EOM_Retired
+	pos 140 118
+	Font SeedF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos 140 118
+	Font SeedF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_Retired
+	pos 290 118
+	Font SeedF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos 290 118
+	Font VSmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text SCB_Score
+	Font StatLabelF
+	pos xtl y+30
+}
+
+Item
+{
+	Text /$ts1/PrScore
+	Font ScoreF
+	pos xtl y+43
+	add y 8
+}
+
+//============================== Stats
+
+add y dy	0.5
+
+Item
+{
+	SubMenuIf /Intern/StatPage 0 0 RG_MatchStatBoardSub1
+	Pos 0 y
+}
+
+Item
+{
+	SubMenuIf /Intern/StatPage 1 1 RG_MatchStatBoardSub2
+	Pos 0 y
+}
+
+
+def	IcoS	16
+def	xr	FrameW 0.99
+
+add y dy	13.5
+
+Item
+{
+	Image Ico/ArrowDRG IcoS IcoS
+	Font IcoF
+	Pos xr+20 y+5 Right Center
+
+	OnAction
+	{
+		ToggleCfg /Intern/StatPage
+	}
+}
+

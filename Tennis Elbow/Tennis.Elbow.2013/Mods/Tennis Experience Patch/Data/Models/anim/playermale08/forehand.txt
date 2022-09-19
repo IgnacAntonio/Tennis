@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 18.0 18.0
+Speed: 1.0
+Author: TE Vanilla | S.Williams

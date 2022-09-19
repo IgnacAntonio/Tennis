@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 72.0 72.0 44.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -12.5 -15.1 248.8 0.493 0.005 0.870
+HandThrow: -48.4 12.2 172.8 -0.305 0.792 0.529
+
+Author: Lucian Cucuteanu | Federer v3

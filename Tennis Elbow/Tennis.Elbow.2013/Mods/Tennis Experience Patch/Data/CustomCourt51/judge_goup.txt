@@ -1,0 +1,48 @@
+Anim: Judge_GoUp
+NbSprite: 5
+InfoSup: 1
+
+Spr 0
+{
+	Page Umpire_01
+	Pos 9999999999999999 9999999999999999
+	Size 0 0
+	HotSpot 7 37
+	Time 133.3
+}
+
+Spr 1
+{
+	Page Umpire_00
+	Pos 9999999999999999 9999999999999999
+	Size 0 0
+	HotSpot 7 39
+	Time 116.7
+}
+
+Spr 2
+{
+	Page Umpire_01
+	Pos 9999999999999999 9999999999999999
+	Size 0 0
+	HotSpot 7 41
+	Time 83.3
+}
+
+Spr 3
+{
+	Page Umpire_00
+	Pos 9999999999999999 9999999999999999
+	Size 0 0
+	HotSpot 7 41
+	Time 116.7
+}
+
+Spr 4
+{
+	Page Umpire_00
+	Pos 9999999999999999 9999999999999999
+	Size 0 0
+	HotSpot 7 41
+	Time 250.0
+}

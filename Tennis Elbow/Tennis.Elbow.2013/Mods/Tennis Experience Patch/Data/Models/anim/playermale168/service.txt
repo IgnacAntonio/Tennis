@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 73.00 73.00 46.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Daniil Medvedev

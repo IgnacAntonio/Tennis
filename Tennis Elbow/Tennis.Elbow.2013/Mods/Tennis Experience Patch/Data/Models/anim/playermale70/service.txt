@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 81.0 81.0 52.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | Stan Wawrinka
+
+SweetSpot: -8.8 -17.4 244.1 0.383 0.006 0.924
+HandThrow: -30.7 -25.4 164.2 -0.017 -0.076 0.997

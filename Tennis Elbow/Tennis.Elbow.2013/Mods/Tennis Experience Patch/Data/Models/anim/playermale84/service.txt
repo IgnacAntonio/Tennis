@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 88.0 88.0 59.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Mr.gotcha | Rafael Nadal v1
+not final version 

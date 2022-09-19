@@ -1,0 +1,341 @@
+Include PlayerPlanning.def
+
+Background	Bg/Planning
+
+item
+{
+	Invisible
+	OnEnter !Real
+
+	OnAction
+	{
+		SetCfg /Board/ChooseQualif 0
+		SetCfg /Board/CT_Week /WT_Intern/Week
+		SetCfg /Board/NbWeek 52
+
+		//SetCfg /WT_Intern/NbPlayer 3
+		SetCfg $2 0
+	}
+
+	OnActionIf /Board/CT_Week 0
+	{
+		SetCfg /Board/CT_Week 52
+	}
+
+	OnActionIf /Intern/Te 0
+	{
+		BreakAction	// Only TE2011 Actions afterwards
+	}
+
+	OnAction
+	{
+		SetCfg /Intern/HumanNum $1-1
+		SetCfg $p /Intern/SectionMode
+		CatCfg $p $_p$1
+
+		SetCfg $2 2
+		SetCfg /Intern/StatPlayer $1-1
+	}
+
+	OnActionIfNot /$p/Partner -1
+	{
+		GetPlayerRankInfo /$p/Partner+BnkNumAdd 0 0 Board 3
+		SetCfg /WT_Intern/PartnerName /Board/Name
+		SetCfg /WT_Intern/PartnerNameS /Board/NameS
+	}
+}
+
+//============================= Tabbed Menu
+item
+{
+	SubMenu PlayerTabs 1 0 0 1
+
+	ShowIf /Intern/Te 0
+}
+
+//============================= Tabbed Menu without tabs for TE
+item
+{
+	SubMenu PlayerTabs 13 1 -1 2
+
+	ShowIfNot /Intern/Te 0
+}
+
+//==================================================== Current Date
+
+item
+{
+	Text CurrentDate /WT_Intern/YearDate /WT_Intern/Week
+
+	Invisible
+	DefaultHelpMessage
+}
+
+
+//============================= Arrows
+def	ArrowXnd	640
+def	Edged	50
+
+add ArrowXnd Edged -2
+
+def	ArrowXnu	ArrowXnd
+add ArrowXnu -ArrowS
+
+item ArrowU	// nav up
+{
+	Image Ico/ArrowU ArrowS ArrowS
+	Pos ArrowXnu ArrowY Right Center
+	HelpText PrevWeek
+
+	OnAction
+	{
+		SlideCfg /Board/CT_Week 1 /Board/NbWeek 1 !AbsDelta !Negative !Cycle
+		GetTournamentForWeek /Board/CT_NbTrn /Board/CT_Week /Board/ChooseQualif /Intern/StatPlayer
+		SetCfg /Board/CT_SubSlot 0
+	}
+
+	ScrollUp
+}
+
+item ArrowD	// nav down
+{
+	Image Ico/ArrowD ArrowS ArrowS
+	Pos ArrowXnd ArrowY Right Center
+	HelpText NextWeek
+
+	OnAction
+	{
+		SlideCfg /Board/CT_Week 1 /Board/NbWeek 1 !AbsDelta !Positive !Cycle
+		GetTournamentForWeek /Board/CT_NbTrn /Board/CT_Week /Board/ChooseQualif /Intern/StatPlayer
+		SetCfg /Board/CT_SubSlot 0
+	}
+
+	ScrollDown
+}
+
+//============================= Column names
+
+add	y	dy 0.5
+add	xW	dxW 0.5
+
+def	hBg	dy
+add	hBg	1
+
+item
+{
+	Image Menu/RoundBg03 640 hBg Rounded
+	Pos 0 y left center
+	Color 0xCF040EA4
+}
+
+item
+{
+	Text Week
+	Pos xW y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxW
+}
+
+add	xT	dxT 0.5
+
+item
+{
+	Text Type
+	Pos xT y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxT
+}
+
+add	xN	dxN 0.5
+
+item
+{
+	Text Name
+	Pos xN y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxN
+}
+
+add	xC	dxC 0.5
+
+item
+{
+	Text Country
+	Pos xC y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxC
+}
+
+
+add	xP	dxP 0.5
+
+item
+{
+	Text Prize
+	Pos xP y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxP
+}
+
+add	xG	dxG 0.5
+
+item
+{
+	Text Ground
+	Pos xG y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxG
+}
+
+
+add	xS	dxS 0.5
+
+item
+{
+	Text Single
+	Pos xS y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxS
+}
+
+add	xD	dxD 0.5
+
+item
+{
+	Text Double
+	Pos xD y	center	center
+	Font BoardTF
+	ShrinkToMaxPixel dxD
+}
+
+
+//============================= Tournaments
+Add y dy 0.5
+
+Def	Num	0
+
+LoopMacro 13
+
+item
+{
+	SubMenu PlayerPlanningSub /Intern/StatPlayer Num $2
+	pos 0 y
+	Add y dy
+
+	Add Num 1
+}
+
+LoopEnd
+
+
+//============================= Double partner
+
+def	xMid	320
+
+item
+{
+	Image Menu/RoundBg03 xMid hBg Rounded
+	Pos 0 y left up
+	Add y dy 0.5
+	Color 0xCF040EA4
+}
+
+
+item
+{
+	Text DoublePartner
+	HelpText ChoosePartner
+	Pos 10 y Left
+	Font BoardTF
+	ShrinkToMaxPixel 150
+
+	OnActionIfNot /$p/PartnerChanged 0
+	{
+		Menu PlayerCant /$p/PartnerChanged
+		BreakAction
+	}
+
+	OnAction
+	{
+		Menu ChoosePartner /Intern/StatPlayer+1
+	}
+}
+
+def	MaxS	xMid
+add	MaxS	-165
+
+item
+{
+	Text /WT_Intern/PartnerNameS
+	HelpText SeeActivity
+	Pos 165 y Left
+	Font BoardTF
+
+	OnAction
+	{
+		Menu BoardActivity /$p/Partner 0 0 /Intern/StatPlayer+1
+	}
+
+	ShrinkToMaxPixel MaxS
+	ShowIfNot /$p/Partner -1
+}
+
+item
+{
+	Text NoDoublePartner
+	Pos 165 y Left
+	Font BoardTF
+
+	ShowIf /$p/Partner -1
+}
+
+
+//============================= Qualifications
+
+def	wBg	640
+add	wBg	-xMid
+
+def	MaxS	xMid	0.65
+def	MaxS2	xMid	0.25
+
+
+
+Add y dy -0.5
+
+item
+{
+	Image Menu/RoundBg03 wBg hBg Rounded
+	Pos xMid y left up
+	Add y dy 0.5
+	Color 0xCF040EA4
+}
+
+//add	xMid	5
+add	xMid	MaxS
+
+item
+{
+	Text DoQualification
+	Pos xMid y Right
+	Font BoardTF
+
+	ShrinkToMaxPixel MaxS
+}
+
+
+add	xMid	MaxS2 0.5
+add	xMid	10
+
+item DoQualif
+{
+	CycleButton #Text
+	Pos xMid y	Center
+	Font BoardTF
+
+	OnAction
+	{
+		SlideCfg /$p/DoQualif 0 2
+	}
+
+	ShrinkToMaxPixel MaxS2
+}

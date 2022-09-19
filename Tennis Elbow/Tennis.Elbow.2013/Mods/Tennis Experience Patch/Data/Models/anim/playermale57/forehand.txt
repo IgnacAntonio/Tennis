@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 30.0 30.0
+Speed: 1.0
+Acceleration: forehand_acc
+Author: Emmainf | Anderson

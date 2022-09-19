@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 01 20 35 22	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+HandBounce: -9.0 -32.6 87.1 -0.053 0.477 -0.877

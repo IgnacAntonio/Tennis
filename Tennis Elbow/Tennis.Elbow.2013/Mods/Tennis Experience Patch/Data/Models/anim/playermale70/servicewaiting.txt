@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 15 30 19	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | Stan Wawrinka
+
+HandBounce: -14.5 -17.1 73.6 0.670 0.315 -0.672

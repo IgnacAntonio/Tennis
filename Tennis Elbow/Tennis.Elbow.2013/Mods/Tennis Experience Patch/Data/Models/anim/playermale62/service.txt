@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 58 58 28	// Hit ball - Max Extension - Throw Ball
+Author: emmainf | Dimitrov
+

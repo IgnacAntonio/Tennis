@@ -1,0 +1,14 @@
+Anim: BallTrace
+NbSprite: 1
+InfoSup: 0
+NbMipMap: 3
+
+Spr 0
+{
+	Page Misc_01
+	Pos 0 42
+	Size 14 14
+	HotSpot 7 7
+	Time 1000.0
+	RealSize 6 4
+}

@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 1.0 15.0 42.0 25.0 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Tennis Experience | Botic van de Zandschulp

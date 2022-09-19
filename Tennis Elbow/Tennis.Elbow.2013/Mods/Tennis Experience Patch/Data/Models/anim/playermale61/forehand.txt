@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 27.2 27.2
+Speed: 1.0
+Author: megyaem | G.Coria

@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 00 00 16 06	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Reginald Wesley | Nick Kyrgios

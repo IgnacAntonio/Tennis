@@ -1,0 +1,249 @@
+Include MatchStatBoard.def
+
+Background #PreviousMenu
+
+Font	Default		HugeChars 11 15 0xFFFFFFFF 0 Center Center Shadow LH1.15
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	0
+def	dy	21
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+//====== Short Rally Won
+Item
+{
+	Text ShortRallyWon /Intern/ShortRallyLength+1
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/ShortRallyWon
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/ShortRallyWon
+	pos xr y
+}
+
+//====== Medium Rally Won
+Item
+{
+	Text MediumRallyWon /Intern/ShortRallyLength+1 /Intern/MediumRallyLength
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MediumRallyWon
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/MediumRallyWon
+	pos xr y
+}
+
+//====== Long Rally Won
+Item
+{
+	Text LongRallyWon /Intern/MediumRallyLength
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/LongRallyWon
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/LongRallyWon
+	pos xr y
+}
+
+//====== Long Rally Length
+Item
+{
+	Text RallyLength /$ts1/RallyLength
+	add y dy
+	Pos xtl y
+}
+
+ //====== Set Point Saved
+Item
+{
+	Text SetPointSaved
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/SetPointSaved
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/SetPointSaved
+	pos xr y
+}
+
+//====== Match Point Saved
+Item
+{
+	Text MatchPointSaved
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MatchPointSaved
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/MatchPointSaved
+	pos xr y
+}
+
+//====== Win1stServe
+Item
+{
+	Text Win1stServe
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win1stServe
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	pos xr y
+}
+
+//====== Win2ndServe
+Item
+{
+	Text Win2ndServe
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	pos xr y
+}
+
+//====== Point Won On Return
+Item
+{
+	Text ReturnPointWon
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/PointWonOnReturn
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/PointWonOnReturn
+	pos xr y
+}
+
+//====== Return Winner
+Item
+{
+	Text ReturnWinner
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/ReturnWinner
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/ReturnWinner
+	pos xr y
+}
+
+//====== Game With Break Point
+Item
+{
+	Text BreakvsGameBP
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/GameWithBreakPoint
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/GameWithBreakPoint
+	pos xr y
+}
+

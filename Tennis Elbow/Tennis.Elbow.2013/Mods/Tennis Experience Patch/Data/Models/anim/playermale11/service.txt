@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 75 75 45	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: 5.1 -16.7 242.8 0.120 -0.001 0.993
+HandThrow: -16.0 -13.5 154.0 -0.327 0.139 0.935
+
+Author: Lucian Cucuteanu | Nadal

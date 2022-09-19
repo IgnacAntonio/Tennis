@@ -1,0 +1,6 @@
+Anim: MoveForward.x
+Info: 0
+Speed: 0.48
+BaseFrame: 8
+
+//Author: Lucian Cucuteanu | David Ferrer

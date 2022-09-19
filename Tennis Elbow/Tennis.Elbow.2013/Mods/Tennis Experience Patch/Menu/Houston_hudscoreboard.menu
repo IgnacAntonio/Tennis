@@ -1,0 +1,623 @@
+Include A250_Hud.def
+
+Background #PreviousMenu
+
+WideScreen
+ShrinkTo 0 0	// Don't shrink
+
+// $1: 0 for light scoreboard, 1 for full scoreboard
+
+item
+{
+	OnEnter !Always
+	OnActionIf /Scoreboard/Position 1
+	{
+		SetCfg /Intern/LightScoreY ScreenH-LightScoreNameH !Apply
+	}
+	OnActionIf /Scoreboard/Position 0
+	{
+		SetCfg /Intern/LightScoreY LightScoreY !Apply
+	}
+	OnActionIf $1 0
+	{
+		SetCfg /Intern/ScoreType 0 !Apply
+		// Save right position of the scoreboard
+		SetCfg /Intern/ScoreXr LightScoreX !Apply
+		SetCfg /Intern/ScoreYr /Intern/LightScoreY !Apply
+		SetCfg /Intern/ScoreNameW LightScoreNameW !Apply
+		SetCfg /Intern/ScoreNameH LightScoreNameH !Apply
+		SetCfg /Intern/ScoreServIndX LightScoreServIndX !Apply
+		SetCfg /Intern/ScoreNameX LightScoreNameX !Apply
+		SetCfg /Intern/ScoreFlagX LightScoreFlagX !Apply
+		SetCfg /Intern/ScoreRankCountryX LightScoreRankCountryX !Apply
+		SetCfg /Intern/ScoreTrnLogoX LightScoreTrnLogoX !Apply
+		SetCfg /Intern/ScoreSetW LightScoreSetW !Apply
+		SetCfg /Intern/ScoreSetH LightScoreSetH !Apply
+		SetCfg /Intern/ScoreSetTextX LightScoreSetTextX !Apply
+		SetCfg /Intern/ScoreCurrentSetW LightScoreCurrentSetW !Apply
+		SetCfg /Intern/ScoreCurrentSetH LightScoreCurrentSetH !Apply
+		SetCfg /Intern/ScoreCurrentSetTextX LightScoreCurrentSetTextX !Apply
+		SetCfg /Intern/ScoreGameW LightScoreGameW !Apply
+		SetCfg /Intern/ScoreGameH LightScoreGameH !Apply
+		SetCfg /Intern/ScoreGameTextX LightScoreGameTextX !Apply
+		SetCfg /Intern/ScoreSetWx2 LightScoreSetWx2
+		SetCfg /Intern/ScoreCurrentSetWx2 LightScoreCurrentSetWx2
+	}	
+	OnActionIf $1 1
+	{
+		SetCfg /Intern/ScoreType 1 !Apply
+		// Save right position of the scoreboard
+		SetCfg /Intern/ScoreXr FullScoreX !Apply
+		SetCfg /Intern/ScoreYr FullScoreY !Apply
+		SetCfg /Intern/ScoreNameW FullScoreNameW !Apply
+		SetCfg /Intern/ScoreNameH FullScoreNameH !Apply
+		SetCfg /Intern/ScoreServIndX FullScoreServIndX !Apply
+		SetCfg /Intern/ScoreNameX FullScoreNameX !Apply
+		SetCfg /Intern/ScoreFlagX FullScoreFlagX !Apply
+		SetCfg /Intern/ScoreSeedX FullScoreSeedX !Apply
+		SetCfg /Intern/ScoreRankCountryX FullScoreRankCountryX !Apply
+		SetCfg /Intern/ScoreTrnLogoX FullScoreTrnLogoX !Apply
+		SetCfg /Intern/ScoreSetW FullScoreSetW !Apply
+		SetCfg /Intern/ScoreSetH FullScoreSetH !Apply
+		SetCfg /Intern/ScoreSetTextX FullScoreSetTextX !Apply
+		SetCfg /Intern/ScoreCurrentSetW FullScoreCurrentSetW !Apply
+		SetCfg /Intern/ScoreCurrentSetH FullScoreCurrentSetH !Apply
+		SetCfg /Intern/ScoreCurrentSetTextX FullScoreCurrentSetTextX !Apply
+		SetCfg /Intern/ScoreGameW FullScoreGameW !Apply
+		SetCfg /Intern/ScoreGameH FullScoreGameH !Apply
+		SetCfg /Intern/ScoreGameTextX FullScoreGameTextX !Apply
+		SetCfg /Intern/ScoreSetWx2 FullScoreSetWx2
+		SetCfg /Intern/ScoreCurrentSetWx2 FullScoreCurrentSetWx2
+		SetCfg /Intern/ScoreTimeBarY FullScoreTimeBarY !Apply
+		SetCfg /Intern/ScoreTrnInfoY FullScoreTrnInfoY !Apply
+		
+		SetCfg /Intern/ScoreTrnBarY FullScoreTrnBarY !Apply
+		SetCfg /Intern/ScoreTrnSinglesY FullScoreTrnSinglesY !Apply
+	}
+	OnAction
+	{		
+		MulAddMulCfg /Intern/ScoreX		0	/Intern/ScoreXr !Apply
+		MulAddMulCfg /Intern/ScoreX		1	/Intern/WideBorder !Apply
+		MulAddMulCfg /Intern/ScoreXr	0	/Intern/ScoreX !Apply
+		MulAddMulCfg /Intern/ScoreY		0	/Intern/ScoreYr !Apply
+		MulAddMulCfg /Intern/ScoreDYu	0	/Intern/ScoreNameH 0.25 !Apply
+		MulAddMulCfg /Intern/ScoreYu	0	/Intern/ScoreY !Apply
+		MulAddMulCfg /Intern/ScoreYu	1	/Intern/ScoreDYu  !Apply
+		MulAddMulCfg /Intern/ScoreYc	0 	/Intern/ScoreNameH 0.50 !Apply
+		MulAddMulCfg /Intern/ScoreYc	1 	/Intern/ScoreY  !Apply
+		MulAddMulCfg /Intern/ScoreDYd	0 	/Intern/ScoreNameH 0.75 !Apply
+		MulAddMulCfg /Intern/ScoreYd	0 	/Intern/ScoreY !Apply
+		MulAddMulCfg /Intern/ScoreYd	1 	/Intern/ScoreDYd  !Apply
+		MulAddMulCfg /Intern/ScoreYb	0 	/Intern/ScoreY !Apply
+		MulAddMulCfg /Intern/ScoreYb	1 	/Intern/ScoreNameH !Apply
+
+		SetCfg /Intern/MatchX /Intern/WideBorder+MatchX !Apply	
+		SetCfg /Intern/HoursX /Intern/WideBorder+TimeX !Apply
+
+	}
+	OnActionIf $1 1
+	{
+		MulAddMulCfg /Intern/ScoreXr	1	FullScoreRightBorderW !Apply
+		MulAddMulCfg /Intern/ScoreXr	1	FullScoreTrnLogoX 0 !Apply		
+	}
+
+
+	Invisible
+}
+
+
+
+//=== Right border ico
+item
+{
+	Image IcoNoBorder/ATP250/BorderRight FullScoreRightBorderW FullScoreRightBorderH
+	Pos /Intern/ScoreXr /Intern/ScoreYc Right Center
+	ShowIf /Intern/ScoreType 1
+}
+
+//=== Score in Game
+item
+{
+	Pos /Intern/ScoreX /Intern/ScoreY Right
+	ShowIf /Intern/ScoreType 0
+	SubMenu A250_HudScoreBoardSub1 0
+}
+
+//=== Score in Sets
+item
+{
+	Pos /Intern/ScoreX /Intern/ScoreY Right
+	ShowIf /Intern/CurrentSet 5
+	ShowIf /Intern/ScoreType 1 !Or
+	SubMenuIf /Intern/NbSet 5 5 A250_HudScoreBoardSub1 5
+}
+
+item
+{
+	Pos /Intern/ScoreX /Intern/ScoreY Right
+	ShowIf /Intern/CurrentSet 4 5
+	ShowIf /Intern/ScoreType 1 !Or
+	SubMenuIf /Intern/NbSet 4 5 A250_HudScoreBoardSub1 4
+}
+
+item
+{
+	Pos /Intern/ScoreX /Intern/ScoreY Right
+	ShowIf /Intern/CurrentSet 3 5
+	ShowIf /Intern/ScoreType 1 !Or
+	SubMenuIf /Intern/NbSet 3 5 A250_HudScoreBoardSub1 3
+}
+
+item
+{
+	Pos /Intern/ScoreX /Intern/ScoreY Right
+	ShowIf /Intern/CurrentSet 2 5
+	ShowIf /Intern/ScoreType 1 !Or
+	SubMenuIf /Intern/NbSet 2 5 A250_HudScoreBoardSub1 2
+}
+
+item
+{
+	Pos /Intern/ScoreX /Intern/ScoreY Right
+	SubMenuIf /Intern/NbSet 1 5 A250_HudScoreBoardSub1 1
+}
+
+//=== Names, countries flags and server indicator Background
+// Full scoreboard
+item
+{
+	Image IcoNoBorder/ATP250/ScoreBoardName2 FullScoreNameW FullScoreNameH
+	Pos /Intern/ScoreXl /Intern/ScoreYl Left Up
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 FullScoreNameW -1
+		// Save the left position of the scoreboard
+		SetCfg /Intern/ScoreXl /Intern/ScoreX
+		SetCfg /Intern/ScoreYl /Intern/ScoreY
+	}
+}
+// Light scoreboard
+item
+{
+	Image IcoNoBorder/ATP250/ScoreBoardName LightScoreNameW LightScoreNameH
+	Pos /Intern/ScoreXl /Intern/ScoreYl Left Up
+	ShowIf /Intern/ScoreType 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 1 LightScoreNameW -1
+		// Save the left position of the scoreboard
+		SetCfg /Intern/ScoreXl /Intern/ScoreX
+		SetCfg /Intern/ScoreYl /Intern/ScoreY
+	}
+}
+
+//=== Names
+
+// Full names in full scoreboard
+item
+{
+	Text /Intern/Team1
+	Pos /Intern/ScoreX /Intern/ScoreYu Left Center
+	Font FullNameF
+	ShrinkToMaxPixel FullScoreNameMax
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreNameX
+	}
+}
+
+item
+{
+	Text /Intern/Team2
+	Pos /Intern/ScoreX /Intern/ScoreYd Left Center
+	Font FullNameF
+	ShrinkToMaxPixel FullScoreNameMax
+	ShowIf /Intern/ScoreType 1
+}
+
+// Short names in light scoreboard
+item
+{
+	Text /Intern/Team1s
+	Pos /Intern/ScoreX /Intern/ScoreYu+1.8 Left Center
+	Font NameF
+	ShrinkToMaxPixel LightScoreNameMax
+	ShowIfNot /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreNameX
+	}
+}
+item
+{
+	Text /Intern/Team2s
+	Pos /Intern/ScoreX /Intern/ScoreYd-1.8 Left Center
+	Font NameF
+	ShrinkToMaxPixel LightScoreNameMax
+	ShowIfNot /Intern/ScoreType 1
+}
+
+//=== Players seed
+item
+{
+	Text SCB_Seed01 /WorldTour_p1/Seed+1
+	Pos /Intern/ScoreX /Intern/ScoreYu Right Center
+	Font SeedF
+	ShrinkToMaxPixel FullScoreSeedMax
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /WorldTour_p1/Seed -1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+item
+{
+	Text SCB_Seed01 /WorldTour_p2/Seed+1
+	Pos /Intern/ScoreX /Intern/ScoreYd Right Center
+	Font SeedF
+	ShrinkToMaxPixel FullScoreSeedMax
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /WorldTour_p2/Seed -1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+//=== Ranks and countries only for singles (full scoreboard)
+item
+{
+	Text SCB_CountryRank /InGame_p1/Country3L /InGame_p1/RankS 
+	Pos /Intern/ScoreX /Intern/ScoreYu Left Center
+	Font RankCountryF
+	ShrinkToMaxPixel FullScoreRankCountryMax
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreRankCountryX
+	}
+}
+
+item
+{
+	Text SCB_CountryRank /InGame_p2/Country3L /InGame_p2/RankS 
+	Pos /Intern/ScoreX /Intern/ScoreYd Left Center
+	Font RankCountryF
+	ShrinkToMaxPixel FullScoreRankCountryMax
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+}
+
+//=== Only countries for doubles (full scoreboard)
+item
+{
+	Text SCB_CountriesForDouble /InGame_p1/Country3L /InGame_p3/Country3L
+	Pos /Intern/ScoreX /Intern/ScoreYu Left Center
+	Font RankCountryF
+	ShrinkToMaxPixel FullScoreRankCountryMax
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/GameType 2
+	ShowIfNot /Intern/PlayerCfg 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreRankCountryX
+	}
+}
+
+item
+{
+	Text SCB_CountriesForDouble /InGame_p2/Country3L /InGame_p4/Country3L
+	Pos /Intern/ScoreX /Intern/ScoreYd Left Center
+	Font RankCountryF
+	ShrinkToMaxPixel FullScoreRankCountryMax
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/GameType 2
+	ShowIfNot /Intern/PlayerCfg 0
+}
+
+//=== Server Indicator
+// full scoreboard
+item
+{
+	Image Ico/ATP250/ScoreBoardServer FullScoreServIndW FullScoreServIndH
+	Pos /Intern/ScoreX /Intern/ScoreYu Left Center
+	ShowIfNot /StatTeam1Set0/Serv -1
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreServIndX
+	}
+}
+
+item
+{
+	Image Ico/ATP250/ScoreBoardServer FullScoreServIndW FullScoreServIndH
+	Pos /Intern/ScoreX /Intern/ScoreYd Left Center
+	ShowIfNot /StatTeam2Set0/Serv -1
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreServIndX
+	}
+}
+
+// light scoreboard
+item
+{
+	Image Ico/ATP250/ScoreBoardServer LightScoreServIndW LightScoreServIndH
+	Pos /Intern/ScoreX /Intern/ScoreYu+1.8 Left Center
+	ShowIfNot /StatTeam1Set0/Serv -1
+	ShowIfNot /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreServIndX
+	}
+}
+
+item
+{
+	Image Ico/ATP250/ScoreBoardServer LightScoreServIndW LightScoreServIndH
+	Pos /Intern/ScoreX /Intern/ScoreYd-1.8 Left Center
+	ShowIfNot /StatTeam2Set0/Serv -1
+	ShowIfNot /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreServIndX
+	}
+}
+
+
+//=== Tournament logo
+item
+{
+	Image Ico/ATP250/TrnLogoHouston FullTrnLogoW FullTrnLogoH
+	Pos /Intern/ScoreX-19.8 /Intern/ScoreYc Left Center
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreTrnLogoX
+	}
+}
+
+
+item
+{
+	Image Ico/ATP250/TrnLogoHouston LightTrnLogoW LightTrnLogoH
+	Pos /Intern/ScoreX /Intern/ScoreYc Left Center
+	ShowIfNot /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreTrnLogoX
+	}
+}
+
+//=== Singles Bar Up, Singles Bar Down & Border Right ico
+
+item
+{
+	Image Ico/ATP250/SinglesBarDown FullScoreSinglesBarW1 FullScoreSinglesBarH
+	Pos /Intern/ScoreX+63.5 /Intern/ScoreY Left Down
+	ShowIf /Intern/NbSet 1
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnSinglesY
+	}
+	
+}
+
+
+item
+{
+	Image Ico/ATP250/SinglesBarDown FullScoreSinglesBarW3 FullScoreSinglesBarH
+	Pos /Intern/ScoreX+63.5 /Intern/ScoreY Left Down
+	ShowIf /Intern/NbSet 3
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnSinglesY
+	}
+	
+}
+
+
+item
+{
+	Image Ico/ATP250/SinglesBarDown FullScoreSinglesBarW5 FullScoreSinglesBarH
+	Pos /Intern/ScoreX+63.5 /Intern/ScoreY Left Down
+	ShowIf /Intern/NbSet 5
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnSinglesY
+	}
+	
+}
+
+
+item
+{
+
+	Image Ico/ATP250/SinglesBarUp FullScoreSinglesBarW1 FullScoreSinglesBarH
+	Pos /Intern/ScoreX+63.5 /Intern/ScoreY Left Up
+	ShowIf /Intern/NbSet 1
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnBarY
+		
+	}
+	
+}
+
+item
+{
+
+	Image Ico/ATP250/SinglesBarUp FullScoreSinglesBarW3 FullScoreSinglesBarH
+	Pos /Intern/ScoreX+63.5 /Intern/ScoreY Left Up
+	ShowIf /Intern/NbSet 3
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnBarY
+		
+	}
+	
+}
+
+item
+{
+
+	Image Ico/ATP250/SinglesBarUp FullScoreSinglesBarW5 FullScoreSinglesBarH
+	Pos /Intern/ScoreX+63.5 /Intern/ScoreY Left Up
+	ShowIf /Intern/NbSet 5
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnBarY	
+
+	}
+	
+}
+//=== Time Bar and Tournament Information Bar
+item
+{
+	Image Ico/ATP250/TimeBar FullTimeBarW FullTimeBarH
+	Pos 225 350
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTimeBarY
+	}
+}
+
+item
+{
+	Image Ico/ATP250/TrnInfoHouston FullTrnInfoW FullTrnInfoH
+	Pos 185 434
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnInfoY
+	}
+}
+
+Item
+{
+	Text SCB_Set1Time3
+	ShowIf /Intern/CurrentSet 1
+	ShowIf /Intern/ScoreType 1
+	Font TrnF
+	Pos 253 361
+}
+
+Item
+{
+	Text SCB_Set2Time3
+	ShowIf /Intern/CurrentSet 2
+	ShowIf /Intern/ScoreType 1
+	Font TrnF
+	Pos 253 361
+}
+
+Item
+{
+	Text SCB_Set3Time3
+	ShowIf /Intern/CurrentSet 3
+	ShowIf /Intern/ScoreType 1
+	Font TrnF
+	Pos 253 361
+}
+
+Item
+{
+	Text SCB_Set4Time3
+	ShowIf /Intern/CurrentSet 4
+	ShowIf /Intern/ScoreType 1
+	Font TrnF
+	Pos 253 361
+}
+
+Item
+{
+	Text SCB_Set5Time3
+	ShowIf /Intern/CurrentSet 5
+	ShowIf /Intern/ScoreType 1
+	Font TrnF
+	Pos 253 361
+}
+
+item
+{
+	Text /Intern/Time1
+	Pos 305 361
+	Font TrnF
+	ShowIf /Intern/ScoreType 1
+	ShrinkToMaxPixel TrnMaxLength
+}
+
+
+
+item
+{
+	Text /Intern/Time2
+	Pos 317 361
+
+	Font TrnF
+	ShowIf /Intern/ScoreType 1
+
+	ShrinkToMaxPixel TrnMaxLength
+}
+
+
+//======================== Tournament informations
+
+//=== Current round of the tournament
+item Round
+{
+	CycleButton #Text
+	Pos 358 449 Left Center
+
+	Font Round8F
+	ShrinkToMaxPixel RndMaxLength
+
+	OnAction
+	{
+		SlideCfg /WT_Intern/Round -1 100
+	}
+
+	ShowIfNot /WT_Intern/Round 12
+	ShowIf /Intern/ScoreType 1
+	ShowIf /Intern/GameType 2
+}

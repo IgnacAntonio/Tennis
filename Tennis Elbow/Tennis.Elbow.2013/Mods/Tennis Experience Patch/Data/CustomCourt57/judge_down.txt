@@ -1,0 +1,12 @@
+Anim: Judge_Down
+NbSprite: 1
+InfoSup: 1
+
+Spr 0
+{
+	Page Umpire_01
+	Pos 999999999999999999999999999 99999999999999999999999999
+	Size 0 0
+	HotSpot 7 34
+	Time 250.0
+}

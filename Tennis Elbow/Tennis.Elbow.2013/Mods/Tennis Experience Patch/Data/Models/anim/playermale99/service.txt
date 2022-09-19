@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 98.00 98.00 77.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Denis Shapovalov

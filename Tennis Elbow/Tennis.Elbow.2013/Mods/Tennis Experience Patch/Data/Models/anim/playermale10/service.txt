@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 52 52 22	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -0.1 -17.5 244.1 0.215 0.008 0.977
+HandThrow: -29.2 -29.4 141.4 -0.124 0.047 0.991
+
+Author: Lucian Cucuteanu | Murray

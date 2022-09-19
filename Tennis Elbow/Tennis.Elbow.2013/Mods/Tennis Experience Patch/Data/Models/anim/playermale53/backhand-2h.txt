@@ -1,0 +1,5 @@
+Anim: BackHand-2H.x
+Info: 26.00 26.00
+Speed: 1.0
+
+Author: Davide Menez | Daniil Medvedev

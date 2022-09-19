@@ -1,0 +1,299 @@
+Include CHGR_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.3
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	6
+def	dy	26
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+
+add y -6
+
+//====== WinnersFH/BH
+Item
+{
+	Text Winners8
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$p1/ST_ForehandWr
+	Font StatValueF
+	pos xl-5 y Right Center
+}
+
+Item
+{
+	Text Slot59
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$p1/ST_BackhandWr
+	Font StatValueF
+	pos xl+5 y Left Center
+}
+
+Item
+{
+	Text /$p2/ST_ForehandWr
+	Font StatValueF
+	pos xr-5 y Right Center
+}
+
+Item
+{
+	Text Slot59
+	Font StatValueF
+	pos xr y
+}
+
+Item
+{
+	Text /$p2/ST_BackhandWr
+	Font StatValueF
+	pos xr+5 y Left Center
+}
+
+//====== Winners
+Item
+{
+	Text Winners9
+	Font StatLabelF
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Winner
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Winner
+	Font StatValueF
+	pos xr y
+}
+
+//====== ErrorsFH/BH
+Item
+{
+	Text Unforced7
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$p1/ST_ForehandOut
+	Font StatValueF
+	pos xl-5 y Right Center
+}
+
+Item
+{
+	Text Slot59
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$p1/ST_BackhandOut
+	Font StatValueF
+	pos xl+5 y Left Center
+}
+
+Item
+{
+	Text /$p2/ST_ForehandOut
+	Font StatValueF
+	pos xr-5 y Right Center
+}
+
+Item
+{
+	Text Slot59
+	Font StatValueF
+	pos xr y
+}
+
+Item
+{
+	Text /$p2/ST_BackhandOut
+	Font StatValueF
+	pos xr+5 y Left Center
+}
+
+//====== Errors
+Item
+{
+	Text Unforced8
+	Font StatLabelF
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/UnforcedError
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/UnforcedError
+	Font StatValueF
+	pos xr y
+}
+
+//====== Short Rally Length
+	add y dy
+
+Item
+{
+	Text /$ts1/ShortRallyWon
+	Font StatValueF
+	pos xl y 
+}
+
+Item
+{
+	Text /$ts2/ShortRallyWon
+	Font StatValueF
+	pos xr y 
+}
+
+Item
+{
+	Text ShortRallyWon4
+	Font StatLabelF
+	Pos xtl y
+}
+
+//====== Medium Rally Length
+	add y dy
+
+Item
+{
+	Text /$ts1/MediumRallyWon
+	Font StatValueF
+	pos xl y 
+}
+
+Item
+{
+	Text /$ts2/MediumRallyWon
+	Font StatValueF
+	pos xr y 
+}
+
+Item
+{
+	Text MediumRallyWon4
+	Font StatLabelF
+	Pos xtl y
+}
+
+//====== Long Rally Length
+	add y dy
+
+Item
+{
+	Text /$ts1/LongRallyWon
+	Font StatValueF
+	pos xl y 
+}
+
+Item
+{
+	Text /$ts2/LongRallyWon
+	Font StatValueF
+	pos xr y 
+}
+
+Item
+{
+	Text LongRallyWon4
+	Font StatLabelF
+	Pos xtl y
+}
+
+ //====== Set Point Saved
+ 	add y dy
+Item
+{
+	Text SetPointSaved2
+	Font StatLabelF
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/SetPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/SetPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Match Point Saved
+	add y dy
+
+Item
+{
+	Text MatchPointSaved2
+	Font StatLabelF
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MatchPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/MatchPointSaved
+	Font StatValueF
+	pos xr y
+}

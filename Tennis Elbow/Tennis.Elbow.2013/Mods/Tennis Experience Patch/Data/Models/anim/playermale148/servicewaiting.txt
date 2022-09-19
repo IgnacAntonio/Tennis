@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 17 40 28 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Sam | Davidovich Fokina

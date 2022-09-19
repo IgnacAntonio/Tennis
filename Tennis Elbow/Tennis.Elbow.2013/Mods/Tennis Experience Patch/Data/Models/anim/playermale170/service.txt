@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 70 85 50 // Hit ball - Max Extension - Throw Ball
+
+Author: Tennis Experience | Baez

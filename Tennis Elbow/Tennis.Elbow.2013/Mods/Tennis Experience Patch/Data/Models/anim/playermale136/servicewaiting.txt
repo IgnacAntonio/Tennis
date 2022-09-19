@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 19 31 26 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Sam | PCB

@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 15 30 19	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | Gael Monfils

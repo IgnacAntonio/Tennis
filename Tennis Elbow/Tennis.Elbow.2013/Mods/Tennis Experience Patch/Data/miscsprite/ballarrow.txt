@@ -1,0 +1,14 @@
+Anim: BallArrow
+NbSprite: 1
+InfoSup: 0
+NbMipMap: 3
+
+Spr 0
+{
+	Page Misc_01
+	Pos 39 33
+	Size 29 30
+	HotSpot 15 0
+	Time 1000.0
+	RealSize 14.5 30
+}

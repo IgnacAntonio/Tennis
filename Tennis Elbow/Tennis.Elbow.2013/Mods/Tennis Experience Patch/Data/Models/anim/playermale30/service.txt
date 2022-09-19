@@ -1,0 +1,8 @@
+Anim: Service.x
+Info: 87 87 49	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | J.M. Del Potro
+
+SweetSpot: -4.8 -15.5 244.2 0.330 0.002 0.944
+HandThrow: -9.1 0.8 163.4 0.134 0.071 0.988
+

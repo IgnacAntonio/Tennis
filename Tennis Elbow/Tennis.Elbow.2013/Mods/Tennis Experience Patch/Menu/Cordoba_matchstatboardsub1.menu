@@ -1,0 +1,253 @@
+Include Cordoba_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	0
+def	dy	43
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.32
+def	xr	FrameW 0.68
+
+add y -34
+
+//====== Ace
+Item
+{
+	Text Ace
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y-5 Center Down
+}
+
+Item
+{
+	Text /$ts1/Ace
+	Font StatValueF
+	pos xl y Left Down
+}
+
+Item
+{
+	Text /$ts2/Ace
+	Font StatValueF
+	pos xr y Right Down
+}
+
+//====== DoubleFault
+Item
+{
+	Text DoubleFault3
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y-5 Center Down
+}
+
+Item
+{
+	Text /$ts1/DoubleFault
+	Font StatValueF
+	pos xl y Left Down
+}
+
+Item
+{
+	Text /$ts2/DoubleFault
+	Font StatValueF
+	pos xr y Right Down
+}
+
+//====== 1stServe
+	add y dy
+
+Item
+{
+	Text /$ts1/1stServe
+	Font StatValueF
+	pos xl+45 y Right Down
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	Font StatValueF
+	pos xr+10 y Right Down
+}
+
+Item
+{
+   Image Ico/Cordoba/HideStat FrameW FrameH
+   Pos 0 -92.3
+}
+
+Item
+{
+	Text 1stServe6
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y-5 Center Down
+}
+
+//====== Winners
+Item
+{
+	Text Winners5
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y-5 Center Down
+}
+
+Item
+{
+	Text /$ts1/Winner
+	Font StatValueF
+	pos xl y Left Down
+}
+
+Item
+{
+	Text /$ts2/Winner
+	Font StatValueF
+	pos xr y Right Down
+}
+
+//====== Errors
+Item
+{
+	Text Unforced4
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y-5 Center Down
+}
+
+Item
+{
+	Text /$ts1/UnforcedError
+	Font StatValueF
+	pos xl y Left Down
+}
+
+Item
+{
+	Text /$ts2/UnforcedError
+	Font StatValueF
+	pos xr y Right Down
+}
+
+//====== BreakPoint
+	add y dy
+
+Item
+{
+	Text /$ts1/BreakPoint
+	Font StatValueF
+	ShrinkToMaxPixel 80
+	pos xl-5 y Left Down
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	Font StatValueF
+	ShrinkToMaxPixel 80
+	pos xr-30 y Left Down
+}
+
+Item
+{
+   Image Ico/Cordoba/HideStat2 FrameW FrameH
+   Pos 0 -92.3
+}
+
+Item
+{
+	Text BreakPoint4
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y-5 Center Down
+}
+
+//================================= Time & Names
+item
+{
+	Text SCB_Seed01 /WorldTour_p2/Seed+1
+	Pos xr+16 198 Left Center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /WorldTour_p2/Seed -1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+item
+{
+	Text SCB_Seed01 /TrainingClub_p2/Rank
+	Pos xr+16 198 Left Center
+	Font SeedF
+	ShrinkToMaxPixel 100
+	ShowIfNot /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	ShowIfNot /TrainingClub_p2/Rank 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreSeedX
+	}
+}
+
+item
+{
+	Text SCB_CountryRank /InGame_p2/Country3L /InGame_p2/RankS 
+	Pos xr+41 198 Left Center
+	Font CountryF
+	ShrinkToMaxPixel 100
+	ShowIf /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreRankCountryX
+	}
+}
+
+item
+{
+	Text SCB_CountryRank /TrainingClub_p2/Country3L /InGame_p2/RankS 
+	Pos xr+41 198 Left Center
+	Font CountryF
+	ShrinkToMaxPixel 100
+	ShowIfNot /Intern/GameType 2
+	ShowIf /Intern/PlayerCfg 0
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreX 0 /Intern/ScoreXl
+		MulAddMulCfg /Intern/ScoreX 1 /Intern/ScoreRankCountryX
+	}
+}

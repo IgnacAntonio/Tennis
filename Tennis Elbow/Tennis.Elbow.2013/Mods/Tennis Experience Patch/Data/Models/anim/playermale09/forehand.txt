@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 21.0 21.0
+Speed: 1.0
+Author: TE Vanilla | Sampras

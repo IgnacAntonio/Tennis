@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 18 36 27 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Sam | Coric

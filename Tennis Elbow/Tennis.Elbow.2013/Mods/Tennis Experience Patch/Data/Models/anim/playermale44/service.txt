@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 70.0 70.0 32.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | Berdych v2
+
+SweetSpot: -11.1 -18.7 245.6 0.400 -0.000 0.917
+HandThrow: -8.2 -12.2 176.9 0.117 0.195 0.974

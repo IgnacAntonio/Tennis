@@ -1,0 +1,4 @@
+Anim: BackHand-2H.x
+Info: 25.0 20.0
+Speed: 1.0
+Author: Lucian Cucuteanu | Berdych (high follow)

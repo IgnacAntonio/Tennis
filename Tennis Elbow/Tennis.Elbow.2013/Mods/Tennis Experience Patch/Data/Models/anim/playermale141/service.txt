@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 62.0 62.0 40.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Rharm | Ljubicic
+

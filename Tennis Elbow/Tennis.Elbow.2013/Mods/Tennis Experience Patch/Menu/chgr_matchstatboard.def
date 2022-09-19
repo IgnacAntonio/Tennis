@@ -1,0 +1,42 @@
+Include Menu.Def
+
+def	FrameX	7
+def	FrameY	45
+
+def	FrameW	627
+def	FrameH	360
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		Din1451 24 24 0xFFFFFFFF 0
+Font	SmallF		Din1451 14 14 0xFFFFFFFF 0 Shadow0
+Font	VSmallF		Din1451 12 12 0xFFFFFFFF 0
+Font	IcoF		Din1451 12 12 0xFFFFFFFF 0
+Font	NetF		Din1451 13 13 0xFFFFFFFF 0x2F000000 Right Bottom
+
+
+// font for the summary
+Font	SummaryF	Din1451 16 16 0xFFFFFFFF 0 Shadow0
+// font for the score
+Font	ScoreF		Din1451 12 12 0xFF387B2E 0 Shadow0
+// font for the names
+Font	NameF 		Din1451 12 12 0xFF000000 0 Center Center Shadow0
+Font	Name1F 		Din1451 12 12 0xFF000000 0 Center Center Shadow0
+// font for the time
+Font	TimeF 		Din1451 14 14 0xFF387B2E 0 Center Center Shadow0
+// font for the time
+Font	MatchTimeF 		Din1451 14 14 0xFF000000 0 Center Center Shadow0
+// font for the stats (label)
+Font	StatLabelF 	Din1451 14 14 0xFF000000 0 Center Center Shadow0
+// font for the stats (value)
+Font	StatValueF 	Din1451 18 18 0xFF387B2E 0 Center Center Shadow0

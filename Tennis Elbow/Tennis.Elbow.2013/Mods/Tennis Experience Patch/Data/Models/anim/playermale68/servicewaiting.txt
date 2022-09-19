@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 1 10 28 14	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+Author Emmainf | Nishikori
+HandBounce: -37.9 -20.2 91.9 0.227 0.359 -0.905

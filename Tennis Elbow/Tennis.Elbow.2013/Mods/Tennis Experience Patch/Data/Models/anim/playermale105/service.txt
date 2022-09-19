@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 70.00 70.00 47.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Rharm | Fritz

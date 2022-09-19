@@ -1,0 +1,7 @@
+Anim: ForeHand_acc.x
+Info: 29.00 29.00
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Reginald Wesley | Milos Raonic

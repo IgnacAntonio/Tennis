@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 40.00 40.00
+Speed: 1.0
+Acceleration: Forehand_acc
+
+Author: Reginald Wesley | Rafael Nadal flat acc

@@ -1,0 +1,7 @@
+Anim: ForeHand.x
+Info: 26 55
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Tennis Experience | Sebastian Baez

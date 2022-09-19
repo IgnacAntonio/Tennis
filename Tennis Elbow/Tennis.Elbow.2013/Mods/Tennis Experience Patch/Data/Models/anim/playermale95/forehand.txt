@@ -1,0 +1,7 @@
+Anim: ForeHand.x
+Info: 37.0 37.0
+Speed: 1.0
+Acceleration: Forehand_Acc
+
+
+Author: Reginald Wesley | Tomas Berdych

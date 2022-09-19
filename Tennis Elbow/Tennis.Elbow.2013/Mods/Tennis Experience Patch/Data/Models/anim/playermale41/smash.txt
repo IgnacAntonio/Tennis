@@ -1,0 +1,5 @@
+Anim: Smash.x
+Info: 27.0 27.0
+Acceleration: smash_acc
+
+Author: Lucian Cucuteanu | Novak Djokovic

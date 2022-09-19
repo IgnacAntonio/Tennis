@@ -1,0 +1,336 @@
+Include WIM_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	0
+def	dy	27
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+//====== Short Rally Length
+Item
+{
+	Text ShortRallyWon2 /Intern/ShortRallyLength+1
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text /$ts1/ShortRallyWon
+	Font StatValueF
+	pos xl+40 y
+}
+
+Item
+{
+	Text /$ts2/ShortRallyWon
+	Font StatLabelF
+	pos xr y
+}
+
+//====== Medium Rally Length
+Item
+{
+	Text MediumRallyWon2 /Intern/ShortRallyLength+1 /Intern/MediumRallyLength
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text /$ts1/MediumRallyWon
+	Font StatValueF
+	pos xl+40 y
+}
+
+Item
+{
+	Text /$ts2/MediumRallyWon
+	Font StatLabelF
+	pos xr y
+}
+
+//====== Long Rally Length
+Item
+{
+	Text LongRallyWon2 /Intern/MediumRallyLength
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy-2
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text /$ts1/LongRallyWon
+	Font StatLabelF
+	pos xl+40 y
+}
+
+Item
+{
+	Text /$ts2/LongRallyWon
+	Font StatValueF
+	pos xr y
+}
+
+ //====== Set Point Saved
+Item
+{
+	Text SetPointSaved2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy-2
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text /$ts1/SetPointSaved
+	Font StatValueF
+	pos xl+40 y
+}
+
+Item
+{
+	Text /$ts2/SetPointSaved
+	Font StatLabelF
+	pos xr y
+}
+
+//====== Match Point Saved
+Item
+{
+	Text MatchPointSaved2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy-2
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text /$ts1/MatchPointSaved
+	Font StatLabelF
+	pos xl+40 y
+}
+
+Item
+{
+	Text /$ts2/MatchPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Avr 1st Serve Speed
+Item
+{
+	Text AvrSpeed1st2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/Avr1stServeSpeed
+	Font StatLabelF
+	pos xl+40 y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/Avr1stServeSpeed
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/Avr1stServeSpeedUs
+	Font StatLabelF
+	pos xl+40 y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/Avr1stServeSpeedUs
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+//====== Avr 2nd Serve Speed
+Item
+{
+	Text AvrSpeed2nd2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy-1
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/Avr2ndServeSpeed
+	Font StatValueF
+	pos xl+40 y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/Avr2ndServeSpeed
+	Font StatLabelF
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/Avr2ndServeSpeedUs
+	Font StatValueF
+	pos xl+40 y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/Avr2ndServeSpeedUs
+	Font StatLabelF
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+//====== Fastest Serve
+Item
+{
+	Text FastestServe2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy-1
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/FastestServe
+	Font StatLabelF
+	pos xl+40 y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/FastestServe
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/FastestServeUs
+	Font StatLabelF
+	pos xl+40 y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/FastestServeUs
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+
+//====== Return Winner
+Item
+{
+	Text ReturnWinner2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy-1
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text /$ts1/ReturnWinner
+	Font StatValueF
+	pos xl+40 y
+}
+
+Item
+{
+	Text /$ts2/ReturnWinner
+	Font StatLabelF
+	pos xr y
+}
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy-1
+	Pos xtl+22 y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	Font StatLabelF
+	pos xl+40 y
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font StatValueF
+	pos xr y
+}
+

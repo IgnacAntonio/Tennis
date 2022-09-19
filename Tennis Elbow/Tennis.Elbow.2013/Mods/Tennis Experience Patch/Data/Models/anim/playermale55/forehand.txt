@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 27 27
+Speed: 1.0
+Author: emmainf | Nishikori 
+Acceleration: forehand_acc

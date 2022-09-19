@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 52.5 52.5 25.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Agassi

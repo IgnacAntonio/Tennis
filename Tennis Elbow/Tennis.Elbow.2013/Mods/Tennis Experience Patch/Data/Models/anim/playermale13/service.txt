@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 88.0 88.0 51.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | Nalbandian v2
+
+SweetSpot: -1.0 -12.1 244.1 0.222 0.006 0.975
+HandThrow: -6.6 0.5 154.0 -0.127 -0.174 0.977

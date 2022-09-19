@@ -1,0 +1,98 @@
+Include Menu.Def
+Include IconPosSet01.def
+
+def x		320
+def y		Sy2
+def dy		14
+
+Background		Bg/Main
+
+Font	Default		HugeChars 10 12 0xFFF8FAFF 0 Circle Center Up Shadow
+
+
+item
+{
+	SubMenu MenuSet01 5
+}
+
+item
+{
+	add y 4
+	Text TeCreditTOO
+	Pos x y
+	Add y dy 3.5
+}
+
+
+item
+{
+	Text TeCreditModel
+	Pos x y
+	Add y dy 2.5
+}
+
+item
+{
+	Text TeCreditZic
+	Pos x y
+	Add y dy 2.5
+}
+
+item
+{
+	Text TeCreditTrans
+	Pos x y
+	Add y dy 5.5
+}
+
+item
+{
+	Text TeCreditQuality
+	Pos x y
+	Add y dy 3.5
+}
+
+item
+{
+	Text TeCreditModders
+	Pos x y
+	Add y dy 3.5
+}
+
+Font	Small  HugeChars 10 13 0xFF7FAFFF 0x7F000000 Circle
+
+def	y	Sy3
+add y -30
+
+item
+{
+	Text TeCopyR /Intern/GameNameShort /Intern/GameVersion
+	Font Small
+	Pos 320 y Center Down
+}
+
+item
+{
+	Add y 20
+	Text VersionSW
+	Font Small
+	Pos 320 y Center Down
+	ShowIf /Intern/Trial 1
+}
+
+item
+{
+	Text VersionReg #UserInfo
+	Font Small
+	Pos 320 y Center Down
+	ShowIf /Intern/Trial 0
+}
+
+
+//=============== Default Help Message
+item
+{
+	Text GameName /Intern/GameNameVersion /Intern/GameBuild
+	Invisible
+	DefaultHelpMessage
+}

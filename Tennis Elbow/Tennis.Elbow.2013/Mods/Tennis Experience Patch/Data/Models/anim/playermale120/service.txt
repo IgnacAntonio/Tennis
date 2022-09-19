@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 71.00 71.00 45.50	// Hit ball - Max Extension - Throw Ball
+
+Author: Rharm | Berretini

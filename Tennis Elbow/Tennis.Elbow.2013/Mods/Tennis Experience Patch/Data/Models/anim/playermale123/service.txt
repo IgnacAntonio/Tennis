@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 70.00 41.00 41.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Stefanos Tsitsipas

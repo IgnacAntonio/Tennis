@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 28 44 32	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+Author: Lucian Cucuteanu
+HandBounce: -15.8 -20.5 72.7 0.368 0.506 -0.780

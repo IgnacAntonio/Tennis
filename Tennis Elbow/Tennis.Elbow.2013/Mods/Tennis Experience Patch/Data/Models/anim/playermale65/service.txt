@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 68.0 68.0 47.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: 18.5 -48.3 232.1 0.263 -0.199 0.944
+HandThrow: 6.3 16.7 193.4 0.555 -0.044 0.830
+
+Author: Emmainf | Hewitt

@@ -1,0 +1,4 @@
+Anim: Smash_acc.x
+Info: 27.0 27.0
+
+Author: Lucian Cucuteanu | Roger Federer

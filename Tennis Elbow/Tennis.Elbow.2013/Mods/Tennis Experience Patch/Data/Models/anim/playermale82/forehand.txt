@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 23.0 23.0
+Speed: 1.0
+Acceleration: forehand_acc
+
+Author: emmainf | goffin

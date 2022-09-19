@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 77.00 77.00 47.50	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Jannik Sinner

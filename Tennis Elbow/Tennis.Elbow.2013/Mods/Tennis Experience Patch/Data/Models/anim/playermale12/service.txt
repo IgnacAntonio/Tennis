@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 47.4 47.4 16.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: 12.2 8.4 240.0 -0.004 -0.100 0.995
+HandThrow: -21.9 -40.7 180.7 0.157 0.530 0.834
+
+Author: Neeky McDeez | Gonzales

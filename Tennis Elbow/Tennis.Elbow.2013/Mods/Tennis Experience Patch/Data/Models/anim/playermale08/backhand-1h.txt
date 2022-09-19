@@ -1,0 +1,5 @@
+Anim: BackHand-1H.x
+Info: 28.0 28.0 // Hit ball - Max Extension
+Speed: 1.0
+Acceleration: backhand-1h_Acc
+Author: Lucian Cucuteanu | Federer norm+acc

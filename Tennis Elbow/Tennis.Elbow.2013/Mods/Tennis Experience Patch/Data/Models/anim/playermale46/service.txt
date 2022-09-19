@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 62.0 62.0 29.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -1.2 -18.8 241.4 0.187 0.070 0.980
+HandThrow: -52.9 -4.7 158.0 -0.344 -0.085 0.935
+
+Author: Megyaem | Cilic 

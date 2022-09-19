@@ -1,0 +1,6 @@
+Anim: BackHand-1H.x
+Info: 27.5 27.5	// Hit ball - Max Extension
+Speed: 1.0
+
+
+AUTHOR: Megyaem | Gaudio

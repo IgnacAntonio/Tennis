@@ -1,0 +1,13 @@
+Anim: PlayerArrow
+NbSprite: 1
+InfoSup: 0
+NbMipMap: 3
+
+Spr 0
+{
+	Page Misc_01
+	Pos 69 0
+	Size 58 60
+	HotSpot 30 64
+	Time 1000.0
+}

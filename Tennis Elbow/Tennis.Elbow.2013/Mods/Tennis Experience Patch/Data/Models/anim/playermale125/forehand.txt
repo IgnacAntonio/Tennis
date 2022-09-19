@@ -1,0 +1,7 @@
+Anim: ForeHand.x
+Info: 28.50 28.50
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Reginald Wesley | Alexander Zverev

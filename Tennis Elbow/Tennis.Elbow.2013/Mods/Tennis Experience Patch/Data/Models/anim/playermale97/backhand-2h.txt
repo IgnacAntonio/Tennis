@@ -1,0 +1,6 @@
+Anim: BackHand-2H.x
+Info: 30.0 30.0
+Speed: 1.0
+Acceleration: backhand-2h_acc
+
+Author: Tennis Experience | Botic van de Zandschulp

@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 0 16 04	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Reginald Wesley | Rafael Nadal

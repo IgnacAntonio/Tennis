@@ -1,0 +1,183 @@
+Include Menu.def
+
+Background		#PreviousMenu
+
+Font	Default		HugeChars 6 8 0xFFFFE040 0 Circle Center Center Shadow LH1.15
+Font	IcoF		HugeChars 18 24 0xBFFFFFFF 0
+Font	SmallF		HugeChars 9 11 0xFFFFE040 0 Circle Center Center Shadow LH1.15
+Font	WhiteF		HugeChars 18 24 0xFFFFFFFF 0 Circle Center Center
+
+def	$p	TrainingClub_p1
+def	$s	p_0
+def	$s2	A
+
+
+def xc	0
+
+def	cw	200
+//def	ch	7
+def	ch	5
+def	bw	11		// (12 - 4) x 2 edges
+def	bh	11		// (12 - 5) x 2 edges
+add	bw	cw
+add	bh	ch
+
+def	y	0
+
+def	xl	xc
+add	xl	-bw 0.5
+add	xl	-16
+
+def	bsw	bh 1.2
+def	bxl	xl
+add	bxl	-2
+
+def	xd	xc
+add	xd	bw 0.5
+add	xd	16
+
+def IcoS	14
+
+item Slot
+{
+	Invisible
+	OnEnter
+
+	OnActionIf $2 0 9
+	{
+		SetCfg $s $p_$2
+		BreakAction
+	}
+
+	OnAction
+	{
+		GetStringLang $s2 $2-10
+		SetCfg $s $p_$s2
+		BreakAction
+	}
+	
+}
+
+
+//======== bouton background
+item
+{
+	Image Menu/Bar02vs bsw bh Rounded
+	Pos bxl y
+	Font IcoF
+}
+
+item Slot
+{
+	Text $2+1
+	Pos xl y
+
+	UnSelectable
+}
+
+/*item Slot
+{
+	SlideButton #Text
+	Pos xl y
+
+	OnAction
+	{
+		SlideCfg $2 0 100 100
+	}
+
+	UnSelectable
+}/**/
+
+//======== Players
+
+item	//=== Load Player
+{
+	Image Menu/Bar02vs bw bh Rounded
+	HelpText LoadSlot
+	Pos xc y
+	Font IcoF
+
+	OnAction
+	{
+		LoadAllIniSectionFromRoot $p $s Section
+		SetCfg /NW_Intern/CheckBld 0		// To recheck the name when logging in in the Online Mode
+		MenuBack
+	}
+
+	ShowIf $1 0
+	SelectableIfNot /Slot/$s -1
+}
+
+item	//=== Save Player
+{
+	Image Menu/Bar02vs bw bh Rounded
+	HelpText SaveSlot
+	Pos xc y
+	Font IcoF
+
+	OnActionIf $3 1	// Exporting from WT to TC ?
+	{
+		SetCfg /Intern/Preview /$p/Preview
+		SetCfg /Intern/AutoPos /$p/AutoPos
+		SetCfg /Intern/Level /$p/Level
+		SetCfg /Intern/SubLevel /$p/SubLevel
+
+		SetCfg /$p/Preview /WorldTour_p1/Preview
+		SetCfg /$p/AutoPos /WorldTour_p1/AutoPos
+		SetCfg /$p/Level /WT_Sav/Diff
+		SetCfg /$p/SubLevel /WT_Sav/SubDiff
+	}
+
+	OnAction
+	{
+		SaveAllIniSectionFromRoot $p $s Section
+		MenuBack
+	}
+
+	OnActionIf $3 1
+	{
+		SetCfg /$p/Preview /Intern/Preview
+		SetCfg /$p/AutoPos /Intern/AutoPos
+		SetCfg /$p/Level /Intern/Level
+		SetCfg /$p/SubLevel /Intern/SubLevel
+	}
+
+	ShowIf $1 1
+}
+
+item	//=== Show player name
+{
+	Text /Slot/$s
+	Pos xc y
+	ShrinkToMaxPixel cw
+
+	ShowIfNot /Slot/$s -1
+}
+
+item
+{
+	Text EmptySlot
+	Pos xc y
+	ShrinkToMaxPixel cw
+
+	ShowIf /Slot/$s -1
+}
+
+
+item
+{
+	HelpText DeleteSlot
+
+	Image Ico/Delete IcoS IcoS
+	Pos xd y
+	Font WhiteF
+
+	OnAction
+	{
+		DeletePlayer $s
+		GetIniInfo p_ Section/Name Slot NbSlot
+	}
+
+	ShowIfNot /Slot/$s -1
+
+}

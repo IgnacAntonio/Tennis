@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 107.00 107.00 83.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Matteo Berrettini

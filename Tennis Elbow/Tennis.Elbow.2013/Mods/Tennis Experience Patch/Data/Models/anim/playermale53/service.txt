@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 57 57 35	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -0.6 5.1 248.3 0.153 -0.064 0.986
+HandThrow: -21.7 4.7 182.2 0.253 0.428 0.868
+
+Author: emmainf | Seppi

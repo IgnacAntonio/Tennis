@@ -1,0 +1,7 @@
+Anim: BackHand-1H.x
+Info: 30.0 30.0 // Hit ball - Max Extension
+Speed: 1.0
+Acceleration: Backhand-1H_Acc
+
+
+Author: Megyaem | Haas

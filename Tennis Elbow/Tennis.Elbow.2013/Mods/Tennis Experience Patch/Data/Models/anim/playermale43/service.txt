@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 80.0 80.0 53.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Lucian Cucuteanu | J.W. Tsonga

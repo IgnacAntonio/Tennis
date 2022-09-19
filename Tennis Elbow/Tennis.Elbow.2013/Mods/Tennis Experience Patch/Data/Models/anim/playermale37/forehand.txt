@@ -1,0 +1,4 @@
+Anim: Forehand.x
+Info: 40.0 40.0
+Speed: 1.0
+Author: nguyengrandslam | Gulbis

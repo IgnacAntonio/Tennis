@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 56.0 56.0 28.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Struff

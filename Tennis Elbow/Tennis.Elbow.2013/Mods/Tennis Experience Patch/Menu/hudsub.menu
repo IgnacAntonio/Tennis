@@ -1,0 +1,56 @@
+Include Hud.Def
+
+def y		50
+
+Font	Default	HugeChars 11 14 0xFFFFFF5F 0 Circle Center Center Shadow0
+Font	InfoF	HugeChars 11 13 0xFFFFFF5F 0 Center Top
+Font	TimeF	HugeChars 9 12 0xFFFFFF5F 0 Left Center //FixedWidth0.75
+
+Background #Game
+
+WideScreen
+ShrinkTo 0 0	// Don't shrink
+
+//============ InfoBoard
+item
+{
+	Text /Intern/InfoBoard
+	Pos /Intern/InfoX /Intern/InfoY
+	Font InfoF
+	ShrinkToMaxPixel 120
+	ShowIf /3dEngine/Stadium3d 0
+}
+
+
+//============ SpeedBoard
+item
+{
+	Text SpeedMph /Intern/SpeedMph
+	Pos /Intern/ServeX /Intern/ServeY Right Top
+	Font TimeF
+	ShowIfNot /Game/Mph 0
+}
+
+item
+{
+	Text SpeedKmh /Intern/SpeedKmh
+	Pos /Intern/ServeX /Intern/ServeY Right Top
+	Font TimeF
+	ShowIf /Game/Mph 0
+}
+
+
+//============ TimeBoard
+item
+{
+	Text /Intern/Time1
+	Pos /Intern/TimeX /Intern/TimeY
+	Font TimeF
+}
+
+item
+{
+	Text /Intern/Time2
+	Pos /Intern/TimeX+10.5 /Intern/TimeY
+	Font TimeF
+}

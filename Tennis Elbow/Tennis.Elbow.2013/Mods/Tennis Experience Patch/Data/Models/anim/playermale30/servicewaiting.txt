@@ -1,0 +1,7 @@
+Anim: ServiceWaiting.x
+Info: 0 15 31 18 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | J.M. Del Potro
+
+HandBounce: -1.2 -25.0 68.9 0.486 0.300 -0.821
+

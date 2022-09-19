@@ -1,0 +1,7 @@
+Anim: ForeHand_acc.x
+Info: 28.00 28.00
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Reginald Wesley | Nick Kyrgios

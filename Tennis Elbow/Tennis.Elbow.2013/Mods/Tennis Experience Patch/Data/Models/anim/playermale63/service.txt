@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 60.0 60.0 39.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Megyaem | F. Lopez
+
+SweetSpot: 16.3 -16.3 243.4 -0.136 0.070 0.988
+HandThrow: -51.0 -17.3 175.5 -0.050 0.880 0.473

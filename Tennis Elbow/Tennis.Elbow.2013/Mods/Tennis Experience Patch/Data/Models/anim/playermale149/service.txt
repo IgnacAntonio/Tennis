@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 110.0 110.0 70.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Delbonis

@@ -1,0 +1,77 @@
+//Include MatchStatBoard.def
+Include Menu.Def
+
+//Background		#White
+//Background		#PreviousMenu
+Background		#Game
+
+Font	Default		HugeChars 11 15 0xFFFFE040 0 Center Center Shadow LH1.15
+Font	TitleF		HugeChars 15 18 0xFFFFE040 0 Center Center Shadow LH1.15
+Font	IcoF		HugeChars 15 18 0xFFFFFFFF 0 Center Up Shadow LH1.15
+Font	SmallF		HugeChars 10 13 0xFFFFFFFF 0 Center Center Shadow LH0.9
+
+FontSize	Selected	11 14
+
+//================================= Frame
+def	FrameW	640
+add	FrameW	FrameX -2
+def	FrameH	480
+add	FrameH	FrameY -2
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+def	Border	5
+add	FrameLx	Border
+add	FrameRx	-Border
+add	FrameYu	Border
+add	FrameYd	-Border
+
+item
+{
+	Image Menu/RoundBg01 FrameW FrameH Rounded
+	Pos FrameX FrameY
+	Color 0xDF2E5FFE
+}
+
+ShrinkTo FrameLx FrameRx
+
+//================================= Help
+
+def	y	FrameYu
+def	dy	18
+
+add	y	dy 0.8
+def	xc	320
+def	xcl	315
+def	xcr	325
+
+def	xl	320 0.5
+add	xl	FrameLx 0.5
+def	xr	320 0.5
+add	xr	FrameRx 0.5
+
+def	xrr	xr 0.5
+add	xrr	FrameRx 0.5
+
+def	xrl	xr 0.5
+add	xrl	320 0.5
+
+def	ShrHdx	FrameW 0.45
+def	ShrHhdx	FrameW 0.225
+
+//================================= Title
+item
+{
+	Text InGameHelp
+	Pos xc y
+	add y dy 1.25
+	Font TitleF
+}
+

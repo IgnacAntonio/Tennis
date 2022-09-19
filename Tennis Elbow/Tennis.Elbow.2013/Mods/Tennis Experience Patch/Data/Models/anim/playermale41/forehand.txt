@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 22.0 22.0
+Speed: 1.0
+Acceleration: forehand_acc
+
+Author: M4n4c0r & Lucian.C | Djokovic v2 norm+acc

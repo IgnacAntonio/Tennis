@@ -1,0 +1,115 @@
+Include Menu.Def
+Include MenuSet01.def
+
+Background	#PreviousMenu
+NoGetFullVersion
+
+
+Font	Bg		HugeChars 18 24 0x7FFFFFFF 0x7F000000 Circle Left Up Shadow LH1.15
+Font	MenuFont	Font_r90 30 44 0xFF1E31AD 0 Center Center Shadow0.65
+Font	HelpFont	HugeChars 13 20 0xFFFFF829 0 Circle Center Center
+
+
+item	// upper left bar
+{
+	Image Menu/RoundBg01 w1_0 h3_0 Rounded
+	Pos Sx0 Sy0
+
+	Font Bg
+}
+
+
+item	// upper middle bar (game title)
+{
+	Image Menu/RoundBg01 w5_2 h1_0 Rounded
+	Pos Sx2 Sy0
+
+	Font Bg
+}
+
+
+item	// main big rectangle
+{
+	Image Menu/RoundBg01 w3_2 h3_2 Rounded
+	Pos Sx2 Sy2
+
+	Font Bg
+}
+
+
+item	// right middle rectangle
+{
+	Image Menu/RoundBg01 w5_4 h3_2 Rounded
+	Pos Sx4 Sy2
+
+	Font Bg
+}
+
+
+//======= Game Title
+item
+{
+	Image Menu/TennisElbow 350 80
+	Pos 130 5
+}
+
+
+item
+{
+	Image Menu/TeYear 144 54
+	Pos 438 33
+
+	ShowIfNot /Intern/Te 0
+}
+
+
+//===== Menu's name bar
+def	bx	Sx0
+def	by	Sy2
+def	bw	Sx1
+def	bh	Sy3
+
+Item
+{
+	add bx 5
+	add by -3
+	add bw -bx
+	add bw -5
+	add bh -by
+	add bh -5
+
+	Image Menu/Bar01 bw bh Rounded
+	Pos bx by
+
+	Font Bg
+}
+
+add by	bh 0.5
+add bh	-40
+
+Item MenuName
+{
+	CycleButton #Text
+	Pos 40 by
+	ShrinkToMaxPixel bh
+
+	Font MenuFont
+
+	OnAction
+	{
+		SlideCfg $1 0 1000
+	}
+	Unselectable
+}
+
+
+//================== Side Icons
+Include SideOptionsSet.def
+
+
+//item
+//{
+//	SubMenu Bar-Quit+Info+Back
+//}
+
+include Bar-Quit+Info+Back.def

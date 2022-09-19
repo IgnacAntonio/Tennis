@@ -1,0 +1,6 @@
+Anim: Forehand_acc.x
+Info: 24.0 24.0
+Speed: 1.0
+Acceleration: forehand_acc
+
+Author: Lucian Cucuteanu | J.W. Tsonga

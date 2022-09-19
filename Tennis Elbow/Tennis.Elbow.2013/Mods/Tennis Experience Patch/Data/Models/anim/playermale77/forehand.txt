@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 31.0 31.0
+Speed: 1.0
+Author: Emmainf | Florian Mayer

@@ -1,0 +1,1269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Tennis Elbow 2013 - Documentation compl&egrave;te</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="images/subSilver.css" rel="stylesheet" type="text/css">
+<meta name="description" content="Documentation du Jeu de Tennis 'Tennis Elbow 2013'">
+</head>
+
+<body>
+  <p align="center"><strong><font size="+3">Tennis Elbow 2013</font><br>
+  de<br>
+ManuTOO</strong></p>
+<h3>&nbsp;</h3>
+<p><u><strong><font size="+2">Sommaire:</font></strong></u><br>
+  <br>
+  <a href="#introduction">I. Introduction</a><br>
+  <a href="#menus">II. Menus</a><br>
+  <a href="#network">III. R&eacute;seau</a><font size="-1"> (non disponible sur Mac OSX &amp; Linux)</font></p>
+<ul>
+	<li><a href="#NotesReseau">Notes Importantes</a></li>
+	<li><a href="#MenuReseau">Menu &quot;R&eacute;seau&quot;</a></li>
+	<li><a href="#MenuHebergerPartie">Menu &quot;H&eacute;berger une partie&quot;</a></li>
+	<li><a href="#MenuJoindrePartie">Menu &quot;Joindre une partie&quot;</a></li>
+	<li><a href="#PartiesInternet">Menu &quot;Parties Internet&quot;</a></li>
+	<li><a href="#ModesDeCompetences">Modes de comp&eacute;tence</a></li>
+	<li><a href="#CreationPartieOnline">Cr&eacute;ation de partie</a></li>
+	<li><a href="#RejoindrePartieOnline">Rejoindre une partie</a></li>
+	<li><a href="#PendantPartieReseau">Pendant la partie</a></li>
+	<li><a href="#ProtectionDuNom">Protection du nom</a></li>
+	<li><a href="#ELO">ELO</a></li>
+	<li><a href="#PenaliteElo">P&eacute;nalit&eacute; ELO</a></li>
+	<li><a href="#Desynchronization">D&eacute;synchronisation</a></li>
+</ul>
+<p><a href="#menus"> </a><a href="#jeu">IV. Jeu</a></p>
+<ul>
+  <li><a href="#coups">Coups disponibles</a></li>
+  <li><a href="#gestures">Mimiques</a></li>
+  <li><a href="#comment">Comment joue-t-on ?</a>
+    <ul>
+      <li><a href="#frappe">D&eacute;placement, frappe et vis&eacute;e</a></li>
+      <li><a href="#precision">Pr&eacute;cision des coups</a></li>
+      <li><a href="#longueur">Longueur des coups</a></li>
+      <li><a href="#danger">Zone de Danger</a></li>
+      <li><a href="#centrer">Centrer la balle</a></li>
+      <li><a href="#amortie">Lob &amp; Amortie</a></li>
+      <li><a href="#arcade">Contr&ocirc;les Arcade, Simulation &amp; Elite</a></li>
+      <li><a href="#servir">Service</a></li>
+      <li><a href="#score">Score</a></li>
+      <li><a href="#trace">Trace de balle</a></li>
+      <li><a href="#epaule">Acc&eacute;l&eacute;ration &agrave; hauteur d'&eacute;paule</a></li>
+    </ul>
+  </li>
+  <li><a href="#fatigue">Fatigue</a></li>
+  <li><a href="#clavier">Raccourcis clavier</a></li>
+  <li><a href="#skills">Influence des caract&eacute;ristiques</a>
+    <ul>
+      <li><a href="#rally">Coup Droit &amp; Revers</a></li>
+      <li><a href="#2hand">Coups &agrave; 1 main contre coups &agrave; 2 mains</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#volee">Vol&eacute;e &amp; Smash</a></li>
+      <li><a href="#lob">Lob &amp; Amortie</a></li>
+      <li><a href="#contre">Contre</a></li>
+      <li><a href="#lift">Lift</a></li>
+      <li><a href="#vitesse">Vitesse</a></li>
+      <li><a href="#taille">Taille</a></li>
+      <li><a href="#endurance">Endurance</a></li>
+      <li><a href="#style">Style du joueur</a></li>
+      <li><a href="#2mains">Coup droit &amp; revers &agrave; 2 mains</a></li>
+      <li><a href="#preview">Preview</a></li>
+      <li><a href="#niveau">Niveau &amp; Sous-Niveau</a></li>
+    </ul>
+  </li>
+  <li><a href="#stats">Ecran de statistiques</a></li>
+  <li><a href="#double">Double</a></li>
+</ul>
+<p><a href="#tournoi">V. Mode tournoi</a></p>
+<ul>
+  <li><a href="#autosave">Sauvegardes Automatiques</a></li>
+  <li><a href="#saison">Type de carri&egrave;re</a></li>
+  <li><a href="#classement">Classement</a></li>
+  <li><a href="#training">Entrainement</a></li>
+  <li><a href="#nbset">Nombres de sets de la partie</a></li>
+  <li><a href="#masters">Les Masters</a></li>
+  <li><a href="#pbed">Changer les joueurs du mode tournoi</a></li>
+</ul>
+<p><a href="#regles-tennis">VI. R&egrave;gles du Tennis</a><br>
+  <a href="#conclusion">VII. Conclusion</a><br>
+</p>
+<p><a name="introduction"></a> </p>
+<table border="5">
+  <tr>
+    <td><div align="left"><font size="+1">&nbsp;I. Introduction&nbsp;</font></div></td>
+  </tr>
+</table>
+<p> Tennis Elbow est un jeu de tennis, &agrave; la jouabilit&eacute; fun et r&eacute;aliste, simulant le tennis
+  de haut niveau.<br>
+  Pour configurer les contr&ocirc;les et la r&eacute;solution, lancez le raccourci
+  &quot;Configuration&quot; (depuis D&eacute;marrer-&gt;Programmes-&gt;Tennis
+  Elbow 2013).</p>
+<p> <font color="#0000FF"><strong>Configuration minimale requise pour la version
+  Windows :</strong></font></p>
+<ul>
+  <li>OS: Windows 8/7/Vista/XP/ME/2000/98 (Windows 95/NT non support&eacute;)</li>
+  <li> Processeur: Intel Pentium II &agrave; 500 MHz ou &eacute;quivalent</li>
+  <li> M&eacute;moire: 256 Mo</li>
+  <li>DirectX 8.1</li>
+  <li> Vid&eacute;o: carte 3D compatible DirectX 6.0, avec 32 Mo</li>
+  <li> Son: carte compatible DirectX 8.1</li>
+  <li> Clavier, souris, ou joystick</li>
+  <li>200 Mo disponible sur le disque dur</li>
+</ul>
+<p><font color="#0000FF"><strong>Configuration recommand&eacute;e pour la version
+  Windows :</strong></font></p>
+<ul>
+  <li> Processeur: Intel Pentium III ou AMD Athlon cadenc&eacute; &agrave; 1.2 GHz ou plus</li>
+  <li>M&eacute;moire: 512 Mo ou plus</li>
+  <li> Vid&eacute;o: carte 3D compatible DirectX 8.1, avec 64 Mo</li>
+</ul>
+<p><strong><font color="#0000FF">Caract&eacute;ristiques :</font></strong> </p>
+<p> <u>Animation :</u> </p>
+<ul>
+  <li> rendu fluide &agrave; 60 images per seconde, m&ecirc;me sur petit PC</li>
+  <li> 10 animations de coups, dont le revers &agrave; 2 mains et le slice</li>
+  <li>mimiques</li>
+  <li> les juges de lignes indiquent les balles fautes et sur la ligne</li>
+</ul>
+<p><u>Tournois :</u></p>
+<ul>
+  <li> 300 tournois</li>
+  <li> Coupe Davis</li>
+  <li> 3500 joueurs g&eacute;r&eacute;s par l'ordinateur, sur 38 ans</li>
+  <li> Double syst&egrave;me de classement et gestion des points, en simple comme
+    en double</li>
+  <li> Palmar&egrave;s, consultation des tableaux de tournois, et de l'historique
+    des joueurs</li>
+</ul>
+<p><u>Divers :</u></p>
+<ul>
+  <li> 9 terrains, chacun avec un rebond sp&eacute;cifique</li>
+  <li> joueur &amp; joueuse compl&egrave;tement param&eacute;trables, de la couleur des cheveux aux chaussures
+    en passant entre autres par la peau et le t-shirt</li>
+  <li> Simple, jeu &agrave; 3, double</li>
+  <li> 6 niveaux de difficult&eacute;, chacun d&eacute;coup&eacute; en 10 sous-niveaux</li>
+</ul>
+<p><a name="menus"></a></p>
+<table border="5">
+  <tr>
+    <td><div align="left"><font size="+1">&nbsp;II. Menus&nbsp;</font></div></td>
+  </tr>
+</table>
+<p><strong><font color="#0000FF">Dans les menus :</font></strong></p>
+<p> Vous contr&ocirc;lez la petite balle qui tourne avec la souris ; amenez la balle sur une ic&ocirc;ne et
+  appuyez sur le bouton n&deg;1 pour activer l'ic&ocirc;ne; quand la balle est sur une ic&ocirc;ne, sa description
+  apparait dans le cadre en bas du menu. Vous pouvez &eacute;galement changer l'ic&ocirc;ne active en utilisant
+  votre clavier ou votre joystick.</p>
+<p>Ic&ocirc;nes standards :</p>
+<ul>
+  <li> Retour : permet de retourner au menu pr&eacute;c&eacute;dent; l'appui sur
+    le bouton n&deg;2 ou la touche 'Echap' est &eacute;quivalent &agrave; Retour</li>
+  <li>Quitter : permet de retourner sous Windows</li>
+</ul>
+<p>Dans de nombreux menus, vous avez une barre d'ic&ocirc;nes sur le c&ocirc;t&eacute;
+  droit. Celles-ci permettent d'acc&eacute;der aux menus de configuration du&nbsp;profile,
+  des contr&ocirc;les, du son, de la vid&eacute;o, et aux options diverses.</p>
+<p><strong><font color="#0000FF">Dans le menu principal :</font></strong></p>
+<ul>
+  <li>Training Club: pour jouer une partie rapidement et comme vous le souhaitez</li>
+  <li> Comp&eacute;tition : pour participer aux Tournois et &ecirc;tre class&eacute;</li>
+  <li> Cr&eacute;dits : page d'information</li>
+</ul>
+<p><strong><font color="#0000FF">Dans le menu &quot;Training Club&quot; :</font></strong></p>
+<ul>
+  <li> Jouer : permet de choisir entre faire un &eacute;chauffement, un match amical, et le mode online, puis
+    lance la partie avec les options en cours</li>
+  <li> Feuilles des joueurs : pour modeler les personnages</li>
+  <li> Options de jeu : pour choisir le terrain, le nombre de sets, le nombre
+    de joueurs et si les changements de c&ocirc;t&eacute; auront lieu pendant
+    le match ou pas</li>
+</ul>
+<p><strong><font color="#0000FF">Dans la feuille de personnage :</font></strong></p>
+<ul>
+  <li> cliquez sur les caract&eacute;ristiques pour les faire changer</li>
+  <li> cliquez sur le joueur pour acc&eacute;der &agrave; l'&eacute;cran de configuration de son apparence</li>
+  <li>cliquez sur l'ic&ocirc;ne avec une main pour passer de droitier &agrave; gaucher</li>
+  <li> Statistiques : permet de voir les statistiques de la carri&egrave;re du joueur</li>
+  <li> Humain / Ordinateur : pour choisir entre le contr&ocirc;le par humain et par ordinateur</li>
+  <li> D&eacute;fenseur / Attaquant de fond de court / Puncheur / Polyvalent / Volleyeur / Contreur : pour
+    choisir le style de jeu</li>
+  <li> Charger / Sauver : pour charger et sauver le joueur</li>
+  <li>Fl&egrave;ches gauche/droite : fait d&eacute;filer les 4 joueurs ; le 1er joueur est celui en bas de
+    l'&eacute;cran (par d&eacute;faut, c'est le joueur que vous contr&ocirc;lez) ; le 2e joueur est celui en
+    haut de l'&eacute;cran (par d&eacute;faut, c'est le joueur contr&ocirc;l&eacute; par l'ordinateur) ; le
+    3e joueur est le partenaire du 1er joueur pour les doubles, et le 4e est le partenaire du 2e joueur</li>
+</ul>
+<p><strong><font color="#0000FF">Dans la configuration de l'apparence :</font></strong></p>
+<ul>
+  <li>cliquez sur les ic&ocirc;nes sur la gauche pour choisir quelle partie configurer, puis r&eacute;glez
+    les param&egrave;tres sur la droite</li>
+  <li>cliquez sur le joueur pour avoir une joueuse, et vice et versa</li>
+  <li>les 2 boutons au milieu en bas vous permettent de copier l'ensemble des param&egrave;tres d'apparence
+    ; cliquez sur celui de gauche pour copier le code d'apparence dans le presse papier de Windows (vous pouvez
+    alors utiliser &quot;Edition-&gt;Coller&quot; or Ctrl+V pour coller ce code o&ugrave; vous le souhaitez),
+    et cliquez sur celui de droite pour entrer un code pr&eacute;c&eacute;demment cr&eacute;&eacute; (vous
+    pouvez utiliser Ctrl+V pour le rentrer d'un coup)</li>
+</ul>
+<p><strong><font color="#0000FF">Dans le menu &quot;Comp&eacute;tition&quot; :</font></strong></p>
+<ul>
+  <li> Nouvelle partie : pour d&eacute;marrer une nouvelle partie</li>
+  <li>Continuer la partie en cours : pour continuer la partie en cours qui est sauvegard&eacute;e quand vous
+    quittez le jeu</li>
+  <li>Charger / Sauver partie : pour charger &amp; sauver vos parties ; si le jeu plante, vous pouvez trouver
+    des sauvegardes automatiques dans le menu de chargement de la partie</li>
+  <li>Match suivant : pour jouer le prochain match, ou pour choisir le prochain tournoi</li>
+  <li> Feuille du joueur : pour observer son personnage</li>
+  <li> Tableaux, classements et scores : pour voir les classements mondiaux, les tableaux des tournois, les
+    r&eacute;sultats de la coupe Davis et les historiques des joueurs</li>
+  <li>Cam&eacute;ra : pour r&eacute;gler tous les param&egrave;tres li&eacute;s &agrave; la cam&eacute;ra</li>
+</ul>
+<p><font color="#0000FF"><strong>Menu &quot;En-Jeu&quot; :</strong></font></p>
+<ul>
+	<li> appuyez sur &quot;Echappe&quot; pendant l'&eacute;chauffement ou le match pour acc&eacute;der au menu En-Jeu</li>
+	<li>Options :  permet de configurer les informations affich&eacute;es</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong><font color="#0000FF"><a name="network" id="network"></a></font></strong></p>
+<table border="5">
+  <tr>
+    <td><div align="left"><font size="+1">&nbsp;III. R&eacute;seau&nbsp;</font></div></td>
+  </tr>
+</table>
+<font size="-1"><strong>(non disponible sur Mac OSX &amp; Linux)</strong></font><br>
+<p><font color="#0000FF"><strong><a name="NotesReseau"></a>/!\ Important :</strong></font></p>
+<ul>
+  <li> Si vous voulez jouer sur Internet, v&eacute;rifiez que vous avez DirectX
+    9.0c (ou une version plus r&eacute;cente), sinon vous risquez d'avoir des
+    ralentissements monstrueux ! Vous pouvez le t&eacute;l&eacute;charger ici
+    : <a href="http://www.microsoft.com/downloads/Browse.aspx?displaylang=fr&categoryid=2" target="_blank">http://www.microsoft.com/downloads/Browse.aspx?displaylang=fr&amp;categoryid=2</a></li>
+  <li>Si vous &ecirc;tes derri&egrave;re un NAT ou routeur, et que vous voulez
+    h&eacute;berger une partie, vous devez forwarder le port UDP 4321;&nbsp; si
+    vous avez besoin d'aide, vous trouverez des instructions en anglais ici :
+    <a href="http://www.portforward.com/routers.htm" target="_blank">http://www.portforward.com/routers.htm</a>
+    ; choisissez votre routeur, puis n'importe quel jeu (par exemple &quot;Quake
+    3&quot;), cela n'a pas d'importance, il faut juste remplacer le n&deg; de
+    port du jeu par 4321 UDP</li>
+  <li>De nombreux FAI fournissent une Box en mode routeur par d&eacute;faut. Vous
+    devez alors ouvrir le port UDP 4321.<br>
+    Jetez un oeil ici pour savoir comment configurer votre Box : <a href="http://www.ratiatum.com/forum/index.php?showtopic=46422" target="_blank">http://www.ratiatum.com/forum/index.php?showtopic=46422</a></li>
+  <li> Si vous avez un pare-feu (firewall), vous devez ouvrir le port UDP 4321,
+    et autorisez Tennis Elbow &agrave; acc&eacute;der &agrave; Internet</li>
+  <li>Si vous pouvez joindre des parties, mais que personne ne joint les parties
+    que vous cr&eacute;ez, cela veut probablement dire que vous avez un routeur
+    et que vous ne l'avez pas ou mal configur&eacute;</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="MenuReseau"></a>Dans le menu &quot;R&eacute;seau&quot; :</font></strong></p>
+<ul>
+  <li>En haut du menu &quot;R&eacute;seau&quot; sont affich&eacute;es les interfaces
+    TCP/IP d&eacute;tect&eacute;es par le jeu. Vous pouvez les faire d&eacute;filer,
+    afin de conna&icirc;tre vos diff&eacute;rentes adresses IP, mais ce choix
+    n'a pas d'incidence sur la cr&eacute;ation de la connexion, qui se fait sur
+    toutes les interfaces disponibles en m&ecirc;me temps</li>
+  <li>Port : 4321 par d&eacute;faut; vous pouvez r&eacute;gler un autre port si
+    le besoin s'en fait sentir, mais le port doit &ecirc;tre le m&ecirc;me pour
+    l'h&ocirc;te et le client (sauf si vous faites une connexion &agrave; une
+    partie distance en sp&eacute;cifiant une adresse compl&eacute;t&eacute;e du
+    n&deg; de port, par ex : 192.168.0.1:4000 ); vous pouvez mettre &quot;-1&quot;
+    pour choisir un port au hasard &agrave; la cr&eacute;ation d'une partie, ou
+    rechercher des parties sur tous les ports quand vous joignez une partie distante
+  </li>
+  <li>H&eacute;berger une partie : pour cr&eacute;er une partie et attendre qu'un
+    joueur vous rejoigne</li>
+  <li>Joindre une partie : pour chercher des parties sur Internet, sur le r&eacute;seau
+    local, ou joindre une partie distante</li>
+  <li>Salon de discussion : ouvre le chat de Mana Games, afin de discuter avec
+    d'autres joueurs</li>
+  <li>Forum : ouvre le forum de Mana Games</li>
+  <li>Documentation : ouvre la documentation compl&egrave;te du jeu</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="MenuHebergerPartie"></a>Dans le menu &quot;H&eacute;berger une partie&quot;
+  :</font></strong></p>
+<ul>
+  <li>Cr&eacute;er une partie : pour cr&eacute;er la partie avec les param&egrave;tres
+    actuels</li>
+  <li> Ping Max : r&egrave;gle le ping maximal que doit avoir un joueur pour joindre
+    votre partie (uniquement pour les parties publiques)</li>
+  <li>Type: mettre &quot;Publique&quot; pour que votre partie soit list&eacute;e
+    par le serveur global de Mana Games, ou sur &quot;Priv&eacute;&quot; pour
+    ne pas &ecirc;tre list&eacute;</li>
+  <li>Permission : mettre &quot;Accepte tout joueur&quot; pour accepter tous les
+    joueurs, et &quot;Seulement version compl&egrave;te&quot; pour accepter seulement
+    les joueurs ayant la version compl&egrave;te de Tennis Elbow</li>
+  <li>Comp&eacute;tences : permet de r&eacute;gler les restrictions sur les comp&eacute;tences,
+    utile pour cr&eacute;er des parties plus &eacute;quilibr&eacute;es</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="MenuJoindrePartie"></a>Dans le menu &quot;Joindre une partie&quot; :</font></strong></p>
+<ul>
+  <li>Trouver des parties Internet : recherche toutes les parties Internet list&eacute;es par le serveur global
+    de Mana Games</li>
+  <li>Joindre une partie locale : scanne les parties disponibles sur votre r&eacute;seau local (LAN) ; vous
+    devez conna&icirc;tre et sp&eacute;cifier le port du serveur que vous recherchez ; normalement, c'est celui
+    par d&eacute;faut, c'est-&agrave;-dire 4321</li>
+  <li>Joindre une partie distante : pour joindre la partie qui se trouve &agrave; l'adresse IP distante sp&eacute;cifi&eacute;e
+    ci-dessous</li>
+  <li>IP Distante : adresse IP (ou URL) de la partie &agrave; rejoindre</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="PartiesInternet"></a>Dans le menu &quot;Parties Internet&quot; :</font></strong></p>
+<ul>
+  <li>Nom des parties : cliquer sur le nom d'une partie pour la rejoindre</li>
+  <li>Rafra&icirc;chir les pings : rafra&icirc;chit les pings de la liste actuelle</li>
+  <li>Rafra&icirc;chir la liste : rafra&icirc;chit la liste des parties</li>
+  <li>Cacher les parties non disponibles : mettre &agrave; &quot;Oui&quot; pour
+    cacher les parties que vous ne pouvez pas joindre (parce que votre ping est
+    trop &eacute;lev&eacute;, que vous n'avez pas la version compl&egrave;te,
+    etc...) </li>
+  <li>Le ping est une estimation du temps d'aller-retour d'un paquet entre deux
+    ordinateurs. Plus il est petit, plus les communications seront r&eacute;actives
+    et ainsi le transfert de donn&eacute;es sera fluide. Si le ping affich&eacute;
+    est &quot;oo&quot;, alors la communication n'a pas pu &ecirc;tre &eacute;tablie.
+    Cela peut &ecirc;tre du &agrave; un paquet perdu si cela se produit qu'une
+    seule fois, ou &agrave; un parefeu ou un routeur mal configur&eacute;, si
+    c'est syst&eacute;matique</li>
+</ul>
+<p><strong><font color="#0000FF"> <a name="ModesDeCompetences"></a>Modes de comp&eacute;tence :</font></strong></p>
+<ul>
+  <li>Libre :
+    <ul>
+      <li> il n'y a aucune restriction, toutes les comp&eacute;tences peuvent
+        avoir n'importe quelle valeur de 0 &agrave; 100%</li>
+    </ul>
+  </li>
+  <li>Fair Play:
+    <ul>
+      <li> la visualisation de la vis&eacute;e n'est pas autoris&eacute;e</li>
+      <li>l'Auto-Positionnement est sur Moyen</li>
+      <li> la moyenne des comp&eacute;tences est de 80%, ce qui signifie que vous
+      devez avoir 780 points disponibles dans votre feuille de personnage</li>
+      <li>les comp&eacute;tences de Service et de Coup Droit sont r&eacute;-&eacute;chelonn&eacute;es sur 20-70%</li>
+      <li>les comp&eacute;tences de Revers sont r&eacute;-&eacute;chelonn&eacute;es sur 20-70%</li>
+      <li> toutes les autres comp&eacute;tences sont r&eacute;-&eacute;chelonn&eacute;es
+        sur 25-75%</li>
+    </ul>
+  </li>
+  <li>R&eacute;aliste :
+    <ul>
+      <li> la visualisation de la vis&eacute;e n'est pas autoris&eacute;e</li>
+      <li>l'Auto-Positionnement est sur Moyen</li>
+      <li> la moyenne des comp&eacute;tences est de 80%, ce qui signifie que vous
+        devez avoir 780 points disponibles dans votre feuille de personnage</li>
+      <li> toutes les  comp&eacute;tences sont r&eacute;-&eacute;chelonn&eacute;es
+      sur 30-90%</li>
+    </ul>
+  </li>
+</ul>
+<p> Si vous ne respectez pas les conditions des modes Fair Play ou R&eacute;alistes,
+  alors le moteur du jeu ajustera automatiquement vos comp&eacute;tences.</p>
+<p>Exemple de r&eacute;-&eacute;chelonnement de comp&eacute;tences :</p>
+<table width="400" border="1" cellpadding="3">
+  <tr>
+    <td align="center">Valeur Initiale</td>
+    <td align="center">0% </td>
+    <td align="center">30%</td>
+    <td align="center">50%</td>
+    <td align="center">70%</td>
+    <td align="center">100%</td>
+  </tr>
+  <tr>
+    <td align="center"><p>R&eacute;sultat pour les comp&eacute;tences en Mode R&eacute;aliste</p></td>
+    <td align="center">30%</td>
+    <td align="center">48%</td>
+    <td align="center">60%</td>
+    <td align="center">72%</td>
+    <td align="center">90%</td>
+  </tr>
+  <tr>
+    <td align="center">R&eacute;sultat pour les  comp&eacute;tences de Service &amp; de Coup Droit en Mode Fair Play</td>
+    <td align="center">20%</td>
+    <td align="center">35%</td>
+    <td align="center">45%</td>
+    <td align="center">55%</td>
+    <td align="center">70%</td>
+  </tr>
+  <tr>
+    <td align="center">R&eacute;sultat pour les  comp&eacute;tences de Revers en Mode Fair Play</td>
+    <td align="center">15%</td>
+    <td align="center">30%</td>
+    <td align="center">40%</td>
+    <td align="center">50%</td>
+    <td align="center">65%</td>
+  </tr>
+  <tr>
+    <td align="center">R&eacute;sultat pour les autres comp&eacute;tences en Mode Fair Play</td>
+    <td align="center">25%</td>
+    <td align="center">40%</td>
+    <td align="center">50%</td>
+    <td align="center">60%</td>
+    <td align="center">75%</td>
+  </tr>
+</table>
+<p>Formules de r&eacute;-&eacute;chelonnement des comp&eacute;tences :</p>
+<ul>
+  <li>Comp&eacute;tences en Mode R&eacute;aliste : Comp&eacute;tence en-jeu = 30 + 60 * Comp&eacute;tence
+  / 100</li>
+  <li>Comp&eacute;tences de Service &amp; de Coup Droit en Mode Fair Play : Comp&eacute;tence en-jeu = 20 + 50 * Comp&eacute;tence
+  / 100</li>
+  <li>Comp&eacute;tences de Revers en Mode Fair Play : Comp&eacute;tence en-jeu = 15 + 50 * Comp&eacute;tence
+  / 100</li>
+  <li>Autres comp&eacute;tences en Mode Fair Play : Comp&eacute;tence en-jeu = 25 + 50 * Comp&eacute;tence
+    / 100</li>
+</ul>
+<p><font color="#0000FF"><strong><a name="CreationPartieOnline"></a>Cr&eacute;ation de partie :</strong></font></p>
+<p>Une fois que vous avez cr&eacute;&eacute; une partie et que vous attendez qu'un
+  joueur vous rejoigne, vous pouvez basculer vers une autre application. Tennis
+  Elbow jouera un son d'avertissement d&egrave;s qu'un joueur rejoindra votre
+  partie.</p>
+<p>Sur l'&eacute;cran suivant, vous devez sp&eacute;cifiez le &quot;D&eacute;lai&quot; voulu. Si vous n'&ecirc;tes
+  pas s&ucirc;r de comment le choisir, mettez-le sur &quot;Auto&quot;, patientez 5 secondes, puis cliquez sur
+  &quot;Jouer&quot;.</p>
+<p>Le D&eacute;lai est un temps de latence interne qui permet &agrave; Tennis Elbow de tourner en parall&egrave;le sur votre PC et celui de votre adversaire. Il existe un temps mort de votre vis&eacute;e qui dure la moiti&eacute; du D&eacute;lai, juste avant que vous ne frappiez dans la balle. Pendant ce temps mort, le jeu consid&egrave;re que vous continuez de presser gauche (ou  droite) si vous &eacute;tiez en train de presser gauche (ou droite) juste avant le d&eacute;but de ce temps mort, et inversement que vous ne pressez rien du tout si vous n'aviez rien de press&eacute; juste avant le d&eacute;but du temps mort. Concr&egrave;tement, cela veut dire que si vous pressez gauche pour viser &agrave; gauche, et que vous rel&acirc;chez la pression sur gauche juste avant de frapper la balle, votre vis&eacute;e ne reviendra pas vers le centre comme lorsque vous jouez contre l'ordinateur. Il vous faut donc pr&eacute;parer votre vis&eacute;e au bon moment car vous ne pourrez pas rattraper au dernier moment une vis&eacute;e qui serait all&eacute;e trop loin, tout sp&eacute;cialement lorsque vous jouez avec un haut D&eacute;lai. Notez qu'il est recommand&eacute; de viser &eacute;galement comme cela  contre l'ordinateur, afin d'avoir une vis&eacute;e plus pr&eacute;cise.</p>
+<p>En r&eacute;sum&eacute; : quand le D&eacute;lai est tr&egrave;s haut, le jeu ne d&eacute;tectera pas votre s&eacute;lection de coup et votre vis&eacute;e si vous ne pr&eacute;parez pas votre coup suffisamment &agrave; l'avance.</p>
+<p>  Pour que le jeu fonctionne &agrave; vitesse normale, le D&eacute;lai doit &ecirc;tre
+  au moins la moiti&eacute; du ping. Par exemple, vous avez g&eacute;n&eacute;ralement
+  au maximum 100ms de ping avec votre adversaire, vous devez donc mettre le D&eacute;lai
+&agrave; 50ms ou plus. Pour &eacute;viter d'avoir des ralentissements ( = lag) pendant vos parties, il est conseill&eacute; d'avoir le D&eacute;lai &eacute;gal au ping, voir plus haut.</p>
+<p><font color="#0000FF"><strong><a name="RejoindrePartieOnline"></a>Rejoindre une partie :</strong></font></p>
+<p> Quand vous joignez une partie, vous avez juste &agrave; attendre que l'h&ocirc;te r&egrave;gle le D&eacute;lai
+  et lance le jeu. Pour conna&icirc;tre le D&eacute;lai r&eacute;gl&eacute; par l'h&ocirc;te, vous pouvez appuyer
+  sur F4 pendant la partie pour consulter les statistiques du match : le D&eacute;lai est marqu&eacute; en
+  bas &agrave; droite.</p>
+<p><font color="#0000FF"><strong><a name="PendantPartieReseau"></a>Pendant la partie :</strong></font></p>
+<ul>
+  <li> si une tortue appara&icirc;t en haut &agrave; gauche : cela signifie que
+    le jeu attend un paquet venant du PC distant et qu'&eacute;ventuellement,
+    ce paquet a &eacute;t&eacute; perdu</li>
+  <li>si un c&acirc;ble barr&eacute; d'une croix rouge appara&icirc;t : cela signifie
+    qu'un ou plusieurs paquets ont &eacute;t&eacute; perdus</li>
+</ul>
+<p><font color="#0000FF"><strong><a name="ProtectionDuNom"></a>Protection du nom :</strong></font></p>
+<p>Les utilisateurs ayant achet&eacute; la version compl&egrave;te du jeu ont leur pseudo online prot&eacute;g&eacute;.
+  Si quelqu'un d'autre tente de prendre le m&ecirc;me nom, le pr&eacute;fixe &quot;[Fake] &quot; sera ajout&eacute;
+  devant.</p>
+<p><font color="#0000FF"><strong><a name="ELO"></a>ELO :</strong></font></p>
+<p>Le score ELO donne une approximation de votre niveau de jeu compar&eacute; aux autres joueurs. Son but est
+  de vous aider &agrave; trouver d'autres joueurs qui ont plus ou moins votre niveau, afin de faire des matchs
+  plus int&eacute;ressants. Son but n'est pas de d&eacute;terminer qui est le meilleur joueur de Tennis Elbow,
+  car il est beaucoup trop impr&eacute;cis. Vous devez jouer autour de 50 &agrave; 100 matchs afin d'avoir
+  un score relativement pr&eacute;cis.</p>
+<p><font color="#0000FF"><strong><a name="PenaliteElo"></a>P&eacute;nalit&eacute; ELO :</strong></font></p>
+<p>Si vous abandonnez le match avant la fin de la partie, vous aurez une p&eacute;nalit&eacute;
+  &agrave; votre ELO de 3%. Mais si pendant plus d'une minute vous adversaire
+  bascule sur une autre application ou reste dans les menus ou regarde le replay,
+  alors vous pouvez abandonner sans avoir de p&eacute;nalit&eacute;, si vous avez
+  pass&eacute; cette minute dans la partie, sans ouvrir les menus, ni basculer
+  vers une autre application, ni regarder le replay.</p>
+<p><font color="#0000FF"><strong><a name="Desynchronization"></a>D&eacute;synchronisation :</strong></font></p>
+<p>Parfois, quand vous jouez en ligne, vous verrez le message &quot;D&eacute;synchronisation
+  d&eacute;tect&eacute;e&quot;. Cela veut dire que votre partie et la partie de
+  votre adversaire ont perdu leur synchronisation, et des choses diff&eacute;rentes
+  se sont produites sur votre ordinateur et le sien. Dans ce cas, les parties
+  seront resynchronis&eacute;es, et vous devrez rejouer le point.</p>
+<p>Si jamais vous avez beaucoup de d&eacute;synchronisation (plus d'une tous les
+  5 points), cela peut vouloir dire que vous et/ou votre adversaire avait install&eacute;
+  un Mod qui change la fa&ccedil;on du moteur du jeu de fonctionner, ou que votre
+  installation a &eacute;t&eacute; corrompue. Dans ce cas, vous et/ou votre adversaire
+  devez enlever tous les Mods install&eacute;s et red&eacute;marrer Tennis Elbow,
+  ou d&eacute;sinstaller puis r&eacute;installer Tennis Elbow, afin de pouvoir
+  jouer &agrave; nouveau en ligne normalement.</p>
+<p>&nbsp;</p>
+<a name="jeu"></a>
+<table border="5">
+  <tr>
+    <td><div align="left"><font size="+1">&nbsp;IV. Jeu&nbsp;</font></div></td>
+  </tr>
+</table>
+<p><strong><font color="#0000FF"><a name="coups" id="coups"></a>Coups disponibles
+  :</font></strong><br>
+  (b1 = bouton n&deg;1; b2 = bouton n&deg;2)</p>
+<ul>
+  <li> b1 = Coup normal</li>
+  <li> b1 + up = Balle courte</li>
+  <li> b1 + down = Lift</li>
+</ul>
+<ul>
+  <li> b2 = Slice</li>
+  <li> b2 + up = Amortie</li>
+  <li> b2 + down = Lob de d&eacute;fense</li>
+</ul>
+<ul>
+  <li>b1+b2 = Acc&eacute;l&eacute;ration</li>
+  <li> b1+b2 + up = Acc&eacute;l&eacute;ration courte</li>
+  <li> b1+b2 + down = Lob d'attaque</li>
+</ul>
+<ul>
+  <li> pas de bouton = Coup assur&eacute;</li>
+</ul>
+<p>Pendant le service :</p>
+<ul>
+  <li>b1+b2 = 1er service &agrave; vitesse maximale</li>
+  <li>b1 = 1er service assur&eacute;, mais plus lent</li>
+  <li>b2 = 2nd service, 100% s&ucirc;r</li>
+  <li>haut = Ajouter de l'effet slic&eacute;</li>
+  <li>bas = Ajouter de l'effet lift&eacute;</li>
+</ul>
+              <p>Le haut et le bas sont invers&eacute;s lorsque votre joueur se trouve en haut
+  de l'&eacute;cran.</p>
+<p><strong><font color="#0000FF"><a name="gestures" id="gestures"></a></font></strong></p>
+<p><strong><font color="#0000FF">Mimiques :</font></strong></p>
+<p>A la fin du point, vous pouvez faire une mimique en pressant b1+b2, et haut, bas, gauche ou droit ;</p>
+<ul>
+  <li>si vous avez gagn&eacute; le point :
+    <ul>
+      <li>haut : saut</li>
+      <li>gauche : poing d'encouragement</li>
+      <li>droit : poing rageur</li>
+      <li>bas : excuse de la main</li>
+    </ul>
+  </li>
+  <li>si vous avez perdu le point :
+    <ul>
+      <li>haut : applaudir votre adversaire</li>
+      <li>gauche : se taper le front avec la raquette</li>
+      <li>droit : fou!</li>
+      <li>bas : jeter votre raquette</li>
+    </ul>
+  </li>
+</ul>
+<p>Notes :</p>
+<ul>
+	<li> si votre joueur est gaucher, alors la gauche et la droite sont invers&eacute;es</li>
+	<li>en fonction du n&deg; de coup droit choisi, certaines mimiques peuvent &ecirc;tre diff&eacute;rentes (mais gardent le m&ecirc;me sens)</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="comment" id="comment"></a></font></strong></p>
+<p><strong><font color="#0000FF">Comment joue-t-on ?</font></strong></p>
+<p> <u><a name="frappe" id="frappe"></a>D&eacute;placement, frappe et vis&eacute;e :</u></p>
+<p> Quand on n'appuie sur aucun bouton, on d&eacute;place le joueur dans toutes les directions.<br>
+  Quand on appuie sur un bouton le joueur se d&eacute;place lentement vers la position id&eacute;ale, plus
+  longtemps on met vers la gauche (ou la droite), plus la balle partira vers la gauche (ou la droite).</p>
+<p> ==&gt;&gt; <strong><font color="#FF0000">Il ne faut pas l&acirc;cher le(s) bouton(s) quand on frappe dans
+  la balle !</font></strong></p>
+<p> Quand on ne donne pas de direction, la balle part vers le centre du terrain adverse.</p>
+<p>Plus vous &ecirc;tes pr&egrave;s du filet, plus la vis&eacute;e part rapidement vers la gauche ou la droite.
+  Ainsi, il ne faut qu'une fraction de seconde pour envoyer la balle sur la ligne quand on est &agrave; la
+  vol&eacute;e, alors qu'il faut 2 ou 3 fois plus de temps quand on est plusieurs m&egrave;tres apr&egrave;s
+  la ligne de fond du court.</p>
+<p>A la vol&eacute;e, quand la balle passe loin de votre joueur, appuyez sur le bouton afin de faire un saut
+  vers la balle.</p>
+<p><u><a name="precision" id="precision"></a>Pr&eacute;cision des coups :</u></p>
+<p>Plus vous appuyez sur le bouton &agrave; l'avance, plus votre coup sera pr&eacute;cis. En effet, si vous
+  n'appuyez qu'au tout dernier moment, votre balle pourra partir dans une large zone, alors que si vous appuyez
+  1 seconde &agrave; l'avance, la zone sera nettement r&eacute;duite.</p>
+<p>Vous pouvez voir la zone de vis&eacute;e et de pr&eacute;cision quand votre
+  &quot;Preview&quot; est r&eacute;gl&eacute;e sur &quot;Tout + Zone de Danger
+  + Vis&eacute;e&quot;. Dans ce cas, vous verrez en temps r&eacute;el l'endroit
+  o&ugrave; vous visez, ainsi que la zone dans laquelle la balle peut partir.</p>
+<p><u><a name="longueur" id="longueur"></a>Longueur des coups :</u></p>
+<p>Plus vous pr&eacute;parez t&ocirc;t, plus :</p>
+<ul>
+  <li>vos coups courts (y compris l'amortie) seront courts</li>
+  <li>vos autres types de coups seront longs</li>
+</ul>
+<p>Mais si vous ne centrez pas la balle ou que vous &ecirc;tes mal plac&eacute;,
+  vos coups courts seront plus longs, et les autres coups seront plus courts.</p>
+<p><u><a name="danger" id="danger"></a>Zone de Danger :</u></p>
+<p>Au tennis, quand la balle est montante, juste apr&egrave;s le rebond, elle est plus dure &agrave; frapper,
+  surtout quand elle est rapide. La zone o&ugrave; il est dangereux de frapper la balle est affich&eacute;e
+  quand votre &quot;Preview&quot; est r&eacute;gl&eacute;e sur &quot;Tout + Zone de Danger&quot; ou plus.</p>
+<p>Si vous frappez la balle alors que vous vous tenez dans la partie rouge de la &quot;Zone de Danger&quot;,
+  vous risquez de perdre le contr&ocirc;le de la balle et de l'envoyer soit dans le filet, soit trop longue.</p>
+<p>Si vous vous tenez dans la partie orange, alors vous risquez de perdre de la pr&eacute;cision sur votre
+  coup, et vous verrez la zone de vis&eacute;e s'agrandir (si vous avez r&eacute;gl&eacute; &quot;Preview&quot;
+  sur &quot;Tout + Zone de Danger + Vis&eacute;e&quot;).</p>
+<p>En plus, &ecirc;tre plac&eacute; dans la zone rouge ou orange vous fera perdre de la puissance sur votre
+  coup, tout sp&eacute;cialement lorsque vous essayez de faire des acc&eacute;l&eacute;rations.</p>
+<p><u><a name="centrer" id="centrer"></a>Centrer la balle :</u></p>
+<p>Au tennis, il est tr&egrave;s important de bien frapper la balle avec le centre de la raquette, sur le c&ocirc;t&eacute;
+  de votre corps. Si vous essayez de frapper la balle alors qu'elle vous arrive sur le corps, il est beaucoup
+  plus difficile de faire un bon coup.</p>
+<p>Pour cette raison, quand vous souhaitez faire une acc&eacute;l&eacute;ration, une amortie ou une vol&eacute;e,
+  il faut bien faire attention &agrave; votre placement, sinon vous pourrez perdre le contr&ocirc;le de la
+  balle, ou perdre de la pr&eacute;cision, selon l'&eacute;tendue de votre erreur de placement, de la m&ecirc;me
+  mani&egrave;re que lorsque vous vous placez dans la partie rouge de la &quot;Zone de Danger&quot;.</p>
+<p>Mais mal centrer la balle apporte &eacute;galement des malus sur les autres coups : g&eacute;n&eacute;ralement,
+  cela vous fera jouer plus court si vous essayez de faire une balle normale, et plus long si vous essayez
+  de faire une balle courte. Vous pouvez &eacute;galement perdre de la puissance dans votre coup, sp&eacute;cialement
+  lorsque vous fa&icirc;tes une acc&eacute;l&eacute;ration.</p>
+<p>Lorsque vous ratez un coup, en sortant la balle ou en l'envoyant dans le filet, une ic&ocirc;ne avec un
+  joueur tapant dans la balle appara&icirc;t dans un coin de l'&eacute;cran pour vous montrer si vous bien
+  ou mal centr&eacute; votre balle :</p>
+<ul>
+  <li>si le fond de l'ic&ocirc;ne est rouge, cela veut dire que vous avez frapp&eacute; la balle avec votre
+    corps</li>
+  <li>si le fond est orange, cela veut dire que vous avez moyennement d&eacute;centr&eacute; la balle</li>
+  <li>si le fond est vert, cela veut dire que vous avez bien centr&eacute; la balle</li>
+</ul>
+<p><u><a name="amortie" id="amortie"></a>Lob &amp; Amortie :</u></p>
+<p>Le lob et l'amortie s'effectuent comme les autres coups, mais si jamais vous tentez de les effectuer sur
+  une balle qui est trop rapide, alors vous en perdrez totalement le contr&ocirc;le, et vous ferez un coup
+  beaucoup plus long que pr&eacute;vu.</p>
+<p>De plus, lorsque vous effectuez un lob en courant trop vite, vous envoyez la balle dans la m&ecirc;me direction
+  que votre course.</p>
+<p><u><a name="arcade" id="arcade"></a>Contr&ocirc;les Arcade, Simulation &amp;
+  Elite :</u></p>
+<p>Par d&eacute;faut, les contr&ocirc;les sont en mode Simulation, mais si vous
+  trouvez le jeu trop dur, si vous fa&icirc;tes trop souvent des fautes directes,
+  alors vous pouvez passer les contr&ocirc;les en mode Arcade, en cliquant sur
+  l'ic&ocirc;ne dans la Feuille de Personnage de votre joueur. Dans ce cas, les
+  malus (perte de pr&eacute;cision et de puissance) dus aux erreurs de placement
+  dans la &quot;Zone de Danger&quot; et de centrage de balle sont divis&eacute;es
+  par 2. De plus, la vitesse &agrave; laquelle la zone de vis&eacute;e devient
+  pr&eacute;cise est multipli&eacute;e par 2, donc au bout d'une demi-seconde
+  de pr&eacute;paration de votre coup en mode Arcade, vous aurez atteint le m&ecirc;me
+  niveau de pr&eacute;cision qu'au bout d'une seconde de pr&eacute;paration en
+  mode Simulation. Choisir de jouer avec le mode Arcade n'influence pas les joueurs
+  contr&ocirc;l&eacute;s par l'ordinateur.</p>
+<p>De mani&egrave;re oppos&eacute;e, si vous trouvez le jeu trop facile, ou si
+  vous voulez avoir plus de fautes pendant la partie, vous pouvez passer en mode
+  Elite. Dans ce mode les effets de la Zone de Danger sont plus importants, et
+  la pr&eacute;cision de la zone de vis&eacute;e est abaiss&eacute;e. Quand vous
+  passez en mode Elite pour votre joueur, alors les joueurs ordinateurs passent
+  &eacute;galement dans ce mode, afin d'&ecirc;tre &agrave; armes &eacute;gales
+  pendant le match.</p>
+<p> <u><a name="servir" id="servir"></a>Service :</u></p>
+<p> Le service s'effectue de la m&ecirc;me mani&egrave;re que les autres coups, &agrave; la diff&eacute;rence
+  que quelle que soit la combinaison des boutons, une pouss&eacute;e vers le haut provoque un slice et une
+  pouss&eacute;e vers le bas provoque un lift. Vous pouvez d&eacute;placer votre joueur sur la gauche ou la
+  droite afin de trouver un angle sp&eacute;cial pour votre service.</p>
+<p>Vous pouvez &eacute;galement rel&acirc;cher le(s) bouton(s) l&eacute;g&egrave;rement avant de taper dans la balle sur votre service ; pour le service vol&eacute;e, cette technique vous permet d'atteindre le filet plus facilement ; pour utiliser cette possibilit&eacute;, rel&acirc;chez le(s) bouton(s) press&eacute;(s), puis rel&acirc;cher la direction (si besoin est) puis appuyez sur haut (+ gauche/droit si besoin est) ; cela marche aussi pour reculer, mais dans ce cas, l'efficacit&eacute; est nettement moindre.</p>
+<p><u><a name="score" id="score"></a>Score :</u></p>
+<p> Le score du joueur 1 est inscrit dans les cases du haut du tableau de score,
+  et celui du joueur 2 en bas. Si la petite balle est dans la case du haut, alors
+  c'est au joueur 1 de servir, sinon c'est au joueur 2.</p>
+<p><u><a name="trace" id="trace"></a>Trace de balle :</u></p>
+<p> Si dans votre feuille de personnage &quot;Preview&quot; est sur &quot;Service&quot; ou plus, la trace de
+  l'impact de la balle au sol au moment du service est marqu&eacute;e un peu &agrave; l'avance afin de vous
+  aider &agrave; anticiper la trajectoire.<br>
+  Si &quot;Preview&quot; est sur &quot;Service + Echanges&quot; ou plus, la trace de l'impact de la balle au
+  sol pendant l'&eacute;change est marqu&eacute;e un peu &agrave; l'avance afin de vous aider &agrave; anticiper
+  la trajectoire.</p>
+<p><u><a name="epaule" id="epaule"></a>Acc&eacute;l&eacute;ration &agrave; hauteur d'&eacute;paule :</u></p>
+<p>Quand vous faites une acc&eacute;l&eacute;ration sur une balle qui se trouve &agrave; peu pr&egrave;s &agrave; hauteur de votre &eacute;paule, vous obtenez un bonus sur la vitesse de votre coup. Ce bonus est plus ou moins grand en fonction de :</p>
+<ul>
+  <li>votre style de joueur (reportez-vous &agrave; la section &quot;Style du joueur&quot; pour plus de d&eacute;tails)</li>
+  <li>la diff&eacute;rence de hauteur depuis votre &eacute;paule, &agrave; part pour le revers &agrave; 2 mains dont le point id&eacute;al se trouve un peu plus bas, et le revers &agrave; 1 main dont le point id&eacute;al se trouve encore un peu plus bas</li>
+  <li>votre temps de pr&eacute;paration : le plus longtemps, le mieux c'est</li>
+  <li>la balle ne doit plus &ecirc;tre en phase ascendante, ou alors elle doit avancer tr&egrave;s lentement</li>
+  <li>vous frappez &agrave; 1 ou 2 mains, ce qui donne du plus rapide au plus lent : coup droit &agrave; 1 main, &agrave; 2 mains, revers &agrave; 2 mains, &agrave; 1 main</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="fatigue" id="fatigue"></a></font></strong></p>
+<p><font color="#0000FF"><strong>Fatigue:</strong></font></p>
+<p>Si dans la feuille de personnage la &quot;Fatigue&quot; est <strong>d&eacute;sactiv&eacute;e</strong>, alors votre joueur se fatiguera
+uniquement lorsqu'il fait des acc&eacute;l&eacute;rations.</p>
+<p>Vous avez un nombre limit&eacute; de bonnes acc&eacute;l&eacute;rations par point, qui d&eacute;pend de
+	votre pourcentage d'endurance. Une fois que vous les avez toutes utilis&eacute;es, vous frapperez la balle
+	avec de moins en moins de pr&eacute;cision et de puissance &agrave; chaque que vous ferez une acc&eacute;l&eacute;ration
+	suppl&eacute;mentaire. Lorsque vous effectuez votre derni&egrave;re bonne acc&eacute;l&eacute;ration et les
+suivantes, de la fum&eacute;e s'&eacute;chappe de votre raquette pour vous l'indiquer.</p>
+<p>Si dans la feuille de personnage la &quot;Fatigue&quot; est <strong>activ&eacute;e</strong>, alors votre joueur se fatiguera
+  lorsqu'il tape dans la balle et lorsqu'il court.</p>
+<p> Pendant le match, vous verrez 2 barres &agrave; l'&eacute;cran pour vous aider &agrave; surveiller votre
+  fatigue :</p>
+<ul>
+  <li>Barre du haut = Energie Instantan&eacute;e</li>
+  <li>Barre du bas = Energie Totale</li>
+</ul>
+<p>Les m&eacute;canismes de base sont :</p>
+<ul>
+  <li>L'&eacute;nergie instantan&eacute;e descend et remonte assez rapidement</li>
+  <li>L'&eacute;nergie totale descend nettement plus lentement et remonte encore plus lentement</li>
+  <li>L'&eacute;nergie instantan&eacute;e ne peut pas remonter plus haut que le niveau actuel d'&eacute;nergie
+    totale </li>
+</ul>
+<p>Vous perdez de l'&eacute;nergie quand :</p>
+<ul>
+  <li>vous courez ; le plus votre Vitesse est au dessus de votre Endurance, le plus rapidement vous perdez
+    votre &eacute;nergie ; le plus votre Endurance est au dessus de votre Vitesse, le moins vite vous perdez
+    votre &eacute;nergie ; ainsi, courir &agrave; votre vitesse maximale avec 100% en Endurance &amp; Vitesse
+    vous fatiguera autant que courir &agrave; votre vitesse maximale lorsque ces 2 comp&eacute;tences sont
+    &agrave; 0%</li>
+  <li> vous frappez des acc&eacute;l&eacute;rations ; le plus haut votre Endurance est, le moins d'&eacute;nergie
+    vous perdez quand vous faites des acc&eacute;l&eacute;rations ; si vous avez un style de jeu qui donne
+    un nombre d'acc&eacute;l&eacute;rations suppl&eacute;mentaires (par exemple : Attaquant de fond de court),
+    alors vous serez un peu moins fatigu&eacute; par vos acc&eacute;l&eacute;rations</li>
+  <li>vous frappez un coup normal ; mais c'est nettement moins fatiguant que de faire une acc&eacute;l&eacute;ration
+    ; mettre beaucoup de lift dans la balle est aussi plus fatiguant</li>
+</ul>
+<p>Le plus votre barre d'Energie Instantan&eacute;e descend en dessous de 20%, le plus :</p>
+<ul>
+  <li>vous perdez de la pr&eacute;cision sur vos coups, et plus particuli&egrave;rement sur vos acc&eacute;l&eacute;rations</li>
+  <li>vous perdez de la puissance sur vos acc&eacute;l&eacute;rations, mais pas sur les autres coups</li>
+  <li>votre vitesse maximale ainsi que votre acc&eacute;l&eacute;ration de course diminuent</li>
+</ul>
+<p>Le plus votre barre d'Energie Totale descend en dessous de 50%, le plus :</p>
+<ul>
+  <li>vous perdez un peu de pr&eacute;cision sur vos coups</li>
+  <li>votre vitesse maximale ainsi que votre acc&eacute;l&eacute;ration de course diminuent</li>
+</ul>
+<p>Vous r&eacute;cup&eacute;rez de l'&eacute;nergie :</p>
+<ul>
+  <li>un peu apr&egrave;s chaque point</li>
+  <li>un peu plus au changement de c&ocirc;t&eacute;, qui se produit tous les
+    2 jeux ; il n'y a cependant pas de temps de repos apr&egrave;s le 1er jeu
+    de chaque set, donc &agrave; ce changement de c&ocirc;t&eacute;, la r&eacute;cup&eacute;ration
+    est moindre</li>
+  <li>encore un peu plus &agrave; la pause en fin de set, qu'il y ait ou non un
+    changement de c&ocirc;t&eacute;</li>
+</ul>
+<p>Quand votre barre d'&eacute;nergie instantan&eacute;e est en dessous de 25%, vous en r&eacute;cup&eacute;rez
+  pendant le point si vous ne bougez pas, mais cela remonte tr&egrave;s lentement.</p>
+<p>Notes :</p>
+<ul>
+	<li> si vous diminuez le nombre de jeux par set, alors votre Energie Totale diminuera plus rapidement, afin de simuler un match en 6 jeux par set</li>
+	<li>les coups sont un peu  plus fatiguant quand la puissance est sup&eacute;rieure &agrave; l'endurance, et un peu moins  fatiguant quand la puissance est en dessous de l'endurance, sp&eacute;cialement pour  les acc&eacute;l&eacute;rations</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="clavier" id="clavier"></a></font></strong></p>
+<p> <strong><font color="#0000FF">Pendant la partie; les touches du clavier :</font></strong></p>
+<ul>
+  <li> Echappe : affiche le menu en-jeu, permettant de quitter la partie</li>
+  <li> Pause : pause; appuyez &agrave; nouveau sur Pause pour reprendre la partie</li>
+  <li> F1 : enclenche le mode Replay; vous pouvez piloter le replay &agrave; l'aide du menu, ou bien utilisez
+    les raccourcis clavier
+    <ul>
+      <li> dans ce mode, il existe 9 vitesses diff&eacute;rentes, appuyez sur les touches de 1 &agrave; 9 pour
+        les enclencher :
+        <ul>
+          <li> 1 - Marche Arri&egrave;re Rapide</li>
+          <li>2 - Marche Arri&egrave;re</li>
+          <li>3 - Marche Arri&egrave;re Lente</li>
+          <li>4 - Marche Arri&egrave;re Tr&egrave;s Lente</li>
+          <li>5 - Pas &agrave; Pas</li>
+          <li>6 - Ralenti au 1/4</li>
+          <li>7 - Ralenti au 1/2</li>
+          <li>8 - Vitesse Normal</li>
+          <li> 9 - Vitesse * 2</li>
+          <li>Origine - D&eacute;but de la S&eacute;quence</li>
+          <li>Fin - Fin de la S&eacute;quence </li>
+        </ul>
+      </li>
+      <li> commandes additionnelles :
+        <ul>
+          <li><u>Au Joystick ou au Clavier, presser :</u>
+            <ul>
+              <li> vers la bas : passe &agrave; la vitesse pr&eacute;c&eacute;dente, si la 1 est actuellement
+                enclench&eacute;e, va au d&eacute;but de la s&eacute;quence</li>
+              <li>vers la haut : passe &agrave; la vitesse suivante, si la 9 est actuellement enclench&eacute;e,
+                va &agrave; la fin de la s&eacute;quence</li>
+              <li>vers la gauche : fait une marche arri&egrave;re</li>
+              <li>vers la droite : fait avancer</li>
+            </ul>
+          </li>
+          <li> <u>En mode Pas &agrave; Pas :</u>
+            <ul>
+              <li> Bouton 1: avance d'une image;</li>
+              <li> Bouton 2: recule d'une image;</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> Pour sortir du Replay, appuyer sur les 2 boutons en m&ecirc;me temps, ou sur la touche 'Echap'</li>
+    </ul>
+  </li>
+  <li> F2 : pour changer de c&ocirc;t&eacute; &agrave; la fin du point</li>
+  <li> F3 : pour afficher la vitesse du service en Km/h ou en Mph</li>
+  <li>F4 : statistiques du match</li>
+  <li> F5 : affiche l'&eacute;cran des statistiques du joueur n&deg;1</li>
+  <li> F6 : affiche l'&eacute;cran des statistiques du joueur n&deg;2</li>
+  <li> F7 : affiche l'&eacute;cran des statistiques du joueur n&deg;3</li>
+  <li> F8 : affiche l'&eacute;cran des statistiques du joueur n&deg;4</li>
+  <li>F9 : change le niveau de d&eacute;tail</li>
+  <li>F11: pour sauver une capture d'&eacute;cran (cela cr&eacute;e des fichiers .bmp num&eacute;rot&eacute;s
+    dans le r&eacute;pertoire de Tennis Elbow)</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="skills" id="skills"></a></font></strong></p>
+<p> <strong><font color="#0000FF">Influence des caract&eacute;ristiques :</font></strong></p>
+<p> <u><a name="rally" id="rally"></a></u><u>Coup Droit &amp; Revers :</u></p>
+<p> Plus vous avez une puissance &eacute;lev&eacute;e, plus vous frappez fort dans la balle, sp&eacute;cialement
+  sur le coup normal, le lift, et les acc&eacute;l&eacute;rations.</p>
+<p>Plus vous avez une r&eacute;gularit&eacute; &eacute;lev&eacute;e :</p>
+<ul>
+  <li>plus vous pouvez frapper la balle dans
+    une situation difficile (balle basse, rapide ou montante) sans p&eacute;nalit&eacute; de pr&eacute;cision</li>
+  <li>plus vos coups normaux seront longs, et plus vos coups courts seront courts</li>
+</ul>
+<p>La comp&eacute;tence de pr&eacute;cision est relative &agrave; celle de puissance. Par exemple avoir 60%
+  en puissance et 70% en pr&eacute;cision vous donnera autant de pr&eacute;cision dans vos coups que d'avoir
+  30% en puissance et 40% en pr&eacute;cision.</p>
+<p>Ainsi plus votre pr&eacute;cision est sup&eacute;rieure &agrave; votre puissance, moins vous avez besoin
+  de pr&eacute;parer votre coup &agrave; l'avance pour qu'il soit pr&eacute;cis. Et plus votre pr&eacute;cision
+  est inf&eacute;rieure &agrave; votre puissance, plus vous avez besoin de pr&eacute;parer votre coup &agrave;
+  l'avance pour qu'il soit pr&eacute;cis.</p>
+<p>Avoir la pr&eacute;cision sup&eacute;rieure &agrave; la puissance  augmente &eacute;galement l'efficacit&eacute; et la vitesse du coup court et de l'acc&eacute;l&eacute;ration courte.</p>
+<p><u><a name="2hand" id="2hand"></a></u><u>Coups &agrave; 1 main contre coups &agrave; 2 mains :</u></p>
+<p>Compar&eacute;s &agrave; leur version &agrave; 1 main, le coup droit et le revers &agrave; 2 mains sont
+  :</p>
+<ul>
+  <li>un peu moins puissants : vous donnez un peu moins de vitesse &agrave; la balle</li>
+  <li>un peu moins amples : vous avez un peu moins d'envergure avec, vous devez donc &ecirc;tre plus proche
+    de la balle pour ex&eacute;cuter votre coup</li>
+  <li>un peu plus s&ucirc;rs : vous avez un malus plus petit quand vous frappez la balle en vous tenant dans
+    les zones rouges et oranges de la Zone de Danger, ainsi vos coups sont souvent un peu plus pr&eacute;cis</li>
+  <li>meilleurs pour contrer les coups puissants : cela vous donne un bonus de 15 points &agrave; votre comp&eacute;tences
+    en contre</li>
+</ul>
+<p><u><a name="service" id="service"></a></u><u>Service :</u></p>
+<p>Comme pour le coup droit et le revers, la pr&eacute;cision au service est relative &agrave; sa puissance
+  : avoir 80% en puissance et 70% en pr&eacute;cision vous donnera autant de pr&eacute;cision que d'avoir 50%
+  en puissance et 40% en pr&eacute;cision.</p>
+<p>Lorsque vous servez en appuyant sur b1+b2, vous tentez de faire votre service le plus rapide possible. Si
+  votre puissance et votre r&eacute;gularit&eacute; sont &eacute;gales, alors vous avez 70% de chance de le
+  r&eacute;ussir. Si votre puissance est sup&eacute;rieure &agrave; votre r&eacute;gularit&eacute;, alors vous
+  avez moins de 70% de chance de r&eacute;ussite, et dans le cas inverse, plus de 70% de chance de r&eacute;ussite.</p>
+<p>Lorsque vous servez en appuyant sur b2, vous avez 100% de chance de r&eacute;ussite, et la vitesse de votre
+  service d&eacute;pend de la puissance et du rapport entre la puissance et r&eacute;gularit&eacute;.</p>
+<p>Lorsque vous servez en appuyant sur b1, vous faites un service entre celui de b1+b2 et celui de b2. Si votre
+  puissance et votre r&eacute;gularit&eacute; sont &eacute;gales, alors vous avez 85% de chance de le r&eacute;ussir.</p>
+<p>La vitesse moyenne maximale que votre service peut atteindre d&eacute;pend principalement de la puissance
+  : </p>
+<table border="1" cellpadding="5">
+  <tr>
+    <td>
+      <div align="right">Pourcentage en puissance</div>
+    </td>
+    <td>
+      <div align="center">0%</div>
+    </td>
+    <td>
+      <div align="center">25%</div>
+    </td>
+    <td>
+      <div align="center">50%</div>
+    </td>
+    <td>
+      <div align="center">75%</div>
+    </td>
+    <td>
+      <div align="center">100%</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center"> Vitesse maximale moyenne</div>
+    </td>
+    <td>
+      <div align="center"> 140 km/h</div>
+    </td>
+    <td>
+      <div align="center"> 160 km/h</div>
+    </td>
+    <td>
+      <div align="center"> 177 km/h</div>
+    </td>
+    <td>
+      <div align="center"> 196 km/h</div>
+    </td>
+    <td>
+      <div align="center"> 215 km/h </div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><u><a name="volee" id="volee"></a></u><u>Vol&eacute;e &amp; Smash :</u></p>
+<p>En fonction du coup que vous effectuez, la comp&eacute;tence de pr&eacute;sence filet est combin&eacute;e
+  avec la comp&eacute;tence de vol&eacute;e coup droit, vol&eacute;e de revers ou smash, afin de d&eacute;terminer
+  la pr&eacute;cision et la r&eacute;gularit&eacute; de votre coup. La puissance quant &agrave; elle ne d&eacute;pend
+  pas de la pr&eacute;sence filet.</p>
+<p>Hormis cela, les vol&eacute;es et les smashs fonctionnent comme le coup droit et le revers du fond du court.</p>
+<p>D'autre part, plus votre pr&eacute;sence filet est &eacute;lev&eacute;e, plus vous pouvez frappez la balle
+  en courant sans avoir de malus.</p>
+<p>Lorsque que vous jouez &agrave; la vol&eacute;e, vous avez besoin d'avoir des comp&eacute;tences de vol&eacute;e
+  &eacute;lev&eacute;es si vous voulez pouvoir faire des vol&eacute;es gagnantes qui d&eacute;bordent votre
+  adversaire. De plus, le coup normal &agrave; la vol&eacute;e ne correspond qu'&agrave; une pouss&eacute;e
+  de balle, qui souvent sera trop lente pour &ecirc;tre hors de port&eacute;e de votre adversaire, m&ecirc;me
+  si elle est bien plac&eacute;e. Si vous voulez faire des vol&eacute;es gagnantes, vous devez utiliser l'acc&eacute;l&eacute;ration,
+  mais uniquement sur les balles faciles, c'est-&agrave;-dire pas trop hautes, pas trop basses et pas trop
+  rapides, au risque sinon de faire une faute.</p>
+<p><u><a name="lob" id="lob"></a></u><u>Lob &amp; Amortie :</u></p>
+<p>Les comp&eacute;tences de lob et d'amortie d&eacute;terminent votre habilit&eacute; &agrave; effectuer respectivement
+  le lob et l'amortie, mais chaque comp&eacute;tence est pond&eacute;r&eacute;e avec vos comp&eacute;tences
+  de coup droit ou de revers, en fonction que vous effectuez un coup droit ou un revers.</p>
+<p>Plus cette comp&eacute;tence pond&eacute;r&eacute;e est &eacute;lev&eacute;e, plus vous pouvez garder le
+  contr&ocirc;le de la balle lorsqu'elle arrive rapidement, et effectuez votre coup normalement, sans que votre
+  coup n'aille trop long.</p>
+<p><u><a name="contre" id="contre"></a></u><u>Contre :</u></p>
+<p>Le contre est la capacit&eacute; &agrave; utiliser la vitesse actuelle de la balle pour la renvoyer plus
+  vite. Le contre vous donne donc un bonus de vitesse sur le coup normal et le lift lorsque la balle arrive
+  vraiment vite, pouvant aller jusqu'&agrave; 7,5km/h.</p>
+<p>De plus, plus votre comp&eacute;tence en contre est &eacute;lev&eacute;e, moins vous &ecirc;tes g&ecirc;n&eacute;
+  par les balles rapides, mais moins les balles lentes sont faciles pour vous &eacute;galement.</p>
+<p><u><a name="lift" id="lift"></a></u><u>Lift :</u></p>
+<p>Le lift est l'effet de bas en haut donn&eacute;e &agrave; la balle par la raquette au moment de la frappe,
+  ce qui la fait tourner rapidement sur elle-m&ecirc;me. Les balles lift&eacute;es ont des trajectoires plus
+  bomb&eacute;es, avec un rebond plus haut et plus rapide qui force vos adversaires &agrave; reculer. Mais
+  attention, le lift n'a que tr&egrave;s peu d'effet sur surface rapide, tout particuli&egrave;rement sur herbe.</p>
+<p>Plus votre comp&eacute;tence en lift est &eacute;lev&eacute;e, plus vous lifterez
+  vos coups, surtout le coup normal, le coup lift&eacute; et l'acc&eacute;l&eacute;ration.
+  Une balle lift&eacute;e donne plus de pr&eacute;cision en longueur, mais par
+  contre, elle perd en vitesse pure.</p>
+<p><u><a name="vitesse" id="vitesse"></a></u><u>Vitesse :</u></p>
+<p>Plus le pourcentage en &quot;Vitesse&quot; est &eacute;lev&eacute;, plus :</p>
+<ul>
+  <li>le joueur courra vite</li>
+  <li>le joueur d&eacute;marrera sa course vite</li>
+  <li>le joueur fera de grands bonds &agrave; la vol&eacute;e</li>
+</ul>
+<p><u><a name="taille" id="taille"></a></u><u>Taille :</u></p>
+<p>Plus votre taille est petite, plus vous d&eacute;marrerez votre course rapidement. Mais ce bonus est tr&egrave;s
+  petit, juste assez grand pour compenser la diff&eacute;rence d'envergure avec les joueurs plus grands, afin
+  de pouvoir jouer avec un joueur plus petit sans &ecirc;tre d&eacute;savantag&eacute;.</p>
+<p><u><a name="endurance" id="endurance"></a></u><u>Endurance :</u></p>
+<p>L'endurance d&eacute;termine le nombre maximum d'acc&eacute;l&eacute;ration que vous pouvez faire avant
+  que celles-ci ne perdent en pr&eacute;cision et en puissance &agrave; cause de la fatigue :</p>
+<table width="400" border="1">
+  <tr>
+    <td><div align="center">Pourcentage</div></td>
+    <td><div align="center">Acc&eacute;l&eacute;rations<br>
+        +<br>
+        Lob d'attaques</div></td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">0% &agrave; 24%</div>
+    </td>
+    <td>
+      <div align="center">1</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">25% &agrave; 49%</div>
+    </td>
+    <td>
+      <div align="center">2</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">50% &agrave; 74%</div>
+    </td>
+    <td>
+      <div align="center">3</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">75% &agrave; 99%</div>
+    </td>
+    <td>
+      <div align="center">4</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">100%</div>
+    </td>
+    <td>
+      <div align="center">5</div>
+    </td>
+  </tr>
+</table>
+<p>Sur votre 2nd service, si vous utilisez B1+B2, cela compte comme une acc&eacute;l&eacute;ration, et si vous utilisez B1, cela compte comme une demi-acc&eacute;l&eacute;ration. Le 1er service ne fatigue pas votre joueur.</p>
+<p><u><a name="style" id="style"></a></u><u>Style du joueur :</u></p>
+<p>En fonction du style de joueur que vous choisissez, vous aurez certains bonus et malus.</p>
+<ul>
+  <li>D&eacute;fenseur :
+    <ul>
+      <li> nombre de lobs d'attaque illimit&eacute;</li>
+      <li>1 acc&eacute;l&eacute;ration suppl&eacute;mentaire</li>
+      <li> bonus de lift sur le coup lift&eacute;</li>
+      <li> malus de profondeur et de vitesse plus faibles sur le coup lift&eacute;</li>
+      <li>faible bonus de vitesse pour les acc&eacute;l&eacute;rations au hauteur d'&eacute;paule</li>
+    </ul>
+  </li>
+  <li>Attaquant de fond de court :
+    <ul>
+      <li> 3 acc&eacute;l&eacute;rations suppl&eacute;mentaires</li>
+      <li>grand bonus de vitesse pour les acc&eacute;l&eacute;rations au hauteur d'&eacute;paule</li>
+    </ul>
+  </li>
+  <li>Puncheur :
+    <ul>
+      <li> 2 acc&eacute;l&eacute;rations suppl&eacute;mentaires</li>
+      <li> bonds l&eacute;g&egrave;rement plus grands &agrave; la vol&eacute;e</li>
+      <li>grand bonus de vitesse pour les acc&eacute;l&eacute;rations au hauteur d'&eacute;paule</li>
+    </ul>
+  </li>
+  <li>Polyvalent :
+    <ul>
+      <li>1 acc&eacute;l&eacute;ration suppl&eacute;mentaire</li>
+      <li> bonds plus grands &agrave; la vol&eacute;e</li>
+      <li>grand bonus de vitesse pour les acc&eacute;l&eacute;rations au hauteur d'&eacute;paule</li>
+    </ul>
+  </li>
+  <li>Volleyeur :
+    <ul>
+      <li>bonds nettement plus grands &agrave; la vol&eacute;e</li>
+      <li>moyen bonus de vitesse pour les acc&eacute;l&eacute;rations au hauteur d'&eacute;paule</li>
+    </ul>
+  </li>
+  <li>Contreur :
+    <ul>
+      <li>nombre d'acc&eacute;l&eacute;ration normale illimit&eacute;, mais puissance nettement diminu&eacute;e,
+        particuli&egrave;rement sur les balles lentes ; la comp&eacute;tence de contre est utilis&eacute;e
+        pour donner de la puissance suppl&eacute;mentaire en fonction de vitesse de la balle avant la frappe</li>
+      <li>certains effets de la comp&eacute;tence Contre augment&eacute;s</li>
+      <li>peut prendre la balle plus t&ocirc;t apr&egrave;s le rebond avec moins de p&eacute;nalit&eacute;s</li>
+      <li>bonds plus grands &agrave; la vol&eacute;e</li>
+      <li>faible bonus de vitesse pour les acc&eacute;l&eacute;rations au hauteur d'&eacute;paule</li>
+    </ul>
+  </li>
+</ul>
+<p>Note: quand la Fatigue est activ&eacute;e, le nombre d'acc&eacute;l&eacute;rations
+  suppl&eacute;mentaires se traduit par moins d'&eacute;nergie perdue quand vous
+  faites des acc&eacute;l&eacute;rations ; de plus, le style Contreur voit ses
+  acc&eacute;l&eacute;rations &ecirc;tre aussi peu fatiguantes que ses coups normaux.</p>
+<p><u><a name="2mains" id="2mains"></a></u><u>Coup droit &amp; revers &agrave; 2 mains :</u></p>
+<p>Compar&eacute;s &agrave; leur version &agrave; 1 main, ces coups ont ces bonus &amp; malus :</p>
+<ul>
+  <li>diminue les malus quand le joueur frappe la balle dans la Zone de Danger</li>
+  <li>augmente les malus quand les balles est trop haute ou trop basse</li>
+  <li>donne un bonus de 10 points &agrave; la comp&eacute;tence de Contre</li>
+  <li>donne un malus de 10% &agrave; la puissance (exemple : 100% de puissance devient 90%, et 50% devient
+    45%) </li>
+</ul>
+<p><u><a name="preview" id="preview"></a></u><u>Preview :</u></p>
+<ul>
+  <li>Aucun : ne voit aucun impact de balle &agrave; l'avance</li>
+  <li> Service : voit les impacts de balle &agrave; l'avance au service</li>
+  <li> Service + Echanges : voit les impacts de balle &agrave; l'avance au service et pendant les &eacute;changes</li>
+  <li> Tout + Zone de Danger : idem que Service + Echanges, mais affiche en plus la Zone de Danger</li>
+  <li> Tout + Zone de Danger + Vis&eacute;e : idem que pr&eacute;c&eacute;demment, mais rajoute l'indicateur
+    de vis&eacute;e et de pr&eacute;cision </li>
+</ul>
+<p><u><a name="niveau" id="niveau"></a></u><u>Niveau &amp; Sous-Niveau :</u></p>
+<p>R&egrave;glent la force g&eacute;n&eacute;rale de l'ordinateur. Le sous-niveau vous permet de r&eacute;gler
+  finement sa force entre 2 niveaux. Si vous mettez le sous-niveau &agrave; 1, alors il sera juste un tout
+  petit peu plus fort qu'en &eacute;tant au niveau inf&eacute;rieur avec le sous-niveau &agrave; 10.</p>
+<p>Aux niveaux D&eacute;butant, Club &amp; Junior, l'ordinateur a des malus sur ses comp&eacute;tences. Aux
+  niveaux Pro et Master, ses comp&eacute;tences fonctionnent exactement comme les v&ocirc;tres. Au niveau Incroyable,
+  il a un bonus sur ses comp&eacute;tences.</p>
+<p>Le niveau Pro est con&ccedil;u pour &ecirc;tre le niveau de difficult&eacute; apportant le plus de r&eacute;alisme.
+  Mais choisissez le niveau avec lequel vous vous amusez le plus, car c'est &ccedil;a le plus important..!</p>
+<p><strong><font color="#0000FF"><a name="stats" id="stats"></a></font></strong></p>
+<p> <strong><font color="#0000FF">Ecran de statistiques :</font></strong></p>
+<p> Cet &eacute;cran montre la force des coups d'un joueur, ainsi que le nombre de balles qu'il a frapp&eacute;es,
+  le nombre de balles qui ont &eacute;t&eacute; dans le court, et le d&eacute;tails des points gagnants; on
+  peut y voir de plus le nombre d'aces effectu&eacute;s, le nombre de doubles fautes, et la distance parcourue.<br>
+  Le classement du joueur n'appara&icirc;t que dans le mode &quot;Comp&eacute;tition&quot;.<br>
+  Si on acc&egrave;de &agrave; cet &eacute;cran pendant un entra&icirc;nement
+  ou un match, les statistiques affich&eacute;es concernent uniquement le match;
+  si on y acc&egrave;de par la feuille de personnage, les statistiques concernent
+  la carri&egrave;re du joueur.</p>
+<p><strong><font color="#0000FF"><a name="double" id="double"></a></font></strong></p>
+<p> <strong><font color="#0000FF">Double :</font></strong></p>
+<p> Au cours d'un double, le joueur n&deg;1 fera &eacute;quipe avec le joueur
+  n&deg;3, et le joueur n&deg;2 fera &eacute;quipe avec le joueur n&deg;4.</p>
+<p>&nbsp;</p>
+<p><strong><font color="#0000FF"><a name="tournoi" id="tournoi"></a> </font></strong></p>
+<table border="5">
+  <tr>
+    <td><div align="left"><font size="+1">&nbsp;V. Mode tournoi&nbsp;</font></div></td>
+  </tr>
+</table>
+<p>Dans le mode Comp&eacute;tition, les femmes ont leur puissance et leur vitesse diminu&eacute;e de 25 points
+  compar&eacute;e aux hommes. Par exemple, si une femme a 75% en puissance en coup droit, alors elle frappera
+  la balle aussi fort qu'un homme ayant 50% de puissance en coup droit.</p>
+<p><strong><font color="#0000FF"><a name="autosave" id="autosave"></a>Sauvegardes automatiques :</font></strong></p>
+<p>Lorsque vous quittez le jeu en cliquant sur le bouton &quot;Quitter&quot;, votre partie est sauvegard&eacute;e
+  automatiquement, et vous reprendrez automatiquement au point o&ugrave; vous en &eacute;tiez la prochaine
+  fois que vous lancerez le jeu.</p>
+<p>De plus, le jeu sauvegarde votre partie automatiquement sur les 3 derni&egrave;res semaines de jeu, dans
+  3 emplacements diff&eacute;rents ; ainsi, en cas de probl&egrave;me (par exemple, si le jeu plante pour une
+  raison ou une autre), vous aurez toujours la possibilit&eacute; de reprendre une sauvegarde r&eacute;cente.</p>
+<p><strong><font color="#FF3300">/!\ Attention :</font></strong> quand vous jouez en mode fen&ecirc;tr&eacute;,
+  et que vous quittez en cliquant sur la petite croix en haut &agrave; droite de la fen&ecirc;tre de jeu, votre
+  partie en cours sera &eacute;galement sauvegard&eacute;e automatiquement si vous &ecirc;tes dans un menu
+  disposant du bouton &quot;Quitter&quot; ; par contre, si ce bouton est absent, il se peut que votre partie
+  ne soit pas sauvegard&eacute;e ; dans ce cas, vous perdrez votre progression depuis la derni&egrave;re sauvegarde
+  automatique.</p>
+<p><strong><font color="#0000FF"><a name="saison" id="autosave2"></a></font></strong></p>
+<p><strong><font color="#0000FF">Type of carri&egrave;re :</font></strong></p>
+<p>quand vous d&eacute;marrez une nouvelle partie, vous avez le choix entre 2 modes :</p>
+<ul>
+  <li>Saisons</li>
+  <li>Carri&egrave;re</li>
+</ul>
+<p>Les 2 modes sont tr&egrave;s similaires, mais le mode Saisons contient 3 diff&eacute;rences majeures :</p>
+<ul>
+  <li>vous ne pouvez pas cr&eacute;ez votre propre joueur, vous devez en choisir un dans la base de joueurs (mais vous pouvez cependant l'&eacute;diter)</li>
+  <li>vous pouvez d&eacute;marrer plus vieux que 17 ans, et &agrave; la fin de chaque saison, le jeu vous demandera si vous d&eacute;sirez continuer ou arr&ecirc;ter</li>
+  <li>vos comp&eacute;tences ne diminueront pas et vous ne gagnerez aucun point d'exp&eacute;rience, donc vous n'aurez pas besoin d'entra&icirc;ner vos comp&eacute;tences ; celles-ci seront chang&eacute;es &agrave; chaque d&eacute;but de saison (si vous l'acceptez), afin de refl&eacute;ter la force du joueur que vous avez choisi pendant cette nouvelle ann&eacute;e &agrave; venir</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="classement" id="classement"></a></font></strong></p>
+<p><strong><font color="#0000FF">Classement pour les hommes :</font></strong></p>
+<ul>
+  <li> Le nombre de points pour&nbsp;le classement technique est la somme des
+    18 meilleurs tournois jou&eacute;s, sur les 52 semaines pr&eacute;c&eacute;dentes,
+    comprenant obligatoirement les 4 Grand Chelems plus les 8 meilleurs des 9
+    Master Series auxquels le joueur se devait de participer si son classement
+    lui permettait d'entrer dans le tableau final ; de plus, les joueurs du Top30
+    peuvent compter leurs 4 meilleurs TET500 et leurs 2 meilleurs TET250 ; les
+    joueurs inf&eacute;rieurs peuvent compter jusqu'&agrave; 4 TET250</li>
+  <li>Le nombre de points pour la Race est la somme des 18 meilleurs tournois jou&eacute;s, depuis le d&eacute;but
+    de l'ann&eacute;e, avec les m&ecirc;mes r&egrave;gles pour les tournois requis que le classement technique</li>
+</ul>
+<p><strong><font color="#0000FF">Classement pour les femmes :</font></strong></p>
+<ul>
+  <li> Le nombre de points pour&nbsp;le classement technique est la somme des
+    16 meilleurs tournois jou&eacute;s en Simple, et les 11 meilleurs en Double,
+    sur les 52 semaines pr&eacute;c&eacute;dentes, comprenant obligatoirement
+    tous les tournois majeurs auxquels la joueuse se devait de participer si son
+    classement lui permettait d'entrer dans le tableau final</li>
+  <li>Le nombre de points pour la Race est la somme des 16 meilleurs tournois jou&eacute;s en Simple, et les
+    11 meilleurs en Double, depuis le d&eacute;but de l'ann&eacute;e, comprenant obligatoirement tous les tournois
+    majeurs auxquels la joueuse se devait de participer si son classement lui permettait d'entrer dans le tableau
+    final</li>
+  <li> Les tournois majeurs sont les 4 tournois du Grand Chelem, plus les tournoi PremiumM et les 2 meilleurs
+    r&eacute;sultats en Premium5</li>
+</ul>
+<p><strong><font color="#0000FF"><a name="training" id="training"></a></font></strong></p>
+<p><strong><font color="#0000FF">Entrainement :</font></strong></p>
+<p> En mode carri&egrave;re, avant chaque tournoi, appara&icirc;t l'&eacute;cran d'entra&icirc;nement;
+  cet &eacute;cran vous permet de distribuer les points d'exp&eacute;rience que
+  vous avez gagn&eacute;s lors de vos pr&eacute;c&eacute;dents matchs.</p>
+<p>Pour chaque jour disponible entre 2 tournois, vous avez 6 heures d'entra&icirc;nement. Selon le mode de
+  difficult&eacute;, les heures d'entra&icirc;nements sont plus ou moins efficaces. De plus, il faut 2 fois
+  plus de temps et d'exp&eacute;rience pour entra&icirc;ner la plupart de vos comp&eacute;tences entre 60%
+  et 89%, et 3 fois plus de temps et d'exp&eacute;rience quand elles sont entre 90% et 99%.</p>
+<p> Dans les tableaux finaux, pour chaque match remport&eacute;, vous gagnez environ 10 &agrave; 20 points
+  d'entra&icirc;nement, pour chaque match perdu, vous gagnez 25 points d'entra&icirc;nement, car on apprend
+  plus de ses d&eacute;faites que de ses victoires..! Ce nombre de points est divis&eacute; par 2 dans les
+  qualifications. De plus, dans les niveaux les plus faciles (D&eacute;butant &amp; Club) vous gagnerez plus
+  de points, et dans les niveaux les plus difficiles (Ma&icirc;tre et Incroyable), vous gagnerez moins de points.</p>
+<p> Mais attention, toutes les semaines, vous perdez quelques points dans vos comp&eacute;tences : si vous
+  ne vous entra&icirc;nez pas, vous r&eacute;gresserez inexorablement. Le plus haut est une comp&eacute;tence,
+  le plus vite elle baissera.</p>
+<p>Le lift est une comp&eacute;tence sp&eacute;ciale, car c'est la seule que vous pouvez choisir de faire baisser.
+  En effet, sur surface rapide, le lift n'est pas tr&egrave;s utile et donc il peut &ecirc;tre int&eacute;ressant
+  d'avoir un joueur de type volleyeur avec un lift tr&egrave;s bas.</p>
+<p><strong>Bonus de fin d'ann&eacute;e :</strong> si vous ne jouez pas durant la derni&egrave;re semaine de
+  D&eacute;cembre (attention: cela exclut les qualifications des tournois se d&eacute;roulant la 1&egrave;re
+  semaine de l'ann&eacute;e suivante !), vous obtiendrez un petit bonus d'exp&eacute;rience, d&eacute;pendant
+  du temps pendant lequel vous n'avez pas jou&eacute;, limit&eacute; &agrave; 50 jours maximum ( = depuis la
+  mi-Novembre), pour un total au maximum de ~35-45 points d'exp&eacute;rience, en fonction du niveau de difficult&eacute;.</p>
+<p><strong>Note :</strong> si vous gagnez un tournoi, c'est toujours un dimanche. Et si vous commencez un nouveau
+  tournoi la semaine suivante, souvent, ce sera le lundi : vous n'aurez donc aucun jour libre pour l'entra&icirc;nement,
+  c'est pourquoi vous verrez 0 jour &amp; heure d'entra&icirc;nement disponible dans l'&eacute;cran d'entra&icirc;nement.</p>
+<p><strong><font color="#0000FF"><a name="nbset" id="nbset"></a></font></strong></p>
+<p><strong><font color="#0000FF">Nombres de sets de la partie, par d&eacute;faut :</font></strong></p>
+<table width="700" border="5">
+  <tr align="center">
+    <td>&nbsp;</td>
+    <td>D&eacute;butant &amp; Club</td>
+    <td>Junior &amp; Pro</td>
+    <td>Ma&icirc;tre &amp; Incroyable</td>
+  </tr>
+  <tr align="center">
+    <td>Type de tournois</td>
+    <td colspan="3">Tours normaux / Finale</td>
+  </tr>
+  <tr align="center">
+    <td>Qualifications</td>
+    <td>1</td>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr align="center">
+    <td>Challenger</td>
+    <td>1/1</td>
+    <td>1/2</td>
+    <td>1/2</td>
+  </tr>
+  <tr align="center">
+    <td>Int'l Series</td>
+    <td>1/1</td>
+    <td>1/2</td>
+    <td>2/2</td>
+  </tr>
+  <tr align="center">
+    <td>Master Series</td>
+    <td>1/2</td>
+    <td>2/3</td>
+    <td>2/3</td>
+  </tr>
+  <tr align="center">
+    <td>Grand Chelem</td>
+    <td>2/3</td>
+    <td>3/3</td>
+    <td>3/3</td>
+  </tr>
+</table>
+<p>Si vous activez les options avanc&eacute;es (dans le menu &quot;Options Diverses&quot;),
+  un &eacute;cran appara&icirc;tra lors de la cr&eacute;ation d'une nouvelle partie,
+  vous permettant de r&eacute;gler le nombre de sets comme vous le souhaitez.</p>
+<p><strong><font color="#0000FF"><a name="masters" id="masters"></a></font></strong></p>
+<p><strong><font color="#0000FF">Les Masters :</font></strong></p>
+<p> Vous participerez automatiquement aux Masters si vous &ecirc;tes dans les
+  8 premiers joueurs mondiaux au moment o&ugrave; ce tournoi a lieu, ou si vous
+  avez gagn&eacute; un tournoi du Grand Chelem. Si ce n'est pas le cas, vous
+  n'y jouerez pas.<br>
+  Son d&eacute;roulement est un peu sp&eacute;cial. Il y a 2 poules de 4 joueurs,
+  et chaque joueur fait 3 matchs. Les 2 meilleurs joueurs de chaque poule vont
+  alors en demi-finales, puis les 2 vainqueurs des demi-finales se rencontrent
+  en finale.</p>
+<p><strong><font color="#0000FF"><a name="pbed" id="pbed"></a></font></strong></p>
+<p><strong><font color="#0000FF">Changer les joueurs du mode tournoi :</font></strong></p>
+<p> Vous pouvez &eacute;diter les joueurs en ouvrant les fichiers Data\Players.*.ini avec un &eacute;diteur
+  de texte avanc&eacute; (les fichier sont tr&egrave;s gros, il faut donc mieux &eacute;viter de l'ouvrir avec
+  le bloc-notes de Windows).</p>
+<p>&nbsp;</p>
+<p><a name="regles-tennis"></a> </p>
+<table border="5">
+  <tr>
+    <td>
+      <div align="left"><font size="+1">&nbsp;VI. R&egrave;gles du Tennis&nbsp;</font></div>
+    </td>
+  </tr>
+</table>
+<p>Toutes les r&egrave;gles et le glossaire du tennis sont sur Wikipedia : <a href="http://fr.wikipedia.org/wiki/Tennis">http://fr.wikipedia.org/wiki/Tennis</a>
+  .</p>
+<p>&nbsp;</p>
+<p><a name="conclusion"></a> </p>
+<table border="5">
+  <tr>
+    <td>
+      <div align="left"><font size="+1">&nbsp;VII. Conclusion&nbsp;</font></div>
+    </td>
+  </tr>
+</table>
+<p>Amusez-vous bien avec Tennis Elbow !</p>
+<p><font color="#0000FF"><strong>Cr&eacute;dits :</strong></font></p>
+<ul>
+  <li> Code, Design, Sons, Menus, Animation : ManuTOO</li>
+  <li> Mod&eacute;lisation 3D : Novtilus.com</li>
+  <li> Musique : StockMusic.Net</li>
+</ul>
+<p>Une question, une remarque ?<br>
+  Contact : <a href="http://www.managames.com/mail_fr?subject=Tennis%20Elbow%202013%20%5BDoc%5D">Formulaire
+  Web </a></p>
+<p>&nbsp;</p>
+<table border="5">
+  <tr>
+    <td><div align="left"><font size="+1">&nbsp;Eh ! Les Cheat Codes ???&nbsp;</font></div></td>
+  </tr>
+</table>
+<p> Ok, mais utilisez-les avec sagesse !</p>
+<ul>
+  <li> mtkil : gagner le match</li>
+  <li> mtwin : gagner le set actuel</li>
+  <li> mtbal : grossir la balle</li>
+  <li> mtrun : courir plus vite</li>
+  <li> mtbozo : Bozo le clown ! :-p</li>
+  <li> '&sup2;' + Maj de droite + '-' du pav&eacute; num&eacute;rique, en m&ecirc;me temps : gagner tous les
+    points</li>
+  <li> Ctrl de gauche + Alt de gauche + '0' du pav&eacute; num&eacute;rique : arr&ecirc;ter de gagner tous
+    les points<br>
+    (touches sur un clavier AZERTY)</li>
+  <li>Coups secrets :
+    <ul>
+      <li> pour effectuer un coup lift&eacute; avec effet sur le c&ocirc;t&eacute; : appuyez sur Coup Normal, puis Coup Court, puis Coup Lift&eacute; (par d&eacute;faut =&gt; B1,
+        puis B1+haut, puis B1+bas)</li>
+      <li>pour effectuer un slice court : appuyez sur Slice, Amortie, Slice ( =&gt; B2, puis B2+haut,  puis sur B2)</li>
+      <li>pour effectuer un slice de d&eacute;fense calamiteux : appuyez sur Slice, Lob de D&eacute;fense, Slice ( =&gt; B2+bas,  puis sur B2)</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<p align="center"><a href="http://www.managames.com"><img src="images/ManaGames02.gif" width="256" height="160" border="0"></a></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font size="-1">Copyright Emmanuel Rivoire - &copy;1996-2015</font></p>
+</body>
+</html>

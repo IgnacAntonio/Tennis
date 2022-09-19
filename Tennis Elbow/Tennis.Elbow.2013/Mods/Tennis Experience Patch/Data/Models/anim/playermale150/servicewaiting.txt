@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 20 35 28 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Sam | Fritz

@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 69.00 69.00 31.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Rharm | Herbert

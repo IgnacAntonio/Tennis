@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 22.10 22.10
+Speed: 1.0
+
+
+Author: Rharm | Dimitrov

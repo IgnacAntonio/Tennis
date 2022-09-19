@@ -1,0 +1,5 @@
+Anim: BackHand-Slice.x
+Info: 26.00 26.00		// Hit ball - Max Extension
+Speed: 1.0
+
+Author: Reginald Wesley | Jannik Sinner

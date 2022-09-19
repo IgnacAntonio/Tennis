@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 67.76 67.76 35.5	// Hit ball - Max Extension - Throw Ball
+SweetSpot: -12.4 -5.9 249.0 0.507 -0.128 0.852
+HandThrow: -6.2 -16.1 147.3 -0.657 0.235 0.716
+Author: Neeky McDeez | Stosur

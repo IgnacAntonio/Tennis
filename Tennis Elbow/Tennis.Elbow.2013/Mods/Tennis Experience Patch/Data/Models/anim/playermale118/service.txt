@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 84.0 84.0 51.00	// Hit ball - Max Extension - Throw Ball
+
+
+Author: Davide Menez | Hyeon Chung (2019)

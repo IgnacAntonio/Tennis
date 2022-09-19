@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 10 11 29 20	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: emmainf | Klizan

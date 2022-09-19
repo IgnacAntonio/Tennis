@@ -1,0 +1,5 @@
+Anim: VolleyFH.x
+Info: 19.0 19.0
+Acceleration: volleyfh_acc
+
+Author: Lucian Cucuteanu | Roger Federer

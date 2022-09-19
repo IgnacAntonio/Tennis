@@ -1,0 +1,66 @@
+Anim: Judge_OutLeft
+NbSprite: 7
+InfoSup: 1
+
+Spr 0
+{
+	Page Umpire_01
+	Pos 999999999999999999 999999999999999999
+	Size 0 0
+	HotSpot 8 34
+	Time 116.7
+}
+
+Spr 1
+{
+	Page Umpire_01
+	Pos 999999999999999999 999999999999999999
+	Size 0 0
+	HotSpot 15 34
+	Time 83.3
+}
+
+Spr 2
+{
+	Page Umpire_01
+	Pos 999999999999999999 999999999999999999
+	Size 0 0
+	HotSpot 23 34
+	Time 116.7
+}
+
+Spr 3
+{
+	Page Umpire_01
+	Pos 999999999999999999 999999999999999999
+	Size 0 0
+	HotSpot 24 34
+	Time 250.0
+}
+
+Spr 4
+{
+	Page Umpire_01
+	Pos 999999999999999999 999999999999999999
+	Size 0 0
+	HotSpot 23 34
+	Time 116.7
+}
+
+Spr 5
+{
+	Page Umpire_01
+	Pos 999999999999999999 999999999999999999
+	Size 0 0
+	HotSpot 15 34
+	Time 83.3
+}
+
+Spr 6
+{
+	Page Umpire_01
+	Pos 999999999999999999 999999999999999999
+	Size 0 0
+	HotSpot 8 34
+	Time 116.7
+}

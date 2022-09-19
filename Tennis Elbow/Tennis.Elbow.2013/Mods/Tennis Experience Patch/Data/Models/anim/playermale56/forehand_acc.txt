@@ -1,0 +1,4 @@
+Anim: ForeHand_acc.x
+Info: 34.0 34.0
+Speed: 1.0
+Author: Emmainf | Berlocq

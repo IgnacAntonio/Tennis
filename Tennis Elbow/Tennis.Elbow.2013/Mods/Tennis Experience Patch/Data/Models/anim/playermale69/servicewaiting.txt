@@ -1,0 +1,7 @@
+Anim: ServiceWaiting.x
+Info: 0 15 26 17	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+HandBounce: -58.2 -12.5 65.4 0.545 -0.063 -0.836
+
+
+Author: Lucian Cucuteanu | Federer v3

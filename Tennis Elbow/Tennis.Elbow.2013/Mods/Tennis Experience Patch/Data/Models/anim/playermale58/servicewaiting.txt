@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 1 10 31 13	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+Author: Emmainf | Monaco
+HandBounce: -57.1 -11.2 80.8 -0.030 0.202 -0.979

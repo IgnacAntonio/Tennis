@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 16 31 19	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | Nadal v4
+
+HandBounce: 3.8 -31.2 81.3 0.274 0.476 -0.835

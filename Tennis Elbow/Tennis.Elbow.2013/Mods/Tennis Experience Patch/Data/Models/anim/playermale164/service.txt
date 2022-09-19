@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 73.0 73.0 43.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Basilashvili

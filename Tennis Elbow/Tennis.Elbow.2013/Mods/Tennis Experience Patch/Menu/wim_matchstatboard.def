@@ -1,0 +1,38 @@
+Include Menu.Def
+
+def	FrameX	80
+def	FrameY	30
+
+def	FrameW	490
+def	FrameH	350
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		GothamLight 28 28 0xFF156042 0 Shadow0
+Font	SmallF		HugeChars 10 14 0xFFFFFFFF 0
+Font	VSmallF		HugeChars 9 12 0xFFFFFFFF 0
+Font	IcoF		HugeChars 9 12 0xFFFFFFFF 0
+Font	NetF		HugeChars 10 13 0xFFFFFFFF 0x2F000000 Right Bottom
+
+// font for the summary
+Font	SummaryF	GothamBold 29 29 0xFF156042 0 Shadow0
+// font for the score
+Font	ScoreF		GothamBold 11 15 0xFFFFFFFF 0 Shadow0
+// font for the names
+Font	NameF 		GothamBold 11 15 0xFFFFFFFF 0 Center Center Shadow0
+// font for the time
+Font	TimeF 		GothamBold 11 15 0xFFFFFFFF 0 Center Center Shadow0
+// font for the stats (label)
+Font	StatLabelF 	GothamBold 11 15 0xFF5f0988 0 Center Center Shadow0
+// font for the stats (value)
+Font	StatValueF 	GothamBold 11 15 0xFFa8a8a8 0 Center Center Shadow0

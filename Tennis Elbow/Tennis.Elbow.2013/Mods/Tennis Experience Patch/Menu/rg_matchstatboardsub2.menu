@@ -1,0 +1,255 @@
+Include RG_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	0
+def	dy	26.5
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+	add y dy
+
+//====== Short Rally Length
+	add y dy
+Item
+{
+	Text /$ts1/ShortRallyWon
+	Font StatValue2F
+	pos xl+93 y right center
+}
+
+Item
+{
+	Text /$ts2/ShortRallyWon
+	Font StatValueF
+	pos xr-68 y right center
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat2 FrameW FrameH
+   Pos 0 -120 
+}
+
+//====== Medium Rally Length
+	add y 20
+	
+Item
+{
+	Text /$ts1/MediumRallyWon
+	Font StatValueF
+	pos xl+93 y right center
+}
+
+Item
+{
+	Text /$ts2/MediumRallyWon
+	Font StatValue2F
+	pos xr-68 y right center
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat3 FrameW FrameH
+   Pos 0 -120 
+}
+
+//====== Long Rally Length
+	add y 20
+	
+Item
+{
+	Text /$ts1/LongRallyWon
+	Font StatValueF
+	pos xl+93 y right center
+}
+
+Item
+{
+	Text /$ts2/LongRallyWon
+	Font StatValue2F
+	pos xr-68 y right center
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat4 FrameW FrameH
+   Pos 0 -120 
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat1 FrameW FrameH
+   Pos 0 -120 
+}
+
+Item
+{
+	Text ShortRallyWon /Intern/ShortRallyLength+1
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk	
+	Pos xtl y-40
+}
+
+Item
+{
+	Text MediumRallyWon /Intern/ShortRallyLength+1 /Intern/MediumRallyLength
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y-20
+}
+
+Item
+{
+	Text LongRallyWon /Intern/MediumRallyLength
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y
+}
+ //====== Set Point Saved
+Item
+{
+	Text SetPointSaved
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/SetPointSaved
+	Font StatValue2F
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/SetPointSaved
+	Font StatValueF
+	pos xr-83 y left center
+}
+
+//====== Match Point Saved
+Item
+{
+	Text MatchPointSaved
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MatchPointSaved
+	Font StatValue2F
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/MatchPointSaved
+	Font StatValueF
+	pos xr-83 y left center
+}
+
+
+//====== Point Won On Return
+item
+{
+   Image Ico/rolandgarros/HideStat5 FrameW FrameH
+   Pos 0 -120 
+}
+
+Item
+{
+	Text ReturnPointWon
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/PointWonOnReturn
+	Font StatValueF
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/PointWonOnReturn
+	Font StatValue2F
+	pos xr-83 y left center
+}
+
+//====== NetApproach
+Item
+{
+	Text NetApproach
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/NetApproach
+	Font StatValueF
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/NetApproach
+	Font StatValue2F
+	pos xr-83 y left center
+}
+
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 33
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	Font TotalF
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font Total2F
+	pos xr-83 y left center
+}

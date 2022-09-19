@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 95.0 95.0 63.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Bautista-Agut

@@ -1,0 +1,318 @@
+Include Sydney_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	EdgeS 2
+def	dy	30
+
+def	xtl	xc
+
+item
+{
+	Invisible
+	OnAction
+	{
+		SetCfg $ts1 $StatTeam1Set$1 !OnEnter
+		SetCfg $ts2 $StatTeam2Set$1 !OnEnter
+	}
+}
+
+item Summary
+{
+	CycleButton #Text
+
+	OnAction
+	{
+		SlideCfg /Intern/MatchBoardSet 0 5 5
+	}
+
+	Font SummaryF
+	Unselectable
+	Pos 225c 23
+	add y dy
+	add y 8
+}
+
+
+//================================= Online level
+//add y -dy 0.30
+add y -dy 0.90
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xl y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam1/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xr y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam2/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT2 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT2 0 10000
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO /StatTeam1/Elo /StatTeam1/EloNbGame
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item
+{
+	Text NW_ELO /StatTeam2/Elo /StatTeam2/EloNbGame
+	Pos xr y Center Center
+
+	Font VSmallF
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y -dy 0.30
+
+
+//================================= Time & Names
+Item
+{
+	Text SCB_MatchTime
+	ShowIf /Intern/MatchBoardSet 0
+	Font MatchTimeF 
+	pos 245c 46	Right Center
+}
+
+Item
+{
+	Text SCB_Set1Time
+	ShoWIf /Intern/MatchBoardSet 1
+	Font MatchTimeF 
+	pos 245c 46	Right Center
+}
+
+Item
+{
+	Text SCB_Set2Time
+	ShowIf /Intern/MatchBoardSet 2
+	Font MatchTimeF 
+	pos 245c 46	Right Center
+}
+
+Item
+{
+	Text SCB_Set3Time
+	ShowIf /Intern/MatchBoardSet 3
+	Font MatchTimeF 
+	pos 245c 46	Right Center
+}
+
+Item
+{
+	Text SCB_Set4Time
+	ShowIf /Intern/MatchBoardSet 4
+	Font MatchTimeF 
+	pos 245c 46	Right Center
+}
+
+Item
+{
+	Text SCB_Set5Time
+	ShowIf /Intern/MatchBoardSet 5
+	Font MatchTimeF 
+	pos 245c 46	Right Center
+}
+
+Item
+{
+	Text /$ts1/PrTime
+	Font TimeF
+	pos 270c 46
+	add y dy
+}
+Item
+{
+	Text /Intern/Team1ss
+	Font SmallF
+	pos 59 90 Left Center
+}
+
+Item
+{
+	Text /Intern/Team2ss
+	Font SmallF
+	pos 392 90 Right Center
+}
+Item
+{
+	Text /Intern/Team1Entry
+	Font NameF
+	pos 59 105 Left Center
+}
+
+Item
+{
+	Text /Intern/Team2Entry
+	Font NameF
+	pos 392 105 Right Center
+	add y dy
+}
+
+
+//================================= Score
+Item
+{
+	Text EOM_Retired
+	pos xc-10 100 Right Center
+	Font SmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos xc-10 100 Right Center
+	Font VSmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_Retired
+	pos xc+10 100 Left Center
+	Font SmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos xc+10 100 Left Center
+	Font VSmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text /$ts1/PrScore
+	Font ScoreF
+	pos 225c 63
+	add y 8
+}
+
+//============================== Stats
+
+add y dy	-1
+
+Item
+{
+	SubMenuIf /Intern/StatPage 0 0 Sydney_MatchStatBoardSub1
+	Pos 0 y
+}
+
+Item
+{
+	SubMenuIf /Intern/StatPage 1 1 Sydney_MatchStatBoardSub2
+	Pos 0 y
+}
+
+
+def	IcoS	16
+def	xr	FrameW 0.99
+
+add y dy	8
+
+Item
+{
+	Image Ico/ArrowD IcoS IcoS
+	Font IcoF
+	Pos xr-10 y Right Center
+
+	OnAction
+	{
+		ToggleCfg /Intern/StatPage
+	}
+}

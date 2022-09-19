@@ -1,0 +1,155 @@
+Include A500_MatchStatBoard.def
+
+Background #PreviousMenu
+
+item
+{
+   Image Ico/ATP500/statsTokyo FrameW FrameH
+   Pos FrameX FrameY  
+}
+
+def	ArrowS	32
+def	ArrowX	FrameLx
+def	ArrowY	FrameYu
+def	Edged	6
+
+add	ArrowX	Edged
+
+add	ArrowY	ArrowS
+
+item
+{
+	Invisible
+	OnAction
+	{
+		SetCfg /Intern/MatchBoardSet 0 !OnEnter
+	}
+}
+
+
+item
+{
+	SubMenu A500_MatchStatBoardSub /Intern/MatchBoardSet
+	Pos FrameLx FrameYu
+}
+
+
+item
+{
+	Image Ico/Arrow -ArrowS ArrowS
+	Font IcoF
+	Pos 30 120
+
+	OnAction
+	{
+		SlideCfg /Intern/MatchBoardSet 0 /Intern/CurrentSet !Negative !Cycle
+
+	}
+}
+
+
+def	ArrowX	FrameRx
+add	ArrowX	-Edged
+
+item
+{
+	Image Ico/Arrow ArrowS ArrowS
+	Font IcoF
+	Pos 626 120
+
+	OnAction
+	{
+		SlideCfg /Intern/MatchBoardSet 0 /Intern/CurrentSet !Positive !Cycle
+
+	}
+}
+
+
+//====== Network Arcade / Simu
+def	NwX	630
+def	IcoS	32
+def	y	405
+
+item ArcadeSimu01
+{
+	HelpText ArcadeSimu01 !ShowIfUnselectable
+	Image Ico/ControlSimulation IcoS IcoS
+	CycleButton #ImageGI
+
+	Pos NwX y Right Center
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/Arcade 0 2
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item ArcadeSimu02
+{
+	HelpText ArcadeSimu02 !ShowIfUnselectable
+	Image Ico/ControlArcade IcoS IcoS
+	Invisible
+}
+
+item ArcadeSimu03
+{
+	HelpText ArcadeSimu03 !ShowIfUnselectable
+	Image Ico/ControlArcade IcoS IcoS
+	Invisible
+}
+
+//====== Network Skill Mode
+add	y	25
+
+item NW_SMode
+{
+	CycleButton #Text
+	Pos NwX y
+	Font NetF
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/SkillMode 0 2
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+
+//====== Network Lag
+add	y	15
+
+item NW_LagV
+{
+	Text NW_InLag
+	CycleButton #Text
+	Pos NwX y
+
+	Font NetF
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/NbLagFrame -1 24
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /Intern/DemoPlayback 2 !Or
+}
+
+//====== LagRatio
+
+add	y	15
+
+item
+{
+	Text NW_LagRatio /NW_Intern/LagRatio
+	Pos NwX y
+	Font NetF
+
+	ShowIfNot /NW_Intern/Status 0
+}

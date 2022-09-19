@@ -1,0 +1,266 @@
+Include AO12_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	0
+def	dy	29.5
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.17
+def	xr	FrameW 0.84
+
+
+//====== Avr 1st Serve Speed
+Item
+{
+	Text AvrSpeed1st2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/Avr1stServeSpeed
+	Font StatValueF
+	pos xl y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/Avr1stServeSpeed
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/Avr1stServeSpeedUs
+	Font StatValueF
+	pos xl y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/Avr1stServeSpeedUs
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+//====== Avr 2nd Serve Speed
+Item
+{
+	Text AvrSpeed2nd2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text SpeedKmh /$ts1/Avr2ndServeSpeed
+	Font StatValueF
+	pos xl y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedKmh /$ts2/Avr2ndServeSpeed
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 0
+}
+
+Item
+{
+	Text SpeedMph /$ts1/Avr2ndServeSpeedUs
+	Font StatValueF
+	pos xl y
+
+	ShowIf /Game/Mph 1
+}
+
+Item
+{
+	Text SpeedMph /$ts2/Avr2ndServeSpeedUs
+	Font StatValueF
+	pos xr y
+
+	ShowIf /Game/Mph 1
+}
+
+
+ //====== Set Point Saved
+Item
+{
+	Text SetPointSaved2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/SetPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/SetPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Match Point Saved
+Item
+{
+	Text MatchPointSaved2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/MatchPointSaved
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/MatchPointSaved
+	Font StatValueF
+	pos xr y
+}
+
+//====== Win1stServe
+Item
+{
+	Text Win1stServe2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValueF
+	pos xr y
+}
+
+//====== Win2ndServe
+Item
+{
+	Text Win2ndServe2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValueF
+	pos xr y
+}
+
+//====== Point Won On Return
+Item
+{
+	Text ReturnPointWon2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/PointWonOnReturn
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/PointWonOnReturn
+	Font StatValueF
+	pos xr y
+}
+
+//====== Return Winner
+Item
+{
+	Text ReturnWinner2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/ReturnWinner
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/ReturnWinner
+	Font StatValueF
+	pos xr y
+}

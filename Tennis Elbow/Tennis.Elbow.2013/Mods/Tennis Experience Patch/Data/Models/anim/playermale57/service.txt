@@ -1,0 +1,8 @@
+Anim: Service.x
+Info: 68 68 41	// Hit ball - Max Extension - Throw Ball
+
+
+SweetSpot: -10.5 -26.9 239.7 0.161 -0.153 0.975
+HandThrow: -17.4 9.8 191.5 0.182 0.425 0.887
+
+Author: emmainf | F.Mayer

@@ -1,0 +1,7 @@
+Anim: ForeHand.x
+Info: 22.0 22.0
+Speed: 1.0
+Acceleration: ForeHand_Acc
+
+Author: Megaem | Medvedev
+

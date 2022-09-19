@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 22 28 24 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Rharm | Nagal

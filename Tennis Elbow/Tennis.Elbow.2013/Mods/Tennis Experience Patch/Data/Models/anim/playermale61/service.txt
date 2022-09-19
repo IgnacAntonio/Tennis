@@ -1,0 +1,8 @@
+Anim: Service.x
+Info: 45.0 45.0 18.0	// Hit ball - Max Extension - Throw Ball
+
+
+Author: Megyaem | Roddick
+
+SweetSpot: 0.7 -17.1 244.7 0.201 0.093 0.975
+HandThrow: -88.2 27.0 177.1 0.120 0.251 0.961

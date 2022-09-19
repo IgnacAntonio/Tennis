@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 15 35 20 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Megyaem | Medvedev
+
+

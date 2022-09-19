@@ -1,0 +1,1472 @@
+include PlayerPlanning.def
+include MenuSet01.def
+include CharSheetBar.def
+
+def xc	320
+def xl	120
+def xr	520
+
+def IcoS	40
+
+def x1	48
+def x2	260
+def x3	320
+def x5	380
+def x6	260
+add x6	IcoS -0.5
+
+def xsl	250
+def xsr	390
+
+def dyt	23
+
+Background #PreviousMenu
+
+Font	Default		HugeChars 14 18 0xFFFFFFFF 0 Center Center Shadow LH1.15
+Font	Ico2F		HugeChars 12 15 0xFFFFFFFF 0 Center Center
+Font	SkillF		HugeChars 8 12 0xFFFFE040 0x7FFFFFFF Circle
+Font	FlagF		HugeChars 9 12 0xFFFFE040 0
+
+Font	RankF		HugeChars 12 15 0xFFFFE040 0
+Font	SmallF		HugeChars 10 12 0xFFFFE040 0
+
+Font	HourF		HugeChars 12 15 0xFFFFE040 0x7FFFFFFF Circle
+
+//Fontsize	Ico2F	12 15
+
+
+def	$p	WorldTour_p1
+
+// /Intern/EditSheet == PickPlayer => No Age, H2H, Level, FaVPartner
+// /Intern/EditSheet == CantTouch
+// /Intern/EditSheet == ViewOnly
+// /Intern/EditSheet == ViewPotential => edit Preview (sheet viewed from World Tour)
+// /Intern/EditSheet == WorldTourView => +edit Colors
+// /Intern/EditSheet == Training => +edit Characteristics (Training page in World Tour)
+// /Intern/EditSheet == Creation => +edit Style (Creation page in World Tour)
+// /Intern/EditSheet == FreeMode => +edit Soul (sheet from Training Club)
+
+// /Intern/CharSheet == -2 => Training
+// /Intern/CharSheet == -1 => Activity, Show Match
+// /Intern/CharSheet == 0 => Training Club
+// /Intern/CharSheet == 1 => World Tour view, PbEd
+// /Intern/CharSheet == 2 => New Game
+
+Include CharSheet.def
+
+MenuEnterParam	3	// ==> Check only 3 params to know if need to redo OnEnter or not
+
+item FuncUpdateCharSheet
+{
+	Invisible
+
+	OnAction
+	{
+		UpdateCharSheet $p /Intern/HumanNum
+	}
+}
+
+item MainEnter
+{
+	Invisible
+	OnEnter !Always
+
+	OnActionIfNot $2 0
+	{
+		SetCfg $p /Intern/SectionMode2
+//		SetCfg /Intern/HumanNum -1
+	}
+
+
+	OnActionIf $2 0
+	{
+		SetCfg $p /Intern/SectionMode
+		CatCfg $p $_p$1
+	}
+
+	OnAction
+	{
+		SetCfg /Intern/HumanNum $1-1
+		Function FuncSetWeightRange
+		//SetCfg /WT_Intern/NbPlayer 3
+		Function FuncUpdateCharSheet
+	}
+}
+
+
+item FuncSetWeightRange
+{
+	Invisible
+
+	OnActionIf /$p/Female 0
+	{
+		SetCfg /Intern/MinWeight /$p/Height-115
+		SetCfg /Intern/MaxWeight /$p/Height-85
+	}
+
+	OnActionIfNot /$p/Female 0
+	{
+		SetCfg /Intern/MinWeight /$p/Height-114.5
+		MulAddMulCfg /Intern/MinWeight 1 /$p/Height-155 -0.3 !Floor
+
+		SetCfg /Intern/MaxWeight /$p/Height-95
+	}
+}
+
+
+item RealEnter
+{
+	Invisible
+	OnEnter !Real
+
+	OnAction
+	{
+		SetCfg /Intern/CharSheetAng 2048
+	}
+}
+
+
+item OnExit
+{
+	Invisible
+	OnExit
+
+	OnActionIf /Intern/EditSheet WorldTourView
+	{
+		SetCfg /WT_Sav/Diff /WorldTour_p1/Level
+		SetCfg /WT_Sav/SubDiff /WorldTour_p1/SubLevel
+	}
+}
+
+
+
+//============================= Upper bar
+item
+{
+	Image Menu/RoundBg01 640 UpBarH Rounded
+	Pos 0 0
+	Font Bg
+//	ShowIfNot /Intern/CharSheet -2
+//	ShowIf $3 2 !Or
+}
+
+add	yt	-dyt
+
+item CharSheet
+{
+	CycleButton #Text
+	Pos xc yt
+	Add yt dyt
+	Font TitleF
+	ShrinkToMaxPixel MaxTitleWidth
+
+	OnAction
+	{
+		SlideCfg $3 0 100 100
+	}
+
+	Unselectable
+//	ShowIfNot /Intern/CharSheet -2
+//	ShowIf $3 2 !Or
+}
+
+
+//============================= FavPartner
+
+def	xfp	5
+add	yt	dyt -0.5
+
+item FavPartner01
+{
+	Image Ico/Char_FavPartner IcoS IcoS
+	HelpText SetFavPartner
+
+	Pos xfp yt	Left Center
+	Font Ico2F
+
+	OnAction
+	{
+		SetCfg /WT_Sav/FavPartner /$p/TourNum
+	}
+
+	ShowIfNot /WT_Sav/FavPartner /$p/TourNum
+	ShowIf /Intern/CharSheet -1
+	ShowIf /$p/Human 0
+}
+
+item FavPartner02
+{
+	Image Ico/Char_FavPartner IcoS IcoS
+	HelpText UnsetFavPartner
+
+	Pos xfp yt	Left Center
+	Font Ico2F
+	Color 0xFF7F7F7F
+
+	OnAction
+	{
+		SetCfg /WT_Sav/FavPartner -1
+	}
+
+	ShowIf /WT_Sav/FavPartner /$p/TourNum
+	ShowIf /Intern/CharSheet -1
+	ShowIf /$p/Human 0
+}
+
+//============================= Save To Training Club from World Tour
+item
+{
+	Image Ico/PlayerSave IcoS IcoS
+	add xfp IcOS 1.1
+	Pos xfp yt	Left Center
+	Font Ico2F
+	HelpText PlayerSaveWT
+
+	OnAction
+	{
+		SetCfg /$p/Tiredness /WorldTour_p1/Tiredness
+		SetCfg /$p/BallDiffScale /WorldTour_p1/BallDiffScale
+		SetCfg /$p/PrecisionScale /WorldTour_p1/PrecisionScale
+		Menu SaveLoadTC 1 1
+	}
+
+	ShowIf /Intern/EditSheet PickPlayer Training
+}
+
+
+add	yt	dyt 0.5
+
+//============================= Name
+item NameNG
+{
+	Text /$p/Name
+	Pos xc yt
+	Font TitleF NoSizeChange
+	ShrinkToMaxPixel MaxTitleWidth
+	HelpText NamePl
+
+	OnAction
+	{
+		EditCfg /$p/Name 47 §None
+		SetCfg /NW_Intern/CheckBld 0		// To recheck the name when logging in in the Online Mode
+	}
+
+	OnActionIf /Intern/EditResult 2
+	{
+		StringCfg /$p/Name 1
+		CatCfg /$p/Name "$ $1+1"
+	}
+
+	OnActionIf /Intern/EditResult 1	 2 // -1 => Esc; 0 => No change; 1 => Changed; 2 => empty
+	{
+		//ResetStat $p
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	SelectableIf /3dEngine/DevMode 1 !Or
+//	ShowIfNot /Intern/CharSheet -2
+//	ShowIf $3 2 !Or
+}
+
+//============================= Load
+def y 62
+add y IcoS 0.5
+
+item
+{
+	Image Ico/PlayerLoad IcoS IcoS
+	Pos xfp yt-10	Left Center
+	Font Ico2F
+	HelpText PlayerLoad
+
+	OnAction
+	{
+		Menu SaveLoadTC 0
+	}
+
+	ShowIf /Intern/CharSheet 0
+}
+
+//============================= Save
+item
+{
+	Image Ico/PlayerSave IcoS IcoS
+	Pos xfp+45 yt-10	Left Center
+	Font Ico2F
+	HelpText PlayerSave
+
+	OnAction
+	{
+		Menu SaveLoadTC 1
+	}
+
+	ShowIf /Intern/CharSheet 0
+}
+
+
+//============================= Flag
+def fy	y
+add fy IcoS 0.15
+
+item
+{
+	HelpText /Intern/Country !ShowIfUnselectable
+	ImageFlag Flag 0.75 0.75
+	CycleButton #Image
+	Pos xc fy Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		SlideCountry /$p/Country 0 /WT_Intern/NbCountry-1
+	}
+	ShowIfNot /Intern/CharSheet 0
+	SelectableIf /Intern/EditSheet Creation FreeMode
+}
+item
+{
+	HelpText /Intern/Country !ShowIfUnselectable
+	ImageFlag Flag 0.75 0.75
+	CycleButton #Image
+	Pos xc fy Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		SlideCountry /TrainingClub_p1/Country2L 0 /WT_Intern/NbCountry-1
+	}
+	ShowIf /Intern/CharSheet 0
+	ShowIf /Intern/StatPlayer 0
+	SelectableIf /Intern/EditSheet Creation FreeMode
+}
+item
+{
+	HelpText /Intern/Country !ShowIfUnselectable
+	ImageFlag Flag 0.75 0.75
+	CycleButton #Image
+	Pos xc fy Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		SlideCountry /TrainingClub_p2/Country2L 0 /WT_Intern/NbCountry-1
+	}
+	ShowIf /Intern/CharSheet 0
+	ShowIf /Intern/StatPlayer 1
+	SelectableIf /Intern/EditSheet Creation FreeMode
+}
+
+add	fy	32
+
+item
+{
+	Text /Intern/Country
+	Pos xc fy Center Center
+	Font FlagF
+	ShowIfNot /Intern/CharSheet 0
+	ShrinkToMaxPixel 125
+}
+
+item
+{
+	Text /$p/Country3L
+	Pos xc fy Center Center
+	Font FlagF
+
+	OnAction
+	{
+		EditCfg /$p/Country3L 3 §None
+		SetCfg /NW_Intern/CheckBld 0		// To recheck the name when logging in in the Online Mode
+	}
+
+	OnActionIf /Intern/EditResult 2
+	{
+		StringCfg /$p/Country3L 1
+		CatCfg /$p/Country3L "$ $1+1"
+	}
+
+	OnActionIf /Intern/EditResult 1	 2 // -1 => Esc; 0 => No change; 1 => Changed; 2 => empty
+	{
+		//ResetStat $p
+	}
+	ShowIf /Intern/CharSheet 0	
+	ShrinkToMaxPixel 125
+}
+
+
+//============================= Style
+
+//def	IcoS	40
+def	dx	Icos 1.1
+def	x	xr
+add	x	dx -1.5
+
+item Style01
+{
+	HelpText StyleDefender !ShowIfUnselectable
+	CycleButton #ImageGI
+	Image Ico/Style_Defenser IcoS IcoS
+	Pos x y
+	Font Ico2F
+
+	OnAction
+	{
+		SlideCfg /$p/Style 0 5
+		//ResetStat $p
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	SelectableIf /3dEngine/DevMode 1 !Or
+}
+
+item Style02
+{
+	HelpText StylePower !ShowIfUnselectable
+	Image Ico/Style_PowerBaseliner IcoS IcoS
+	Pos 0 0 Right Top
+	Font Ico2F
+	Invisible
+}
+
+item Style03
+{
+	HelpText StylePuncher !ShowIfUnselectable
+	Image Ico/Style_Puncher IcoS IcoS
+	Pos 0 0 Right Top
+	Font Ico2F
+	Invisible
+}
+
+item Style04
+{
+	HelpText StyleVaried !ShowIfUnselectable
+	Image Ico/Style_Varied IcoS IcoS
+	Pos 0 0 Right Top
+	Font Ico2F
+	Invisible
+}
+
+item Style05
+{
+	HelpText StyleVolleyer !ShowIfUnselectable
+	Image Ico/Style_Volleyer IcoS IcoS
+	Pos 0 0 Right Top
+	Font Ico2F
+	Invisible
+}
+
+item Style06
+{
+	HelpText StyleCounter !ShowIfUnselectable
+	Image Ico/Style_Counter IcoS IcoS
+	Pos 0 0 Right Top
+	Font Ico2F
+	Invisible
+}
+
+
+//============================= Height
+add	x	dx
+
+item
+{
+	HelpText Height !ShowIfUnselectable
+	Image Ico/Char_Height IcoS IcoS
+	Pos x y Center Center
+	Font Ico2F
+}
+
+item
+{
+	Text %scm /$p/Height
+	CycleButton #None
+	Pos x y Center Center
+	Font SmallF
+
+	OnActionIf /$p/Female 0
+	{
+		SlideCfg /$p/Height 170 200
+	}
+
+	OnActionIfNot /$p/Female 0
+	{
+		SlideCfg /$p/Height 155 190
+	}
+
+	OnAction
+	{
+		Function FuncSetWeightRange
+	}
+
+	OnActionIf /$p/Weight 0 /Intern/MinWeight
+	{
+		SetCfg /$p/Weight /Intern/MinWeight
+	}
+
+	OnActionIfNot /$p/Weight /Intern/MinWeight /Intern/MaxWeight
+	{
+		SetCfg /$p/Weight /Intern/MaxWeight
+	}
+
+	OnActionIfNot /Intern/CharSheet 0
+	{
+		ExportWorldTour
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	SelectableIf /3dEngine/DevMode 1 !Or
+}
+
+//============================= Weight
+add	x	dx
+
+item
+{
+	HelpText Weight !ShowIfUnselectable
+	Image Ico/Char_Weight IcoS IcoS
+	Pos x y Center Center
+	Font Ico2F
+}
+
+item
+{
+	Text %skg /$p/Weight
+	CycleButton #None
+	Pos x y Center Center
+	Font SmallF
+
+	OnAction
+	{
+		SlideCfg /$p/Weight /Intern/MinWeight /Intern/MaxWeight
+	}
+
+	OnActionIfNot /Intern/CharSheet 0
+	{
+		ExportWorldTour
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	SelectableIf /3dEngine/DevMode 1 !Or
+}
+
+//============================= Age
+//Add	y	IcoS
+
+add	x	dx
+
+item
+{
+	HelpText Age !ShowIfUnselectable
+	Image Ico/Char_Age IcoS IcoS
+	Pos x y Center Center
+	Font Ico2F
+	ShowIfNot /Intern/CharSheet 0
+	ShowIfNot /Intern/EditSheet PickPlayer
+}
+
+item
+{
+	Text /$p/Age
+	Pos x y Center Center
+	Font RankF
+
+	OnAction
+	{
+		Menu PlayerAge
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	ShowIfNot /Intern/CharSheet 0
+	ShowIfNot /Intern/EditSheet PickPlayer
+}
+
+//============================= Rank
+//Add y IcoS 0.5
+//add	x	dx
+
+def	x	xl
+add	x	cw 0.5
+add	x	IcoS -0.25
+
+item Rank
+{
+	HelpText EntryPos !ShowIfUnselectable
+	Image Ico/Rank IcoS IcoS
+	Pos x y Center Center
+	Font Ico2F
+
+	ShowIfNot /Intern/EditSheet Creation
+
+}
+
+add	x	1
+
+item
+{
+	Text #%g /$p/Rank
+	Pos x y Center Center
+	Font RankF
+	
+	ShowIfNot /Intern/CharSheet 0
+	ShowIfNot /Intern/EditSheet ViewPotential Creation
+	
+}
+
+item
+{
+	Text #%g /$p/Rank
+	Pos x y Center Center
+	Font RankF
+	
+	OnAction
+	{
+		SlideCfg /$p/Rank 0 32 // 0 => empty
+	}	
+	ShowIfNot /Intern/EditSheet ViewPotential Creation
+	
+}
+
+item
+{
+	Text RankSD /$p/RankS /$p/RankD
+	Pos x y Center Center
+	Font SmallF
+	
+	ShowIf /Intern/EditSheet ViewPotential Training
+
+}
+
+
+//============================= Palmares
+add	x	-dx
+
+item Palmares
+{
+	HelpText Palmares
+	Image Ico/Palmares IcoS IcoS
+	Pos x y Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		Menu PlayerPalmares
+	}
+
+	ShowIf /Intern/EditSheet WorldTourView
+}
+
+
+//============================= Career Evolution
+add	x	-dx
+
+item CareerEvolution
+{
+	HelpText CareerEvolution
+	Image Ico/CareerEvolution IcoS IcoS
+	Pos x y Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		Menu PlayerCareerEvolution
+	}
+
+	ShowIf /Intern/EditSheet WorldTourView
+//	ShowIf /WT_Intern/GameMode 0
+}
+
+//============================= Retire
+add	x	-dx
+
+item
+{
+	HelpText EndCareer
+	Image Ico/Retire IcoS IcoS
+	Pos x y Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		Menu CoachConfirmRetire
+	}
+
+	ShowIf /Intern/EditSheet WorldTourView
+	ShowIf /WT_Sav/GameOver 0
+	ShowIf /WT_Intern/GameMode 0
+}
+
+
+//============================= PlayerStat
+add	x	-dx
+
+//def	$s	InGame_p1
+
+item
+{
+	Image Ico/PlayerStat IcoS IcoS
+	Pos x y
+	Font Ico2F
+	HelpText PlayerStat
+
+	OnAction
+	{
+		UpdateSimpleSkill $p /Intern/HumanNum
+		Menu PlayerStatSheet
+//		Log /$p/Name
+//		Log /$s/Skill_Crc
+	}
+
+	ShowIf /Intern/CharSheet 0
+	ShowIf /Intern/EditSheet WorldTourView !Or
+}
+
+
+/*//============================= Csv Export
+item
+{
+	Image Ico/Csv IcoS IcoS
+	HelpText ExportCharToCsv
+
+	Pos x6 y Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		ExportCharSheetToCsv /$p/TourNum
+	}
+
+	ShowIf /Menu/Adv 1
+}*/
+
+
+/*//============================= Talents
+add	x5	-Icos
+
+item
+{
+	HelpText SeeTalents !ShowIfUnselectable
+	Image Ico/Char_Talent IcoS IcoS
+	Pos x5 y Center Center
+	Font Ico2F
+
+	OnAction
+	{
+		Menu PlayerTalents
+	}
+
+	ShowIfNot /$p/NbTalent 0
+}
+
+item
+{
+	HelpText NoTalent !ShowIfUnselectable
+	Image Ico/Char_Talent IcoS IcoS
+	Pos x5 y Center Center
+	Font Ico2F
+
+	Color 0xFF7F7F7F
+
+	ShowIf /$p/NbTalent 0
+}*/
+
+//============================= Skills
+//add y IcoS
+Add	y	IcoS	0.75
+def	dy	Sy4
+add	dy	-40
+add	dy	-y
+def	dy	dy 0.0675	// divide by ~13
+
+def	sdy	dy 0.5
+
+def	xSb	xl
+add	xSb	95
+
+def	SbS	24
+
+
+def	TopY	y
+
+//========== Forehand
+item
+{
+	Text SkillFH
+	Pos xl y center up
+	Font SkillF
+	add y dy
+}
+
+item
+{
+	SubMenu CharSheetSkillBar 0
+	Pos xl y
+	add y dy
+}
+
+add y dy 0.40
+
+def	xll	xl
+add	xll	cw -0.5
+add	xll	-15.0
+
+def	SiS	18
+
+item DoubleHandFH01
+{
+	Image Ico/Char_1hand SiS SiS
+	Pressbutton #ImageGI
+	Pos xll y	Center Center
+	Font Ico2F
+	HelpText SingleHandFH !ShowIfUnselectable
+
+	OnAction
+	{
+		ToggleCfg /$p/DoubleHandFH 0 1
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	SelectableIf /3dEngine/DevMode 1 !Or
+}
+
+item DoubleHandFH02
+{
+	Image Ico/Char_2hand SiS SiS
+	Font Ico2F
+	HelpText DoubleHandFH !ShowIfUnselectable
+	Invisible
+}
+
+add y dy -0.40
+
+item
+{
+	SubMenu CharSheetSkillBar 1
+	Pos xl y
+	add y dy
+}
+
+item
+{
+	SubMenu CharSheetSkillBar 2
+	Pos xl y
+	add y dy
+}
+
+add y sdy
+
+//========== Backhand
+item
+{
+	Text SkillBH
+	Pos xl y center up
+	Font SkillF
+	add y dy
+}
+
+item
+{
+	SubMenu CharSheetSkillBar 3
+	Pos xl y
+	add y dy
+}
+
+
+add y dy 0.40
+
+item DoubleHandBH01
+{
+	Image Ico/Char_1hand SiS SiS
+	Pressbutton #ImageGI
+	Pos xll y	Center Center
+	Font Ico2F
+	HelpText SingleHandBH !ShowIfUnselectable
+
+	OnAction
+	{
+		ToggleCfg /$p/DoubleHandBH 0 1
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	SelectableIf /3dEngine/DevMode 1 !Or
+}
+
+item DoubleHandBH02
+{
+	Image Ico/Char_2hand SiS SiS
+	Font Ico2F
+	HelpText DoubleHandBH !ShowIfUnselectable
+	Invisible
+}
+
+add y dy -0.40
+
+item
+{
+	SubMenu CharSheetSkillBar 4
+	Pos xl y
+	add y dy
+}
+
+item
+{
+	SubMenu CharSheetSkillBar 5
+	Pos xl y
+	add y dy
+}
+
+add y sdy
+
+//========== Volley
+item
+{
+	Text SkillVolley
+	Pos xl y center up
+	Font SkillF
+	add y dy
+}
+
+item NetPresence
+{
+	SubMenu CharSheetSkillBar 17
+	Pos xl y
+	add y dy
+}
+
+item VolleyFH
+{
+	SubMenu CharSheetSkillBar 14
+	Pos xl y
+	add y dy
+}
+
+item VolleyBH
+{
+	SubMenu CharSheetSkillBar 15
+	Pos xl y
+	add y dy
+}
+
+item Smash
+{
+	SubMenu CharSheetSkillBar 16
+	Pos xl y
+	add y dy
+}
+
+
+//========== Service
+def	y TopY
+
+item
+{
+	Text SkillService
+	Pos xr y center up
+	Font SkillF
+	add y dy
+}
+
+item
+{
+	SubMenu CharSheetSkillBar 6
+	Pos xr y
+	add y dy
+}
+
+item
+{
+	SubMenu CharSheetSkillBar 7
+	Pos xr y
+	add y dy
+}
+
+item
+{
+	SubMenu CharSheetSkillBar 8
+	Pos xr y
+	add y dy
+}
+
+add y sdy
+
+//========== Physical
+item
+{
+	Text SkillFitness
+	Pos xr y center up
+	Font SkillF
+	add y dy
+}
+
+item Speed
+{
+	SubMenu CharSheetSkillBar 19 1
+	Pos xr y
+	add y dy
+}
+
+item Stamina
+{
+	SubMenu CharSheetSkillBar 20 1
+	Pos xr y
+	add y dy
+}
+
+add y sdy
+
+//========== Special Skills
+item
+{
+	Text SkillSpecial
+	Pos xr y center up
+	Font SkillF
+	add y dy
+}
+
+item Lob
+{
+	SubMenu CharSheetSkillBar 10
+	Pos xr y
+	add y dy
+}
+
+item DropShot
+{
+	SubMenu CharSheetSkillBar 12
+	Pos xr y
+	add y dy
+}
+
+item Counter
+{
+	SubMenu CharSheetSkillBar 13
+	Pos xr y
+	add y dy
+}
+
+//add y sdy
+add y dy
+
+item Lift
+{
+	SubMenu CharSheetSkillBar 18
+	Pos xr y
+}
+
+//========== Experience & Points
+
+add y dy
+
+item Experience
+{
+	SubMenu CharSheetSkillBar 34 -1
+	Pos xc y
+
+	ShowIf /Intern/EditSheet WorldTourView Creation
+}
+
+item TotalPoints
+{
+	SubMenu CharSheetSkillBar 45 -1
+	Pos xc y
+	add y dy
+
+	ShowIfNot /Intern/EditSheet WorldTourView Creation
+}
+
+//========== Levels & Preview + AutPos
+item Preview
+{
+	SubMenu CharSheetLevelBar 48
+	Pos xc y
+
+	ShowIfNot /Intern/EditSheet Training
+	ShowIf /$p/Soul 0 1
+}
+
+/*item PreviewO
+{
+	Text /$p/Preview
+	Pos xc y
+}*/
+
+
+item Level
+{
+	SubMenu CharSheetLevelBar 46
+	Pos xc y
+	add y dy
+
+	ShowIfNot /Intern/EditSheet PickPlayer
+	ShowIfNot /Intern/EditSheet Training
+	ShowIfNot /Intern/EditSheet ViewPotential
+	ShowIfNot /$p/Soul 0 1
+}
+
+item AutoPos
+{
+	SubMenu CharSheetLevelBar 49
+	Pos xc y
+
+	ShowIfNot /Intern/EditSheet Training
+	ShowIf /$p/Soul 0 1
+}
+
+item SubLevel
+{
+	SubMenu CharSheetLevelBar 47
+	Pos xc y
+
+	ShowIfNot /Intern/EditSheet PickPlayer
+	ShowIfNot /Intern/EditSheet Training
+	ShowIfNot /Intern/EditSheet ViewPotential
+	ShowIfNot /$p/Soul 0 1
+}
+
+
+//========= Nb Training Days & Hours
+
+add y dy -0.5
+
+Item
+{
+	Text NbTrainingDay /WT_Intern/NbTrainingDay
+	Pos xc y Center Center
+	Font HourF
+
+	ShrinkToMaxPixel 180
+//	ShowIf /Intern/CharSheet -2
+	ShowIf /Intern/EditSheet Training
+}
+
+Item
+{
+	Text NbTrainingHour /WT_Intern/NbTrainingHour
+	add y dy
+	Pos xc y Center Center
+	Font HourF
+
+	ShrinkToMaxPixel 180
+	ShowIf /Intern/EditSheet Training
+}
+
+add y dy -0.5
+
+//============================= Head To Head
+
+//add y dy 1.5
+//add y sdy
+
+
+item
+{
+	SubMenu CharSheetHeadToHead /$p/TourNum /$p/Human
+	add xr 8
+	Pos xr y
+	add xr -8
+
+	ShowIf /Board/Human 0
+	ShowIfNot /WT_Intern/NbPlayer 0 1 !Or
+	ShowIfNot /Intern/CharSheet 0 1
+	ShowIf /Intern/EditSheet CantTouch WorldTourView
+}
+
+
+//========== Character
+//def yc	TopY 0.5
+//add yc	Sy4 0.5
+//add yc	IcoS 0.5
+
+def yc 230
+
+item
+{
+	ImageCharSheet 100 180
+	Pos 320 yc Center Center
+	Font Ico2F
+	HelpText CustomizeChar
+
+	OnAction
+	{
+		Menu CharSheetCustomize $1
+	}
+
+	NoImageSelected
+	SelectableIf /Intern/EditSheet WorldTourView FreeMode
+}
+
+
+//============================= Soul, Hand, Controls & Tiredness
+def	x	xc //xr
+
+def	dx	dx	0.8
+def	IcoS	IcoS	0.8
+
+add	x	dx	-2
+
+//add	y	dy -0.5
+add	y	dy -3.5
+
+//============================= Controls
+Item
+{
+	Image Ico/Side_Controls IcoS IcoS
+	Pos x y
+	Font Ico2F
+
+	HelpText Controls
+
+	OnAction
+	{
+		menu ControlsPl $1
+	}
+
+	ShowIf /$p/Soul 0 1
+	ShowIf /Intern/CharSheet -1 2
+}
+
+
+//============================= Hand
+add	x	dx
+
+item Hand01
+{
+	Image Ico/Char_HandL IcoS IcoS
+	Pressbutton #ImageGi
+	Pos x y Center Center
+	Font Ico2F
+	HelpText CharHandLeft !ShowIfUnselectable
+
+	OnAction
+	{
+		ToggleCfg /$p/Hand -1 1
+		Function FuncUpdateCharSheet
+	}
+
+	SelectableIf /Intern/EditSheet Creation FreeMode
+	SelectableIf /3dEngine/DevMode 1 !Or
+}
+
+item Hand02
+{
+	Image Ico/Char_HandR IcoS IcoS
+	Font Ico2F
+	HelpText CharHandRight !ShowIfUnselectable
+	Invisible
+}
+
+
+
+//============================= Soul
+add	x	dx
+
+item Soul01
+{
+	HelpText SoulHuman
+	PressButton #ImageGI
+	Image Ico/Soul_Human IcoS IcoS
+	Pos x y
+	Font Ico2F
+
+	OnAction
+	{
+		ToggleCfg /$p/Soul 1 2
+	}
+
+	OnActionIf /$p/Soul 2
+	{
+		SetCfg /$p/BallDiffScale 1.0
+		SetCfg /$p/PrecisionScale 1.0
+	}
+
+	ShowIf /Intern/CharSheet 0 1
+	ShowIf /WT_Intern/ShowMatch 1 !Or
+	ShowIfNot /Intern/EditSheet PickPlayer
+
+	SelectableIf /Intern/EditSheet WorldTourView FreeMode
+	SelectableIf /WT_Intern/ShowMatch 1 !Or
+}
+
+item Soul02
+{
+	HelpText SoulCPU
+	Image Ico/Soul_CPU IcoS IcoS
+	Font Ico2F
+	Invisible
+}
+
+//============================= Retrain
+item
+{
+	HelpText AutoRetrain
+	Image Ico/AutoRetrain IcoS IcoS
+	Pos x y
+	Font Ico2F
+
+	OnAction
+	{
+		AutoRetrain $p /Intern/HumanNum
+	}
+
+	ShowIf /Intern/CharSheet -2
+}
+
+
+//============================= Tiredness On / Off
+add	x	dx
+
+item Tiredness01
+{
+	HelpText Tiredness01
+	PressButton #ImageGI
+	Image Ico/Tiredness-Off IcoS IcoS
+	Pos x y
+	Font Ico2F
+
+	OnAction
+	{
+		ToggleCfg /$p/Tiredness
+	}
+
+	ShowIf /Intern/CharSheet 0 2
+	ShowIfNot /Intern/EditSheet PickPlayer
+	SelectableIf /Intern/EditSheet WorldTourView FreeMode
+}
+
+item Tiredness02
+{
+	HelpText Tiredness02
+	Font Ico2F
+	Image Ico/Tiredness-On IcoS IcoS
+	Invisible
+}
+
+//============================= Arcade / Simulation
+add	x	dx
+
+item ArcadeSimu01
+{
+	HelpText ArcadeSimu01
+	CycleButton #ImageGI
+	Image Ico/ControlSimulation IcoS IcoS
+	Pos x y
+	Font Ico2F
+
+	OnAction
+	{
+		NumberCfg /$p/BallDiffScale 1.0 0.5 1.25
+		NumberCfg /$p/PrecisionScale 1.0 2.0 0.75
+	}
+
+	ShowIf /Intern/CharSheet 0 2
+	ShowIf /$p/Soul 0 1
+	SelectableIf /Intern/EditSheet WorldTourView FreeMode
+}
+
+item ArcadeSimu02
+{
+	HelpText ArcadeSimu02
+	Font Ico2F
+	Image Ico/ControlArcade IcoS IcoS
+	Invisible
+}
+
+item ArcadeSimu03
+{
+	HelpText ArcadeSimu03
+	Font Ico2F
+	Image Ico/ControlElite IcoS IcoS
+	Invisible
+}
+
+
+//============================= Pick Player
+def x	Sx5
+add x 	IcoS -1.25
+def y	Sy4
+add y 	IcoS -0.75
+
+
+item
+{
+	Image Ico/CoachContract IcoS IcoS
+	Pos x y
+	Font Ico2F
+	HelpText NG_PickIt
+
+	OnAction
+	{
+		MenuBack
+		Menu NewGamePlayerPick2 /Intern/s1 /Intern/s2 /Intern/s3
+	}
+
+	NoDefaultBack
+	ShowIf /Intern/EditSheet PickPlayer
+}
+
+
+
+//========== Forces
+
+def x	x1
+add x 	10
+def y	370
+def dy	12
+
+add	x	-10
+
+item
+{
+	Text #%.0f_Rally /$p/ForceRally
+	Pos x y		Left
+	add y dy
+
+	Font FlagF
+	ShowIf /3dEngine/DevMode 1
+}
+
+item
+{
+	Text #%.0f_Return /$p/ForceReturn
+	Pos x y		Left
+	add y dy
+
+	Font FlagF
+	ShowIf /3dEngine/DevMode 1
+}
+
+item
+{
+	Text #%.0f_Serve /$p/ForceServe
+	Pos x y		Left
+	add y dy
+
+	Font FlagF
+	ShowIf /3dEngine/DevMode 1
+}
+
+item
+{
+	Text #%.2f_Norm /$p/ForceNorm
+	Pos x y		Left
+	add y dy
+
+	Font FlagF
+	ShowIf /3dEngine/DevMode 1
+}
+
+
+item
+{
+	CycleButton #Num
+
+	Pos x y		Left
+	add y dy
+
+	OnAction
+	{
+		SlideCfg /WT_Intern/ForceSurface -1 6
+	}
+
+	Font FlagF
+	ShowIf /3dEngine/DevMode 1
+}

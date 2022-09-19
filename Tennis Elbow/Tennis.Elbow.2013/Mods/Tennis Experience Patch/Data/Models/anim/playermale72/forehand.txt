@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 24.0 24.0
+Speed: 1.0
+Acceleration: forehand_acc
+Author: Emmainf | kyrgios

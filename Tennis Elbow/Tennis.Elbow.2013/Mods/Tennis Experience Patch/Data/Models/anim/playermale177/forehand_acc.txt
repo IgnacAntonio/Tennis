@@ -1,0 +1,7 @@
+Anim: ForeHand_acc.x
+Info: 32.00 32.00
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Reginald Wesley | Daniil Medvedev

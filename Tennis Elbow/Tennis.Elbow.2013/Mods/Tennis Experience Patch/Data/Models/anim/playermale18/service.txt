@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 63.0 63.0 34.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -3.7 -32.4 240.2 0.200 -0.367 0.908
+HandThrow: -60.5 -8.3 144.8 -0.842 0.086 0.532
+
+Author: Neeky McDeez | Monfils v2

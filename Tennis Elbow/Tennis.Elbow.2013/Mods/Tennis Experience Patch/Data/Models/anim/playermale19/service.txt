@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 83.0 83.0 56.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -13.4 -43.3 234.8 0.411 -0.373 0.832
+HandThrow: -39.1 -21.0 159.8 -0.618 -0.222 0.754
+
+Author: Neeky McDeez | Davydenko

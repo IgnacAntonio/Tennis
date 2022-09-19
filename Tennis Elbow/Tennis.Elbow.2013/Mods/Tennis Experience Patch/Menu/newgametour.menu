@@ -1,0 +1,121 @@
+Include NewGame.Def
+
+def	xl	295
+def	xr	320
+
+def	y	UpBarH 1.25
+def	dy	27
+add	y	dy 0.25
+
+def	xrp	xr
+add	xrp	120
+
+def	xrf	xr
+add	xrf	47
+
+def	ShRp	620
+add	ShRp	-xrp
+
+Font	IcoCCF		HugeChars 14 18 0xFFFFFFFF 0 Center Center
+
+//============================= Bg
+item
+{
+	SubMenu MenuSet02 12 1
+}
+
+//============================= Middle bg
+def	bgH	480
+add	bgH	UpBarH -2
+
+Font	BgF		HugeChars 18 24 0x5FFFFFFF 0x7F000000 Circle Left Up
+
+item
+{
+	Image Menu/RoundBg01 640 bgH Rounded
+	Pos 0 56
+	Font BgF
+}
+
+
+//======= Men
+def	x	320
+def	y	240
+def	IcoS	160
+
+Item
+{
+	Image Ico/TourMenNG IcoS IcoS
+	HelpText TourMen
+	Pos 190 y
+	Font IcoCCF
+
+	OnAction
+	{
+		MenuBack
+		SetCfg /WT_Intern/CreatingNewGame 1
+		SetCfg /WT_Static/WTA 0
+		Menu NewGame
+	}
+}
+
+//======= Women
+Item
+{
+	Image Ico/TourWomenNG IcoS IcoS
+	HelpText TourWomen
+	Pos 450 y
+	Font IcoCCF
+
+	OnAction
+	{
+		MenuBack
+		SetCfg /WT_Intern/CreatingNewGame 1
+		SetCfg /WT_Static/WTA 1
+		Menu NewGame
+	}
+}
+
+//======= Back
+Item
+{
+	Image Ico/Back 48 44
+	HelpText Back
+	Pos 635 475 Right Down
+	Font IcoCCF
+
+	OnAction
+	{
+		MenuBack
+	}
+
+	DefaultBack
+}
+
+//======= HelpBox
+Font	HelpFont	HugeChars 12 16 0xFFFFEFAF 0 Circle Center Center
+
+def	x	320
+def	bw	420
+def	bh	48
+def	y	480
+add	y	56 -0.5
+
+Item
+{
+	Image Menu/RoundBg02 bw bh Rounded
+	Pos x y	Center Center
+	Color 0xEFFFFFFF
+}
+
+def	MaxDx	bw
+add	MaxDx	-20
+
+Item
+{
+	HelpBox
+	Pos x y
+
+	Font HelpFont
+	MaxTextPixelPerLine MaxDx
+}

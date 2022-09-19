@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 76.0 76.0 50.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: 2.3 -17.1 244.6 0.163 0.004 0.987
+HandThrow: -30.8 11.4 158.8 0.219 0.629 0.746
+
+Author: Lucian Cucuteanu | Tsonga

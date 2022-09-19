@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 25.00 25.00
+Speed: 1.0
+Acceleration: forehand_acc
+
+Author: Lucian Cucuteanu | Stan Wawrinka

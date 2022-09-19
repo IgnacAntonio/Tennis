@@ -1,0 +1,42 @@
+Include Menu.Def
+
+def	FrameX	7
+def	FrameY	45
+
+def	FrameW	627
+def	FrameH	360
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		ProximaNova 18 24 0xFFFFFFFF 0
+Font	SmallF		ProximaNova 10 14 0xFFFFFFFF 0 Shadow0
+Font	VSmallF		ProximaNova 9 12 0xFFFFFFFF 0
+Font	IcoF		ProximaNova 9 12 0xFFFFFFFF 0
+Font	NetF		ProximaNova 10 13 0xFFFFFFFF 0x2F000000 Right Bottom
+
+
+// font for the summary
+Font	SummaryF	ProximaNova 16 16 0xFF000000 0 Shadow0
+// font for the score
+Font	ScoreF		ProximaNova 12 12 0xFFB2B2B2 0 Shadow0
+// font for the names
+Font	NameF 		ProximaNova 12 12 0xFFFFFFFF 0 Center Center Shadow0
+Font	Name1F 		ProximaNova 12 12 0xFFB2B2B2 0 Center Center Shadow0
+// font for the time
+Font	TimeF 		ProximaNovaBold 12 14 0xFFFFFFFF 0 Center Center Shadow0
+// font for the time
+Font	MatchTimeF 		ProximaNovaBold 12 14 0xFFFFFFFF 0 Center Center Shadow0
+// font for the stats (label)
+Font	StatLabelF 	ProximaNovaBold 12 14 0xFFFFFFFF 0 Center Center Shadow0
+// font for the stats (value)
+Font	StatValueF 	ProximaNovaLight 18 17 0xFFFFFFFF 0 Center Center Shadow0

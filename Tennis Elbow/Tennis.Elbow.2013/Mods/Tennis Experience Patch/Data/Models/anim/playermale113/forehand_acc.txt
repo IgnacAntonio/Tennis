@@ -1,0 +1,5 @@
+Anim: ForeHand_acc.x
+Info: 22.0 22.0
+Speed: 1.0
+
+Author: Lucian Cucuteanu | David Ferrer

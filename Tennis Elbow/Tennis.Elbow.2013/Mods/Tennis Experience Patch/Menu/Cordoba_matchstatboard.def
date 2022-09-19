@@ -1,0 +1,44 @@
+Include Menu.Def
+
+def	FrameX	67.5
+def	FrameY	82
+
+def	FrameW	505.5
+def	FrameH	316.5
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		ATPNumber 24 24 0xFF1D222B 0 Rectangle Center Center Shadow0 AS1
+Font	SmallF		ElliotSants 9 11 0xFFEFEFEF 0 Rectangle Center Center Shadow0 AS1
+Font	VSmallF		ElliotSants 10 11 0xFFEFEFEF 0 Circle Center Center Shadow0 AS1
+Font	IcoF		ElliotSantsBold 14 14 0xFF81868B 0 Circle Center Center Shadow0 AS1
+Font	NetF		ElliotSantsBold 14 14 0xFFD8DDE3 0 Circle Center Center Shadow0 AS1
+Font	SeedF 		ElliotSants 16 16 0xFF689BB3 0 Circle Center Center Shadow0 AS1
+Font	CountryF 	ElliotSants 16 16 0xFFE68C45 0 Circle Center Center Shadow0 AS1
+
+
+// font for the summary
+Font	SummaryF	ElliotSantsBold 12 12 0xFF0B385A 0 Rectangle Center Center Shadow0 AS1
+// font for the score
+Font	ScoreF		ElliotSants 10 10 0xFF598AAC 0 Shadow0
+// font for the names
+Font	NameF 		ElliotSantsBold 20 20 0xFFEFEFEF 0 Circle Center Center Shadow0 AS1
+Font	Name2F 		ElliotSants 16 16 0xFFEFEFEF 0 Circle Center Center Shadow0 AS1
+// font for the time
+Font	TimeF 		ElliotSantsBold 9 9 0xFFEFEFEF 0 Center Center Shadow0
+// font for the time
+Font	MatchTimeF 	ElliotSants 9 9 0xFFEFEFEF 0 Rectangle Center Center Shadow0 AS1
+// font for the stats
+Font	StatLabelF 	ElliotSants 10 10 0xFF598AAC 0 Circle Center Center Shadow0 AS1
+// font for the stats
+Font	StatValueF 	ElliotSants 20 22 0xFFE67F2E 0 Circle Center Center Shadow0 AS1

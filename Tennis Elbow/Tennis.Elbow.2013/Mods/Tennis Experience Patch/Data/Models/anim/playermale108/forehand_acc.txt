@@ -1,0 +1,7 @@
+Anim: ForeHand_acc.x
+Info: 33.00 33.00
+Speed: 1.0
+
+Acceleration: forehand_acc
+
+Author: Reginald Wesley | Shapovalov

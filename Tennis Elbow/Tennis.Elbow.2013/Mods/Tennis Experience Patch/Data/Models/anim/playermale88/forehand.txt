@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 15.0 15.0
+Speed: 1.0
+Author: FEDERER2 | Chung

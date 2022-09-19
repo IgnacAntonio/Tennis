@@ -1,0 +1,4 @@
+Anim: BackHand-1H.x
+Info: 29.0 29.0
+Speed: 1.0
+Author: phucnguyen0209 | Wawrinka

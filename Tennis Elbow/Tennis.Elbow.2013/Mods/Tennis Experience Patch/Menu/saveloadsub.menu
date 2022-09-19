@@ -1,0 +1,13 @@
+NoGetFullVersion
+
+item
+{
+	SubMenu SaveLoadSubTC $1 $2 $3
+	ShowIf $1 0 1
+}
+
+item
+{
+	SubMenu SaveLoadSubWT $1 $2 $3
+	ShowIf $1 2 3
+}

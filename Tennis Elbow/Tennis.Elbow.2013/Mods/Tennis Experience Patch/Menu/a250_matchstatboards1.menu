@@ -1,0 +1,281 @@
+Include A250_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.3
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	10
+def	dy	26
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+
+add y -6
+
+//====== Ace
+Item
+{
+	Text Ace
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Ace
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Ace
+	Font StatValueF
+	pos xr y
+}
+
+//====== DoubleFault
+Item
+{
+	Text DoubleFault
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/DoubleFault
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/DoubleFault
+	Font StatValueF
+	pos xr y
+}
+
+//====== 1stServe
+Item
+{
+	Text 1stServe7
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/1stServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	Font StatValueF
+	pos xr y
+}
+
+//====== Win1stServe%
+	add y dy
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl+25 y Right Center
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValueF
+	pos xr+25 y Right Center
+}
+
+Item
+{
+   Image IcoNoBorder/ATP250/HideStat FrameW FrameH
+   Pos 0 -86.9
+}
+
+Item
+{
+	Text Win1stServe
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y
+}
+
+//====== Win1stServe
+	add y dy
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl+100 y Right Center
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValueF
+	pos xr+100 y Right Center
+}
+
+Item
+{
+   Image IcoNoBorder/ATP250/HideStat2 FrameW FrameH
+   Pos 0 -86.9
+}
+
+Item
+{
+	Text Win1stServe6
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y
+}
+
+//====== Win2ndServe%
+	add y dy
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatValueF
+	pos xl+25 y Right Center
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValueF
+	pos xr+25 y Right Center
+}
+
+Item
+{
+   Image IcoNoBorder/ATP250/HideStat3 FrameW FrameH
+   Pos 0 -86.9
+}
+
+Item
+{
+	Text Win2ndServe
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y
+}
+
+//====== Win2ndServe
+	add y dy
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatValueF
+	pos xl+100 y Right Center
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValueF
+	pos xr+100 y Right Center
+}
+
+Item
+{
+   Image IcoNoBorder/ATP250/HideStat4 FrameW FrameH
+   Pos 0 -86.9
+}
+
+Item
+{
+	Text Win2ndServe6
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y
+}
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint3
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font StatValueF
+	pos xr y
+}
+
+//====== BreakPoint
+	add y dy
+
+Item
+{
+	Text /$ts1/BreakPoint
+	Font StatValueF
+	pos xl+100 y Right Center
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	Font StatValueF
+	pos xr+100 y Right Center
+}
+
+Item
+{
+   Image IcoNoBorder/ATP250/HideStat5 FrameW FrameH
+   Pos 0 -86.9
+}
+
+Item
+{
+	Text BreakPoint5
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y
+}

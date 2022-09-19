@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 10 42 20 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Tennis Experience | Baez

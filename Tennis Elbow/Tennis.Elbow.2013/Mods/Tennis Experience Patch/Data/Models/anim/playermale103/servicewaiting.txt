@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 20 32 25 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Sam | Garin

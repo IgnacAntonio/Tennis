@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 29.5 29.5
+Speed: 1.0
+Author: Neeky McDeez | Kuerten

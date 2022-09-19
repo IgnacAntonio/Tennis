@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 25.0 25.0
+Speed: 1.0
+Acceleration: forehand_acc
+
+Author: Sam | Sinner

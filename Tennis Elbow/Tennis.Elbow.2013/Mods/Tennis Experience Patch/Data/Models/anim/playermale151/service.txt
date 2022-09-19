@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 53.0 53.0 26.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Sam | Fucsovics

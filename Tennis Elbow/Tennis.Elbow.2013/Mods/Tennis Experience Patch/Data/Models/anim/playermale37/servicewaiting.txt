@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 35 55 37   // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: phucnguyen0209 | Gulbis
+
+HandBounce: -69.5 4.7 75.6 0.120 0.034 -0.992

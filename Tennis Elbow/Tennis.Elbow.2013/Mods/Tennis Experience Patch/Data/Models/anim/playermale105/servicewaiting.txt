@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 10 22 15		// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Rharm | Fritz

@@ -1,0 +1,6 @@
+Anim: BackHand-1H.x
+Info: 39 39	// Hit ball - Max Extension
+Speed: 1.0
+Acceleration: backhand-1h_Acc
+
+Author: Jono4sure | Federer

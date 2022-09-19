@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 30.00 30.00
+Speed: 1.0
+
+Author: Davide Menez | Daniil Medvedev

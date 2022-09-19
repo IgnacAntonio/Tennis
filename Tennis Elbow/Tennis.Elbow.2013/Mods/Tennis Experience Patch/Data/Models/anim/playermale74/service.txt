@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 60.0 60.0 33.0	// Hit ball - Max Extension - Throw Ball
+SweetSpot: -25.8 -18.1 240.1 0.086 0.047 0.995
+HandThrow: -29.7 -18.4 170.2 0.515 0.157 0.843
+Author: Davide Menez | Zverev

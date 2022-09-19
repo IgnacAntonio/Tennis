@@ -1,0 +1,176 @@
+// COMMON DATA FOR ALL SCOREBOARD TYPES
+Include ALL_Hud.def
+
+// SPECIFIC DATA FOR CURRENT SCOREBOARD
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+// font for global tournament information (name and year)
+Font	TrnF	IBC	9 12 0xFFFFFFFF Rectangle Center Center Shadow0 AS1
+// font for tournament round
+Font	RoundF	IBC	9 12 0xFFFFFFFF Rectangle Center Center Shadow0 AS1
+// font for time of the match
+Font	TimeF	IBC	9 12 0xFFF5F8FF Rectangle Center Center Shadow0 AS1
+// font for players name (Full Scoreboard)
+Font	FullNameF	IBC	11 12 0xFFFFFFFF 0 Circle Center Center Shadow0 AS1
+// font for players name
+Font	NameF	IBC	11 12 0xFFFFFFFF 0 Circle Center Center Shadow0 AS1
+// font for all sets score except current one
+Font	SetF	IBC	11 12 0xFFFFFFFF 0 Circle Center Center Shadow0 AS1
+// font for games in all loser sets score except current one
+Font	LoserSetF	IBC	11 12 0xFF50a1e0 0 Circle Center Center Shadow0 AS1
+// font for ranks and countries
+Font	RankCountryF	IBC	6 7 0xFFFFFFFF 0 Circle Center Center Shadow0 AS0
+// font for the current game score
+Font	GameScoreF	IBCsc	11 12 0xFFFFFFFF 0 Rectangle Center Center Shadow0 AS1
+// font for seed
+Font	SeedF	IBC	6 7 0xFFFFFFFF 0 Circle Center Center Shadow0 AS1
+// font for key points alert bar
+Font	KeyPointsBarF	IB	12 12  0xFF083463 0 Circle Center Center Shadow0 AS1
+// font for entry players name
+Font	BigNameF	IBC	12 13 0xFFFFFFFF 0 Circle Center Center Shadow0 AS1
+// font for all sets score except current one
+Font	FullSetF	IBC	15 15 0xFFFFFFFF 0 Rectangle Center Center Shadow0 AS1
+// font for games in all loser sets score except current one
+Font	FullLoserSetF	IBC	15 15 0xFF50a1e0 0 Rectangle Center Center Shadow0 AS1
+
+//=============================================================================
+//=== Scoreboards parameters
+//=============================================================================
+
+//=== Full scoreboard
+
+// Position for full scoreboard (Right&Up corner)
+def	FullScoreX	385
+def	FullScoreY	360
+// Size of the full scoreboard (without sets&game items)
+def FullScoreNameW 190
+def FullScoreNameH 43
+// Size of set ico in the full scoreboard and relative center position of the text
+def FullScoreSetW 17.2
+def FullScoreSetH FullScoreNameH
+def FullScoreSetTextX FullScoreSetW -0.5 
+def FullScoreSetWx2 FullScoreSetW 2
+// Size of current set ico in the full scoreboard and relative center position of the text
+def FullScoreCurrentSetW 16
+def FullScoreCurrentSetH FullScoreSetH
+def FullScoreCurrentSetTextX FullScoreCurrentSetW -0.5
+def FullScoreCurrentSetWx2 FullScoreCurrentSetW 2
+// Size of game ico in the full scoreboard and relative center position of the text
+def FullScoreGameW FullScoreSetW 2
+def FullScoreGameH FullScoreSetH
+def FullScoreGameTextX FullScoreGameW -0.4
+// Size of the server indicator
+def FullScoreServIndW 6
+def FullScoreServIndH 6
+
+// Size of the below ico (left&top position)
+def FullScoreBelowW5 335
+def FullScoreBelowW3 300
+def FullScoreBelowW1 266
+def FullScoreBelowH 12.3
+
+// Size of the tournament info ico (left&top position)
+def FullScoreTrnInfoW5 335
+def FullScoreTrnInfoW3 300
+def FullScoreTrnInfoW1 266
+def FullScoreTrnInfoH 17.6
+
+// Relative position of the items from the left position of the full scoreboard (without sets&game items)
+def FullScoreNameX 42
+def FullScoreServIndX 180
+def FullScoreSeedX 38
+def FullScoreRankCountryX 165
+def FullScoreFlagX 0
+def FullScoreTrnLogoX -32
+def FullScoreTrnLogoY 22
+def FullScoreTrnInfoX -90
+def FullScoreTrnInfoY -20
+
+// Max length of the name, seed and rank&country of the full scoreboard
+def FullScoreNameMax 166
+def FullScoreSeedMax 14
+def FullScoreRankCountryMax 40
+
+//=== Light scoreboard
+
+// Position for light scoreboard (Right&Up corner)
+def	LightScoreX	100
+def	LightScoreY	390
+def LightScoreServIndX 119
+def LightScoreServIndY 40
+// Size of the light scoreboard (without sets&game items)
+def LightScoreNameW 125
+def LightScoreNameH 40
+// Size of set ico in the light scoreboard and relative center position of the text
+def LightScoreSetW 14
+def LightScoreSetH LightScoreNameH
+def LightScoreSetTextX LightScoreSetW -0.5
+def LightScoreSetWx2 LightScoreSetW 2
+// Size of current set ico in the light scoreboard and relative center position of the text
+def LightScoreCurrentSetW 15
+def LightScoreCurrentSetH LightScoreSetH
+def LightScoreCurrentSetTextX LightScoreCurrentSetW -0.5
+def LightScoreCurrentSetWx2 LightScoreCurrentSetW 2
+// Size of game ico in the light scoreboard and relative center position of the text
+def LightScoreGameW 20
+def LightScoreGameH LightScoreSetH
+def LightScoreGameTextX LightScoreGameW -0.5
+// Max length of the name of the light scoreboard
+def LightScoreNameMax 75
+// Size of the below ico (left&top position)
+def LightScoreBelowW LightScoreNameW
+def LightScoreBelowH 15´
+// Size of the server indicator
+def LightScoreServIndW 4
+def LightScoreServIndH 4
+
+//=============================================================================
+//=== Tournament informations (name, year, round)
+//=============================================================================
+// Name and Year positions (Right&Up corner)
+def TrnX 30
+def TrnY -54
+// Round positions (Right&Up corner)
+def RoundX 262
+def RoundY TrnY
+//Time Position
+def TimeX -40
+// Max string length in pixels
+def TrnMaxLength 150
+
+
+//=============================================================================
+//=== TV Logo position (from its Right&Up corner) and size
+//=============================================================================
+def TVLogoH TVLogoW 0.609
+
+//=============================================================================
+//=== TV Logo position (from its Right&Up corner) and size
+//=============================================================================
+
+def TVLogoH 52
+def TVLogoW 90
+
+//=============================================================================
+//=== Tournament Logo size
+//=============================================================================
+def FullTrnLogoH 42
+def FullTrnLogoW 57.4
+
+//=============================================================================
+//=== Info bar for key points alert (from its Right&Up corner) and size
+//=============================================================================
+def KeyPointsBarY 376
+def KeyPointsBarW 78
+def KeyPointsBarTextMax 59
+
+//=============================================================================
+//=== Entry name board position and size
+//=============================================================================
+// X offset from the screen Left&Up corner (for the top side name) and the screen Right&Down corner (for the bottom side name) 
+// Y offset from Left&Up corner and Right&Down corner of the screen
+def NameBoardDX 450
+def NameBoardDY 40
+def NameBoardDH 20

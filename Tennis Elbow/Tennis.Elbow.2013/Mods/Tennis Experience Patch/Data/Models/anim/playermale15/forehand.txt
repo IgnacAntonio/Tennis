@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 30 30
+Speed: 1.0
+Author: Neeky McDeez | Tsonga

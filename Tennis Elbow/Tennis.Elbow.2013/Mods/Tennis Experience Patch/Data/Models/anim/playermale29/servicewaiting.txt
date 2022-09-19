@@ -1,0 +1,3 @@
+Anim: ServiceWaiting.x
+Info: 1 13 32 16.5	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+Author Emmainf | Bautista Agut

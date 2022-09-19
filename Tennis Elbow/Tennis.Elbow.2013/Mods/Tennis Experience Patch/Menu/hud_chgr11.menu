@@ -1,0 +1,325 @@
+Include CHGR_Hud.def
+
+Background #PreviousMenu
+
+item
+{
+	OnEnter !Always
+	OnAction
+	{	
+		SetCfg /Intern/SelectedHUD 110	
+		SetCfg /Intern/TVLogoX 				/Intern/WideBorder+TVLogoX !Apply
+		SetCfg /Intern/TVLogoY 				TVLogoY !Apply
+		SetCfg /Intern/InfoBoardX 			/Intern/WideBorder+InfoBoardX !Apply
+		SetCfg /Intern/InfoBoardY 			InfoBoardY !Apply
+		MulAddMulCfg /Intern/InfoBoardTextX 0 /Intern/InfoBoardX !Apply
+		MulAddMulCfg /Intern/InfoBoardTextX	1 InfoBoardW -0.5 !Apply
+		MulAddMulCfg /Intern/InfoBoardTextX 1 InfoBoardTextX !Apply
+		MulAddMulCfg /Intern/InfoBoardTextY 0 /Intern/InfoBoardY !Apply
+		MulAddMulCfg /Intern/InfoBoardTextY	1 InfoBoardH 0.5 !Apply
+		MulAddMulCfg /Intern/InfoBoardTextY 1 InfoBoardTextY !Apply
+		MulAddMulCfg /Intern/KeyPointsBarX 0 /Intern/ScoreXr !Apply
+		MulAddMulCfg /Intern/KeyPointsBarX 1 /Intern/IG_InfoS KeyPointsBarW !Apply
+		SetCfg /Intern/NameBoardTeam2X		NameBoardDX !Apply
+		SetCfg /Intern/NameBoardTeam2Y		NameBoardDY !Apply
+		SetCfg /Intern/NameBoardTeam2TextX 	/Intern/NameBoardTeam2X+NameBoardTextDX !Apply
+		SetCfg /Intern/NameBoardTeam2TextY 	/Intern/NameBoardTeam2Y+NameBoardTextDY !Apply
+		SetCfg /Intern/NameBoardTeam1X 		ScreenW-NameBoardDX !Apply
+		SetCfg /Intern/NameBoardTeam1Y 		ScreenH-NameBoardDY !Apply
+		SetCfg /Intern/NameBoardTeam1TextX 	/Intern/NameBoardTeam1X-NameBoardW !Apply
+		MulAddMulCfg /Intern/NameBoardTeam1TextX 1 NameBoardTextDX !Apply
+		SetCfg /Intern/NameBoardTeam1TextY 	/Intern/NameBoardTeam1Y-NameBoardH !Apply
+		MulAddMulCfg /Intern/NameBoardTeam1TextY 1 NameBoardTextDY !Apply
+
+		SetCfg /Intern/ScoreTrnSinglesY FullScoreTrnSinglesY !Apply
+		SetCfg /Intern/ScoreTrnBarY FullScoreTrnBarY !Apply
+
+		
+		SetCfg /Intern/TrnX /Intern/WideBorder+TrnX !Apply	
+		SetCfg /Intern/RoundX /Intern/WideBorder+RoundX !Apply
+	}
+	OnActionIf /Intern/PlayerCfg 0
+	{
+		//=== Player Name Formatting Example
+		// f = First Name Untouched ; F = First Name Uppercase
+		// l = Last Name Untouched ; L = Last Name Uppercase
+		// 3. => Max of 3 Letters, add a point if shortened or followed by more text without space
+		FormatTeamName /Intern/Team1s 1 "f L"
+		SetCfg /Intern/Team1 "" // Set Empty String
+		CatCfg /Intern/Team1 /Intern/Team1s
+		FormatTeamName /Intern/Team2s 2 "f L"
+		SetCfg /Intern/Team2 "" // Set Empty String
+		CatCfg /Intern/Team2 /Intern/Team2s
+		FormatTeamName /Intern/Team1s 1 "L25."
+		FormatTeamName /Intern/Team2s 2 "L25."
+	}
+	Invisible
+}
+
+//=== TV logo
+item
+{
+	Image Ico/CHGR/TVLogo TVLogoW TVLogoH
+	Pos /Intern/TVLogoX /Intern/TVLogoY Right Up
+	Unselectable
+}
+
+//=== InfoBoard
+item
+{
+	Image Ico/CHGR/HudInfoBoard InfoBoardW InfoBoardH
+
+	Pos /Intern/InfoBoardX /Intern/InfoBoardY Right Up
+	Font IcoF
+
+	ShowIfNot /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1 !Or
+	ShowIfNot /Intern/PointTime 0 FullScoreTimeDisp !Or
+	ShowIfNot /StatTeam1Set0/Score 0 0 !Or
+	ShowIfNot /StatTeam2Set0/Score 0 0 !Or
+	ShowIfNot /3dEngine/Stadium3d 0
+}
+
+item
+{
+	Text /Intern/InfoBoard
+
+	Pos /Intern/InfoBoardTextX /Intern/InfoBoardTextY Center Center
+	Font InfoF
+
+	ShrinkToMaxPixel InfoBoardW
+	
+	ShowIfNot /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1 !Or
+	ShowIfNot /Intern/PointTime 0 FullScoreTimeDisp !Or
+	ShowIfNot /StatTeam1Set0/Score 0 0 !Or
+	ShowIfNot /StatTeam2Set0/Score 0 0 !Or
+	ShowIfNot /3dEngine/Stadium3d 0
+}
+
+//=== Key points alert
+item
+{
+	Image Ico/CHGR/HudKeyPoints KeyPointsBarW KeyPointsBarH
+	
+	Pos /Intern/KeyPointsBarX /Intern/ScoreYu Left Center
+	
+	ShowIf /Intern/HudInfo 2 4
+	ShowIf /Intern/IG_InfoS -0.999f 10.0f
+	ShowIf /StatTeam1Set0/ScoreNum /StatTeam2Set0/ScoreNum 999999
+}
+item HudInfo
+{
+	CycleButton #Text /Intern/HudInfoOther /Intern/HudInfoNum
+	
+	Pos /Intern/KeyPointsBarX+KeyPointsBarTextX /Intern/ScoreYu+KeyPointsBarTextY Left Center
+	Font KeyPointsBarF
+
+	ShrinkToMaxPixel KeyPointsBarW-KeyPointsBarTextX
+
+	OnAction
+	{
+		SlideCfg /Intern/HudInfo 0 100
+	}
+	
+	ShowIf /Intern/HudInfo 2 4
+	ShowIf /Intern/IG_InfoS -0.999f 10.0f
+	ShowIf /StatTeam1Set0/ScoreNum /StatTeam2Set0/ScoreNum 999999
+
+	UnSelectable
+}
+
+item
+{
+	Image Ico/CHGR/HudKeyPoints KeyPointsBarW KeyPointsBarH
+	
+	Pos /Intern/KeyPointsBarX /Intern/ScoreYd Left Center
+	
+	ShowIf /Intern/HudInfo 2 4
+	ShowIf /Intern/IG_InfoS -0.999f 10.0f
+	ShowIf /StatTeam2Set0/ScoreNum /StatTeam1Set0/ScoreNum 999999
+}
+item HudInfo
+{
+	CycleButton #Text /Intern/HudInfoOther /Intern/HudInfoNum
+	
+	Pos /Intern/KeyPointsBarX+KeyPointsBarTextX /Intern/ScoreYd+KeyPointsBarTextY Left Center
+	Font KeyPointsBarF
+
+	ShrinkToMaxPixel KeyPointsBarW-KeyPointsBarTextX
+
+	OnAction
+	{
+		SlideCfg /Intern/HudInfo 0 100
+	}
+	
+	ShowIf /Intern/HudInfo 2 4
+	ShowIf /Intern/IG_InfoS -0.999f 10.0f
+	ShowIf /StatTeam2Set0/ScoreNum /StatTeam1Set0/ScoreNum 999999
+
+	UnSelectable
+}
+
+//=== Entry Name board (only displayed at the beginning of match)
+item
+{
+	Image IcoWithAnim/CHGR/NameBoard NameBoardW NameBoardH
+	Pos /Intern/NameBoardTeam2X /Intern/NameBoardTeam2Y Left Up
+	ShowIf /StatTeam1Set1/Score 0 0
+	ShowIf /StatTeam2Set1/Score 0 0
+	ShowIf /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1
+	ShowIf /Intern/PointTime 0 FullScoreTimeDisp
+	ShowIf /StatTeam1Set0/Score 0 0
+	ShowIf /StatTeam2Set0/Score 0 0
+}
+item
+{
+	Text /Intern/Team2s
+	Pos /Intern/NameBoardTeam2TextX /Intern/NameBoardTeam2TextY Left Up
+	Font BigNameF
+	ShrinkToMaxPixel NameBoardMaxLength
+	ShowIf /StatTeam1Set1/Score 0 0
+	ShowIf /StatTeam2Set1/Score 0 0
+	ShowIf /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1
+	ShowIf /Intern/PointTime 0 FullScoreTimeDisp
+	ShowIf /StatTeam1Set0/Score 0 0
+	ShowIf /StatTeam2Set0/Score 0 0
+	
+}
+item
+{
+	Image IcoWithAnim/CHGR/NameBoard NameBoardW NameBoardH
+	Pos /Intern/NameBoardTeam1X /Intern/NameBoardTeam1Y Right Down
+	ShowIf /StatTeam1Set1/Score 0 0
+	ShowIf /StatTeam2Set1/Score 0 0
+	ShowIf /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1
+	ShowIf /Intern/PointTime 0 FullScoreTimeDisp
+	ShowIf /StatTeam1Set0/Score 0 0
+	ShowIf /StatTeam2Set0/Score 0 0
+}
+item
+{
+	Text /Intern/Team1s
+	Pos /Intern/NameBoardTeam1TextX /Intern/NameBoardTeam1TextY Left Up
+	Font BigNameF
+	ShrinkToMaxPixel NameBoardMaxLength
+	ShowIf /StatTeam1Set1/Score 0 0
+	ShowIf /StatTeam2Set1/Score 0 0
+	ShowIf /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1
+	ShowIf /Intern/PointTime 0 FullScoreTimeDisp
+	ShowIf /StatTeam1Set0/Score 0 0
+	ShowIf /StatTeam2Set0/Score 0 0
+	
+}
+
+//=== Singles Bar, Tournament Bar & Border Right ico
+
+item
+{
+	Image Ico/CHGR/SinglesBar FullScoreSinglesBarW1 FullScoreSinglesBarH
+	Pos /Intern/ScoreXl /Intern/ScoreY Left Down
+	ShowIf /Intern/NbSet 1
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnSinglesY
+	}
+	
+}
+
+
+item
+{
+	Image Ico/CHGR/SinglesBar FullScoreSinglesBarW3 FullScoreSinglesBarH
+	Pos /Intern/ScoreXl /Intern/ScoreY Left Down
+	ShowIf /Intern/NbSet 3
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnSinglesY
+	}
+	
+}
+
+
+item
+{
+	Image Ico/CHGR/SinglesBar FullScoreSinglesBarW5 FullScoreSinglesBarH
+	Pos /Intern/ScoreXl /Intern/ScoreY Left Down
+	ShowIf /Intern/NbSet 5
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnSinglesY
+	}
+	
+}
+
+
+item
+{
+	Image Ico/CHGR/TrnBar FullScoreTrnBarW1 FullScoreTrnBarH
+	Pos /Intern/ScoreXl /Intern/ScoreY Left Up
+	ShowIf /Intern/NbSet 1
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnBarY
+		
+	}
+	
+}
+
+item
+{
+	Image Ico/CHGR/TrnBar FullScoreTrnBarW3 FullScoreTrnBarH
+	Pos /Intern/ScoreXl /Intern/ScoreY Left Up
+	ShowIf /Intern/NbSet 3
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnBarY
+		
+	}
+	
+}
+
+item
+{
+	Image Ico/CHGR/TrnBar FullScoreTrnBarW5 FullScoreTrnBarH
+	Pos /Intern/ScoreXl /Intern/ScoreY Left Up
+	ShowIf /Intern/NbSet 5
+	ShowIf /Intern/ScoreType 1
+	OnRender
+	{
+		MulAddMulCfg /Intern/ScoreY 0 /Intern/ScoreYl
+		MulAddMulCfg /Intern/ScoreY 1 /Intern/ScoreTrnBarY
+		
+	}
+	
+}
+
+//=== Full scoreboard (only displayed at the beginning of new games)
+item
+{
+	SubMenu CHGR_HudScoreBoard 1
+	ShowIfNot /StatTeam1Set1/Score 0 0
+	ShowIfNot /StatTeam2Set1/Score 0 0 !Or
+	ShowIf /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1
+	ShowIf /Intern/PointTime 0 FullScoreTimeDisp
+	ShowIf /StatTeam1Set0/Score 0 0
+	ShowIf /StatTeam2Set0/Score 0 0
+}
+
+//=== Simple scoreboard
+item
+{
+	SubMenu CHGR_HudScoreBoard 0
+	ShowIfNot /Intern/OverallPointTime /Intern/PointTime-0.1 /Intern/PointTime+0.1 !Or
+	ShowIfNot /Intern/PointTime 0 FullScoreTimeDisp !Or
+	ShowIfNot /StatTeam1Set0/Score 0 0 !Or
+	ShowIfNot /StatTeam2Set0/Score 0 0 !Or
+}

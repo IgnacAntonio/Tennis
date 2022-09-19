@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 103.50 103.50 72.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Alexander Zverev

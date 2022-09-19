@@ -1,0 +1,806 @@
+Include WT_Menu.def
+Include hud.def
+Background #None
+
+//================================ Victory by PeterJ
+
+def	x	320
+
+Font	BgF		HugeChars 18 24 0x3FFFFFFF 0x7F000000 Circle Center Center
+
+
+//================================ Bg
+item
+{
+	Image Bg/victory 640 480
+	Pos 0 0
+}
+
+
+//================================ Bg
+item
+{
+	Image Menu/RoundBg01 640 UpBarH Rounded
+	Pos x 0 Center Up
+	Font BgF
+}
+
+
+item
+{
+	Image Menu/RoundBg01 340 220 Rounded
+	Pos x 240
+	Font BgF
+}
+
+
+item
+{
+	Image Menu/RoundBg01 640 UpBarH Rounded
+	Pos x 480 Center Down
+	Font BgF
+}
+
+//================================ Title
+def	y	UpBarH 0.5
+
+item Compet
+{
+	Text Congratulation
+	
+	add yt -dyt
+	Pos x yt Center Center
+	add yt dyt
+	Font TitleF
+
+	OnEnter
+	Unselectable
+
+	OnAction
+	{
+		PlaySound 2
+
+	}
+}
+
+
+
+
+
+//================================ AO12
+item
+{
+
+	Image Ico/Trophies/AO12 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_AO12
+	ShowIf /Intern/GameType 2
+}
+
+//================================ RG
+item
+{
+
+	Image Ico/Trophies/RG 140 140
+	Pos x 125 center 
+	ShowIf /Intern/SelectedHUD HUD_RG
+	ShowIf /Intern/GameType 2
+}
+
+//================================ WIM
+item
+{
+
+	Image Ico/Trophies/WIM 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_WIM
+	ShowIf /Intern/GameType 2
+}
+
+
+//================================ USO
+item
+{
+
+	Image Ico/Trophies/USO 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_USO
+	ShowIf /Intern/GameType 2
+}
+
+//================================ ATPWTF
+item
+{
+
+	Image Ico/Trophies/ATPWTF 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_ATPWTF
+	ShowIf /Intern/GameType 2
+}
+
+//================================ IWELLS
+item
+{
+
+	Image Ico/Trophies/IWELLS 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_IWELLS
+	ShowIf /Intern/GameType 2
+}
+ 
+//================================ MIAMI
+item
+{
+
+	Image Ico/Trophies/MIAMI 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MIAMI
+	ShowIf /Intern/GameType 2
+}
+
+//================================ MCARLO
+item
+{
+
+	Image Ico/Trophies/MCARLO 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MCARLO
+	ShowIf /Intern/GameType 2
+}
+
+//================================ MADRID
+item
+{
+
+	Image Ico/Trophies/MADRID 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MADRID
+	ShowIf /Intern/GameType 2
+}
+
+//================================ CANADA
+item
+{
+
+	Image Ico/Trophies/CANADA 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_CANADA
+	ShowIf /Intern/GameType 2
+}
+
+//================================ CINCINNATI
+item
+{
+
+	Image Ico/Trophies/CINCINNATI 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_CINCINNATI
+	ShowIf /Intern/GameType 2
+}
+
+//================================ PARIS
+item
+{
+
+	Image Ico/Trophies/PARIS 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_PARISBERCY
+	ShowIf /Intern/GameType 2
+}
+
+//================================ ROMA
+item
+{
+
+	Image Ico/Trophies/ROMA 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_ROMA
+	ShowIf /Intern/GameType 2
+}
+
+//================================ SHANGHAI
+item
+{
+
+	Image Ico/Trophies/SHANGHAI 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_SHANGHAI
+	ShowIf /Intern/GameType 2
+}
+
+//================================ ACAPULCO
+item
+{
+
+	Image Ico/Trophies/ACAPULCO 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_ACAPULCO
+	ShowIf /Intern/GameType 2
+}
+
+//================================ BARCELONA
+item
+{
+
+	Image Ico/Trophies/BARCELONA 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_BARCELONA
+	ShowIf /Intern/GameType 2
+}
+
+//================================ BEIJING
+item
+{
+
+	Image Ico/Trophies/BEIJING 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_BEIJING
+	ShowIf /Intern/GameType 2
+}
+
+//================================ DUBAI
+item
+{
+
+	Image Ico/Trophies/DUBAI 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_DUBAI
+	ShowIf /Intern/GameType 2
+}
+
+//================================ HALLE
+item
+{
+
+	Image Ico/Trophies/HALLE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_HALLE
+	ShowIf /Intern/GameType 2
+}
+
+//================================ HAMBURG
+item
+{
+
+	Image Ico/Trophies/HAMBURG 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_HAMBURG
+	ShowIf /Intern/GameType 2
+}
+
+//================================ LONDON
+item
+{
+
+	Image Ico/Trophies/LONDON 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_LONDON
+	ShowIf /Intern/GameType 2
+}
+
+//================================ BASEL
+item
+{
+
+	Image Ico/Trophies/BASEL 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_BASEL
+	ShowIf /Intern/GameType 2
+}
+
+//================================ MONTPELLIER
+item
+{
+
+	Image Ico/Trophies/MONTPELLIER 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MONTPELLIER
+	ShowIf /Intern/GameType 2
+}
+
+//================================ DOHA
+item
+{
+
+	Image Ico/Trophies/DOHA 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_DOHA
+	ShowIf /Intern/GameType 2
+}
+
+//================================ MARSEILLE
+item
+{
+
+	Image Ico/Trophies/MARSEILLE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MARSEILLE
+	ShowIf /Intern/GameType 2
+}
+
+//================================ SOFIA
+item
+{
+
+	Image Ico/Trophies/SOFIA 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_SOFIA
+	ShowIf /Intern/GameType 2
+}
+
+//================================ CHENNAI
+item
+{
+
+	Image Ico/Trophies/BASEL 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_CHENNAI
+	ShowIf /Intern/GameType 2
+}
+
+//================================ AUCKLAND
+item
+{
+
+	Image Ico/Trophies/AUCKLAND 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_AUCKLAND
+	ShowIf /Intern/GameType 2
+}
+
+//================================ BRISBANE
+item
+{
+
+	Image Ico/Trophies/BRISBANE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_BRISBANE
+	ShowIf /Intern/GameType 2
+}
+
+//================================ SYDNEY
+item
+{
+
+	Image Ico/Trophies/SYDNEY 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_SYDNEY
+	ShowIf /Intern/GameType 2
+}
+
+//================================ QUITO
+item
+{
+
+	Image Ico/Trophies/QUITO 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_QUITO
+	ShowIf /Intern/GameType 2
+}
+
+//================================ MEMPHIS
+item
+{
+
+	Image Ico/Trophies/MEMPHIS 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MEMPHIS
+	ShowIf /Intern/GameType 2
+}
+
+//================================ BAIRES
+item
+{
+
+	Image Ico/Trophies/BAIRES 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_BAIRES
+	ShowIf /Intern/GameType 2
+}
+
+//================================ ROTTERDAM
+item
+{
+
+	Image Ico/Trophies/ROTTERDAM 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_ROTTERDAM
+	ShowIf /Intern/GameType 2
+}
+
+//================================ SAOPAULO
+item
+{
+
+	Image Ico/Trophies/SAOPAULO 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_SAOPAULO
+	ShowIf /Intern/GameType 2
+}
+
+//================================ TOKYO
+item
+{
+
+	Image Ico/Trophies/TOKYO 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_TOKYO
+	ShowIf /Intern/GameType 2
+}
+
+//================================ SHENZHEN
+item
+{
+
+	Image Ico/Trophies/SHENZHEN 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_SHENZHEN
+	ShowIf /Intern/GameType 2
+}
+
+//================================ DBEACH
+item
+{
+
+	Image Ico/Trophies/DBEACH 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_DBEACH
+	ShowIf /Intern/GameType 2
+}
+
+//================================ HOUSTON
+item
+{
+
+	Image Ico/Trophies/HOUSTON 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_HOUSTON
+	ShowIf /Intern/GameType 2
+}
+
+//================================ BUCHAREST
+item
+{
+
+	Image Ico/Trophies/BUCHAREST 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_BUCHAREST
+	ShowIf /Intern/GameType 2
+}
+
+//================================ OEIRAS
+item
+{
+
+	Image Ico/Trophies/OEIRAS 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_OEIRAS
+	ShowIf /Intern/GameType 2
+}
+
+//================================ MUNICH
+item
+{
+
+	Image Ico/Trophies/MUNICH 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MUNICH
+	ShowIf /Intern/GameType 2
+}
+
+//================================ GENEVE
+item
+{
+
+	Image Ico/Trophies/GENEVE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_GENEVE
+	ShowIf /Intern/GameType 2
+}
+
+//================================ NICE
+item
+{
+
+	Image Ico/Trophies/NICE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_NICE
+	ShowIf /Intern/GameType 2
+}
+
+//================================ NOTTIN
+item
+{
+
+	Image Ico/Trophies/NOTTIN 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_NOTTIN
+	ShowIf /Intern/GameType 2
+}
+
+//================================ TOPSHEFT
+item
+{
+
+	Image Ico/Trophies/TOPSHEFT 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_TOPSHEFT
+	ShowIf /Intern/GameType 2
+}
+
+//================================ NEWPORT
+item
+{
+
+	Image Ico/Trophies/NEWPORT 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_NEWPORT
+	ShowIf /Intern/GameType 2
+}
+
+//================================ BASTAD
+item
+{
+
+	Image Ico/Trophies/BASTAD 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_BASTAD
+	ShowIf /Intern/GameType 2
+}
+
+//================================ STUTTGART
+item
+{
+
+	Image Ico/Trophies/STUTTGART 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_STUTTGART
+	ShowIf /Intern/GameType 2
+}
+
+//================================ CROATIE
+item
+{
+
+	Image Ico/Trophies/CROATIE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_CROATIE
+	ShowIf /Intern/GameType 2
+}
+
+//================================ ATLANTA
+item
+{
+
+	Image Ico/Trophies/ATLANTA 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_ATLANTA
+	ShowIf /Intern/GameType 2
+}
+
+//================================ GSTAAD
+item
+{
+
+	Image Ico/Trophies/GSTAAD 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_GSTAAD
+	ShowIf /Intern/GameType 2
+}
+
+//================================ ISTANBUL
+item
+{
+
+	Image Ico/Trophies/ISTANBUL 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_ISTANBUL
+	ShowIf /Intern/GameType 2
+}
+
+//================================ KITZBUL
+item
+{
+
+	Image Ico/Trophies/KITZBUL 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_KITZBUL
+	ShowIf /Intern/GameType 2
+}
+
+//================================ WASHINGTON
+item
+{
+
+	Image Ico/Trophies/WASHINGTON 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_WASHINGTON
+	ShowIf /Intern/GameType 2
+}
+
+//================================ METZ
+item
+{
+
+	Image Ico/Trophies/METZ 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_METZ
+	ShowIf /Intern/GameType 2
+}
+
+//================================ WSALEM
+item
+{
+
+	Image Ico/Trophies/WSALEM 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_WSALEM
+	ShowIf /Intern/GameType 2
+}
+
+//================================ KLUMPUR
+item
+{
+
+	Image Ico/Trophies/KLUMPUR 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_KLUMPUR
+	ShowIf /Intern/GameType 2
+}
+
+//================================ STPETERSBURG
+item
+{
+
+	Image Ico/Trophies/STPETERSBURG 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_STPETERSBURG
+	ShowIf /Intern/GameType 2
+}
+
+//================================ MOSCOW
+item
+{
+
+	Image Ico/Trophies/MOSCOW 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_MOSCOW
+	ShowIf /Intern/GameType 2
+}
+
+//================================ STOCKHOLM
+item
+{
+
+	Image Ico/Trophies/STOCKHOLM 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_STOCKHOLM
+	ShowIf /Intern/GameType 2
+}
+
+//================================ VIENNE
+item
+{
+
+	Image Ico/Trophies/VIENNE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_VIENNE
+	ShowIf /Intern/GameType 2
+}
+
+//================================ RIO
+item
+{
+
+	Image Ico/Trophies/RIO 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_RIO
+	ShowIf /Intern/GameType 2
+}
+
+//================================ CASABLANCA
+item
+{
+
+	Image Ico/Trophies/CASABLANCA 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_CASABLANCA
+	ShowIf /Intern/GameType 2
+}
+
+//================================ ANTWERP
+item
+{
+
+	Image Ico/Trophies/ANTWERP 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_ANTWERP
+	ShowIf /Intern/GameType 2
+}
+ 
+//================================ CABOS
+item
+{
+
+	Image Ico/Trophies/CABOS 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_CABOS
+	ShowIf /Intern/GameType 2
+} 
+//================================ DAVISCUP
+item
+{
+
+	Image Ico/Trophies/DAVISCUP 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_DAVISCUP
+	ShowIf /Intern/GameType 2
+}
+//================================ CHALENGER
+item
+{
+
+	Image Ico/Trophies/CHALENGER 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_CHGR
+	ShowIf /Intern/GameType 2
+}
+//================================ FUTURE
+item
+{
+
+	Image Ico/Trophies/FUTURE 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_DEF
+	ShowIf /Intern/GameType 2
+}
+//================================ OLYMPICS
+item
+{
+
+	Image Ico/Trophies/OLYMPICS 140 140
+	Pos x 125 center
+	ShowIf /Intern/SelectedHUD HUD_OLYMPICS
+	ShowIf /Intern/GameType 2
+}
+//================================ YouWon
+
+
+item
+{
+	Text YouWon /WT_Intern/TrnName 
+	Pos x 300 //center bottom
+	Font TitleF
+
+	MaxTextPixelPerLine 320
+  ShowIfNot /WT_Intern/TrnNum 0
+}
+
+
+item
+{
+	Text WonTeamCup 
+	Pos x 300 //center bottom
+	Font TitleF
+
+	MaxTextPixelPerLine 320
+  ShowIf /WT_Intern/TrnNum 0
+}
+
+
+//================================ Back
+def	y	UpBarH -0.5
+add y	480
+
+item
+{
+	Image Ico/Done 48 48
+	Pos 320 y Center Center
+	Selected
+
+	OnAction
+	{
+	  SetCfg /WT_Intern/Victory 1
+		MenuBack
+	}
+}

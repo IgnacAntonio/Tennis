@@ -1,0 +1,41 @@
+Include Menu.Def
+
+def	FrameX	-40
+def	FrameY	50
+
+def	FrameW	724
+def	FrameH	324
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		CoreSans 18 28 0xFFFFFFFF 0 Rectangle Center Center Shadow0 AS1
+Font	SmallF		CoreSans 10 10 0xFFFFFFFF 0 Shadow0
+Font	VSmallF		CoreSans 9 9 0xFFFFFFFF 0 Shadow0
+Font	TotalF		CoreSans 10 10 0xFFFFFFFF 0 Center Center Shadow0
+Font	Total2F		CoreSans 10 10 0xFFFFFFFF 0 Center Center Shadow0
+Font	SeedF 		CoreSans 7 7 0xFFFFFFFF 0 Center Center Shadow0
+
+// font for the summary
+Font	SummaryF	CoreSans 16 19 0xFF02F1CC 0 Center Center Shadow0
+// font for the score
+Font	ScoreF		CoreSans 14 14 0xFF06281F 0 Rectangle Center Center Shadow0 AS1
+// font for the names
+Font	NameF 		CoreSans 14 14 0xFFFFFFFF 0 Center Center Shadow0
+// font for the time
+Font	TimeF 		Din 11 13 0xFFFFFFFF 0 Center Center Shadow0
+// font for the stats (label)
+Font	StatLabelF 	CoreSans 9 9 0xFF156042 0 Center Center Shadow0
+// font for the stats (value)
+Font	StatValueF 	CoreSans 13 13 0xFFFFFFFF 0 Center Center Shadow0
+// font for the stats (value)
+Font	StatValue2F 	CoreSans 11 11 0xFFFFFFFF 0 Center Center Shadow0

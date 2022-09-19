@@ -1,0 +1,66 @@
+"Installscript"
+{
+	"Registry"
+	{
+		"HKEY_CURRENT_USER\\Software\\ManaGames\\Steam\\TE2013"
+		{
+			"string"
+			{
+				"english"
+				{
+					"language"		"En"
+				}
+				"french"
+				{
+					"language"		"Fr"
+				}
+				"german"
+				{
+					"language"		"De"
+				}
+				"italian"
+				{
+					"language"		"It"
+				}
+				"spanish"
+				{
+					"language"		"Es"
+				}
+				"portuguese"
+				{
+					"language"		"Pt"
+				}
+				"dutch"
+				{
+					"language"		"Nl"
+				}
+				"polish"
+				{
+					"language"		"Pl"
+				}
+				"hungarian"
+				{
+					"language"		"Hu"
+				}
+			}
+		}
+	}
+	"Run Process"
+	{
+		"OggDirectShowFilter"
+		{
+			"HasRunKey"		"HKEY_LOCAL_MACHINE\\Software\\ManaGames\\OggDS"
+			"process 1"		"%INSTALLDIR%\\Music\\Ogg DirectShow Filter Setup.exe"
+			"command 1"		"/S"
+			"NoCleanUp"		"1"
+		}
+	}
+	"Firewall"
+	{
+		"Tennis Elbow 2013 Steam"		"%INSTALLDIR%\\TennisElbow.exe"
+	}
+}
+"kvsignatures"
+{
+	"Installscript"		"798f78db321f20dd1acbefe42af9ee2546ffb4188ea8745d9e5db207a43fcc12b06f38df4f90705bbcaae3c5d16a0dc37de81c39a4d95dd33c8a5d65df97869ba3228c8d476370fe4606c29a3ea04f5c149767f7d6091f2f41a367c1e50db4882195b99407d20065fb3de55c89e9bf109392a154b795f6ff3aaf60855dc23eaa"
+}

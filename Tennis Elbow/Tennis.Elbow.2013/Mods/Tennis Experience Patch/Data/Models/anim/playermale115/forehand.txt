@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 26.0 26.0
+Speed: 1.0
+
+
+Author: Rharm | RublevV2

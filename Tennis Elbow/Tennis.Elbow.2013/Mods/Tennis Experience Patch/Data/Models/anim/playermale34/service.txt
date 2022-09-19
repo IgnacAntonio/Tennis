@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 59.0 59.0 30.0	// Hit ball - Max Extension- Throw Ball
+
+Author: Lucian Cucuteanu | David Ferrer

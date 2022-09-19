@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 24.0 24.0
+Speed: 1.0
+Acceleration: ForeHand_acc
+
+Author: Megyaem | F. Lopez norm+acc

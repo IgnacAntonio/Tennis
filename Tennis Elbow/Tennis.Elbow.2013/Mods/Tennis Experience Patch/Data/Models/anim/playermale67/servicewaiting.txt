@@ -1,0 +1,7 @@
+Anim: ServiceWaiting.x
+Info: 0 18 32 21
+
+HandBounce: -48.9 -24.2 65.0 0.132 0.675 -0.726
+
+Author: Megyaem | Leo Mayer
+

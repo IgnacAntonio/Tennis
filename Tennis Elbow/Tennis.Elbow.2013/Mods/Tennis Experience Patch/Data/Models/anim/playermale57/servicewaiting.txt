@@ -1,0 +1,8 @@
+Anim: ServiceWaiting.x
+Info: 5 10 30 13	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+HandBounce: -27.1 19.3 93.2 0.034 -0.011 -0.999
+
+Author: emmainf | F.Mayer
+
+

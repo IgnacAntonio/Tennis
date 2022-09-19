@@ -1,0 +1,660 @@
+Include Hud.Def
+
+Background #Game
+
+WideScreen
+ShrinkTo 0 0	// Don't shrink
+
+item
+{
+	OnEnter
+
+	OnAction
+	{
+		SetCfg /Intern/IG_InfoX -InfoBarW
+		UpdateCamera3d /Camera/Elevation /Camera/Aperture
+		SetCfg /Intern/PlayerCfg /WorldTour/PlayerCfg
+		//=== Player Name Formatting Example
+		// f = First Name Untouched ; F = First Name Uppercase
+		// l = Last Name Untouched ; L = Last Name Uppercase
+		// 3. => Max of 3 Letters, add a point if shortened or followed by more text without space
+//		FormatTeamName /Intern/Team1s 1 "f3.L5."
+//		FormatTeamName /Intern/Team2s 2 "F l"
+//		// In-Game current formatting:
+//		FormatTeamName /Intern/Team1s 1 "f1.l3"
+	}
+	OnActionIf /Intern/GameType 1
+	{
+		SetCfg /Intern/PlayerCfg /TrainingClub/PlayerCfg
+	}
+
+	Invisible
+}
+
+//======================== Management of Specific HUD 
+item HUD_AustralianOpen
+{
+	SubMenuIf /Intern/SelectedHUD HUD_AO HUD_AO AO_HudAbove
+}
+item HUD_AustralianOpen11
+{
+	SubMenuIf /Intern/SelectedHUD HUD_AO11 HUD_AO11 AO11_HudAbove
+}
+item HUD_AustralianOpen12
+{
+	SubMenuIf /Intern/SelectedHUD HUD_AO12 HUD_AO12 AO12_HudAbove
+}
+
+item HUD_RolandGarros
+{
+	SubMenuIf /Intern/SelectedHUD HUD_RG HUD_RG RG_HudAbove
+}
+
+item HUD_Wimbledon
+{
+	SubMenuIf /Intern/SelectedHUD HUD_WIM HUD_WIM WIM_HudAbove
+}
+
+item HUD_USOpen
+{
+	SubMenuIf /Intern/SelectedHUD HUD_USO HUD_USO USO_HudAbove
+}
+
+item HUD_ATP1000
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATP1000 HUD_ATP1000 A1000_HudAbove
+}
+
+item HUD_ATP500
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATP500 HUD_ATP500 A500_HudAbove
+}
+
+item HUD_ATP250
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATP250 HUD_ATP250 A250_HudAbove
+}
+
+item HUD_ATPWTF
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATPWTF HUD_ATPWTF AWTF_HudAbove
+}
+
+item HUD_DAVISCUP
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DAVISCUP HUD_DAVISCUP DAVIS_HudAbove
+}
+
+item HUD_Londres2012
+{
+	SubMenuIf /Intern/SelectedHUD HUD_OLYMPICS HUD_OLYMPICS OLYMPICS_HudAbove
+}
+
+item HUD_Default
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DEF HUD_DEF DEF_HudAbove
+}
+
+item HUD_Challenger
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CHGR HUD_CHGR CHGR_HudAbove
+}
+
+item HUD_IndianWells
+{
+	SubMenuIf /Intern/SelectedHUD HUD_IWELLS HUD_IWELLS IWELLS_HudAbove
+}
+
+item HUD_Miami
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MIAMI HUD_MIAMI MIAMI_HudAbove
+}
+
+item HUD_MonteCarlo
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MCARLO HUD_MCARLO MCARLO_HudAbove
+}
+
+item HUD_Madrid
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MADRID HUD_MADRID MADRID_HudAbove
+}
+
+item HUD_Roma
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ROMA HUD_ROMA ROMA_HudAbove
+}
+
+item HUD_Toronto
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CANADA HUD_CANADA CANADA_HudAbove
+}
+
+item HUD_Cincinnati
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CINCINNATI HUD_CINCINNATI CINCINNATI_HudAbove
+}
+
+item HUD_Shanghai
+{
+	SubMenuIf /Intern/SelectedHUD HUD_SHANGHAI HUD_SHANGHAI SHANGHAI_HudAbove
+}
+
+item HUD_ParisBercy
+{
+	SubMenuIf /Intern/SelectedHUD HUD_PARISBERCY HUD_PARISBERCY PARISBERCY_HudAbove
+}
+
+item HUD_Rotterdam
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ROTTERDAM HUD_ROTTERDAM ROTTERDAM_HudAbove
+}
+
+item HUD_Memphis
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MEMPHIS HUD_MEMPHIS MEMPHIS_HudAbove
+}
+
+item HUD_Acapulco
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ACAPULCO HUD_ACAPULCO ACAPULCO_HudAbove
+}
+
+item HUD_Dubai
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DUBAI HUD_DUBAI DUBAI_HudAbove
+}
+
+item HUD_Barcelona
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BARCELONA HUD_BARCELONA BARCELONA_HudAbove
+}
+
+item HUD_Tokyo
+{
+	SubMenuIf /Intern/SelectedHUD HUD_TOKYO HUD_TOKYO TOKYO_HudAbove
+}
+
+item HUD_Beijing
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BEIJING HUD_BEIJING BEIJING_HudAbove
+}
+
+item HUD_Basel
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BASEL HUD_BASEL BASEL_HudAbove
+}
+
+item HUD_Antwerp
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ANTWERP HUD_ANTWERP ANTWERP_HudAbove
+}
+
+item HUD_Hamburg
+{
+	SubMenuIf /Intern/SelectedHUD HUD_HAMBURG HUD_HAMBURG HAMBURG_HudAbove
+}
+
+item HUD_Oeiras
+{
+	SubMenuIf /Intern/SelectedHUD HUD_OEIRAS HUD_OEIRAS OEIRAS_HudAbove
+}
+
+item HUD_Doha
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DOHA HUD_DOHA DOHA_HudAbove
+}
+
+item HUD_Geneve
+{
+	SubMenuIf /Intern/SelectedHUD HUD_GENEVE HUD_GENEVE GENEVE_HudAbove
+}
+
+item HUD_Brisbane
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BRISBANE HUD_BRISBANE BRISBANE_HudAbove
+}
+
+item HUD_Montpellier
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MONTPELLIER HUD_MONTPELLIER MONTPELLIER_HudAbove
+}
+
+item HUD_Baires
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BAIRES HUD_BAIRES BAIRES_HudAbove
+}
+
+item HUD_Bucharest
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BUCHAREST HUD_BUCHAREST BUCHAREST_HudAbove
+}
+
+item HUD_Moscow
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MOSCOW HUD_MOSCOW MOSCOW_HudAbove
+}
+
+item HUD_Klumpur
+{
+	SubMenuIf /Intern/SelectedHUD HUD_KLUMPUR HUD_KLUMPUR KLUMPUR_HudAbove
+}
+
+item HUD_Marseille
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MARSEILLE HUD_MARSEILLE MARSEILLE_HudAbove
+}
+
+item HUD_Dbeach
+{
+	SubMenuIf /Intern/SelectedHUD HUD_DBEACH HUD_DBEACH DBEACH_HudAbove
+}
+
+item HUD_Munich
+{
+	SubMenuIf /Intern/SelectedHUD HUD_MUNICH HUD_MUNICH MUNICH_HudAbove
+}
+
+item HUD_Sofia
+{
+	SubMenuIf /Intern/SelectedHUD HUD_SOFIA HUD_SOFIA SOFIA_HudAbove
+}
+
+item HUD_Metz
+{
+	SubMenuIf /Intern/SelectedHUD HUD_METZ HUD_METZ METZ_HudAbove
+}
+
+item HUD_Halle
+{
+	SubMenuIf /Intern/SelectedHUD HUD_HALLE HUD_HALLE HALLE_HudAbove
+}
+
+item HUD_Atlanta
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ATLANTA HUD_ATLANTA ATLANTA_HudAbove
+}
+
+item HUD_Wsalem
+{
+	SubMenuIf /Intern/SelectedHUD HUD_WSALEM HUD_WSALEM WSALEM_HudAbove
+}
+
+item HUD_Newport
+{
+	SubMenuIf /Intern/SelectedHUD HUD_NEWPORT HUD_NEWPORT NEWPORT_HudAbove
+}
+
+item HUD_Bastad
+{
+	SubMenuIf /Intern/SelectedHUD HUD_BASTAD HUD_BASTAD BASTAD_HudAbove
+}
+
+item HUD_Nice
+{
+	SubMenuIf /Intern/SelectedHUD HUD_NICE HUD_NICE NICE_HudAbove
+}
+
+item HUD_Stuttgart
+{
+	SubMenuIf /Intern/SelectedHUD HUD_STUTTGART HUD_STUTTGART STUTTGART_HudAbove
+}
+
+item HUD_Topshelf
+{
+	SubMenuIf /Intern/SelectedHUD HUD_TOPSHELF HUD_TOPSHELF TOPSHELF_HudAbove
+}
+
+item HUD_Cordoba
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CORDOBA HUD_CORDOBA CORDOBA_HudAbove
+}
+
+item HUD_RIO
+{
+	SubMenuIf /Intern/SelectedHUD HUD_RIO HUD_RIO RIO_HudAbove
+}
+
+item HUD_WASHINGTON
+{
+	SubMenuIf /Intern/SelectedHUD HUD_WASHINGTON HUD_WASHINGTON WASHINGTON_HudAbove
+}
+
+item HUD_AUCKLAND
+{
+	SubMenuIf /Intern/SelectedHUD HUD_AUCKLAND HUD_AUCKLAND AUCKLAND_HudAbove
+}
+
+item HUD_CROATIE
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CROATIE HUD_CROATIE CROATIE_HudAbove
+}
+
+item HUD_STOCKHOLM
+{
+	SubMenuIf /Intern/SelectedHUD HUD_STOCKHOLM HUD_STOCKHOLM STOCKHOLM_HudAbove
+}
+
+item HUD_STPETERSBURG
+{
+	SubMenuIf /Intern/SelectedHUD HUD_STPETERSBURG HUD_STPETERSBURG STPETERSBURG_HudAbove
+}
+
+item HUD_SaoPaulo
+{
+	SubMenuIf /Intern/SelectedHUD HUD_SAOPAULO HUD_SAOPAULO SAOPAULO_HudAbove
+}
+
+item HUD_Sydney
+{
+	SubMenuIf /Intern/SelectedHUD HUD_SYDNEY HUD_SYDNEY SYDNEY_HudAbove
+}
+
+item HUD_London
+{
+	SubMenuIf /Intern/SelectedHUD HUD_LONDON HUD_LONDON LONDON_HudAbove
+}
+
+item HUD_Vienne
+{
+	SubMenuIf /Intern/SelectedHUD HUD_VIENNE HUD_VIENNE VIENNE_HudAbove
+}
+
+item HUD_Istanbul
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ISTANBUL HUD_ISTANBUL ISTANBUL_HudAbove
+}
+
+item HUD_Shenzhen
+{
+	SubMenuIf /Intern/SelectedHUD HUD_SHENZHEN HUD_SHENZHEN SHENZHEN_HudAbove
+}
+
+item HUD_Cabos
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CABOS HUD_CABOS CABOS_HudAbove
+}
+
+item HUD_Nottin
+{
+	SubMenuIf /Intern/SelectedHUD HUD_NOTTIN HUD_NOTTIN NOTTIN_HudAbove
+}
+
+item HUD_Casablanca
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CASABLANCA HUD_CASABLANCA CASABLANCA_HudAbove
+}
+
+item HUD_Chennai
+{
+	SubMenuIf /Intern/SelectedHUD HUD_CHENNAI HUD_CHENNAI CHENNAI_HudAbove
+}
+
+item HUD_Kitzbul
+{
+	SubMenuIf /Intern/SelectedHUD HUD_KITZBUL HUD_KITZBUL KITZBUL_HudAbove
+}
+
+item HUD_Houston
+{
+	SubMenuIf /Intern/SelectedHUD HUD_HOUSTON HUD_HOUSTON HOUSTON_HudAbove
+}
+
+item HUD_Gstaad
+{
+	SubMenuIf /Intern/SelectedHUD HUD_GSTAAD HUD_GSTAAD GSTAAD_HudAbove
+}
+
+item HUD_WC18
+{
+	SubMenuIf /Intern/SelectedHUD HUD_WC18 HUD_WC18 WC18_HudAbove
+}
+
+item HUD_LAVERCUP
+{
+	SubMenuIf /Intern/SelectedHUD HUD_LAVERCUP HUD_LAVERCUP LAVERCUP_HudAbove
+}
+item HUD_ITF25S
+{
+	SubMenuIf /Intern/SelectedHUD HUD_ITF25S HUD_ITF25S ITF25S_HudAbove
+}
+
+//======================== Pause / IG_Message
+item	IG_Message
+{
+	CycleButton #Text /Intern/IGM_Param1 /Intern/IGM_Param2
+	Pos 320 240
+
+	Font BigF
+
+	OnAction
+	{
+		SlideCfg /Intern/IG_Message 0 255
+	}
+
+	UnSelectable
+	ShowIfNot /Intern/IG_Message -1
+}
+
+//======================== Chat
+
+item
+{
+	SubMenu HudChatPreset
+
+	ShowIfNot /Intern/ShiftDown 0
+	ShowIfNot /NW_Intern/Status 0
+}
+
+
+item
+{
+	SubMenu HudChat
+
+	ShowIf /Intern/MatchEnd 1
+	ShowIf /Intern/InReplay 0
+	ShowIf /Intern/IG_Message 0 !Or
+	ShowIf /NW_Intern/OtherPeerState 1 !Or
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item
+{
+	SubMenu HudChatAbove
+
+	ShowIfNot /Intern/MatchEnd 1
+	ShowIfNot /Intern/IG_Message 0
+	ShowIfNot /NW_Intern/OtherPeerState 1
+	ShowIfNot /NW_Intern/Status 0
+}
+
+//======================== Other peer state
+item NW_OPState
+{
+	CycleButton #Text /NW_Intern/Other
+	Pos 320 150
+
+	Font BigF
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/OtherPeerState 1 255
+	}
+
+	UnSelectable
+	ShowIfNot /NW_Intern/OtherPeerState 0
+	ShowIf /Intern/InReplay 0
+}
+
+
+item NW_Cant
+{
+	CycleButton #Text
+	Pos 320 200
+	Font BigF
+
+	OnAction
+	{
+		SlideCfg /NW_Intern/CantNum 0 10
+	}
+
+	UnSelectable
+	TimeAlpha /NW_Intern/CantTime 750
+}
+
+
+//======================== NW Trial Time
+def IcoS	32
+def x	30
+def y	IcoS 1.5
+def dx	50
+
+Font	TimeF	HugeChars 15 20 0xFF4F8FFF 0x7F000000 Circle Center Center Shadow
+
+item
+{
+	Text /NW_Intern/TrialTime
+	Pos 30 y
+	add x 50
+	Font TimeF
+
+	ShowIfNot /NW_Intern/TrialTime -100 -0.01
+}
+
+//======================== Network icons
+item
+{
+	Image Ico/NW_Slow IcoS IcoS
+	Pos x y
+	Font IcoF
+	add x IcoS 1.25
+	TimeAlpha /NW_Intern/TimeSlow 1000
+}
+
+
+item
+{
+	Image Ico/NW_Drop IcoS IcoS
+	Pos x y
+	Font IcoF
+	add x IcoS 1.5
+	TimeAlpha /NW_Intern/TimeDrop 1000
+}
+
+
+item
+{
+	Text NW_Resync
+	Pos 320 160
+
+	Font BigF
+
+	TimeAlpha /NW_Intern/TimeResync+500 2000
+}
+
+
+//======================== Ping
+Font	PingF	HugeChars 9 12 0xFF4F8FFF 0x7F000000 Circle Right Center Shadow
+
+item
+{
+	Text NW_InPing /NW_Intern/InPing
+	Pos 145 20
+	add x 50
+	Font PingF
+
+	ShowIfNot /NW_Intern/Status 0
+}
+
+//======================== Strike Count
+item
+{
+	Text #%02.f /Intern/StrikeCount
+	Pos /Intern/InfoBoardX /Intern/InfoBoardY-2 Right Bottom
+	Font BigF
+
+	ShowIf /Menu/ShowStrikeCount 1
+}
+
+//======================== InfoBar
+item
+{
+	SubMenu HudInfo
+	Pos /Intern/IG_InfoX 20
+
+	ShowIf /Intern/IG_InfoS -0.999f 10.0f
+	ShowIfNot /Intern/HudInfo 2 4
+}
+
+
+//======================== SweetSpot
+def IcoS	64
+
+item SweetSpot01
+{
+	CycleButton #ImageGI
+	Image Ico/SweetSpotGreen IcoS IcoS
+	Pos 8 /Intern/CarretY Left Down
+	Font IcoF
+
+	OnAction
+	{
+		SlideCfg /Intern/HudSweetSpot 0 2
+	}
+
+	OnRender
+	{
+		SetCfg /Intern/CarretY 282
+		MulAddMulCfg /Intern/CarretY 1 /Intern/SweetSpotSide -190
+	}
+
+	UnSelectable
+	TimeAlpha /Intern/TimeSweetSpot+2000 500
+}
+
+item SweetSpot02
+{
+	Image Ico/SweetSpotOrange IcoS IcoS
+	Font IcoF
+	Invisible
+
+	TimeAlpha /Intern/TimeSweetSpot+2000 500
+}
+
+item SweetSpot03
+{
+	Image Ico/SweetSpotRed IcoS IcoS
+	Font IcoF
+	Invisible
+
+	TimeAlpha /Intern/TimeSweetSpot+2000 500
+}
+
+//======================== Form
+item HudFormLeftUp
+{
+	Pos /Intern/WideBorderLeft 70
+	SubMenu HudFormLeft 2
+	ShowIfNot /InGame_p2/ShortForm 2
+}
+
+item HudFormLeftDown
+{
+	Pos /Intern/WideBorderLeft 430
+	SubMenu HudFormLeft 1
+	ShowIfNot /InGame_p1/ShortForm 2
+}
+
+item HudFormRightUp
+{
+	Pos /Intern/WideBorderRight 70
+	SubMenu HudFormRight 4
+	ShowIfNot /InGame_p4/ShortForm 2
+}
+
+item HudFormRightDown
+{
+	Pos /Intern/WideBorderRight 430
+	SubMenu HudFormRight 3
+	ShowIfNot /InGame_p3/ShortForm 2
+}

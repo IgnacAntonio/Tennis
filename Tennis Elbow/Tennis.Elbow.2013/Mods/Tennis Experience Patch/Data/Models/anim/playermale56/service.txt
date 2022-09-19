@@ -1,0 +1,8 @@
+Anim: Service.x
+Info: 72 72 44.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -7.7 -8.1 243.7 0.230 -0.204 0.952
+HandThrow: -14.5 8.5 192.4 0.183 0.274 0.944
+
+Author: emmainf | Kohlschreiber
+

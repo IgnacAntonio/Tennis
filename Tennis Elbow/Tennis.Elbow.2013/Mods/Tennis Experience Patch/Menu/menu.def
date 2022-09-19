@@ -1,0 +1,13 @@
+Font	Default		HugeChars 18 24 0xFFFFFFFF 0x2F000000 Circle Center Center Shadow LH1.15
+Font	Selected	HugeChars 20 26 0xEFFFFFFF 0xBF3F5F6F SelectedBg
+
+Font	Title		HugeTitle 30 40 0xFF2E4BBE 0x7F000000 Shadow0
+
+Font	Apply		HugeChars 19 25 0xEFFFFFFF 0xDFFF2F1F SelectedBg Center Center
+
+Background		Bg/Main
+SelectSymbolScale	0.66
+
+def	BnkNumAdd	10000	// Used when PlayerNum is from Bank Number, not Rank
+
+def	MaxYear		16

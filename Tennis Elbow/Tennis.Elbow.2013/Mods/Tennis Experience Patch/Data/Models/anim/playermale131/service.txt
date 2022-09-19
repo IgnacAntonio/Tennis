@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 60.0 60.0 33.0	// Hit ball - Max Extension - Throw Ball
+
+Author: Rharm | Basilashvili
+

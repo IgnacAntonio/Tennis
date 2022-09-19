@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 58 58 22  // Hit ball - Max Extension - Throw Ball
+
+Author: phucnguyen0209 | Youzhny
+
+SweetSpot: 0.1 -48.1 241.2 -0.094 -0.247 0.964
+HandThrow: -41.3 -15.1 185.7 0.086 0.407 0.909

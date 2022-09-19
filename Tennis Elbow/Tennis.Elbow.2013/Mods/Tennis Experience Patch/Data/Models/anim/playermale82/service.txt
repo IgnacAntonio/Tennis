@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 82.0 82.0 53.0	// Hit ball - Max Extension - Throw Ball
+
+Author: emmainf | Klizan

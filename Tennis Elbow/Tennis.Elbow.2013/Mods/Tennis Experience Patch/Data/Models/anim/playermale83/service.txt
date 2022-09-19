@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 99.00 99.00 65.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Kevin Anderson

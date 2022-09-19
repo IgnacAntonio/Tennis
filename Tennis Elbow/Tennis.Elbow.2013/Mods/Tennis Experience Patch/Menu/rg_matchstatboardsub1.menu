@@ -1,0 +1,249 @@
+Include RG_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	0
+def	dy	27
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+	add y dy
+
+//====== 1stServe
+	add y dy
+
+Item
+{
+	Text /$ts1/1stServe
+	Font StatValue2F
+	pos xl+93 y right center
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	Font StatValueF
+	pos xr-68 y right center
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat2 FrameW FrameH
+   Pos 0 -120 
+}
+
+//====== Win1stServe
+	add y 20
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl+93 y right center
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValue2F
+	pos xr-68 y right center
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat3 FrameW FrameH
+   Pos 0 -120 
+}
+
+//====== Win2ndServe
+	add y 20
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatValueF
+	pos xl+93 y right center
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValue2F
+	pos xr-68 y right center
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat4 FrameW FrameH
+   Pos 0 -120 
+}
+
+item
+{
+   Image Ico/rolandgarros/HideStat1 FrameW FrameH
+   Pos 0 -120 
+}
+
+Item
+{
+	Text 1stServe
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y-40
+}
+
+Item
+{
+	Text Win1stServe
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y-20
+}
+
+Item
+{
+	Text Win2ndServe
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	Pos xtl y
+}
+
+//====== Winners
+Item
+{
+	Text Winners
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Winner
+	Font StatValue2F
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/Winner
+	Font StatValueF
+	pos xr-83 y left center
+}
+
+//====== Errors
+Item
+{
+	Text Unforced
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/UnforcedError
+	Font StatValue2F
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/UnforcedError
+	Font StatValueF
+	pos xr-83 y left center
+}
+
+ //====== Ace
+Item
+{
+	Text Ace
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Ace
+	Font StatValueF
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/Ace
+	Font StatValue2F
+	pos xr-83 y left center
+}
+
+//====== BreakPoint
+Item
+{
+	Text BreakPoint
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 20
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/BreakPoint
+	Font StatValueF
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	Font StatValue2F
+	pos xr-83 y left center
+}
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y 33
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	Font TotalF
+	pos xl+88 y right center
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font Total2F
+	pos xr-83 y left center
+}

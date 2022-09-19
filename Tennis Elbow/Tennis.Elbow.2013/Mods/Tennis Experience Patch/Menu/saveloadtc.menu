@@ -1,0 +1,122 @@
+Include Menu.def
+Include IconPosSet01.def
+
+NoGetFullVersion
+
+Background		Bg/Main
+
+def xc	320
+def xl	160
+def xr	480
+def y	17
+def dy	25
+
+Font	Default		HugeChars 15 20 0xFFFFE040 0 Circle Center Center Shadow LH1.15
+Font	BgF			HugeChars 18 24 0x7FFFFFFF 0 Circle Left Up
+Font	TitleF		HugeChars 16 22 0xFFFFE040 0 Center Center
+Font	IcoF		HugeChars 18 24 0xFFFFFFFF 0 Circle Center Center Shadow LH1.15
+Font	SlotF		HugeChars 15 20 0xFFFFE040 0x7F000000 Circle Right Center
+
+def	$p	WorldTour_p1
+
+def	NbLine	34
+def	NbSlot	NbLine	2
+
+
+item
+{
+	Invisible
+	OnEnter !Real
+
+	OnAction
+	{
+		GetIniInfo p_ Section/Name Slot NbSlot
+	}
+}
+
+
+def	bgh	Sy4
+add	bgh	-32
+
+item
+{
+	Image Menu/RoundBg01 640 bgh Rounded
+	Pos 0 32
+	Font BgF
+}
+
+//============================= Upper bar
+
+def	UpBarH	32
+
+item
+{
+	Image Menu/RoundBg01 640 UpBarH Rounded
+	Pos 0 0
+	Font BgF
+}
+
+item LoadSave
+{
+	Pos xc y
+	Add y dy
+	Font TitleF
+	SlideButton #Text
+
+	OnAction
+	{
+		SlideCfg $1 0 3 3
+	}
+
+	Unselectable
+}
+
+//============================= Name
+//item
+{
+	//Text /$p/Name
+	//Pos xc y
+	//Font TitleF
+	//ShrinkToMaxPixel 528 // 640 - 56x2
+}
+
+//============================= Slots
+def	y	45
+//def	Mul	0.089	// ~= 1 / 11
+//def	Mul	0.033	// ~= 1 / 25
+def	Mul	0.028	// ~= 1 / 25
+//def	Mul	0.055	// ~= 1 / 18
+def	dy	Sy4 Mul
+
+add dy -y Mul
+add y dy 0.55
+
+
+def	Num	0
+
+LoopMacro NbLine
+
+item
+{
+	SubMenu SaveLoadSub $1 Num
+	pos xl y
+}
+
+item
+{
+	SubMenu SaveLoadSub $1 Num+NbLine $2
+	pos xr y
+	add y dy
+}
+
+add Num 1
+
+LoopEnd
+
+//============================= Downer bar
+item
+{
+	SubMenu Bar-Quit+Info+Back -1
+}
+
+include DefaultBack.def

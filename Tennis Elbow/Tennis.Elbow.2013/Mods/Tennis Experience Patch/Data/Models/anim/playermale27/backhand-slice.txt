@@ -1,0 +1,5 @@
+Anim: BackHand-Slice.x
+Info: 21.0 21.0		// Hit ball - Max Extension
+Speed: 1.0
+
+Author: Megyaem | Rafa Nadal

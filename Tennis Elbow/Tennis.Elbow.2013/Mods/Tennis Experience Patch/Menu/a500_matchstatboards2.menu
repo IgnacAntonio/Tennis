@@ -1,0 +1,287 @@
+ Include A500_MatchStatBoard.def
+
+Background #PreviousMenu
+
+item
+{
+   Image Ico/ATP500/StatSlide2 598 350
+   Pos 0 -71
+}
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+def	$p1	InGame_p1
+def	$p2	InGame_p2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.3
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	0
+def	dy	21
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+
+add y dy
+add y dy
+add y dy
+add y dy
+add y dy
+add y dy
+add y dy
+add y dy
+
+//====== Winners
+Item
+{
+	Text /$p1/ST_TotalWr
+	Font IcoF
+	pos 195 118
+}
+
+Item
+{
+	Text /$p2/ST_TotalWr
+	Font NetF
+	pos 225 118
+}
+
+//== Backhand
+item
+{
+	Text /$p1/ST_BackhandWr
+	Font IcoF
+	pos 80 85
+}
+
+item
+{
+	Text /$p2/ST_BackhandWr
+	Font NetF
+	pos 120 85
+}
+//== Forehand
+item
+{
+	Text /$p1/ST_ForehandWr
+	Font IcoF
+	pos 80 118
+}
+
+item
+{
+	Text /$p2/ST_ForehandWr
+	Font NetF
+	pos 120 118
+}
+//== Serve
+Item
+{
+	Text /$p1/ST_Ace
+	Font IcoF
+	pos 80 151
+}
+
+Item
+{
+	Text /$p2/ST_Ace
+	Font NetF
+	pos 120 151
+}
+
+//====== Unforced Errors
+item
+{
+	Text /$p1/ST_TotalOut
+	Font IcoF
+	pos 465 118
+}
+
+item
+{
+	Text /$p2/ST_TotalOut
+	Font NetF
+	pos 495 118
+}
+
+//== Backhand
+item
+{
+	Text /$p1/ST_BackhandOut
+	Font IcoF
+	pos 356 85
+}
+
+item
+{
+	Text /$p2/ST_BackhandOut
+	Font NetF
+	pos 390 85
+}
+
+//== Forehand
+item
+{
+	Text /$p1/ST_ForehandOut
+	Font IcoF
+	pos 356 118
+}
+
+item
+{
+	Text /$p2/ST_ForehandOut
+	Font NetF
+	pos 390 118
+}
+//== Serve
+Item
+{
+	Text /$p1/ST_DoubleFault
+	Font IcoF
+	pos 356 151
+}
+
+Item
+{
+	Text /$p2/ST_DoubleFault
+	Font NetF
+	pos 390 151
+}
+
+//====== NetApproach
+Item
+{
+	Text /$ts1/NetApproach
+	Font VSmallF
+	pos 150 246 Right Center
+}
+
+Item
+{
+	Text /$ts2/NetApproach
+	Font VSmallF
+	pos 150 259 Right Center
+}
+
+Item
+{
+	Text /Intern/Team1s
+	Font VSmallF
+	pos 19 246 Left Center
+	ShrinkToMaxPixel 50
+}
+
+Item
+{
+	Text /Intern/Team2s
+	Font VSmallF
+	pos 19 259 Left Center
+	ShrinkToMaxPixel 50
+}
+
+//====== Serve Profile
+Item
+{
+	Text /Intern/Team1s
+	Font VSmallF
+	pos 175 243 Left Center
+	ShrinkToMaxPixel 50
+}
+
+Item
+{
+	Text /Intern/Team2s
+	Font VSmallF
+	pos 175 261 Left Center
+	ShrinkToMaxPixel 50
+}
+
+//==1stServe
+item
+{
+	Text Service1
+	Font VSmallF
+	Pos 280 232 LeftCenter
+}
+
+item
+{
+	Text /$ts1/Win1stServe
+	Font VSmallF
+	Pos 320 243 Right Center
+}
+
+item
+{
+	Text /$ts2/Win1stServe
+	Font VSmallF
+	Pos 320 261 Right Center
+}
+//==2ndServe
+item
+{
+	Text Service2
+	Font VSmallF
+	Pos 350 232 Left Center
+}
+
+item
+{
+	Text /$ts1/Win2ndServe
+	Font VSmallF
+	Pos 410 243 Right Center
+}
+
+item
+{
+	Text /$ts2/Win2ndServe
+	Font VSmallF
+	Pos 410 261 Right Center
+}
+
+//====== TotalPoint
+Item
+{
+	Text /$ts1/TotalPoint
+	Font VSmallF
+	pos 575 246 Right Center
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font VSmallF
+	pos 575 259 Right Center
+}
+
+Item
+{
+	Text /Intern/Team1s
+	Font VSmallF
+	pos 443 246 Left Center
+	ShrinkToMaxPixel 50
+}
+
+Item
+{
+	Text /Intern/Team2s
+	Font VSmallF
+	pos 443 259 Left Center
+	ShrinkToMaxPixel 50
+}
+
+
+

@@ -1,0 +1,6 @@
+Anim: BackHand-2H.x
+Info: 25.0 25.0
+Speed: 1.0
+Acceleration: backhand-2h_acc
+
+Author: Lucian Cucuteanu | Berdych norm+acc

@@ -1,0 +1,5 @@
+Anim: ServiceWaiting.x
+Info: 0 22 38 25// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Megyaem | Raonic v2
+HandBounce: -54.9 -18.4 85.1 0.400 -0.015 -0.916

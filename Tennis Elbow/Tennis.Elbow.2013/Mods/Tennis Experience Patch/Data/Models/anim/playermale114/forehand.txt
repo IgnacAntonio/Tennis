@@ -1,0 +1,5 @@
+Anim: ForeHand.x
+Info: 25.00 25.00
+Speed: 1.0
+
+Author: Nico75  |  M.Fuscovics v2

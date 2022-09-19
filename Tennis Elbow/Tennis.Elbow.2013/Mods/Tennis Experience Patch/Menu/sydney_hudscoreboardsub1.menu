@@ -1,0 +1,51 @@
+Background #PreviousMenu
+
+ShrinkTo 0 0	// Don't shrink
+
+def	$s1	StatTeam1Set1
+def	$s2	StatTeam2Set1
+
+// $1 : 0 for the game score, else the set number
+
+item
+{
+	OnEnter
+	Invisible
+
+	OnActionIfNot $1 -1
+	{
+		SetCfg $s1 $StatTeam1Set$1
+		SetCfg $s2 $StatTeam2Set$1
+	}
+}
+
+item
+{
+	SubMenu Sydney_HudScoreBoardSub2 $1 0
+	Pos 0 0
+
+	ShowIf /$s1/Score 0 9
+	ShowIf /$s2/Score 0 9
+	ShowIf $1 -1 0 !Or
+}
+
+item
+{
+	SubMenu Sydney_HudScoreBoardSub2 $1 1
+	Pos /Intern/ScoreSetTextX 0
+
+	ShowIfNot /$s1/Score 0 9
+	ShowIfNot /$s2/Score 0 9 !Or
+	ShowIfNot $1 -1 0
+	ShowIfNot /Intern/CurrentSet $1
+}
+item
+{
+	SubMenu Sydney_HudScoreBoardSub2 $1 1
+	Pos /Intern/ScoreCurrentSetTextX 0
+
+	ShowIfNot /$s1/Score 0 9
+	ShowIfNot /$s2/Score 0 9 !Or
+	ShowIfNot $1 -1 0
+	ShowIf /Intern/CurrentSet $1
+}

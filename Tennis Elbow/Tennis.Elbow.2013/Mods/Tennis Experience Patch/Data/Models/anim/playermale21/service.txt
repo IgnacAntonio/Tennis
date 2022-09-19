@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 84.0 84.0 55.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -12.9 -31.6 240.2 0.178 -0.223 0.959
+HandThrow: -18.0 -45.4 148.1 -0.555 0.060 0.830
+
+Author: Neeky McDeez | Bartoli

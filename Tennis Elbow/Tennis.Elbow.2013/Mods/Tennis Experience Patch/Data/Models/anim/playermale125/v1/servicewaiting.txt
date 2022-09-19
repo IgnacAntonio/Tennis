@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 0 20 5	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Reginald Wesley | Alexander Zverev

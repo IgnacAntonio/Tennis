@@ -1,0 +1,264 @@
+Include MatchStatBoard.def
+
+Background #PreviousMenu
+
+Font	Default		HugeChars 11 15 0xFFFFFFFF 0 Center Center Shadow LH1.15
+Font	BigF		HugeChars 18 24 0xFFFFFFFF 0
+Font	SmallF		HugeChars 10 14 0xFFFFFFFF 0
+Font	VSmallF		HugeChars 9 12 0xFFFFFFFF 0
+Font	IcoF		HugeChars 9 12 0xFFFFFFFF 0
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.45
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+def	y	EdgeS 2
+def	dy	19
+
+def	xtl	xc
+
+item
+{
+	OnEnter
+	Invisible
+
+	OnAction
+	{
+		SetCfg $ts1 $StatTeam1Set$1
+		SetCfg $ts2 $StatTeam2Set$1
+	}
+}
+
+item Summary
+{
+	CycleButton #Text
+
+	OnAction
+	{
+		SlideCfg /Intern/MatchBoardSet 0 5 5
+	}
+
+	Font BigF
+	Unselectable
+	Pos xc y
+	add y dy
+	add y 8
+}
+
+
+//================================= Online level
+//add y -dy 0.30
+add y -dy 0.90
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xl y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam1/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item NW_Level
+{
+	CycleButton #Text
+	Pos xr y Center Center
+	Font VSmallF
+
+	OnAction
+	{
+		SlideCfg /StatTeam2/EloLevel 5 0
+	}
+
+	Unselectable
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT1
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT1 0 10000
+}
+
+item
+{
+	Text NW_ELO+ /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIf /NW_Intern/EloChangeT2 0 10000
+}
+
+item
+{
+	Text NW_ELO- /NW_Intern/EloChangeT2
+	Pos xr y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+	ShowIfNot /NW_Intern/EloChangeT2 0 10000
+}
+
+add y dy 0.60
+
+item
+{
+	Text NW_ELO /StatTeam1/Elo /StatTeam1/EloNbGame
+	Pos xl y Center Center
+	Font VSmallF
+
+	ShowIfNot /NW_Intern/Status 0
+}
+
+item
+{
+	Text NW_ELO /StatTeam2/Elo /StatTeam2/EloNbGame
+	Pos xr y Center Center
+
+	Font VSmallF
+	ShowIfNot /NW_Intern/Status 0
+}
+
+add y -dy 0.30
+
+
+//================================= Time & Names
+Item
+{
+	Text /$ts1/PrTime
+	pos xc y
+	add y dy
+}
+
+Item
+{
+	Text /Intern/Team1
+	pos xl y
+}
+
+Item
+{
+	Text /Intern/Team2
+	pos xr y
+	add y dy
+}
+
+
+//================================= Score
+Item
+{
+	Text EOM_Retired
+	pos xl y
+	Font SmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos xl y
+	Font VSmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 0
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_Retired
+	pos xr y
+	Font SmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIf /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text EOM_RetiredELO /NW_Intern/QuitPenalty
+	pos xr y
+	Font VSmallF
+
+	ShowIf /StatTeam1Set0/GiveUp 1
+	ShowIfNot /NW_Intern/QuitPenalty 0
+}
+
+Item
+{
+	Text /$ts1/PrScore
+	pos xc y
+	add y 8
+	Font BigF
+}
+
+//============================== Stats
+
+add y dy	0.5
+
+Item
+{
+	SubMenuIf /Intern/StatPage 0 0 MatchStatBoardSub1
+	Pos 0 y
+}
+
+Item
+{
+	SubMenuIf /Intern/StatPage 1 1 MatchStatBoardSub2
+	Pos 0 y
+}
+
+
+def	IcoS	16
+def	xr	FrameW 0.99
+
+add y dy	12.5
+
+Item
+{
+	Image Ico/ArrowD IcoS IcoS
+	Font IcoF
+	Pos xr y Right Center
+
+	OnAction
+	{
+		ToggleCfg /Intern/StatPage
+	}
+}
+

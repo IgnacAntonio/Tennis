@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 01 10 35 17 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Tennis Experience | Fransisco Cerundolo

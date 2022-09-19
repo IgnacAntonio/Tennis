@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 108.00 108.00 86.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Rafael Nadal

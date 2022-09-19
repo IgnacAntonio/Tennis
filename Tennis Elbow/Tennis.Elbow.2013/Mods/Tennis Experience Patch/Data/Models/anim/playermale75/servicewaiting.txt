@@ -1,0 +1,4 @@
+Anim: ServiceWaiting.x
+Info: 0 20 32 23 // ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Danispadi - Sanchez

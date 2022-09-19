@@ -1,0 +1,241 @@
+Include Menu.Def
+Include IconPosSet01.def
+
+def x		320
+def y		Sy2
+add y		20
+def dy		35
+
+def x1		340
+def x2		370
+def xc		320
+
+FontSize	Default 15 20
+FontSize	Selected 17 22
+
+
+item
+{
+	SubMenu MenuSet01 15
+}
+
+item
+{
+	OnExit !Real
+	Invisible
+
+		OnAction
+	{
+		SetCfg /Intern/SelectedHUD /Menu/SelectedHUD
+	}
+}
+
+Background		#Game
+
+
+//========================== SCOREBOARD Selector
+item
+{
+	Text ScoreB
+	Pos x1 y Right
+}
+
+
+item ScorebCode
+{
+	CycleButton #Text
+	Pos x2 y  Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Menu/SelectedHUD 0 750 75
+	}
+
+	ShrinkToMaxPixel MaxR
+}
+
+
+
+
+//========================== MPH / KMH
+item MphOn
+{
+	Text MphOn
+	Invisible
+}
+
+item KmhOn
+{
+	Text KmhOn
+	Invisible
+}
+
+item
+{
+	Text Mph
+	Pos x1 y Right
+}
+
+item
+{
+	CheckButton MphOn KmhOn
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Game/Mph
+	}
+}
+
+//========================== Show Info On Error
+item
+{
+	Text ShowInfoOnError
+	Pos x1 y Right
+}
+
+item
+{
+	CheckButton On Off
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Game/ShowErrors
+	}
+}
+
+
+//========================== Ball Motion Blur
+item
+{
+	Text BallMotion
+	Pos x1 y Right
+}
+
+
+item BallMCode
+{
+	CycleButton #Text
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Game/MotionBlur 0 2
+	}
+}
+
+
+//========================== Ball Size
+item
+{
+	Text BallSize
+	Pos x1 y Right
+}
+
+item
+{
+	SlideButton CamScrollBar CamScrollButton
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		SlideCfg /Ball/Scale 0 9 0.5 !AbsDelta
+	}
+}
+
+//========================== Show Strike Speed
+item
+{
+	Text ShowStrikeSpeed
+	Pos x1 y Right
+
+	ShowIfNot /Menu/Adv 0
+}
+
+item
+{
+	CheckButton On Off
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Game/ShowStrikeSpeed
+	}
+
+	ShowIfNot /Menu/Adv 0
+}
+
+//========================== Show Strike Count
+item
+{
+	Text ShowStrikeCount
+	Pos x1 y Right
+
+	ShowIfNot /Menu/Adv 0
+}
+
+item
+{
+	CheckButton On Off
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Menu/ShowStrikeCount
+	}
+
+	ShowIfNot /Menu/Adv 0
+}
+
+//========================== Simul Match Time
+item
+{
+	Text SimulMatchTime
+	Pos x1 y Right
+
+	ShowIfNot /Menu/Adv 0
+}
+
+item
+{
+	CheckButton On Off
+	Pos x2 y Left
+	Add y dy
+
+	OnAction
+	{
+		ToggleCfg /Game/SimulMatchTime
+	}
+
+	ShowIfNot /Menu/Adv 0
+}
+
+
+//========================== Default
+item
+{
+	Text Default
+	Pos xc y
+
+	OnAction
+	{
+		SetCfg /Ball/Scale 1
+		SetCfg /Game/MotionBlur 2
+		SetCfg /Game/ShowStrikeSpeed 0
+		SetCfg /Menu/ShowStrikeCount 0
+		SetCfg /Game/ShowErrors 1
+		SetCfg /Game/SimulMatchTime 0
+	}
+}
+
+GetFullVersion
+
+

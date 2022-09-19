@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 127.0 127.0 104.00	// Hit ball - Max Extension - Throw Ball
+
+
+Author: Reginald Wesley | Milos Raonic

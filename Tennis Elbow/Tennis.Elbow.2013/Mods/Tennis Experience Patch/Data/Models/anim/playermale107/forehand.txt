@@ -1,0 +1,7 @@
+Anim: ForeHand.x
+Info: 27.0 27.0
+Speed: 1.0
+
+Acceleration: forehand_acc.x
+
+Author: Rharm | Ruud

@@ -1,0 +1,5 @@
+Anim: Service.x
+Info: 41 41 10  //  Hit ball - Max Extension - Throw Ball
+Author: phucnguyen0209 | Gulbis
+SweetSpot: -16.8 -32.9 248.0 0.033 -0.297 0.954
+HandThrow: -64.3 -12.2 170.9 -0.047 0.464 0.885

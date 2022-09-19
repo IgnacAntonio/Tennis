@@ -1,0 +1,41 @@
+
+Include Menu.Def
+
+def	FrameX	16
+def	FrameY	107
+
+def	FrameW	608
+def	FrameH	266
+
+def	FrameLx	FrameX
+def	FrameYu	FrameY
+
+def	FrameRx	FrameLx
+add	FrameRx FrameW
+
+def	FrameYd	FrameYu
+add	FrameYd FrameH
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font	BigF		CambayBold	18 24 0xFFFFFFFF 0
+Font	SmallF		CambayBold	12 16 0xFFFFFFFF 0
+Font	VSmallF		CambayBold	12 16 0xFFFFFFFF 0
+Font	IcoF		CambayBold	9 12 0xFFFFFFFF 0
+Font	NetF		CambayBold	10 13 0xFFFFFFFF 0x2F000000 Right Bottom
+
+// font for the summary
+Font	SummaryF	FrizQuadrataBold	26 30 0xFFFFFFFF 0 Shadow0
+// font for the score
+Font	ScoreF		CambayBold	17 19 0xFFFFFFFF 0 Shadow0
+// font for the names
+Font	NamefF 		FrizQuadrata3D	28 32 0xFFFFFEF8 0 Center Center Shadow0
+Font	NamelF 		FrizQuadrata3D	32 36 0xFFFFFEF8 0 Center Center Shadow0
+// font for the time
+Font	TimeF 		CambayBold	13 15 0xFFBBA76C 0 Center Center Shadow0
+Font	MatchTimeF	CambayBold	12 13 0xFFBBA76C 0 Center Center Shadow0
+// font for the stats (label)
+Font	StatLabelF 	CambayBold	11 12 0xFFFFFFFF 0 Center Center Shadow0
+// font for the stats (value)
+Font	StatValueF 	CambayBold	15 18 0xFFFFFFFF 0 Center Center Shadow0

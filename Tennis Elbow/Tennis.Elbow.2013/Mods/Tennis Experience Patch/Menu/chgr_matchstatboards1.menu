@@ -1,0 +1,245 @@
+Include CHGR_MatchStatBoard.def
+
+Background #PreviousMenu
+
+def	$ts1	StatTeam1Set1
+def	$ts2	StatTeam1Set2
+
+def	Shl	0
+def	Shr	FrameW
+def	EdgeS	8
+add	Shl	EdgeS
+add	Shr	-EdgeS
+
+ShrinkTo	Shl Shr
+
+def	MidShk	FrameW 0.3
+
+def	xc	FrameW 0.5
+def	xl	FrameW 0.15
+def	xr	FrameW 0.85
+def	y	6
+def	dy	26
+
+def	xtl	xc
+
+//============================== Stats
+def	xl	FrameW 0.2
+def	xr	FrameW 0.8
+
+add y -6
+
+//====== Ace
+Item
+{
+	Text Ace2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/Ace
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Ace
+	Font StatValueF
+	pos xr y
+}
+
+//====== DoubleFault
+Item
+{
+	Text DoubleFault2
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/DoubleFault
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/DoubleFault
+	Font StatValueF
+	pos xr y
+}
+
+//====== 1stServe
+Item
+{
+	Text 1stServe9
+	Font StatLabelF
+	ShrinkToMaxPixel MidShk
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/1stServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/1stServe
+	Font StatValueF
+	pos xr y
+}
+
+
+//====== Win1stServe
+	add y dy
+
+Item
+{
+	Text /$ts1/Win1stServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win1stServe
+	Font StatValueF
+	pos xr y
+}
+
+Item
+{
+	Text Win1stServe7
+	Font StatLabelF
+	Pos xtl y
+}
+
+//====== Win2ndServe
+	add y dy
+
+Item
+{
+	Text /$ts1/Win2ndServe
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/Win2ndServe
+	Font StatValueF
+	pos xr y
+}
+
+Item
+{
+	Text Win2ndServe7
+	Font StatLabelF
+	Pos xtl y
+}
+
+//====== NetApproach
+Item
+{
+	Text NetApproach2
+	Font StatLabelF
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/NetApproach
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/NetApproach
+	Font StatValueF
+	pos xr y
+}
+
+//====== Point Won On Return
+	add y dy
+
+Item
+{
+	Text /$ts1/PointWonOnReturn
+	Font StatValueF
+	pos xl y 
+}
+
+Item
+{
+	Text /$ts2/PointWonOnReturn
+	Font StatValueF
+	pos xr y
+}
+
+Item
+{
+	Text ReturnPointWon2
+	Font StatLabelF
+	Pos xtl y
+}
+
+//====== BreakPoint
+	add y dy
+
+Item
+{
+	Text /$ts1/BreakPoint
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/BreakPoint
+	Font StatValueF
+	pos xr y
+}
+
+Item
+{
+	Text BreakPoint6
+	Font StatLabelF
+	Pos xtl y
+}
+
+//====== TotalPoint
+Item
+{
+	Text TotalPoint4
+	Font StatLabelF
+	add y dy
+	Pos xtl y
+}
+
+Item
+{
+	Text /$ts1/TotalPoint
+	Font StatValueF
+	pos xl y
+}
+
+Item
+{
+	Text /$ts2/TotalPoint
+	Font StatValueF
+	pos xr y
+}

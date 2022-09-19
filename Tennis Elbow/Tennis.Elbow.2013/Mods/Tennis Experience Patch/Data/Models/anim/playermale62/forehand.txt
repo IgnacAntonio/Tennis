@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 31.1 31.1
+Speed: 1.0
+Author: emmainf | Nishikori acc only

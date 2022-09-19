@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 29.0 29.0
+Speed: 1.0
+Author: Davide Menez | Fabio Fognini

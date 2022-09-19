@@ -1,0 +1,62 @@
+// COMMON DATA FOR ALL SCOREBOARD TYPES
+Include ALL_Hud.def
+
+// SPECIFIC DATA FOR CURRENT SCOREBOARD
+
+//=============================================================================
+//=== Fonts
+//=============================================================================
+// font for players name (Full Scoreboard)
+Font	FullNameF	HugeChars 16 17 0xFFE7E7E7 0 Circle Center Center Shadow0 AS1
+// font for global tournament information (name and year)
+Font	TrnF	HugeChars 12 13 0xFFFFFFFF Rectangle Center Center Shadow0 AS1
+// font for tournament round
+Font	RoundF	HugeChars 12 13 0xFFDDA921 Rectangle Center Center Shadow0 AS1
+// font for ranks and countries
+Font	RankCountryF	HugeChars 11 13 0xFFDDA921 0 Circle Center Center Shadow0 AS0
+// font for seed
+Font	SeedF	HugeChars 11 13 0xFFDDA921 0 Circle Center Center Shadow0 AS1
+// font for all sets score except current one
+Font	SetF	HugeChars 13 14 0xFFDDA921 0 Rectangle Center Center Shadow0 AS1
+// font for games in all loser sets score except current one
+Font	LoserSetF	HugeChars 13 14 0xFFDDA921 0 Rectangle Center Center Shadow0 AS1
+// font for the current set score
+Font	CurrentSetF	HugeChars 13 14 0xFF000000 0 Rectangle Center Center Shadow0 AS1
+// font for all sets score except current one
+Font	FullSetF	HugeChars 17 18 0xFFDDA921 0 Rectangle Center Center Shadow0 AS1
+// font for games in all loser sets score except current one
+Font	FullLoserSetF	HugeChars 17 18 0xFFDDA921 0 Rectangle Center Center Shadow0 AS1
+// font for the current set score
+Font	FullCurrentSetF	HugeChars 17 18 0xFF000000 0 Rectangle Center Center Shadow0 AS1
+
+//=============================================================================
+//=== TV Logo position (from its Right&Up corner) and size
+//=============================================================================
+def TVLogoH TVLogoW 0.609
+
+//=============================================================================
+//=== TV Logo Size 
+//=============================================================================
+
+def TVLogoH 52
+def TVLogoW 90
+
+//=============================================================================
+//=== Tournament informations (name, year, round)
+//=============================================================================
+// Court Positions
+def CourtX 147
+def CourtY TrnY
+// Max string length in pixels
+def TrnMaxLength 130
+def RndMaxLength 60
+def CrtMaxLength 70
+
+//=============================================================================
+//=== Info bar for key points alert (from its Right&Up corner) and size
+//=============================================================================
+def KeyPointsBarW 87
+def KeyPointsBarH LightScoreNameH 0.5
+// relative position of the text (from its left/center position) in the info bar
+// (0,0) is the left/center of the info bar
+def KeyPointsBarTextX 13

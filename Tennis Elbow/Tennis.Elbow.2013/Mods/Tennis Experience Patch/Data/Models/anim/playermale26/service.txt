@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 67.5 67.5 42.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: 9.6 -40.2 239.2 0.542 0.144 0.828
+HandThrow: -43.4 -6.4 144.5 -0.419 0.538 0.731
+
+Author: Neeky McDeez | Federer v3

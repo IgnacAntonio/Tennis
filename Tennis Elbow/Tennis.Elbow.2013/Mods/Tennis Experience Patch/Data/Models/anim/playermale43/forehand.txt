@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 23.00 23.00
+Speed: 1.0
+Acceleration: Forehand_acc
+
+Author: Lucian Cucuteanu | Federer v3 +acc

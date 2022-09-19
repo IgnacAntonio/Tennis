@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 73.5 73.5 37.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: -21.1 -31.9 231.0 0.262 0.056 0.964
+HandThrow: -16.1 -31.3 143.6 -0.826 0.112 0.553
+
+Author: Neeky McDeez | Sharapova v3

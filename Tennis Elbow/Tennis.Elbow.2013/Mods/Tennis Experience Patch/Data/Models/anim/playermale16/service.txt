@@ -1,0 +1,7 @@
+Anim: Service.x
+Info: 59.0 59.0 25.0	// Hit ball - Max Extension - Throw Ball
+
+SweetSpot: 4.6 -19.7 244.4 0.161 0.009 0.987
+HandThrow: -5.1 -16.0 128.7 -0.593 -0.089 0.800
+
+Author: Lucian Cucuteanu | Djokovic

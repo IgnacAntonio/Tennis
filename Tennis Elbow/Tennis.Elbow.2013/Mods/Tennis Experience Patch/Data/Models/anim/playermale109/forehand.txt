@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 21.3 21.3
+Speed: 1.0
+
+
+Author: Rharm | Garin

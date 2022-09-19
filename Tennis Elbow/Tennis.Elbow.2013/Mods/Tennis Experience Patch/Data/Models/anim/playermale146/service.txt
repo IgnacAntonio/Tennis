@@ -1,0 +1,4 @@
+Anim: Service.x
+Info: 83.00 83.00 61.00	// Hit ball - Max Extension - Throw Ball
+
+Author: Reginald Wesley | Novak Djokovic

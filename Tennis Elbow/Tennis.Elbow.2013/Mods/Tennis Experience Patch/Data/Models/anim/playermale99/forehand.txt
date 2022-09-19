@@ -1,0 +1,6 @@
+Anim: ForeHand.x
+Info: 31.0 31.0
+Speed: 1.0
+Acceleration: Forehand_acc
+
+Author: Davide Menez | Kyle Edmund

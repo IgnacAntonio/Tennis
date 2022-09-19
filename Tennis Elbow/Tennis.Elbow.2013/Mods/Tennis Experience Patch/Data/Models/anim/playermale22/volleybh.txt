@@ -1,0 +1,5 @@
+Anim: VolleyBH.x
+Info: 23.0 23.0
+Acceleration: volleybh_acc
+
+Author: Lucian Cucuteanu | Stan Wawrinka

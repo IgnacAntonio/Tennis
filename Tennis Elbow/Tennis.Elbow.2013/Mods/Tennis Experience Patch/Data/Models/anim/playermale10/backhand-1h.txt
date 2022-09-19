@@ -1,0 +1,6 @@
+Anim: BackHand-1H.x
+Info: 24.0 24.0 // Hit ball - Max Extension
+Speed: 1.0
+Acceleration: backhand-1h_acc
+
+Author: Lucian Cucuteanu | Richard Gasquet norm+acc

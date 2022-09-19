@@ -1,0 +1,8 @@
+Anim: Service.x
+Info: 44 44 16	// Hit ball - Max Extension - Throw Ball
+
+Author: Megyaem | Medvedev
+
+
+
+

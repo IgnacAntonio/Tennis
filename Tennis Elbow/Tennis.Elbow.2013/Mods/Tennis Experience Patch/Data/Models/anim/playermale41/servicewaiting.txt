@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 0 16 31 20	// ReadyToServe - LoopBegin - LoopEnd - ThrowBall
+
+Author: Lucian Cucuteanu | David Ferrer v2
+
+HandBounce: 16.5 -16.3 76.6 0.481 0.152 -0.864

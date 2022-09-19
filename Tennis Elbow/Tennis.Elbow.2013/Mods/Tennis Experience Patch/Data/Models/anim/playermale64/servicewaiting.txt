@@ -1,0 +1,6 @@
+Anim: ServiceWaiting.x
+Info: 01 17 33 20.5	
+
+HandBounce: -9.3 8.9 97.0 0.340 0.049 -0.939
+
+Author: megyaem

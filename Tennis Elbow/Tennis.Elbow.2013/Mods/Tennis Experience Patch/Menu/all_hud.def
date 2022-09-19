@@ -1,0 +1,215 @@
+//=============================================================================
+//=== Fonts
+//=============================================================================
+Font   Default      HugeChars 14 18 0xFFFFFFFF 0 Circle Center Center
+// font for global tournament information (name and year)
+Font	TrnF	HugeChars 12 13 0xFFD3D3D3 Rectangle Center Center Shadow0 AS1
+// font for tournament round
+Font	RoundF	HugeChars 12 13 0xFFD3D3D3 Rectangle Center Center Shadow0 AS1
+// font for players name (Light Scoreboard)
+Font	NameF	HugeChars 10 14 0xFFD3D4D4 0 Circle Center Center Shadow0 AS1
+// font for ranks and countries
+Font	RankCountryF	HugeChars 11 13 0xFFD3D3D3 0 Circle Center Center Shadow0 AS0
+// font for seed
+Font	SeedF	HugeChars 7 13 0xFFD3D3D3 0 Circle Center Center Shadow0 AS1
+// font for all sets score except current one
+Font	SetF	HugeChars 13 13 0xFFFFFFFF 0 Rectangle Center Center Shadow0 AS1
+// font for games in all loser sets score except current one
+Font	LoserSetF	HugeChars 13 13 0xFFFFFFFF 0 Rectangle Center Center Shadow0 AS1
+// font for the current set score
+Font	CurrentSetF	HugeChars 11 13 0xFF000000 0 Rectangle Center Center Shadow0 AS1
+// font for the counter of winning sets
+Font	NbWinSetF	HugeChars 13 13 0xFFD3D4D4 0 Rectangle Center Center Shadow0 AS1
+// font for the current game score
+Font	GameScoreF	HugeChars 11 13 0xFFD3D4D4 0 Rectangle Center Center Shadow0 AS1
+// font for information board
+Font	IcoF	HugeChars 11 13 0xFFD8D8D8 0 Center Center
+Font	InfoF	HugeChars 7 10  0xFFD8D8D8 0 Center Center
+// font for key points alert bar
+Font	KeyPointsBarF	HugeChars 9 13  0xFF000000 0 Center Center
+// font for names during key points alert
+Font	NameKeyPointsF	HugeChars 10 14 0xFF000000 0 Circle Center Center Shadow0 AS1
+// font for entry players name
+Font	BigNameF	HugeChars 15 16 0xFFD3D4D4 0 Circle Center Center Shadow0 AS1
+
+//=============================================================================
+//=== Screen resolution
+//=============================================================================
+def ScreenW 640
+def ScreenH 480
+
+//=============================================================================
+//=== Scoreboards parameters
+//=============================================================================
+
+//=== Full scoreboard
+
+// Position for full scoreboard (Right&Up corner)
+def	FullScoreX	160
+def	FullScoreY	390
+// Size of the full scoreboard (without sets&game items)
+def FullScoreNameW 183
+def FullScoreNameH 44
+// Size of set ico in the full scoreboard and relative center position of the text
+def FullScoreSetW 18
+def FullScoreSetH FullScoreNameH
+def FullScoreSetTextX FullScoreSetW -0.5
+def FullScoreSetWx2 FullScoreSetW 2
+// Size of current set ico in the full scoreboard and relative center position of the text
+def FullScoreCurrentSetW FullScoreSetW
+def FullScoreCurrentSetH FullScoreSetH
+def FullScoreCurrentSetTextX FullScoreCurrentSetW -0.5
+def FullScoreCurrentSetWx2 FullScoreCurrentSetW 2
+// Size of game ico in the full scoreboard and relative center position of the text
+def FullScoreGameW FullScoreSetW 1.5
+def FullScoreGameH FullScoreSetH
+def FullScoreGameTextX FullScoreGameW -0.5
+// Relative position of the items from the left position of the full scoreboard (without sets&game items)
+def FullScoreNameX 16
+def FullScoreServIndX 6
+def FullScoreSeedX 172
+def FullScoreRankCountryX 143
+def FullScoreFlagX 202
+def FullScoreTrnLogoX -2
+// Max length of the name, seed and rank&country of the full scoreboard
+def FullScoreNameMax 120
+def FullScoreSeedMax 14
+def FullScoreRankCountryMax 25
+// Size of the flag
+def FullScoreFlagW 12
+def FullScoreFlagH 10
+// Size of the server indicator
+def FullScoreServIndW 10
+def FullScoreServIndH 18
+// Time in second after which the full scoreboard is hidden
+// Set to -1 to disable the full scoreboard
+def FullScoreTimeDisp 5
+
+// Size of the right border of the scoreboard
+def FullScoreRightBorderW 48
+def FullScoreRightBorderH FullScoreNameH
+
+// Size of the bars ( for diferents sets quantity)
+
+def FullScoreSinglesBarW1 249
+def FullScoreSinglesBarW3 285
+def FullScoreSinglesBarW5 321
+
+def FullScoreTrnBarW1 FullScoreSinglesBarW1
+def FullScoreTrnBarW3 FullScoreSinglesBarW3
+def FullScoreTrnBarW5 FullScoreSinglesBarW5
+
+def FullScoreSinglesBarH 31
+def FullScoreTrnBarH 60
+
+// Positions of the bars
+def FullScoreTrnBarY -59
+def FullScoreTrnSinglesY 74
+
+//=== Light scoreboard
+
+// Position for light scoreboard (Right&Up corner)
+def	LightScoreX	56
+def	LightScoreY	415
+// Size of the light scoreboard (without sets&game items)
+def LightScoreNameW 80
+def LightScoreNameH 31
+// Size of set ico in the light scoreboard and relative center position of the text
+def LightScoreSetW 12
+def LightScoreSetH LightScoreNameH
+def LightScoreSetTextX LightScoreSetW -0.5
+def LightScoreSetWx2 LightScoreSetW 2
+// Size of current set ico in the light scoreboard and relative center position of the text
+def LightScoreCurrentSetW LightScoreSetW
+def LightScoreCurrentSetH LightScoreSetH
+def LightScoreCurrentSetTextX LightScoreCurrentSetW -0.5
+def LightScoreCurrentSetWx2 LightScoreCurrentSetW 2
+// Size of game ico in the light scoreboard and relative center position of the text
+def LightScoreGameW LightScoreSetW 1.9
+def LightScoreGameH LightScoreSetH
+def LightScoreGameTextX LightScoreGameW -0.5
+// Relative position of the items from the left position of the light scoreboard (without sets&game items)
+def LightScoreNameX 9
+def LightScoreServIndX 0
+def LightScoreTrnLogoX -2
+// Max length of the name of the light scoreboard
+def LightScoreNameMax 70
+// Size of the server indicator
+def LightScoreServIndW 8
+def LightScoreServIndH 15
+
+//=============================================================================
+//=== Tournament informations (name, year, round)
+//=============================================================================
+// Name and Year positions (Right&Up corner)
+def TrnX FullScoreX
+def TrnY -58
+// Round positions (Right&Up corner)
+def RoundX 11
+def RoundY TrnY
+// Court Positions
+def CourtX 80
+def CourtY TrnY
+// Max string length in pixels
+def TrnMaxLength 130
+def RndMaxLength 60
+def CrtMaxLength 70
+
+//=============================================================================
+//=== TV Logo position (from its Right&Up corner) and size
+//=============================================================================
+def TVLogoX 1000
+def TVLogoY 20
+def TVLogoW 70
+def TVLogoH TVLogoW 0.215
+
+//=============================================================================
+//=== Tournament Logo size
+//=============================================================================
+def FullTrnLogoH FullScoreNameH 0.97
+def FullTrnLogoW FullTrnLogoH 0.72
+def LightTrnLogoH 0
+def LightTrnLogoW 0
+
+//=============================================================================
+//=== Info board position (from its Right&Up corner) and size
+//=============================================================================
+def InfoBoardX 640
+def InfoBoardY 467
+def InfoBoardW 76
+def InfoBoardH 13
+// relative position of the text (from its center/center position) in the info board
+// (0,0) is the center/center of the info board
+def InfoBoardTextX 0
+def InfoBoardTextY 0
+
+//=============================================================================
+//=== Info bar for key points alert (from its Right&Up corner) and size
+//=============================================================================
+def KeyPointsBarX LightScoreX
+def KeyPointsBarY 395
+def KeyPointsBarW 80
+def KeyPointsBarH LightScoreNameH 0.5
+// relative position of the text (from its center/center position) in the info bar
+// (0,0) is the center/center of the info bar
+def KeyPointsBarTextX 0
+def KeyPointsBarTextY 0
+
+//=============================================================================
+//=== Entry name board position and size
+//=============================================================================
+
+// X offset from the screen Left&Up corner (for the top side name) and the screen Right&Down corner (for the bottom side name) 
+// Y offset from Left&Up corner and Right&Down corner of the screen
+def NameBoardDX 45
+def NameBoardDY 30
+//  Size
+def NameBoardW 120
+def NameBoardH 33
+// Text length & position
+def NameBoardMaxLength 100
+// X offset of the text from left position of the board
+def NameBoardTextDX 15
+// Y offset of the text from top position of the board
+def NameBoardTextDY 8
+

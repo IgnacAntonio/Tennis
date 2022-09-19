@@ -1,0 +1,19 @@
+
+[Camera]
+Angle		=	-15.4011
+CustomFocal	=	5.54426
+Dist		=	4521
+Focal		=	1
+Height		=	1215
+Translation	=	0
+2dCourt16:9	=	0
+Aperture	=	0.45
+AspectRatio	=	1.6
+AutoClearCustom	=	1
+Custom		=	0
+Elevation	=	0.5
+FollowMode	=	3
+ForceSunInBack	=	0
+Mode		=	0
+Zoom		=	2.25
+ZoomStart	=	0

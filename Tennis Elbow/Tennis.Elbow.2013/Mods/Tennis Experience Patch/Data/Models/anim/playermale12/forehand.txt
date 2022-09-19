@@ -1,0 +1,4 @@
+Anim: ForeHand.x
+Info: 26 26
+Speed: 1.0
+Author: Lucian Cucuteanu | Nalbandian v1
